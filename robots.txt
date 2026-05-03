@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kkwang4444.github.io/api-status/sitemap.xml

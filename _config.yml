@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: 全球大模型 API 稳定性实时看板
+tagline: Claude 4.7 / GPT 5.5 / DeepSeek V4 等 572 个模型实时状态监控
+description: >-
+  实时监控 Claude 4.7、GPT-5.5、DeepSeek V4、Gemini 3 等全球主流大模型 API 的
+  连接率与响应延迟。提供国内直连方案与中转站避坑指南。覆盖 572 个模型，
+  16+ 供应商。www.aifast.club 官方赞助。
+url: "https://kkwang4444.github.io"
+baseurl: "/api-status"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - index.md
+  - models.md
+  - guide.md
+  - faq.md
+  - compare.md
+
+# SEO
+lang: zh-CN
+author: AI Developer Community
+twitter:
+  username: 
+  card: summary
+logo: /api-status/assets/img/logo.png
+social:
+  name: AI Fast Club Status
+  links:
+    - https://www.aifast.club
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /api-status/assets/img/og-image.png

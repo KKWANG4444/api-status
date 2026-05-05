@@ -7,6 +7,10 @@
 
 > 👉 **[www.aifast.club](https://www.aifast.club) — 一个 API Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
 
+![api-status 截图](assets/img/api-status-screenshot.png)
+
+*📊 实时状态看板截图 — 572 个模型连接状态一目了然*
+
 ---
 
 ## 📋 目录

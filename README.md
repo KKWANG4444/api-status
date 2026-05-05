@@ -292,6 +292,17 @@ OpenRouter 需要代理访问、海外卡支付、无中文客服。而 [www.aif
 ---
 
 <p align="center">
-  <em>Proudly maintained by the 2026 AI Developer Community.<br>
-  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 国内直连 · 572 个模型 · 一个 Key 搞定。</em>
+  <small>Proudly maintained by the 2026 AI Developer Community.<br>
+  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 国内直连 · 572 个模型 · 一个 Key 搞定。</small>
 </p>
+
+---
+
+### 🔗 相关仓库
+
+| 仓库 | 说明 |
+|:---|:---|
+| [📊 api-status](https://github.com/KKWANG4444/api-status) | 572 个模型实时状态看板 |
+| [📈 Claude-4.7-GPT-5.5-Stability-Tracker](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) | Claude/GPT 稳定性追踪 |
+| [📖 ai-api-proxy-china-guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | AI 中转站完整指南 |
+| [🌐 www.aifast.club](https://www.aifast.club) | 官网 / 注册

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 开发者接入指南 - Cursor Dify LobeChat 配置教程
+title: 开发者接入指南 - Cursor Dify LobeChat 配置教程 | 国内直连API
 permalink: /guide/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 实时状态看板 - 全球大模型 API 稳定性监控
+title: 实时状态看板 - 全球大模型 API 稳定性监控 | Claude 4.7 GPT 5.5 国内直连
 permalink: /
 ---
 

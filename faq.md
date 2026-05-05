@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 常见问题 - 中转站封号 API 401 报错 解答
+title: 常见问题 - 中转站封号 API 401 报错 解答 | 国内直连AI API
 permalink: /faq/
 ---
 

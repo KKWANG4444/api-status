@@ -36,7 +36,7 @@ author: AI Developer Community
 twitter:
   username: 
   card: summary
-logo: /api-status/assets/img/logo.png
+logo: /assets/img/logo.png
 social:
   name: AI Fast Club Status
   links:
@@ -48,4 +48,4 @@ defaults:
       path: ""
     values:
       layout: default
-      image: /api-status/assets/img/og-image.png
+      image: /assets/img/og-image.png

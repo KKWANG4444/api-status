@@ -3,7 +3,7 @@
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
-[![更新](https://img.shields.io/badge/更新-2026--05--23-yellow)](https://github.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/更新-2026--05--24-yellow)](https://github.com/KKWANG4444/api-status)
 
 > 👉 **[www.aifast.club](https://www.aifast.club) — 一个 API Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
 
@@ -19,9 +19,9 @@
 - [www.aifast.club 是什么？优势在哪里](#wwwaifastclub-是什么优势在哪里)
 - [支持的模型清单 (572个)](#支持的模型清单-572个)
 - [接入教程：1 分钟上手](#接入教程1-分钟上手)
-- [各类工具配置指南](#各类工具配置指南)
-- [与官方直连对比](#与官方直连对比)
-- [常见问题](#常见问题)
+- [各类工具配置指南](index.md)
+- [与官方直连对比](compare.md)
+- [常见问题](faq.md)
 - [立即开始](#立即开始)
 
 ---

@@ -4,6 +4,7 @@
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
 [![更新](https://img.shields.io/badge/更新-2026--05--28-yellow)](https://github.com/KKWANG4444/api-status)
+[![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
 
 > 👉 **[www.aifast.club](https://www.aifast.club) — 一个 API Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
@@ -152,7 +153,7 @@ https://www.aifast.club/v1
 1. 打开 Cursor → Settings → Models
 2. OpenAI API Base URL → `https://www.aifast.club/v1`
 3. 填入你的 API Key
-4. 模型名：`claude-opus-4-7` 或 `gpt-5-5`
+4. 模型名：`claude-opus-4-7` 或 `gpt-5.5`
 
 > **推荐：** `claude-code`（编程专用）、`claude-opus-4-7`（复杂推理）
 
@@ -205,7 +206,7 @@ curl https://www.aifast.club/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer your-api-key" \
   -d '{
-    "model": "gpt-5-5",
+    "model": "gpt-5.5",
     "messages": [{"role": "user", "content": "你好！"}]
   }'
 ```

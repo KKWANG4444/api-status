@@ -20,10 +20,10 @@ permalink: /guide/
 1. 打开 Cursor → Settings → Models
 2. 将 `OpenAI API Base URL` 改为 `https://www.aifast.club/v1`
 3. 填入你的 API Key
-4. 模型名填入：`claude-opus-4-7` 或 `gpt-5-5` 或 `deepseek-v4-pro`
+4. 模型名填入：`claude-opus-4-7` 或 `gpt-5.5` 或 `deepseek-v4-pro`
 5. ✅ 完成
 
-> **推荐模型：** claude-code（编程专用）、claude-opus-4-7（复杂推理）、gpt-5-5（通用编码）
+> **推荐模型：** claude-code（编程专用）、claude-opus-4-7（复杂推理）、gpt-5.5（通用编码）
 
 ---
 
@@ -37,7 +37,7 @@ permalink: /guide/
 4. API Key: 你的密钥
 5. 支持的模型列表会自动加载
 
-> **推荐模型：** gpt-5-5-pro（复杂工作流）、deepseek-v4-flash（高吞吐）、qwen3.6-27b（国产合规）
+> **推荐模型：** gpt-5.5-pro（复杂工作流）、deepseek-v4-flash（高吞吐）、qwen3.6-27b（国产合规）
 
 ---
 
@@ -101,7 +101,7 @@ curl https://www.aifast.club/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer your-api-key" \
   -d '{
-    "model": "gpt-5-5",
+    "model": "gpt-5.5",
     "messages": [{"role": "user", "content": "你好！"}]
   }'
 ```
@@ -112,9 +112,9 @@ curl https://www.aifast.club/v1/chat/completions \
 
 | 场景 | 推荐模型 | 供应商 |
 |:---|:---|:---|
-| 编程/代码 | `claude-code` / `gpt-5-5` | Anthropic / OpenAI |
-| 复杂推理 | `claude-opus-4-7` / `gpt-5-5-pro` | Anthropic / OpenAI |
-| 日常对话 | `gpt-5-5` / `gemini-3-flash` | OpenAI / Google |
+| 编程/代码 | `claude-code` / `gpt-5.5` | Anthropic / OpenAI |
+| 复杂推理 | `claude-opus-4-7` / `gpt-5.5-pro` | Anthropic / OpenAI |
+| 日常对话 | `gpt-5.5` / `gemini-3-flash` | OpenAI / Google |
 | 高吞吐低成本 | `deepseek-v4-flash` / `gpt-5-4-nano` | DeepSeek / OpenAI |
 | 图像生成 | `gpt-image-2` / `midjourney-v7` | OpenAI / Midjourney |
 | 视频生成 | `kling-2.0` / `grok-videos` | 可灵 / xAI |
@@ -126,3 +126,5 @@ curl https://www.aifast.club/v1/chat/completions \
 <p align="center">
   👉 <a href="https://www.aifast.club"><strong>免费注册 → www.aifast.club</strong></a>
 </p>
+
+[![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

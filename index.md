@@ -55,3 +55,5 @@ permalink: /
   <em>Proudly maintained by the 2026 AI Developer Community.<br>
   Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 572 个模型。</em>
 </p>
+
+[![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

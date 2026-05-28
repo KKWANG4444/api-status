@@ -79,3 +79,5 @@ aifast 使用全球动态住宅 IP 轮询技术，每个请求都来自真实的
 <p align="center">
   👉 <a href="https://www.aifast.club"><strong>还有问题？来官网咨询客服 → www.aifast.club</strong></a>
 </p>
+
+[![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

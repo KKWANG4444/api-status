@@ -58,3 +58,5 @@ permalink: /compare/
 <p align="center">
   👉 <a href="https://www.aifast.club"><strong>立即体验性能优势 → www.aifast.club</strong></a>
 </p>
+
+[![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

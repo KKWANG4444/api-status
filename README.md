@@ -3,7 +3,7 @@
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
-[![更新](https://img.shields.io/badge/更新-2026--05--28-yellow)](https://github.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/更新-2026--05--29-brightgreen)](https://github.com/KKWANG4444/api-status)
 [![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
 
@@ -88,7 +88,7 @@
 | 供应商 | 模型数 | 旗舰模型 |
 |:---|:---:|:---|
 | **OpenAI** | 100 | `gpt-5.5-pro`、`gpt-5.5`、`gpt-5.4-mini`、`gpt-image-2`、`o4` |
-| **Anthropic (Claude)** | 19 | `claude-opus-4-7`、`claude-sonnet-4-6`、`claude-code` |
+| **Anthropic (Claude)** | 20 | `claude-opus-4-8`、`claude-opus-4-7`、`claude-sonnet-4-6`、`claude-code` |
 | **Google Gemini** | 55 | `gemini-3.1-flash`、`gemini-3-pro`、`gemini-2.5-pro` |
 | **DeepSeek** | 28 | `deepseek-v4-pro`、`deepseek-v4-flash`、`deepseek-r1` |
 | **xAI (Grok)** | 25 | `grok-4-20-reasoning`、`grok-4-20-non-reasoning`、`grok-videos` |
@@ -155,7 +155,7 @@ https://www.aifast.club/v1
 3. 填入你的 API Key
 4. 模型名：`claude-opus-4-7` 或 `gpt-5.5`
 
-> **推荐：** `claude-code`（编程专用）、`claude-opus-4-7`（复杂推理）
+> **推荐：** `claude-code`（编程专用）、`claude-opus-4-8`（最强模型）、`claude-opus-4-7`（复杂推理）
 
 ### 🏗️ Dify
 
@@ -247,7 +247,7 @@ curl https://www.aifast.club/v1/chat/completions \
 **支持。** 兼容 OpenAI 的 SSE 流式协议，`stream: true` 即可。
 
 ### ❓ 支持 Vision 识图吗？
-**支持。** Claude Opus 4.7 / Sonnet 4.6 和 GPT-5.5 均支持图像输入。
+**支持。** Claude Opus 4.8 / Opus 4.7 / Sonnet 4.6 和 GPT-5.5 均支持图像输入。
 
 ### ❓ 和 OpenRouter 比怎么样？
 OpenRouter 需要代理访问、海外卡支付、无中文客服。而 [www.aifast.club](https://www.aifast.club) 国内直连、国内支付、中文客服、模型更多（572 vs 200+）。

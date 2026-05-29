@@ -153,7 +153,7 @@ https://www.aifast.club/v1
 1. 打开 Cursor → Settings → Models
 2. OpenAI API Base URL → `https://www.aifast.club/v1`
 3. 填入你的 API Key
-4. 模型名：`claude-opus-4-7` 或 `gpt-5.5`
+4. 模型名：`claude-opus-4-8`（推荐）、`claude-opus-4-7` 或 `gpt-5.5`
 
 > **推荐：** `claude-code`（编程专用）、`claude-opus-4-8`（最强模型）、`claude-opus-4-7`（复杂推理）
 
@@ -195,7 +195,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="claude-opus-4-7",
+    model="claude-opus-4-8",
     messages=[{"role": "user", "content": "你好！"}]
 )
 print(response.choices[0].message.content)

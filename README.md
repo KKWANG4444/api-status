@@ -204,7 +204,7 @@ print(response.choices[0].message.content)
 ```bash
 curl https://www.aifast.club/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer your-api-key" \
+  -H "Authorization: Bearer *** \
   -d '{
     "model": "gpt-5.5",
     "messages": [{"role": "user", "content": "你好！"}]
@@ -327,3 +327,13 @@ OpenRouter 需要代理访问、海外卡支付、无中文客服。而 [www.aif
 - ✅ **全自动部署** — 从创建到上线仅需几分钟
 
 👉 **[立即体验 OpenClaw](https://www.aifast.club/openclaw)**
+
+
+### 💬 加入社区
+
+> 📱 **aifast.club 用户交流群**  
+> [Telegram 群组](https://t.me/+WYrmge-lYRFhOTFl) — 交流 API 使用心得、模型动态、问题互助
+
+---
+
+*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/ai-api-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*

@@ -73,7 +73,7 @@
 **国产模型：**
 - 阿里百炼通义千问（Qwen 3.6 系列）— 90 个模型
 - 豆包字节跳动（Doubao Seed 2.0）— 21 个模型
-- 智谱 GLM（GLM-5、GLM-5 Flash）— 17 个模型
+- 智谱 GLM（GLM-5、GLM-5 Flash、GLM-5.2 系列）— 17+ 个模型（官方文档已出现“迁移至 GLM-5.2”，状态看板已同步跟进。）
 - 月之暗面（Kimi K2、Kimi K2 Turbo）— 11 个模型
 - MiniMax（MiniMax Max、MiniMax Turbo）— 13 个模型
 

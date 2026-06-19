@@ -484,3 +484,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 </p>
 
 *📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/ai-api-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
+
+---
+
+**⭐ 觉得有用？点个 Star 支持一下 →** [github.com/KKWANG4444/api-status](https://github.com/KKWANG4444/api-status)

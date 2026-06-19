@@ -483,7 +483,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
   Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 572 个模型。</small>
 </p>
 
-*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/ai-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
+*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/llm-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
 
 ---
 

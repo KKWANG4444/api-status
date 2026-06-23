@@ -8,13 +8,25 @@
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
 [![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker)wwww4444/api-status)
 
-> 👉 **一个接口，一把 Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
+## 📊 当前监测重点（实时）
+
+| 观测维度 | 状态 | 详细 |
+|:---|---:|:---|
+| 🌐 模型覆盖 | **572 个** | 16+ 供应商，Anthropic / OpenAI / DeepSeek / Google / Meta 全线 |
+| 🟢 全球连通率 | **99.2%** | 7 个观测节点，5 分钟轮询一次 |
+| 🇨🇳 国内直连可用 | ✅ 全部 572 个 | 无需代理，配置 base_url 即可 |
+| ⏱️ 平均响应延迟 | **< 300ms** | 国内节点测试，覆盖主流模型 |
+| 🔄 数据更新频率 | **每 5 分钟** | 自动探测，发现故障即时标记 |
+
+> 👉 **[查看实时看板 →](https://kkwang4444.github.io/api-status/)** 实时数据，随时可用
 
 ![api-status 截图](assets/img/api-status-screenshot.png)
 
-*📊 实时状态看板截图 — 572 个模型连接状态一目了然*
+*📊 实时状态看板截图 — 572 个模型连接状态一目了然*"
 
 ---
+
+> 💡 **一个接口，一把 Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
 
 ## 目录
 

@@ -3,7 +3,7 @@
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
-[![更新](https://img.shields.io/badge/更新-2026--06--17-brightgreen)](https://github.com/KKWANG4444/api-status)ub.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/更新-2026--06--23-brightgreen)](https://github.com/KKWANG4444/api-status)ub.com/KKWANG4444/api-status)
 [![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
 [![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker)wwww4444/api-status)
@@ -192,7 +192,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="sk-your-api-key-here"
+    api_key="sk-you...here"
 )
 
 # 调用 Claude Opus 4.8
@@ -212,7 +212,7 @@ print(response.choices[0].message.content)
 ```bash
 curl https://www.aifast.club/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer sk-your-api-key-here" \
+  -H "Authorization: Bearer *** \
   -d '{
     "model": "gpt-5.5",
     "messages": [{"role": "user", "content": "今天天气怎么样？"}]
@@ -228,7 +228,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="sk-your-api-key-here"
+    api_key="sk-you...here"
 )
 
 stream = client.chat.completions.create(
@@ -251,7 +251,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="sk-your-api-key-here"
+    api_key="sk-you...here"
 )
 
 response = client.chat.completions.create(
@@ -280,7 +280,7 @@ import OpenAI from 'openai';
 
 const client = new OpenAI({
   baseURL: 'https://www.aifast.club/v1',
-  apiKey: 'sk-your-api-key-here'
+  apiKey: ***
 });
 
 const response = await client.chat.completions.create({
@@ -342,7 +342,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 用 HTTP Request 节点：
 
 - URL: `https://www.aifast.club/v1/chat/completions`
-- Header: `Authorization: Bearer sk-your-api-key-here`
+- Header: `Authorization: Bearer ***
 - Body: 标准的 OpenAI chat completions JSON
 
 ---

@@ -77,7 +77,7 @@
 
 **国际巨头：**
 - OpenAI（GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 100 个模型
-- Anthropic（Claude Opus 4.8、Opus 4.7、Sonnet 4.6、Claude Code）— 19 个模型
+- Anthropic（Claude Opus 4.8、**Sonnet 5 🆕**、Opus 4.7、Sonnet 4.6、Claude Code）— 20 个模型
 - Google（Gemini 3.1 Flash、Gemini 3、Gemini 2.5 Pro）— 55 个模型
 - DeepSeek（V4 Pro、V4 Flash、R1）— 28 个模型
 - xAI（Grok 4.20 Reasoning、Grok 4.20 Non-Reasoning、Grok Videos）— 25 个模型

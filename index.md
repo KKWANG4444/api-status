@@ -14,7 +14,8 @@ permalink: /
 
 | 物理模型 | 官方状态 | 国内直连 | 延迟 | 推荐接入 |
 |:---|:---:|:---:|:---:|:---|
-| **Claude Opus 4.8** 🆕 | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
+| **Claude Sonnet 5** 🆕 | 🟢 正常 | 🔴 封锁 | 100ms | 💎 [www.aifast.club](https://www.aifast.club) |
+| **Claude Opus 4.8** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **Claude Opus 4.7** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **Claude Sonnet 4.6** | 🟢 正常 | 🔴 封锁 | 120ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **GPT 5.5** | 🟢 正常 | 🔴 封锁 | 250ms | 💎 [www.aifast.club](https://www.aifast.club) |

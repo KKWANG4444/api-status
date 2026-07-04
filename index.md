@@ -18,8 +18,6 @@ permalink: /
 | **Claude Opus 4.8** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **Claude Opus 4.7** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **Claude Sonnet 4.6** | 🟢 正常 | 🔴 封锁 | 120ms | 💎 [www.aifast.club](https://www.aifast.club) |
-| **GPT 5.6 Sol** 🆕 | 🟢 正常 | 🔴 封锁 | 300ms | 💎 [www.aifast.club](https://www.aifast.club) |
-| **GPT 5.6 Luna** 🆕 | 🟢 正常 | 🔴 封锁 | 200ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **GPT 5.5** | 🟢 正常 | 🔴 封锁 | 250ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **GPT 5.5 Pro** | 🟢 正常 | 🔴 封锁 | 350ms | 💎 [www.aifast.club](https://www.aifast.club) |
 | **GPT 5.4 Mini** | 🟢 正常 | 🔴 封锁 | 180ms | 💎 [www.aifast.club](https://www.aifast.club) |

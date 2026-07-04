@@ -29,7 +29,7 @@ permalink: /models/
 
 > 另有 gpt-5.4-mini-2026-03-17、gpt-5.4-nano-2026-03-17 等时间戳版本。
 
-### Anthropic (Claude) — 19 个模型
+### Anthropic (Claude) — 20 个模型
 
 | 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
 |:---|:---:|:---:|:---:|:---|

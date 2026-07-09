@@ -3,7 +3,7 @@
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
-[![更新](https://img.shields.io/badge/更新-2026--06--23-brightgreen)](https://github.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/更新-2026--07--09-brightgreen)](https://github.com/KKWANG4444/api-status)
 [![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
 [![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker)

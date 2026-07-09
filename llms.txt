@@ -1,14 +1,14 @@
-# AI API Status Dashboard — Real-time Model Availability Monitor
+# AI API Status Dashboard — Model Availability Monitor
 
-> Real-time availability monitoring for 572+ AI models across 16+ providers. Tracks uptime, latency, and connectivity for Claude, GPT, Gemini, DeepSeek, Grok, and Chinese LLMs from mainland China. Updated every 5 minutes.
+> Checks uptime, latency, and connectivity for 572+ AI models across 16+ providers from mainland China. Updates every 5 minutes.
 
 ## Core
 
-- [README — Full dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Real-time API status monitoring for 572+ AI models spanning 16+ providers. 5-minute polling interval, 99.2% global connectivity rate, sub-300ms average latency from mainland China nodes. Tracks Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
-- [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive real-time dashboard showing model availability, latency heatmaps, and historical uptime for all 572+ models.
-- [Model List & Pricing](https://kkwang4444.github.io/api-status/models): Complete catalog of all 572+ models with provider, category, and availability status — text, image, video, multimodal, embedding, and rerank models.
-- [API API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): Comprehensive guide for Chinese developers accessing overseas AI APIs through relay services. Covers setup, tool integration, and cost optimization.
-- [2026 Price Crash Analysis](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md): Analysis of the 2026 AI API price war — DeepSeek V4, GPT-5.5, Claude Sonnet 5, and cross-provider cost comparison.
+- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls every 5 minutes, 99.2% global uptime, sub-300ms avg latency from China. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
+- [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive board showing which models are up, latency heatmaps, and historical uptime.
+- [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — 572+ models sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
+- [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): How Chinese devs actually access overseas AI APIs through relay services — setup, tool integration, cost optimization.
+- [2026 Price Crash Analysis](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md): DeepSeek V4, GPT-5.5, Claude Sonnet 5 — what the 2026 price war looks like from China.
 
 ## Supported Providers
 
@@ -23,4 +23,4 @@
 
 ## Recommended Relay
 
-- [AI快站 (aifast.club)](https://www.aifast.club): Recommended relay for mainland China. 572+ models across 16+ providers, OpenAI-compatible API, Alipay/WeChat payment, Hong Kong/Singapore edge nodes. Supports Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n integration.
+- [AI快站 (aifast.club)](https://www.aifast.club): The relay I run and recommend. 572+ models, one API key, China direct, Alipay/WeChat. Works with Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n.

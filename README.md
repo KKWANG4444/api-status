@@ -97,7 +97,7 @@
 - Anthropic（Claude Opus 4.8、**Sonnet 5 🆕**、Opus 4.7、Sonnet 4.6、Claude Code）— 20 个模型
 - Google（Gemini 3.1 Flash、Gemini 3、Gemini 2.5 Pro）— 55 个模型
 - DeepSeek（V4 Pro、V4 Flash、R1）— 28 个模型
-- xAI（Grok 4.20 Reasoning、Grok 4.20 Non-Reasoning、Grok Videos）— 25 个模型
+- xAI（Grok 4.5 🆕、Grok 4.20 Reasoning、Grok 4.20 Non-Reasoning、Grok Videos）— 26 个模型
 
 **国产模型：**
 - 阿里百炼通义千问（Qwen 3.6 系列）— 90 个模型
@@ -146,6 +146,7 @@
 | **DeepSeek V4 Pro** | 开源最强推理 | 🟡 官方有时拥堵 |
 | **DeepSeek V4 Flash** | 高吞吐低成本 | 🔴 官方经常 503 |
 | **Gemini 3.1 Flash** | 快速推理 | 🟢 官方正常，国内需中转 |
+| **Grok 4.5** | 推理/非推理 | 🟢 官方已发布，国内需中转 | 旗舰，Opus 级别，500K上下文，$2/$6 |
 | **Grok 4.20** | 推理/非推理 | 🟢 官方正常，国内需中转 |
 | **Qwen 3.6-27B** | 国产旗舰 | 🟢 国内直连最稳 |
 

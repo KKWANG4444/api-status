@@ -94,7 +94,7 @@
 这不是那种只接三五家的小打小闹。覆盖的供应商包括：
 
 **国际巨头：**
-- OpenAI（GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 100 个模型
+- OpenAI（GPT-5.6 Sol 🆕、GPT-5.6 Terra 🆕、GPT-5.6 Luna 🆕、GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 103 个模型
 - Anthropic（Claude Opus 4.8、**Sonnet 5 🆕**、Opus 4.7、Sonnet 4.6、Claude Code）— 20 个模型
 - Google（Gemini 3.1 Flash、Gemini 3、Gemini 2.5 Pro）— 55 个模型
 - DeepSeek（V4 Pro、V4 Flash、R1）— 28 个模型
@@ -142,7 +142,10 @@
 |:---|:---|:---:|
 | **Claude Opus 4.8** | 编程/复杂推理/Agent | 🟢 官方正常，国内需中转 |
 | **Claude Code** | 编程专用智能体 | 🟢 强烈推荐 |
-| **GPT-5.5 Pro** | 旗舰推理 | 🟢 官方正常，国内需中转 |
+|| **GPT-5.6 Sol 🆕** | 旗舰推理/编码/Agent | 🟢 OpenAI 最新旗舰 | 最强模型 Sol🌞 |
+|| **GPT-5.6 Terra 🆕** | 均衡推理/编码 | 🟢 全能均衡款 | 性价比最优 |
+|| **GPT-5.6 Luna 🆕** | 轻量推理 | 🟢 轻量高效 | 低成本首选 |
+|| **GPT-5.5 Pro** | 旗舰推理 | 🟢 官方正常，国内需中转 |
 | **GPT-5.5** | 通用大语言模型 | 🟢 性价比之王 |
 | **DeepSeek V4 Pro** | 开源最强推理 | 🟡 官方有时拥堵 |
 | **DeepSeek V4 Flash** | 高吞吐低成本 | 🔴 官方经常 503 |

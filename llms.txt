@@ -13,7 +13,7 @@
 ## Supported Providers
 
 - **Anthropic**: Claude Opus 4.8, Sonnet 5, Sonnet 4.6, Claude Code — 20 models
-- **OpenAI**: GPT-5.5 Pro, GPT-5.5, GPT-5.4 Mini, GPT Image 2, o4 series — 100 models
+- **OpenAI**: GPT-5.6 Sol 🆕, GPT-5.6 Terra 🆕, GPT-5.6 Luna 🆕, GPT-5.5 Pro, GPT-5.5, GPT-5.4 Mini, GPT Image 2, o4 series — 103 models
 - **Google**: Gemini 3.1 Flash, Gemini 3, Gemini 2.5 Pro — 55 models
 - **DeepSeek**: V4 Pro, V4 Flash, R1 — 28 models
 - **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.20 Reasoning, Grok Videos — 26 models

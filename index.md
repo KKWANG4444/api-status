@@ -24,7 +24,6 @@ permalink: /
 || **DeepSeek V4 Flash** | 🔴 503 | 🟢 正常 | 800ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **DeepSeek V4 Pro** | 🟡 拥堵 | 🟢 正常 | 600ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **Gemini 3.1 Flash** | 🟢 正常 | 🔴 封锁 | 200ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **Grok 4.20** | 🟢 正常 | 🔴 封锁 | 300ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **Qwen 3.6** | 🟢 正常 | 🟢 正常 | 100ms | 💎 [www.aifast.club](https://www.aifast.club) |
 
 ---

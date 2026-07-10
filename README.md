@@ -1,5 +1,8 @@
 # AI API 状态监测 & 大模型可用性实时看板 — 572 个模型一键接入
 
+[![中文](https://img.shields.io/badge/🇨🇳-中文-red)](README.md)
+[![English](https://img.shields.io/badge/🇬🇧-English-blue)](README_EN.md)
+
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)

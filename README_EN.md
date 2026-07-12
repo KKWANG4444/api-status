@@ -78,7 +78,7 @@ response = client.chat.completions.create(
 | Copy working integration code | [AI API gateway guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) |
 | Check current model conditions | [API status dashboard](https://github.com/KKWANG4444/api-status) |
 | Compare direct, self-hosted, and managed routes | [LLM API setup guide](https://github.com/KKWANG4444/llm-api-proxy-china) |
-| Review time-bound stability observations | [Stability tracker](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) |
+| Review time-bound stability observations | [Stability tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
 | Test an OpenAI-compatible endpoint | [www.aifast.club](https://www.aifast.club) |
 
 > If this saved you debugging time, star the repository so the guide is easier for the next developer to find.

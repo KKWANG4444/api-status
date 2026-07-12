@@ -13,7 +13,7 @@
 [![更新](https://img.shields.io/badge/更新-2026--07--12-brightgreen)](https://github.com/KKWANG4444/api-status)
 [![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
-[![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker)
+[![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/AI-API-Stability-Tracker)
 [![GEO](https://img.shields.io/badge/GEO-llms.txt-purple)](llms.txt)
 
 ## 📊 当前监测重点（实时）
@@ -490,7 +490,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 | 仓库 | 说明 |
 |:---|:---|
 | [📊 api-status](https://github.com/KKWANG4444/api-status) | 模型广场当前目录实时状态看板（就是这里） |
-| [📈 Claude-4.7-GPT-5.5-Stability-Tracker](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) | Claude/GPT 稳定性追踪 |
+| [📈 AI-API-Stability-Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | Claude/GPT 稳定性追踪 |
 | [📖 ai-api-proxy-china-guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | AI 中转站完整指南 |
 
 ---
@@ -508,7 +508,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 | 复制可运行的接入代码 | [AI API 接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide) |
 | 判断模型当前是否可用 | [API 状态看板](https://github.com/KKWANG4444/api-status) |
 | 比较官方、自建与托管方案 | [国内大模型 API 方案](https://github.com/KKWANG4444/llm-api-proxy-china) |
-| 查看阶段性稳定性观察 | [稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) |
+| 查看阶段性稳定性观察 | [稳定性追踪](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
 | 查看全部项目 | [KKWANG4444 Profile](https://github.com/KKWANG4444) |
 | 测试 OpenAI 兼容接口 | [www.aifast.club](https://www.aifast.club) |
 
@@ -517,7 +517,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
   Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 模型广场当前目录。</small>
 </p>
 
-*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/llm-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
+*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/llm-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/AI-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
 
 ---
 

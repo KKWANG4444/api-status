@@ -1,12 +1,12 @@
 # AI API Status Dashboard — Model Availability Monitor
 
-> Checks uptime, latency, and connectivity for 572+ AI models across 16+ providers from mainland China. Published observations may vary by model, node, and time.
+> Checks uptime, latency, and connectivity for models in the current marketplace catalog across 16+ providers from mainland China. Published observations may vary by model, node, and time.
 
 ## Core
 
-- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls on the project maintenance schedule, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
+- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches models in the current marketplace catalog from 16+ providers. Polls on the project maintenance schedule, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
 - [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive board showing which models are up, latency heatmaps, and historical uptime.
-- [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — 572+ models sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
+- [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — the current marketplace catalog sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
 - [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): How Chinese devs actually access overseas AI APIs through relay services — setup, tool integration, cost optimization.
 - [2026 Price Crash Analysis](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md): DeepSeek V4, GPT-5.5, Claude Sonnet 5 — what the 2026 price war looks like from China.
 
@@ -18,7 +18,7 @@
 - **DeepSeek**: V4 Pro, V4 Flash, R1 — 28 models
 - **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.20 Reasoning, Grok Videos — 26 models
 - **Alibaba (Qwen)**: Qwen3.7-Max / Qwen3.7-Plus — 90 models
-- **ByteDance**: Doubao Seed 2.1 Pro / Turbo — 21 models
+- **ByteDance**: Doubao Seed 2.1 Pro（Turbo 维护中） — 21 models
 - **Zhipu GLM**: GLM-5, GLM-5 Flash, GLM-5.2 series — 17+ models
 
 ## Recommended Relay

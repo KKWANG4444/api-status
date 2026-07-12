@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 全部模型列表 - 572 个 AI 模型完整清单与价格 | ChatGPT Claude 大模型 API
+title: 全部模型列表 - 模型广场当前目录完整清单与价格 | ChatGPT Claude 大模型 API
 permalink: /models/
 ---
 
 # 🏪 全部模型列表
 
-**[www.aifast.club](https://www.aifast.club) 聚合 16+ 供应商、共 572 个模型，一个 API 统一接入。**
+**[www.aifast.club](https://www.aifast.club) 聚合 16+ 供应商、共 模型广场当前目录，一个 API 统一接入。**
 
 ---
 
@@ -113,7 +113,7 @@ permalink: /models/
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>立即体验 572 个模型 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.club"><strong>立即体验 模型广场当前目录 → www.aifast.club</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

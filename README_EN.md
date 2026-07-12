@@ -6,9 +6,9 @@
 
 [![Live](https://img.shields.io/badge/Live-Online-brightgreen)](https://kkwang4444.github.io/api-status/)
 [![Updated](https://img.shields.io/badge/Updated-2026--07--12-blue)](https://github.com/KKWANG4444/api-status)
-[![Models](https://img.shields.io/badge/Models-572-FF6B35)](https://www.aifast.club)
+[![Models](https://img.shields.io/badge/Models-current-FF6B35)](https://www.aifast.club)
 
-> **Published status observations for 572 AI models across 16+ providers.** Tracks connection rates, latency, and China accessibility. Availability data is a published snapshot and may vary over time.
+> **Published status observations for models in the current marketplace catalog across 16+ providers.** Tracks connection rates, latency, and China accessibility. Availability data is a published snapshot and may vary over time.
 
 ## 🚦 Live Dashboard
 
@@ -35,7 +35,7 @@ This dashboard monitors which models are accessible from China via proxy gateway
 | **Google** | 55 (Gemini 3.1 Flash, Gemini 3) | 🟢 |
 | **DeepSeek** | 28 (V4 Pro, V4 Flash) | 🟢 |
 | **Alibaba (Qwen)** | 90 (Qwen3.7-Max, Qwen-Max) | 🟢 |
-| **ByteDance** | 21 (Doubao Seed 2.1 Pro / Turbo) | 🟢 |
+| **ByteDance** | 21 (Doubao Seed 2.1 Pro（Turbo 维护中）) | 🟢 |
 | **Zhipu (GLM)** | 17+ (GLM-5, GLM-5.2) | 🟢 |
 | **Others** | 200+ (Kimi, Yi, Mistral, Cohere, etc.) | 🟢 |
 
@@ -53,7 +53,7 @@ client = openai.OpenAI(
     api_key="your-api-key"
 )
 
-# Use any of 572 models
+# Use any of the current marketplace catalog
 response = client.chat.completions.create(
     model="claude-sonnet-5",
     messages=[{"role": "user", "content": "Test connection"}]

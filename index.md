@@ -17,14 +17,13 @@ permalink: /
 | **GPT-5.6 Sol** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
 | **GPT-5.6 Terra** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
 | **GPT-5.6 Luna** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
-|| **Claude Sonnet 5** 🆕 | 🟢 正常 | 🔴 封锁 | 100ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **Claude Opus 4.8** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **Grok 4.5** 🆕 | 🟢 正常 | 🔴 封锁 | 280ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **GPT 5.5** | 🟢 正常 | 🔴 封锁 | 250ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **DeepSeek V4 Flash** | 🔴 503 | 🟢 正常 | 800ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **DeepSeek V4 Pro** | 🟡 拥堵 | 🟢 正常 | 600ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **Gemini 3.1 Flash** | 🟢 正常 | 🔴 封锁 | 200ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **Qwen3.7-Max** | 🟢 正常 | 🟢 正常 | 100ms | 💎 [www.aifast.club](https://www.aifast.club) |
+|| 模型 | 模型广场状态 | 说明 |
+|:---|:---:|:---|
+| GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
+| Claude Sonnet 5 / Opus 4.8 | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
+| Grok 4.5 / 4.3 / 4.20 | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
+| DeepSeek V4 Pro / Flash | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
+| Doubao Seed 2.1 Turbo | 🛠️ 维护中 | 2026-07-09 公告暂时下线 |
 
 ---
 
@@ -45,7 +44,7 @@ permalink: /
 
 | 页面 | 说明 |
 |:---|:---|
-| [🏪 全部模型列表](/api-status/models) | 572 个模型完整清单与价格 |
+| [🏪 全部模型列表](/api-status/models) | 模型广场当前目录完整清单与价格 |
 | [📖 开发者接入指南](/api-status/guide) | Cursor / Dify / LobeChat 等工具配置教程 |
 | [❓ 常见问题](/api-status/faq) | 封号、降智、支付等问题解答 |
 | [⚖️ 性能对比](/api-status/compare) | 各中转站横向对比 |
@@ -54,7 +53,7 @@ permalink: /
 
 <p align="center">
   <em>Proudly maintained by the 2026 AI Developer Community.<br>
-  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 572 个模型。</em>
+  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 模型广场当前目录。</em>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

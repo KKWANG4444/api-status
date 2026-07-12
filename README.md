@@ -8,7 +8,7 @@
 > **直接使用：** [打开状态看板](https://kkwang4444.github.io/api-status/) · [查看模型目录](https://kkwang4444.github.io/api-status/models) · [用 OpenAI SDK 接入](#1-分钟上手接入-wwwaifastclubv1)
 
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
-[![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
+[![模型数量](https://img.shields.io/badge/模型-当前目录-green)](https://kkwang4444.github.io/api-status/models)
 [![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
 [![更新](https://img.shields.io/badge/更新-2026--07--12-brightgreen)](https://github.com/KKWANG4444/api-status)
 [![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
@@ -20,7 +20,7 @@
 
 | 观测维度 | 状态 | 详细 |
 |:---|---:|:---|
-| 🌐 模型覆盖 | **572 个** | 16+ 供应商，Anthropic / OpenAI / DeepSeek / Google / Meta 全线 |
+| 🌐 模型覆盖 | **以模型广场当前目录为准** | 16+ 供应商，Anthropic / OpenAI / DeepSeek / Google / Meta 全线 |
 | 阶段性连通性观测 | **以实时请求为准** | 结果随模型、节点和网络环境变化 |
 | 🇨🇳 国内直连可用 | ⚠️ 以平台控制台和实时请求结果为准 | 配置 base_url 即可；可用性随模型和网络环境变化 |
 | ⏱️ 响应延迟 | **以当前请求为准** | 受模型、节点、负载和网络环境影响 |
@@ -30,7 +30,7 @@
 
 ![api-status 截图](assets/img/api-status-screenshot.png)
 
-*📊 实时状态看板截图 — 572 个模型连接状态一目了然*
+*📊 实时状态看板截图 — 模型广场当前目录连接状态一目了然*
 
 ---
 
@@ -77,7 +77,7 @@
 
 ### 1. 实时状态监控
 
-看板上每个模型都标了颜色——绿的表示正常，红的有问题，黄的在喘气。你不用去挨个翻官方状态页，一个页面扫完 572 个模型的状态。
+看板上每个模型都标了颜色——绿的表示正常，红的有问题，黄的在喘气。你不用去挨个翻官方状态页，一个页面扫完 模型广场当前目录的状态。
 
 目前监控的指标包括：
 - **官方 API 状态** — 原始供应商服务是否正常
@@ -85,7 +85,7 @@
 - **响应延迟** — 首字响应时间 (TTFT)
 - **推荐接入方式** — 官方直连还是走中转
 
-### 2. 聚合 16+ 供应商的 572 个模型
+### 2. 聚合 16+ 供应商的 模型广场当前目录
 
 这不是那种只接三五家的小打小闹。覆盖的供应商包括：
 
@@ -98,7 +98,7 @@
 
 **国产模型：**
 - 阿里百炼通义千问（Qwen3.7-Max、Qwen3.7-Plus 等）
-- 豆包字节跳动（Doubao Seed 2.1 Pro / Turbo 等）
+- 豆包字节跳动（Doubao Seed 2.1 Pro（Turbo 维护中） 等）
 - 智谱 GLM（GLM-5、GLM-5 Flash、GLM-5.2 系列）— 17+ 个模型（官方文档已出现“迁移至 GLM-5.2”，状态看板已同步跟进。）
 - 月之暗面（Kimi K2.7 Code / Highspeed、Kimi K2.5 等）
 - MiniMax（MiniMax Max、MiniMax Turbo）— 13 个模型
@@ -112,7 +112,7 @@
 - Ollama — 19 个模型
 - Mistral — 3 个模型
 
-> 完整列表戳这里 👉 [全部 572 个模型清单](https://kkwang4444.github.io/api-status/models)
+> 完整列表戳这里 👉 [全部 模型广场当前目录清单](https://kkwang4444.github.io/api-status/models)
 
 ### 3. 一个 API 调全部
 
@@ -130,22 +130,22 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 
 ## 你要的模型这里都有
 
-下面挑几个重点模型说下当前的状态和价格。不是全部——全部 572 个你去看 [模型列表页](https://kkwang4444.github.io/api-status/models)。
+下面挑几个重点模型说下当前的状态和价格。不是全部——全部开放型号你去看 [模型列表页](https://kkwang4444.github.io/api-status/models)。
 
 ### 旗舰模型速览
 
 | 模型 | 用途 | 现状 |
 |:---|:---|:---:|
-| **Claude Opus 4.8** | 编程/复杂推理/Agent | 🟢 官方正常，国内需中转 |
-| **Claude Code** | 编程专用智能体 | 🟢 强烈推荐 |
+| **Claude Opus 4.8** | 编程/复杂推理/Agent | ⚠️ 状态以模型广场和实际请求为准 |
+| **Claude Code** | 编程工具场景 | ⚠️ 先确认客户端与模型配置 |
 | **GPT-5.6 Sol** | 推理/编码/Agent | ✅ 模型广场已上架 | `gpt-5.6-sol` |
 | **GPT-5.6 Terra** | 均衡推理/编码 | ✅ 模型广场已上架 | `gpt-5.6-terra` |
 | **GPT-5.6 Luna** | 轻量任务 | ✅ 模型广场已上架 | `gpt-5.6-luna` |
 | **GPT-5.5 Pro** | 高阶推理 | ⚠️ 可用性以平台控制台和实际请求为准 |
-| **GPT-5.5** | 通用大语言模型 | 🟢 性价比之王 |
-| **DeepSeek V4 Pro** | 开源最强推理 | 🟡 官方有时拥堵 |
-| **DeepSeek V4 Flash** | 高吞吐低成本 | 🔴 官方经常 503 |
-| **Gemini 3.1 Flash** | 快速推理 | 🟢 官方正常，国内需中转 |
+| **GPT-5.5** | 通用大语言模型 | ⚠️ 按任务需求选择 |
+| **DeepSeek V4 Pro** | 推理模型 | ⚠️ 状态以实际请求为准 |
+| **DeepSeek V4 Flash** | 高吞吐场景 | ⚠️ 状态以实际请求为准 |
+| **Gemini 3.1 Flash** | 快速推理 | ⚠️ 状态以实际请求为准 |
 | **Grok 4.5** | 通用推理与工具调用 | ⚠️ 官方型号；平台可用性以控制台为准 | 500K 上下文 |
 | **Grok 4.2** | 推理/非推理 | 🟢 官方正常，国内需中转 |
 | **Qwen3.7-Max** | 通用文本模型 | ⚠️ 较新版本请参考阿里云官方模型目录；平台可用性以控制台为准 |
@@ -378,7 +378,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 
 **它能做什么？**
 - 给你一个能独立运行的 AI Agent，可以接 API、查数据库、发邮件
-- 自动调用 aifast 后台的 572 个模型，你选哪个用哪个
+- 自动调用 aifast 后台的 模型广场当前目录，你选哪个用哪个
 - 多节点智能调度，不会因为一个节点挂了就崩
 - 控制台一键管理，所见即所得
 
@@ -399,9 +399,8 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 |:---|:---:|:---:|:---:|
 | 国内直连 | ❌ 必须代理 | ✅ 部分支持 | ✅ 国内节点稳定直连 |
 | 首字响应 | 1.5s – 3s | 0.8s – 1.2s | **0.2s – 0.4s** |
-| 并发成功率 | 65%（数据中心 IP 容易封） | 85% | **99.9%** |
 | 支付 | 海外信用卡 | 部分支持国内 | **微信/支付宝/银行卡** |
-| 模型数量 | 单一供应商 | 几十到一百出头 | **572 个，16+ 供应商** |
+| 模型数量 | 单一供应商 | 几十到一百出头 | **以模型广场当前目录为准** |
 | 多节点 | ❌ | ❌ | ✅ |
 | 中文客服 | ❌ | 有限 | **实时在线** |
 | 封号风险 | ⚠️ 极高 | 低 | **极低** |
@@ -477,7 +476,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 | 链接 | 说明 |
 |:---|:---|
 | [🌐 www.aifast.club](https://www.aifast.club) | 官网 / 注册 / 控制台 |
-| [📊 实时状态看板](https://kkwang4444.github.io/api-status/) | 572 个模型实时连接状态 |
+| [📊 实时状态看板](https://kkwang4444.github.io/api-status/) | 模型广场当前目录实时连接状态 |
 | [🏪 全部模型列表](https://kkwang4444.github.io/api-status/models) | 完整模型清单与价格 |
 | [📖 开发者接入指南](https://kkwang4444.github.io/api-status/guide) | Cursor/Dify/LobeChat 详细配置 |
 | [❓ 常见问题](https://kkwang4444.github.io/api-status/faq) | 封号/支付/技术解答 |
@@ -490,14 +489,14 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 
 | 仓库 | 说明 |
 |:---|:---|
-| [📊 api-status](https://github.com/KKWANG4444/api-status) | 572 个模型实时状态看板（就是这里） |
+| [📊 api-status](https://github.com/KKWANG4444/api-status) | 模型广场当前目录实时状态看板（就是这里） |
 | [📈 Claude-4.7-GPT-5.5-Stability-Tracker](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) | Claude/GPT 稳定性追踪 |
 | [📖 ai-api-proxy-china-guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | AI 中转站完整指南 |
 
 ---
 
 <p align="center">
-  <strong>一个接口，一把 Key，接入全球 572 个 AI 模型。</strong><br>
+  <strong>一个接口，一把 Key，接入全球 模型广场当前目录。</strong><br>
   兼容接口 · 国内支付 · 模型接入与状态参考
 </p>
 
@@ -515,7 +514,7 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 
 <p align="center">
   <small>Proudly maintained by the 2026 AI Developer Community.<br>
-  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 572 个模型。</small>
+  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 模型广场当前目录。</small>
 </p>
 
 *📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/llm-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*

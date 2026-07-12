@@ -64,7 +64,7 @@ permalink: /models/
 | `deepseek-r1` | 文本 | — | — | 推理模型 |
 | `deepseek-v3` | 文本 | — | — | 上一代 |
 
-> ⚠️ 此为 aifast 中转价格（含网络加速和多节点容错）。DeepSeek 官方已于2026年5月22日降价75%，输出降至$0.87/M tokens。中转价包含国内直连、动态住宅IP和99.9%可用性保障，实际成本仍比自建代理低。详见 [2026 API 大跳水实测](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)。
+> ⚠️ 此为 aifast 中转价格（含网络加速和多节点容错）。DeepSeek 官方已于2026年5月22日降价75%，输出降至$0.87/M tokens。中转价包含国内直连、多节点和可用性以实时请求结果为准，实际成本仍比自建代理低。详见 [2026 API 大跳水实测](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)。
 
 ### xAI (Grok) — 26 个模型
 

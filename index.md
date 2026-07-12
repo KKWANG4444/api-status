@@ -32,12 +32,12 @@ permalink: /
 
 2026 年，主流 AI 模型（Claude、GPT、Gemini）对中国大陆的访问限制持续收紧：
 
-1. **Anthropic Shield-v2** — 自动识别数据中心 IP，10 次调用后封禁
+1. **Anthropic 地区与风控策略** — 自动识别数据中心 IP，部分网络环境下可能返回访问限制错误
 2. **OpenAI 区域封锁** — 非白名单区域返回 403/429
 3. **DeepSeek 官方 503** — 负载过高，生产环境不可用
 4. **支付障碍** — 海外信用卡申请门槛极高
 
-**👉 解决方案：** 通过 [www.aifast.club](https://www.aifast.club) 国内直连，动态住宅 IP 轮询，无需海外支付方式。
+**👉 解决方案：** 通过 [www.aifast.club](https://www.aifast.club) 国内直连，多节点 轮询，无需海外支付方式。
 
 ---
 

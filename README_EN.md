@@ -16,7 +16,7 @@
 
 If you're a developer in China (or serving Chinese users), you know the pain:
 - OpenAI direct access may be limited on some mainland China networks
-- Anthropic's Shield-v2 detects data center proxies
+- Anthropic regional and risk controls detects data center proxies
 - DeepSeek's official API is unreliable under load
 
 This dashboard monitors which models are accessible from China via proxy gateways, updated every 5 minutes.
@@ -35,20 +35,9 @@ This dashboard monitors which models are accessible from China via proxy gateway
 | **Zhipu (GLM)** | 17+ (GLM-5, GLM-5.2) | 🟢 |
 | **Others** | 200+ (Kimi, Yi, Mistral, Cohere, etc.) | 🟢 |
 
-## Current Status Snapshot (2026-07-10)
+## Availability Snapshot
 
-| Model | Official Status | China Access | Latency |
-|:---|:---:|:---:|:---:|
-| **GPT-5.6 Sol** 🆕 | 🟢 Normal | 🔴 Blocked | 350ms |
-| **GPT-5.6 Terra** 🆕 | 🟢 Normal | 🔴 Blocked | 300ms |
-| **GPT-5.6 Luna** 🆕 | 🟢 Normal | 🔴 Blocked | 200ms |
-| **Claude Sonnet 5** 🆕 | 🟢 Normal | 🔴 Blocked | 100ms |
-| **Claude Opus 4.8** | 🟢 Normal | 🔴 Blocked | 150ms |
-| **Grok 4.5** 🆕 | 🟢 Normal | 🔴 Blocked | 280ms |
-| **GPT 5.5** | 🟢 Normal | 🔴 Blocked | 250ms |
-| **DeepSeek V4 Flash** | 🔴 503 | 🟢 Proxy OK | 800ms |
-| **DeepSeek V4 Pro** | 🟡 Congested | 🟢 Proxy OK | 600ms |
-| **Gemini 3.1 Flash** | 🟢 Normal | 🔴 Blocked | 200ms |
+Model status and latency change over time. Use the live dashboard and test from your own environment before production deployment.
 
 ## Quick Setup
 

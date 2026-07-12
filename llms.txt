@@ -1,10 +1,10 @@
 # AI API Status Dashboard — Model Availability Monitor
 
-> Checks uptime, latency, and connectivity for 572+ AI models across 16+ providers from mainland China. Updates every 5 minutes.
+> Checks uptime, latency, and connectivity for 572+ AI models across 16+ providers from mainland China. Published observations may vary by model, node, and time.
 
 ## Core
 
-- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls every 5 minutes, 99.2% global uptime, sub-300ms avg latency from China. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
+- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls every 5 minutes, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
 - [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive board showing which models are up, latency heatmaps, and historical uptime.
 - [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — 572+ models sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
 - [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): How Chinese devs actually access overseas AI APIs through relay services — setup, tool integration, cost optimization.

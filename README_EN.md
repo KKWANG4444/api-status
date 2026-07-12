@@ -4,7 +4,7 @@
 [![Updated](https://img.shields.io/badge/Updated-2026--07--12-blue)](https://github.com/KKWANG4444/api-status)
 [![Models](https://img.shields.io/badge/Models-572-FF6B35)](https://www.aifast.club)
 
-> **Real-time monitoring for 572 AI models across 16+ providers.** Tracks connection rates, latency, and China accessibility. Updated every 5 minutes.
+> **Real-time monitoring for 572 AI models across 16+ providers.** Tracks connection rates, latency, and China accessibility. Availability data is a published snapshot and may vary over time.
 
 ## 🚦 Live Dashboard
 
@@ -15,7 +15,7 @@
 ## Why This Exists
 
 If you're a developer in China (or serving Chinese users), you know the pain:
-- OpenAI blocks Chinese IPs
+- OpenAI direct access may be limited on some mainland China networks
 - Anthropic's Shield-v2 detects data center proxies
 - DeepSeek's official API is unreliable under load
 

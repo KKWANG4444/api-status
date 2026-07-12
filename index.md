@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 实时状态看板 - 全球大模型 API 稳定性监控 | Claude Sonnet 5 GPT-5.6 国内直连
+title: 实时状态看板 - 全球大模型 API 稳定性监控 | Claude Sonnet 5 OpenAI API 国内直连
 permalink: /
 ---
 
 # 📊 全球大模型 API 稳定性实时看板
 
-> **声明：** 本项目致力于实时监测 GPT-5.6 Sol / Claude Sonnet 5 / Grok 4.5 / DeepSeek V4 / Gemini 3 等旗舰级大模型的全球连接率、响应延迟及各区域（特别是中国大陆）的支付通过率。数据每日更新。
+> **声明：** 本项目致力于实时监测 OpenAI models / Claude Sonnet 5 / Grok 4.5 / DeepSeek V4 / Gemini 3 等旗舰级大模型的全球连接率、响应延迟及各区域（特别是中国大陆）的支付通过率。数据每日更新。
 
 ---
 
@@ -14,9 +14,9 @@ permalink: /
 
 | 物理模型 | 官方状态 | 国内直连 | 延迟 | 推荐接入 |
 |:---|:---:|:---:|:---:|:---|
-|| **GPT-5.6 Sol** 🆕 | 🟢 正常 | 🔴 封锁 | 350ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **GPT-5.6 Terra** 🆕 | 🟢 正常 | 🔴 封锁 | 300ms | 💎 [www.aifast.club](https://www.aifast.club) |
-|| **GPT-5.6 Luna** 🆕 | 🟢 正常 | 🔴 封锁 | 200ms | 💎 [www.aifast.club](https://www.aifast.club) |
+|| **OpenAI models** 🆕 | 🟢 正常 | 🔴 封锁 | 350ms | 💎 [www.aifast.club](https://www.aifast.club) |
+|| **OpenAI models** 🆕 | 🟢 正常 | 🔴 封锁 | 300ms | 💎 [www.aifast.club](https://www.aifast.club) |
+|| **OpenAI models** 🆕 | 🟢 正常 | 🔴 封锁 | 200ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **Claude Sonnet 5** 🆕 | 🟢 正常 | 🔴 封锁 | 100ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **Claude Opus 4.8** | 🟢 正常 | 🔴 封锁 | 150ms | 💎 [www.aifast.club](https://www.aifast.club) |
 || **Grok 4.5** 🆕 | 🟢 正常 | 🔴 封锁 | 280ms | 💎 [www.aifast.club](https://www.aifast.club) |

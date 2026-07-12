@@ -1,7 +1,11 @@
-# AI API 状态监测 & 大模型可用性实时看板 — 572 个模型一键接入
+# AI API 状态看板：模型可用性、延迟与接入参考
 
 [![中文](https://img.shields.io/badge/🇨🇳-中文-red)](README.md)
 [![English](https://img.shields.io/badge/🇬🇧-English-blue)](README_EN.md)
+
+> 接入模型前，先看它当前是否可用。这里整理主流供应商的阶段性状态、延迟观察和常见故障，不把历史截图当作 SLA。
+>
+> **直接使用：** [打开状态看板](https://kkwang4444.github.io/api-status/) · [查看模型目录](https://kkwang4444.github.io/api-status/models) · [用 OpenAI SDK 接入](#1-分钟上手接入-wwwaifastclubv1)
 
 [![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
 [![模型数量](https://img.shields.io/badge/模型-572-green)](https://kkwang4444.github.io/api-status/models)
@@ -19,8 +23,8 @@
 | 🌐 模型覆盖 | **572 个** | 16+ 供应商，Anthropic / OpenAI / DeepSeek / Google / Meta 全线 |
 | 阶段性连通性观测 | **以实时请求为准** | 结果随模型、节点和网络环境变化 |
 | 🇨🇳 国内直连可用 | ⚠️ 以平台控制台和实时请求结果为准 | 配置 base_url 即可；可用性随模型和网络环境变化 |
-| ⏱️ 平均响应延迟 | **< 300ms** | 国内节点测试，覆盖主流模型 |
-| 🔄 数据更新频率 | **每 5 分钟** | 自动探测，发现故障即时标记 |
+| ⏱️ 响应延迟 | **以当前请求为准** | 受模型、节点、负载和网络环境影响 |
+| 🔄 数据更新频率 | **按实际维护情况** | 自动探测，发现故障即时标记 |
 
 > 👉 **[查看实时看板 →](https://kkwang4444.github.io/api-status/)** 实时数据，随时可用
 
@@ -30,7 +34,7 @@
 
 ---
 
-> 💡 **一个接口，一把 Key，接入全球 572 个 AI 模型。国内直连，无需代理，支持微信/支付宝。**
+> 💡 **一个 OpenAI 兼容接口接入平台当前开放的模型，支持国内支付。**
 
 ---
 
@@ -86,7 +90,7 @@
 这不是那种只接三五家的小打小闹。覆盖的供应商包括：
 
 **国际巨头：**
-- OpenAI（GPT-5.6 Sol 🆕、GPT-5.6 Terra 🆕、GPT-5.6 Luna 🆕、GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 103 个模型
+- OpenAI（GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 103 个模型
 - Anthropic（Claude Opus 4.8、**Sonnet 5 🆕**、Opus 4.7、Sonnet 4.6、Claude Code）— 20 个模型
 - Google（Gemini 3.1 Flash、Gemini 3、Gemini 2.5 Pro）— 55 个模型
 - DeepSeek（V4 Pro、V4 Flash、R1）— 28 个模型
@@ -134,9 +138,9 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 |:---|:---|:---:|
 | **Claude Opus 4.8** | 编程/复杂推理/Agent | 🟢 官方正常，国内需中转 |
 | **Claude Code** | 编程专用智能体 | 🟢 强烈推荐 |
-|| **GPT-5.6 Sol 🆕** | 旗舰推理/编码/Agent | 🟢 OpenAI 最新旗舰 | 最强模型 Sol🌞 |
-|| **GPT-5.6 Terra 🆕** | 均衡推理/编码 | 🟢 全能均衡款 | 性价比最优 |
-|| **GPT-5.6 Luna 🆕** | 轻量推理 | 🟢 轻量高效 | 低成本首选 |
+|| **OpenAI models 🆕** | 旗舰推理/编码/Agent | 🟢 OpenAI 最新旗舰 | 最强模型 Sol🌞 |
+|| **OpenAI models 🆕** | 均衡推理/编码 | 🟢 全能均衡款 | 性价比最优 |
+|| **OpenAI models 🆕** | 轻量推理 | 🟢 轻量高效 | 低成本首选 |
 || **GPT-5.5 Pro** | 旗舰推理 | 🟢 官方正常，国内需中转 |
 | **GPT-5.5** | 通用大语言模型 | 🟢 性价比之王 |
 | **DeepSeek V4 Pro** | 开源最强推理 | 🟡 官方有时拥堵 |
@@ -156,14 +160,7 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 
 几个有代表性的：
 
-- `deepseek-v4-flash`：输入 $1.00/M，输出 $2.00/M — 性价比最高
-- `deepseek-v4-pro`：输入 $12.00/M，输出 $24.00/M
-- `gpt-5.5`：输入 $3.00/M，输出 $18.00/M
-- `gpt-5.5-pro`：输入 $180.00/M，输出 $1,080.00/M — 这是真旗舰价
-- `claude-opus-4-8`：输入 $5.00/M，输出 $25.00/M
-- `qwen3.6-27b`：输入 $3.00/M
 
-小提示：DeepSeek 官方 2026 年 5 月 22 号大降价了一波，输出降到 $0.87/M tokens。中转价看起来贵一点，但包含了国内直连加速、多节点 轮询、多节点容错，算下来比你自己搭代理还是便宜不少。
 
 ### 怎么选模型
 
@@ -501,8 +498,20 @@ export OPENAI_API_BASE_URL=https://www.aifast.club/v1
 
 <p align="center">
   <strong>一个接口，一把 Key，接入全球 572 个 AI 模型。</strong><br>
-  无需代理 · 国内支付 · 中文客服 · 2026 最稳定的大模型中转方案
+  兼容接口 · 国内支付 · 模型接入与状态参考
 </p>
+
+
+## 核心项目导航
+
+| 你要解决的问题 | 入口 |
+|:---|:---|
+| 复制可运行的接入代码 | [AI API 接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide) |
+| 判断模型当前是否可用 | [API 状态看板](https://github.com/KKWANG4444/api-status) |
+| 比较官方、自建与托管方案 | [国内大模型 API 方案](https://github.com/KKWANG4444/llm-api-proxy-china) |
+| 查看阶段性稳定性观察 | [稳定性追踪](https://github.com/KKWANG4444/Claude-4.7-GPT-5.5-API-Stability-Tracker) |
+| 查看全部项目 | [KKWANG4444 Profile](https://github.com/KKWANG4444) |
+| 测试 OpenAI 兼容接口 | [www.aifast.club](https://www.aifast.club) |
 
 <p align="center">
   <small>Proudly maintained by the 2026 AI Developer Community.<br>

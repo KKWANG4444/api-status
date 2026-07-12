@@ -23,7 +23,7 @@ permalink: /guide/
 4. 模型名填入：`claude-opus-4-7` 或 `gpt-5.5` 或 `deepseek-v4-pro`
 5. ✅ 完成
 
-> **推荐模型：** claude-code（编程专用）、**gpt-5.6-sol**（复杂推理）、gpt-5.5（通用编码）
+> **推荐模型：** claude-code（编程专用）、**gpt-5.5**（复杂推理）、gpt-5.5（通用编码）
 
 ---
 
@@ -112,7 +112,7 @@ curl https://www.aifast.club/v1/chat/completions \
 
 | 场景 | 推荐模型 | 供应商 |
 |:---|:---|:---|
-| 编程/代码 | `claude-code` / **`gpt-5.6-sol`** | Anthropic / OpenAI |
+| 编程/代码 | `claude-code` / **`gpt-5.5`** | Anthropic / OpenAI |
 | 复杂推理 | `claude-opus-4-7` / `gpt-5.5-pro` | Anthropic / OpenAI |
 | 日常对话 | `gpt-5.5` / `gemini-3-flash` | OpenAI / Google |
 | 高吞吐低成本 | `deepseek-v4-flash` / `gpt-5-4-nano` | DeepSeek / OpenAI |

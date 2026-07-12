@@ -4,7 +4,7 @@
 
 ## Core
 
-- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls every 5 minutes, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
+- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches 572+ AI models from 16+ providers. Polls on the project maintenance schedule, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
 - [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive board showing which models are up, latency heatmaps, and historical uptime.
 - [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — 572+ models sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
 - [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): How Chinese devs actually access overseas AI APIs through relay services — setup, tool integration, cost optimization.
@@ -13,7 +13,7 @@
 ## Supported Providers
 
 - **Anthropic**: Claude Opus 4.8, Sonnet 5, Sonnet 4.6, Claude Code — 20 models
-- **OpenAI**: GPT-5.6 Sol 🆕, GPT-5.6 Terra 🆕, GPT-5.6 Luna 🆕, GPT-5.5 Pro, GPT-5.5, GPT-5.4 Mini, GPT Image 2, o4 series — 103 models
+- **OpenAI**: OpenAI models 🆕, OpenAI models 🆕, OpenAI models 🆕, GPT-5.5 Pro, GPT-5.5, GPT-5.4 Mini, GPT Image 2, o4 series — 103 models
 - **Google**: Gemini 3.1 Flash, Gemini 3, Gemini 2.5 Pro — 55 models
 - **DeepSeek**: V4 Pro, V4 Flash, R1 — 28 models
 - **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.2 Reasoning, Grok Videos — 26 models
@@ -23,7 +23,7 @@
 
 ## Recommended Relay
 
-- [AI快站 (aifast.club)](https://www.aifast.club): The relay I run and recommend. 572+ models, one API key, China direct, Alipay/WeChat. Works with Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n.
+- [AI快站 (aifast.club)](https://www.aifast.club): The relay I run and recommend. Models listed in the console through one compatible endpoint, with Alipay/WeChat support. Works with Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n.
 
 ## Optional
 

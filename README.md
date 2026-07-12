@@ -90,17 +90,17 @@
 这不是那种只接三五家的小打小闹。覆盖的供应商包括：
 
 **国际巨头：**
-- OpenAI（GPT-5.5 Pro、GPT-5.5、GPT-5.4 Mini、GPT Image 2、o4 系列）— 103 个模型
-- Anthropic（Claude Opus 4.8、**Sonnet 5 🆕**、Opus 4.7、Sonnet 4.6、Claude Code）— 20 个模型
-- Google（Gemini 3.1 Flash、Gemini 3、Gemini 2.5 Pro）— 55 个模型
-- DeepSeek（V4 Pro、V4 Flash、R1）— 28 个模型
-- xAI（Grok 4.5 🆕、Grok 4.2 Reasoning、Grok 4.2 Non-Reasoning、Grok Videos）— 26 个模型
+- OpenAI（GPT-5.6 Sol / Terra / Luna、GPT-5.5 Pro、GPT Image 2 等）
+- Anthropic（Claude Sonnet 5、Claude Opus 4.8、Claude Fable 5 等）
+- Google（Gemini 3.5 Flash、Gemini 3.1 Pro、Gemini 3.1 Flash-Lite 等）
+- DeepSeek（V4 Pro、V4 Flash 等）
+- xAI（Grok 4.5、Grok 4.3、Grok 4.20 等）
 
 **国产模型：**
-- 阿里百炼通义千问（Qwen 3.6 系列）— 90 个模型
-- 豆包字节跳动（Doubao Seed 2.0）— 21 个模型
+- 阿里百炼通义千问（Qwen3.7-Max、Qwen3.7-Plus 等）
+- 豆包字节跳动（Doubao Seed 2.1 Pro / Turbo 等）
 - 智谱 GLM（GLM-5、GLM-5 Flash、GLM-5.2 系列）— 17+ 个模型（官方文档已出现“迁移至 GLM-5.2”，状态看板已同步跟进。）
-- 月之暗面（Kimi K2、Kimi K2 Turbo）— 11 个模型
+- 月之暗面（Kimi K2.7 Code / Highspeed、Kimi K2.5 等）
 - MiniMax（MiniMax Max、MiniMax Turbo）— 13 个模型
 
 **图像 & 视频：**
@@ -138,9 +138,9 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 |:---|:---|:---:|
 | **Claude Opus 4.8** | 编程/复杂推理/Agent | 🟢 官方正常，国内需中转 |
 | **Claude Code** | 编程专用智能体 | 🟢 强烈推荐 |
-|| **OpenAI models 🆕** | 旗舰推理/编码/Agent | 🟢 OpenAI 最新旗舰 | 最强模型 Sol🌞 |
-|| **OpenAI models 🆕** | 均衡推理/编码 | 🟢 全能均衡款 | 性价比最优 |
-|| **OpenAI models 🆕** | 轻量推理 | 🟢 轻量高效 | 低成本首选 |
+| **GPT-5.6 Sol** | 推理/编码/Agent | ✅ 模型广场已上架 | `gpt-5.6-sol` |
+| **GPT-5.6 Terra** | 均衡推理/编码 | ✅ 模型广场已上架 | `gpt-5.6-terra` |
+| **GPT-5.6 Luna** | 轻量任务 | ✅ 模型广场已上架 | `gpt-5.6-luna` |
 | **GPT-5.5 Pro** | 高阶推理 | ⚠️ 可用性以平台控制台和实际请求为准 |
 | **GPT-5.5** | 通用大语言模型 | 🟢 性价比之王 |
 | **DeepSeek V4 Pro** | 开源最强推理 | 🟡 官方有时拥堵 |
@@ -148,7 +148,7 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 | **Gemini 3.1 Flash** | 快速推理 | 🟢 官方正常，国内需中转 |
 | **Grok 4.5** | 通用推理与工具调用 | ⚠️ 官方型号；平台可用性以控制台为准 | 500K 上下文 |
 | **Grok 4.2** | 推理/非推理 | 🟢 官方正常，国内需中转 |
-| **Qwen 3.6-27B** | 通用文本模型 | ⚠️ 较新版本请参考阿里云官方模型目录；平台可用性以控制台为准 |
+| **Qwen3.7-Max** | 通用文本模型 | ⚠️ 较新版本请参考阿里云官方模型目录；平台可用性以控制台为准 |
 
 ### 价格参考
 
@@ -167,9 +167,9 @@ Anthropic API 的可用性会受到地区、账号状态、供应商政策和网
 说句大实话——模型不是越贵越好，关键是"匹不匹配你的场景"：
 
 - **写代码、做 Agent** → `claude-code` 或 `claude-opus-4-8`。Claude 在编程和工具调用方面确实有两把刷子
-- **日常聊天、内容生成** → `gpt-5.5` 或 `gemini-3.1-flash`，又快又稳
+- **日常聊天、内容生成** → `gpt-5.5` 或 `gemini-3.1-flash-preview`，又快又稳
 - **高并发、低成本大批量处理** → `deepseek-v4-flash` 或 `gpt-5.4-nano`，价格能打到几分钱一次调用
-- **需要国产合规**（政府、国企项目）→ `qwen3.6-27b` 或 `glm-5`，数据留在中国
+- **需要国产合规**（政府、国企项目）→ `qwen3.7-max` 或 `glm-5`，数据留在中国
 - **画图** → `gpt-image-2` 或 `midjourney-v7`，看你要什么风格
 - **视频生成** → `kling-2.0` 或 `grok-videos`
 
@@ -226,7 +226,7 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-想换个模型？把 model 名字改成 `gpt-5.5`、`deepseek-v4-flash`、`qwen3.6-27b` 之类的就行。**其他代码一个字都不用改。**
+想换个模型？把 model 名字改成 `gpt-5.5`、`deepseek-v4-flash`、`qwen3.7-max` 之类的就行。**其他代码一个字都不用改。**
 
 ### cURL
 
@@ -339,7 +339,7 @@ console.log(response.choices[0].message.content);
 4. 填你的 Key
 5. 模型列表会自动出现
 
-推荐：`deepseek-v4-flash`（高吞吐便宜）、`qwen3.6-27b`（国产合规）、`claude-opus-4-8`（复杂工作流）
+推荐：`deepseek-v4-flash`（高吞吐便宜）、`qwen3.7-max`（国产合规）、`claude-opus-4-8`（复杂工作流）
 
 ### LobeChat / Chatbox / Cherry Studio
 
@@ -348,7 +348,7 @@ console.log(response.choices[0].message.content);
 1. 设置 → 语言模型 → OpenAI 兼容模式
 2. API 地址: `https://www.aifast.club/v1`
 3. 填入 API Key
-4. 手动添加你想要用的模型名（比如 `gpt-5.5`、`gemini-3.1-flash`）
+4. 手动添加你想要用的模型名（比如 `gpt-5.5`、`gemini-3.1-flash-preview`）
 
 ### OpenWebUI
 

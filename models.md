@@ -16,9 +16,9 @@ permalink: /models/
 
 | 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
 |:---|:---:|:---:|:---:|:---|
-| `gpt-5.5` | 推理 | — | — | OpenAI 推理模型；能力和可用性以官方文档及平台控制台为准 |
-| `gpt-5.5` | 推理 | — | — | 均衡款，全能通用 🆕 |
-| `gpt-5.5` | 推理 | — | — | 轻量高效，低成本首选 🆕 |
+| `gpt-5.6-sol` | 推理/编码 | — | — | GPT-5.6 Sol |
+| `gpt-5.6-terra` | 通用 | — | — | GPT-5.6 Terra |
+| `gpt-5.6-luna` | 轻量 | — | — | GPT-5.6 Luna |
 | `gpt-4.1` | 文本 | — | — | 稳定版 |
 | `gpt-4o` | 多模态 | — | — | 多模态通用 |
 | `o4` | 文本 | — | — | 推理模型 |
@@ -33,15 +33,16 @@ permalink: /models/
 |:---|:---:|:---:|:---:|:---|
 | `claude-sonnet-4-6` | 文本 | — | — | 性价比首选，主力模型 |
 | `claude-code` | 文本 | — | — | 编程专用智能体 |
-| `claude-haiku-4-5` | 文本 | — | — | 轻量快速 |
+| `claude-haiku-4-5-20251001` | 文本 | — | — | 轻量快速 |
 
 ### Google Gemini — 55 个模型
 
 | 模型名 | 类型 | 说明 |
 |:---|:---:|:---|
-| `gemini-3.1-flash` | 文本 | 快速推理；Google 当前另有 Gemini 3.5 Flash 等更新型号 |
-| `gemini-3-flash` | 文本 | 主力模型 |
-| `gemini-3-pro` | 文本 | 专业推理 |
+| `gemini-3.5-flash` | 文本/多模态 | Gemini 3.5 Flash |
+| `gemini-3.1-pro-preview` | 文本/多模态 | Gemini 3.1 Pro Preview |
+| `gemini-3-flash-preview` | 文本 | 主力模型 |
+| `gemini-3-pro-preview` | 文本 | 专业推理 |
 | `gemini-2.5-pro` | 文本 | 上一代旗舰 |
 | `gemini-2.0-flash` | 文本 | 轻量版 |
 | `gemini-cli` | 文本 | CLI 工具 |
@@ -58,7 +59,7 @@ permalink: /models/
 
 | 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
 |:---|:---:|:---:|:---:|:---|
-| `grok-4-5` | 文本 | — | — | xAI 官方型号，500K 上下文；勿与 Grok 4.20 或 Grok 4.3 混写 |
+| `grok-4.5` | 文本 | — | — | xAI 官方型号，500K 上下文；勿与 Grok 4.20 或 Grok 4.3 混写 |
 | `grok-3` / `grok-3-mini` / `grok-3-vision` | 多模态 | — | — | 上一代系列 |
 
 ---
@@ -79,16 +80,16 @@ permalink: /models/
 | 模型名 | 类型 | 说明 |
 |:---|:---:|:---|
 | `doubao-seed-2-0-code-preview-260215` | 文本 | 代码专用 |
-| `doubao-pro` | 文本 | 旗舰版 |
-| `doubao-lite` | 文本 | 轻量版 |
+| `doubao-seed-2-1-pro-260628` | 文本 | 旗舰版 |
+| `doubao-seed-2-0-lite-260428` | 文本 | 轻量版 |
 
 ### 其他国产模型
 
 | 供应商 | 模型数 | 代表模型 |
 |:---|:---:|:---|
-| **智谱 GLM** | 17 | `glm-5`, `glm-5-flash` |
-| **Moonshot (月之暗面)** | 11 | `kimi-k2`, `kimi-k2-turbo` |
-| **MiniMax** | 13 | `minimax-max`, `minimax-turbo` |
+| **智谱 GLM** | 以控制台为准 | `glm-5.2`, `glm-5.1`, `glm-5` |
+| **Moonshot (月之暗面)** | 11 | `kimi-k2.7-code`, `kimi-k2.7-code-highspeed`, `kimi-k2.5` |
+| **MiniMax** | 13 | `MiniMax-M3`, `MiniMax-M2.7-highspeed` |
 
 ---
 

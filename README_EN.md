@@ -34,8 +34,8 @@ This dashboard monitors which models are accessible from China via proxy gateway
 | **xAI (Grok)** | 26 (Grok 4.5, Grok 4.2) | 🟢 |
 | **Google** | 55 (Gemini 3.1 Flash, Gemini 3) | 🟢 |
 | **DeepSeek** | 28 (V4 Pro, V4 Flash) | 🟢 |
-| **Alibaba (Qwen)** | 90 (Qwen3.6-27B, Qwen-Max) | 🟢 |
-| **ByteDance** | 21 (Doubao Seed 2.0) | 🟢 |
+| **Alibaba (Qwen)** | 90 (Qwen3.7-Max, Qwen-Max) | 🟢 |
+| **ByteDance** | 21 (Doubao Seed 2.1 Pro / Turbo) | 🟢 |
 | **Zhipu (GLM)** | 17+ (GLM-5, GLM-5.2) | 🟢 |
 | **Others** | 200+ (Kimi, Yi, Mistral, Cohere, etc.) | 🟢 |
 

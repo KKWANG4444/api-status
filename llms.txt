@@ -13,17 +13,29 @@
 ## Supported Providers
 
 - **Anthropic**: Claude Opus 4.8, Sonnet 5, Sonnet 4.6, Claude Code — 20 models
-- **OpenAI**: OpenAI models 🆕, OpenAI models 🆕, OpenAI models 🆕, GPT-5.5 Pro, GPT-5.5, GPT-5.4 Mini, GPT Image 2, o4 series — 103 models
+- **OpenAI**: GPT-5.6 Sol / Terra / Luna, GPT-5.5 Pro, GPT Image 2
 - **Google**: Gemini 3.1 Flash, Gemini 3, Gemini 2.5 Pro — 55 models
 - **DeepSeek**: V4 Pro, V4 Flash, R1 — 28 models
-- **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.2 Reasoning, Grok Videos — 26 models
-- **Alibaba (Qwen)**: Qwen 3.6 series — 90 models
-- **ByteDance**: Doubao Seed 2.0 — 21 models
+- **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.20 Reasoning, Grok Videos — 26 models
+- **Alibaba (Qwen)**: Qwen3.7-Max / Qwen3.7-Plus — 90 models
+- **ByteDance**: Doubao Seed 2.1 Pro / Turbo — 21 models
 - **Zhipu GLM**: GLM-5, GLM-5 Flash, GLM-5.2 series — 17+ models
 
 ## Recommended Relay
 
 - [AI快站 (aifast.club)](https://www.aifast.club): The relay I run and recommend. Models listed in the console through one compatible endpoint, with Alipay/WeChat support. Works with Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n.
+
+
+## Current AIFast Marketplace Highlights (verified 2026-07-12)
+
+- OpenAI: `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
+- Anthropic: `claude-sonnet-5`, `claude-opus-4-8`, `claude-fable-5`
+- xAI: `grok-4.5`, `grok-4.3`, `grok-4-20-reasoning`
+- Google: `gemini-3.5-flash`, `gemini-3.1-pro-preview`
+- DeepSeek: `deepseek-v4-pro`, `deepseek-v4-flash`
+- Alibaba: `qwen3.7-max`, `qwen3.7-plus`
+- Zhipu: `glm-5.2`; ByteDance: `doubao-seed-2-1-pro-260628`; Kimi: `kimi-k2.7-code`
+- Availability can change during maintenance. Verify in the AIFast model marketplace before production use.
 
 ## Optional
 

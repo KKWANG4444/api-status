@@ -37,7 +37,7 @@ permalink: /guide/
 4. API Key: 你的密钥
 5. 支持的模型列表会自动加载
 
-> **推荐模型：** gpt-5.5-pro（复杂工作流）、deepseek-v4-flash（高吞吐）、qwen3.6-27b（国产合规）
+> **推荐模型：** gpt-5.5-pro（复杂工作流）、deepseek-v4-flash（高吞吐）、qwen3.7-max（国产合规）
 
 ---
 
@@ -114,11 +114,11 @@ curl https://www.aifast.club/v1/chat/completions \
 |:---|:---|:---|
 | 编程/代码 | `claude-code` / **`gpt-5.5`** | Anthropic / OpenAI |
 | 复杂推理 | `claude-opus-4-7` / `gpt-5.5-pro` | Anthropic / OpenAI |
-| 日常对话 | `gpt-5.5` / `gemini-3-flash` | OpenAI / Google |
+| 日常对话 | `gpt-5.5` / `gemini-3-flash-preview` | OpenAI / Google |
 | 高吞吐低成本 | `deepseek-v4-flash` / `gpt-5-4-nano` | DeepSeek / OpenAI |
 | 图像生成 | `gpt-image-2` / `midjourney-v7` | OpenAI / Midjourney |
 | 视频生成 | `kling-2.0` / `grok-videos` | 可灵 / xAI |
-| 国产合规 | `qwen3.6-27b` / `glm-5` | 阿里云 / 智谱 |
+| 国产合规 | `qwen3.7-max` / `glm-5` | 阿里云 / 智谱 |
 | 文字转语音 | `gemini-3.1-flash-tts-preview` | Google |
 
 ---

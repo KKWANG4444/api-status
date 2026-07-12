@@ -1,7 +1,7 @@
 # API Status Monitor — 572 Model Live Dashboard
 
 [![Live](https://img.shields.io/badge/Live-Online-brightgreen)](https://kkwang4444.github.io/api-status/)
-[![Updated](https://img.shields.io/badge/Updated-2026--07--10-blue)](https://github.com/KKWANG4444/api-status)
+[![Updated](https://img.shields.io/badge/Updated-2026--07--12-blue)](https://github.com/KKWANG4444/api-status)
 [![Models](https://img.shields.io/badge/Models-572-FF6B35)](https://www.aifast.club)
 
 > **Real-time monitoring for 572 AI models across 16+ providers.** Tracks connection rates, latency, and China accessibility. Updated every 5 minutes.

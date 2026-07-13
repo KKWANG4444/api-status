@@ -1,10 +1,12 @@
 ---
 layout: default
-title: 开发者接入指南 - OpenAI SDK Cursor Dify Claude Code 配置
+title: 500+ AI模型接入指南 - OpenAI SDK Cursor Dify Claude Code
 permalink: /guide/
 ---
 
 # 📖 开发者接入指南
+
+AI快站提供500+模型，覆盖语言、生图、视频、向量与检索。Claude、GPT、Gemini等国外模型国内可直连、无需代理，支持自动故障切换，所有地区和运营商均可使用；企业客户可申请开具发票。
 
 使用 [www.aifast.club](https://www.aifast.club) 的 OpenAI 兼容接口时，基础配置是：
 

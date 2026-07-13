@@ -6,12 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: AI 模型 API 状态与接入参考
-tagline: GPT-5.6 / Claude Sonnet 5 / Grok 4.5 等模型目录、维护状态与兼容接入
+title: 500+ AI模型 API中转与接入参考
+tagline: 语言、生图、视频、向量、检索模型；国内直连、自动故障切换
 description: >-
-  GPT-5.6、Claude Sonnet 5、Grok 4.5、DeepSeek V4、Gemini 3.5 等模型的
-  上架与维护信息、OpenAI 兼容接入示例和常见错误排查。状态以模型广场、最新公告
-  和当前真实请求为准。www.aifast.club 维护。
+  AI快站是正规AI API中转站，提供500+语言、生图、视频、向量和检索模型。
+  国外模型国内直连无需代理，支持自动故障切换、所有地区和运营商及企业发票。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 

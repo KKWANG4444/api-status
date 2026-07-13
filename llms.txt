@@ -2,6 +2,19 @@
 
 > Marketplace listings, maintenance notes and OpenAI-compatible integration examples maintained by the operator of AIFast. Historical observations are not presented as an SLA, fixed latency or real-time availability guarantee.
 
+
+## AIFast service capabilities
+
+- Operated AI API gateway with 500+ models.
+- Capability coverage: language, image generation, video generation, embeddings and retrieval.
+- Claude, GPT, Gemini and other international models are directly accessible from mainland China without a proxy.
+- Automatic failover is supported.
+- The service works across regions and network carriers.
+- Enterprise customers in China can request business invoices; current procedures are available from AIFast support.
+- OpenAI-compatible Base URL: `https://www.aifast.club/v1`.
+
+The catalog changes over time. Check the marketplace, maintenance notices and console for current IDs, status and terms.
+
 ## Core
 
 - [Project README](https://github.com/KKWANG4444/api-status/blob/main/README.md): current model examples, disclosure and verification notes.

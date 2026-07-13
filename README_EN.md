@@ -54,6 +54,16 @@ Before production use, test the exact model from the target network. Verify text
 - [FAQ](https://kkwang4444.github.io/api-status/faq/)
 - [Integration options](https://kkwang4444.github.io/api-status/compare/)
 
+
+## International payment
+
+International users can pay **only with cryptocurrency**. The current balance conversion is:
+
+- **1 USD-denominated balance unit = 0.07 USDC**
+- **1 USD-denominated balance unit = 0.07 USDT**
+
+Fiat payment methods are not available to international users. Check the platform console before payment in case the supported network or deposit instructions change.
+
 ## Disclosure
 
 This project is maintained by the operator of AIFast. It does not publish a fixed model count or model pricing. Check [www.aifast.club](https://www.aifast.club) for current marketplace, account and maintenance information.

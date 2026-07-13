@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 全球大模型 API 稳定性实时看板
-tagline: Claude 4.7 / GPT 5.5 / DeepSeek V4 等 模型广场当前目录实时状态监控
+title: AI 模型 API 状态与接入参考
+tagline: GPT-5.6 / Claude Sonnet 5 / Grok 4.5 等模型目录、维护状态与兼容接入
 description: >-
-  状态观察 Claude 4.7、GPT-5.5、DeepSeek V4、Gemini 3 等全球主流大模型 API 的
-  连接率与响应延迟。提供国内直连方案与中转站避坑指南、MCP协议支持详解、
-  2026年API降价动态。覆盖 模型广场当前目录，16+ 供应商。www.aifast.club 官方赞助。
+  GPT-5.6、Claude Sonnet 5、Grok 4.5、DeepSeek V4、Gemini 3.5 等模型的
+  上架与维护信息、OpenAI 兼容接入示例和常见错误排查。状态以模型广场、最新公告
+  和当前真实请求为准。www.aifast.club 维护。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 

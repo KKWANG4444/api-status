@@ -1,42 +1,50 @@
 ---
 layout: default
-title: 实时状态看板 - 全球大模型 API 稳定性监控 | Claude Sonnet 5 OpenAI API 国内直连
+title: AI 模型 API 状态参考 | GPT-5.6 Claude Sonnet 5 Grok 4.5
 permalink: /
 ---
 
-# 📊 全球大模型 API 稳定性实时看板
+# 📊 AI 模型 API 状态参考
 
-> **声明：** 本项目致力于实时监测 GPT-5.6 Sol / Terra / Luna / Claude Sonnet 5 / Grok 4.5 / DeepSeek V4 / Gemini 3 等旗舰级大模型的全球连接率、响应延迟及各区域（特别是中国大陆）的支付通过率。数据每日更新。
+> 本页记录 AI快站模型广场的上架与维护信息，不构成实时监控、延迟承诺或 SLA。实际可用性以最新公告和当前请求为准。
 
 ---
 
-## 🚦 实时连接状态 (2026-07-03)
+## 🚦 模型广场状态（复核于 2026-07-13）
 
-| 物理模型 | 官方状态 | 国内直连 | 延迟 | 推荐接入 |
-|:---|:---:|:---:|:---:|:---|
-| **GPT-5.6 Sol** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
-| **GPT-5.6 Terra** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
-| **GPT-5.6 Luna** | ✅ 已上架 | 状态以实际请求为准 | — | [模型广场](https://www.aifast.club) |
-|| 模型 | 模型广场状态 | 说明 |
+| 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-| GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
-| Claude Sonnet 5 / Opus 4.8 | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
-| Grok 4.5 / 4.3 / 4.20 | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
-| DeepSeek V4 Pro / Flash | ✅ 已上架 | 实际可用性与延迟以当前请求为准 |
+| GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 实际可用性以当前请求为准 |
+| Claude Sonnet 5 / Opus 4.8 / Fable 5 | ✅ 已上架 | 实际可用性以当前请求为准 |
+| Grok 4.5 / 4.3 / 4.20 Reasoning | ✅ 已上架 | 实际可用性以当前请求为准 |
+| DeepSeek V4 Pro / Flash | ✅ 已上架 | 实际可用性以当前请求为准 |
+| Gemini 3.5 Flash | ✅ 已上架 | 实际可用性以当前请求为准 |
+| Qwen3.7 Max / GLM-5.2 / Kimi K2.7 Code | ✅ 已上架 | 实际可用性以当前请求为准 |
 | Doubao Seed 2.1 Turbo | 🛠️ 维护中 | 2026-07-09 公告暂时下线 |
 
+配置中存在模型 ID 不代表模型始终在线。生产使用前应从部署网络发起真实请求，并记录状态码、响应结构和超时情况。
+
 ---
 
-## 为什么官方 API 在国内越来越难用？
+## 🔌 OpenAI 兼容接入
 
-2026 年，主流 AI 模型（Claude、GPT、Gemini）对中国大陆的访问限制持续收紧：
+```python
+from openai import OpenAI
 
-1. **Anthropic 地区与风控策略** — 自动识别数据中心 IP，部分网络环境下可能返回访问限制错误
-2. **OpenAI 区域封锁** — 非白名单区域返回 403/429
-3. **DeepSeek 官方 503** — 负载过高，生产环境不可用
-4. **支付障碍** — 海外信用卡申请门槛极高
+client = OpenAI(
+    base_url="https://www.aifast.club/v1",
+    api_key="your-api-key"
+)
 
-**👉 解决方案：** 通过 [www.aifast.club](https://www.aifast.club) 国内直连，多节点 轮询，无需海外支付方式。
+response = client.chat.completions.create(
+    model="gpt-5.6-terra",
+    messages=[{"role": "user", "content": "你好"}],
+    timeout=60,
+)
+print(response.choices[0].message.content)
+```
+
+模型能力、工具调用、图片输入和响应格式可能不同。先验证单个文本请求，再逐步加入流式输出、工具和回退路由。
 
 ---
 
@@ -44,16 +52,15 @@ permalink: /
 
 | 页面 | 说明 |
 |:---|:---|
-| [🏪 全部模型列表](/api-status/models) | 模型广场当前目录完整清单与价格 |
-| [📖 开发者接入指南](/api-status/guide) | Cursor / Dify / LobeChat 等工具配置教程 |
-| [❓ 常见问题](/api-status/faq) | 封号、降智、支付等问题解答 |
-| [⚖️ 性能对比](/api-status/compare) | 各中转站横向对比 |
+| [🏪 模型目录](/api-status/models) | 供应商与模型 ID 参考；状态以模型广场和公告为准 |
+| [📖 开发者接入指南](/api-status/guide) | Cursor、Dify、OpenWebUI 等工具配置 |
+| [❓ 常见问题](/api-status/faq) | 401、429、模型不存在等问题排查 |
+| [⚖️ 方案对比](/api-status/compare) | 使用可验证维度选择接入方案 |
 
 ---
 
 <p align="center">
-  <em>Proudly maintained by the 2026 AI Developer Community.<br>
-  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 模型广场当前目录。</em>
+  <em>由 <a href="https://www.aifast.club">www.aifast.club</a> 维护。模型、账户与当前公告请以官网页面为准。</em>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

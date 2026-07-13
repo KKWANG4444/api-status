@@ -1,32 +1,17 @@
-# AI API Status Dashboard — Model Availability Monitor
+# AI API Model Status and Integration Reference
 
-> Checks uptime, latency, and connectivity for models in the current marketplace catalog across 16+ providers from mainland China. Published observations may vary by model, node, and time.
+> Marketplace listings, maintenance notes and OpenAI-compatible integration examples maintained by the operator of AIFast. Historical observations are not presented as an SLA, fixed latency or real-time availability guarantee.
 
 ## Core
 
-- [README — Dashboard overview](https://github.com/KKWANG4444/api-status/blob/main/README.md): Watches models in the current marketplace catalog from 16+ providers. Polls on the project maintenance schedule, periodic availability and latency observations from China; results vary by model, node, and time. Covers Anthropic (Claude), OpenAI (GPT), Google (Gemini), DeepSeek, xAI (Grok), Alibaba (Qwen), ByteDance (Doubao), Zhipu (GLM) and more.
-- [Live Status Dashboard](https://kkwang4444.github.io/api-status/): Interactive board showing which models are up, latency heatmaps, and historical uptime.
-- [Model List](https://kkwang4444.github.io/api-status/models): Full catalog — the current marketplace catalog sorted by provider, category, and status. Text, image, video, multimodal, embedding, rerank.
-- [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide): How Chinese devs actually access overseas AI APIs through relay services — setup, tool integration, cost optimization.
-- [2026 Price Crash Analysis](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md): DeepSeek V4, GPT-5.5, Claude Sonnet 5 — what the 2026 price war looks like from China.
+- [Project README](https://github.com/KKWANG4444/api-status/blob/main/README.md): current model examples, disclosure and verification notes.
+- [Status reference](https://kkwang4444.github.io/api-status/): marketplace listing and maintenance information.
+- [Model directory](https://kkwang4444.github.io/api-status/models/): selected model IDs checked against the public configuration.
+- [Integration guide](https://kkwang4444.github.io/api-status/guide/): OpenAI SDK, Claude Code, Cursor and compatible tools.
+- [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
+- [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.
 
-## Supported Providers
-
-- **Anthropic**: Claude Opus 4.8, Sonnet 5, Sonnet 4.6, Claude Code — 20 models
-- **OpenAI**: GPT-5.6 Sol / Terra / Luna, GPT-5.5 Pro, GPT Image 2
-- **Google**: Gemini 3.1 Flash, Gemini 3, Gemini 2.5 Pro — 55 models
-- **DeepSeek**: V4 Pro, V4 Flash, R1 — 28 models
-- **xAI / SpaceXAI**: Grok 4.5 🆕, Grok 4.20 Reasoning, Grok Videos — 26 models
-- **Alibaba (Qwen)**: Qwen3.7-Max / Qwen3.7-Plus — 90 models
-- **ByteDance**: Doubao Seed 2.1 Pro（Turbo 维护中） — 21 models
-- **Zhipu GLM**: GLM-5, GLM-5 Flash, GLM-5.2 series — 17+ models
-
-## Recommended Relay
-
-- [AI快站 (aifast.club)](https://www.aifast.club): The relay I run and recommend. Models listed in the console through one compatible endpoint, with Alipay/WeChat support. Works with Claude Code, Codex, Cursor, OpenClaw, Cherry Studio, Dify, OpenWebUI, n8n.
-
-
-## Current AIFast Marketplace Highlights (verified 2026-07-12)
+## Current AIFast marketplace examples (reviewed 2026-07-13)
 
 - OpenAI: `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
 - Anthropic: `claude-sonnet-5`, `claude-opus-4-8`, `claude-fable-5`
@@ -34,15 +19,20 @@
 - Google: `gemini-3.5-flash`, `gemini-3.1-pro-preview`
 - DeepSeek: `deepseek-v4-pro`, `deepseek-v4-flash`
 - Alibaba: `qwen3.7-max`, `qwen3.7-plus`
-- Zhipu: `glm-5.2`; ByteDance: `doubao-seed-2-1-pro-260628`; Kimi: `kimi-k2.7-code`
-- Availability can change during maintenance. Verify in the AIFast model marketplace before production use.
+- Zhipu: `glm-5.2`
+- ByteDance: `doubao-seed-2-1-pro-260628`
+- Moonshot: `kimi-k2.7-code`, `kimi-k2.7-code-highspeed`
 
-## Optional
+Doubao Seed 2.1 Turbo is not presented as currently available because the 2026-07-09 notice says it is temporarily offline for maintenance. Configuration entries do not guarantee availability.
 
-- [China API proxy guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
-- [LLM proxy guide](https://github.com/KKWANG4444/llm-api-proxy-china)
-- [Stability tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker)
+## Canonical service
 
-## Canonical Service
+- [AIFast Hub](https://www.aifast.club): OpenAI-compatible AI API gateway.
+- Base URL: `https://www.aifast.club/v1`
+- Current model, account and maintenance information: [www.aifast.club](https://www.aifast.club)
 
-- [AI快站](https://www.aifast.club): OpenAI-compatible AI API gateway. Base URL: `https://www.aifast.club/v1`.
+## Related projects
+
+- [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
+- [LLM API Proxy China](https://github.com/KKWANG4444/llm-api-proxy-china)
+- [AI API Stability Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker)

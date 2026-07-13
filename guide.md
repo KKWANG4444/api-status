@@ -1,130 +1,99 @@
 ---
 layout: default
-title: 开发者接入指南 - Cursor Dify LobeChat 配置教程 | 国内直连API
+title: 开发者接入指南 - OpenAI SDK Cursor Dify Claude Code 配置
 permalink: /guide/
 ---
 
 # 📖 开发者接入指南
 
-**无论你用什么工具，接入 [www.aifast.club](https://www.aifast.club) 只需两步：**
+使用 [www.aifast.club](https://www.aifast.club) 的 OpenAI 兼容接口时，基础配置是：
 
-1. **Base URL** 改为 `https://www.aifast.club/v1`
-2. **API Key** 填入你在控制台创建的令牌
+- **Base URL**：`https://www.aifast.club/v1`
+- **API Key**：在控制台创建的令牌
+- **Model ID**：从模型广场复制，注意点号和连字符
 
----
-
-## 🔌 Cursor 配置
-
-适用于写代码、重构、解释与开发工作流。
-
-1. 打开 Cursor → Settings → Models
-2. 将 `OpenAI API Base URL` 改为 `https://www.aifast.club/v1`
-3. 填入你的 API Key
-4. 模型名填入：`claude-opus-4-7` 或 `gpt-5.5` 或 `deepseek-v4-pro`
-5. ✅ 完成
-
-> **推荐模型：** claude-code（编程专用）、**gpt-5.5**（复杂推理）、gpt-5.5（通用编码）
+先用一个短文本请求验证密钥、模型 ID 和响应结构，再配置工具调用或工作流。
 
 ---
 
-## 🏗️ Dify 配置
+## 🔌 Cursor 与兼容编辑器
 
-适用于 AI 工作流、知识库、客服与企业内部应用。
+1. 打开设置中的模型/API Key 页面。
+2. 选择 OpenAI 或 OpenAI-compatible 接入方式。
+3. 填写 Base URL 和 API Key。
+4. 添加模型广场中的精确 ID，例如 `gpt-5.6-terra`、`claude-sonnet-5` 或 `deepseek-v4-pro`。
+5. 发起短对话验证。
 
-1. 进入 Dify 后台 → Settings → Model Provider
-2. 添加自定义 API 提供商
-3. Base URL: `https://www.aifast.club/v1`
-4. API Key: 你的密钥
-5. 支持的模型列表会自动加载
-
-> **推荐模型：** gpt-5.5-pro（复杂工作流）、deepseek-v4-flash（高吞吐）、qwen3.7-max（国产合规）
+不同版本的 Cursor 对自定义 Base URL 和模型能力支持可能不同，以当前官方文档和软件界面为准。
 
 ---
 
-## 💬 Chatbox / Cherry Studio 配置
+## 🏗️ Dify / OpenWebUI / Cherry Studio
 
-适用于日常对话、总结、翻译和多模型切换。
+这些平台通常需要填写 Base URL、API Key 和模型 ID。建议只添加一个文本模型并完成测试，再增加知识库、图片和工具调用。
 
-1. 打开设置 → AI 模型提供商
-2. 选择 OpenAI 兼容模式
-3. API 地址: `https://www.aifast.club/v1`
-4. API Key: 你的密钥
-5. 添加你需要的模型名称
+若普通聊天成功但工具调用失败，通常是模型能力或请求格式不兼容，不应反复重试同一请求。
 
 ---
 
-## 🌐 LobeChat 配置
+## 🧠 Claude Code
 
-1. 进入 LobeChat → 设置 → 语言模型
-2. 自定义 OpenAI 兼容接口
-3. 代理地址: `https://www.aifast.club/v1`
-4. API Key: 你的密钥
-5. 添加模型
+Anthropic 官方 LLM Gateway 文档使用：
 
----
+```bash
+export ANTHROPIC_BASE_URL="https://www.aifast.club/v1"
+export ANTHROPIC_AUTH_TOKEN="$AIFAST_API_KEY"
+claude
+```
 
-## 🧩 OpenWebUI / n8n 配置
-
-适用于自建平台、自动化编排与团队工具链。
-
-**OpenWebUI:**
-- 环境变量: `OPENAI_API_BASE_URL=https://www.aifast.club/v1`
-- 或 UI 设置中填入
-
-**n8n:**
-- 使用 HTTP Request 节点
-- Base URL: `https://www.aifast.club/v1/chat/completions`
-- Header: `Authorization: Bearer 你的APIKey`
+`ANTHROPIC_BASE_URL` 只改变请求发送位置，并不决定最终模型。实际兼容情况请先用当前 Claude Code 版本验证。
 
 ---
 
-## 💻 直接调用 (OpenAI SDK)
+## 💻 OpenAI SDK
 
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="your-api-key-here"
+    api_key="your-api-key"
 )
 
 response = client.chat.completions.create(
-    model="claude-opus-4-7",
-    messages=[{"role": "user", "content": "你好！"}]
+    model="gpt-5.6-terra",
+    messages=[{"role": "user", "content": "你好！"}],
+    timeout=60,
 )
 print(response.choices[0].message.content)
 ```
 
 ```bash
-# cURL 示例
 curl https://www.aifast.club/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer your-api-key" \
+  -H "Authorization: Bearer $AIFAST_API_KEY" \
   -d '{
-    "model": "gpt-5.5",
+    "model": "gpt-5.6-terra",
     "messages": [{"role": "user", "content": "你好！"}]
   }'
 ```
 
 ---
 
-## 📋 推荐模型速查
+## 🧯 常见排查顺序
 
-| 场景 | 推荐模型 | 供应商 |
-|:---|:---|:---|
-| 编程/代码 | `claude-code` / **`gpt-5.5`** | Anthropic / OpenAI |
-| 复杂推理 | `claude-opus-4-7` / `gpt-5.5-pro` | Anthropic / OpenAI |
-| 日常对话 | `gpt-5.5` / `gemini-3-flash-preview` | OpenAI / Google |
-| 高吞吐低成本 | `deepseek-v4-flash` / `gpt-5-4-nano` | DeepSeek / OpenAI |
-| 图像生成 | `gpt-image-2` / `midjourney-v7` | OpenAI / Midjourney |
-| 视频生成 | `kling-2.0` / `grok-videos` | 可灵 / xAI |
-| 国产合规 | `qwen3.7-max` / `glm-5` | 阿里云 / 智谱 |
-| 文字转语音 | `gemini-3.1-flash-tts-preview` | Google |
+1. **401**：检查 API Key 及 `Authorization: Bearer ...`。
+2. **404 / model not found**：从模型广场复制精确 ID。
+3. **429**：读取响应正文与重试提示，使用有上限的退避重试。
+4. **超时或 5xx**：查看最新维护公告，再测试同能力的其他已上架型号。
+5. **工具调用失败**：先退回纯文本请求，确认基础接口正常。
+
+不要把配置列表当成可用性保证；模型可能临时维护。
 
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>免费注册 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.club"><strong>查看模型广场和控制台 → www.aifast.club</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

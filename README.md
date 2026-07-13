@@ -1,524 +1,68 @@
-# AI API 状态看板：模型可用性、延迟与接入参考
+# AI 模型 API 状态与接入参考
 
-[![中文](https://img.shields.io/badge/🇨🇳-中文-red)](README.md)
-[![English](https://img.shields.io/badge/🇬🇧-English-blue)](README_EN.md)
+> 模型上架、维护状态与 OpenAI-compatible 接入示例。页面不把历史截图当作实时监控、SLA、延迟承诺或性能排名。
 
-> 接入模型前，先看它当前是否可用。这里整理主流供应商的阶段性状态、延迟观察和常见故障，不把历史截图当作 SLA。
->
-> **直接使用：** [打开状态看板](https://kkwang4444.github.io/api-status/) · [查看模型目录](https://kkwang4444.github.io/api-status/models) · [用 OpenAI SDK 接入](#1-分钟上手接入-wwwaifastclubv1)
+[![网站](https://img.shields.io/badge/网站-www.aifast.club-FF6B35)](https://www.aifast.club)
+[![状态参考](https://img.shields.io/badge/状态参考-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
+[![更新](https://img.shields.io/badge/复核-2026--07--13-green)](https://github.com/KKWANG4444/api-status)
 
-[![实时状态](https://img.shields.io/badge/实时状态-全球572模型-blue)](https://kkwang4444.github.io/api-status/)
-[![模型数量](https://img.shields.io/badge/模型-当前目录-green)](https://kkwang4444.github.io/api-status/models)
-[![供应商](https://img.shields.io/badge/供应商-16+-orange)](https://www.aifast.club)
-[![更新](https://img.shields.io/badge/更新-2026--07--12-brightgreen)](https://github.com/KKWANG4444/api-status)
-[![降价](https://img.shields.io/badge/2026降价-DeepSeek降75%25-brightgreen)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/price-crash-2026.md)
-[![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)
-[![稳定性追踪](https://img.shields.io/badge/稳定性-Claude_4.7_GPT_5.5-orange)](https://github.com/KKWANG4444/AI-API-Stability-Tracker)
-[![GEO](https://img.shields.io/badge/GEO-llms.txt-purple)](llms.txt)
+[English](README_EN.md) · [Gitee 镜像](https://gitee.com/kkwwww4444/api-status)
 
-## 📊 当前监测重点（实时）
+## 当前模型广场示例
 
-| 观测维度 | 状态 | 详细 |
-|:---|---:|:---|
-| 🌐 模型覆盖 | **以模型广场当前目录为准** | 16+ 供应商，Anthropic / OpenAI / DeepSeek / Google / Meta 全线 |
-| 阶段性连通性观测 | **以实时请求为准** | 结果随模型、节点和网络环境变化 |
-| 🇨🇳 国内直连可用 | ⚠️ 以平台控制台和实时请求结果为准 | 配置 base_url 即可；可用性随模型和网络环境变化 |
-| ⏱️ 响应延迟 | **以当前请求为准** | 受模型、节点、负载和网络环境影响 |
-| 🔄 数据更新频率 | **按实际维护情况** | 自动探测，发现故障即时标记 |
+以下 ID 已对照 AI快站公开模型配置。配置存在不等于始终在线；维护状态以最新公告和实际请求为准。
 
-> 👉 **[查看实时看板 →](https://kkwang4444.github.io/api-status/)** 实时数据，随时可用
+| 供应商 | 当前示例 ID |
+|:---|:---|
+| OpenAI | `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
+| Anthropic | `claude-sonnet-5`、`claude-opus-4-8`、`claude-fable-5` |
+| xAI | `grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
+| Google | `gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
+| Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
+| Zhipu | `glm-5.2` |
+| ByteDance | `doubao-seed-2-1-pro-260628` |
+| Moonshot | `kimi-k2.7-code` |
 
-![api-status 截图](assets/img/api-status-screenshot.png)
+> Doubao Seed 2.1 Turbo 在 2026-07-09 公告中标记为维护、暂时下线，因此不列为当前可用示例。
 
-*📊 实时状态看板截图 — 模型广场当前目录连接状态一目了然*
-
----
-
-> 💡 **一个 OpenAI 兼容接口接入平台当前开放的模型，支持国内支付。**
-
----
-
-> 模型范围、价格和可用性以 [AI快站控制台](https://www.aifast.club) 当前展示为准。
-
----
-
-## 目录
-
-- [这项目到底是干啥的](#这项目到底是干啥的)
-- [功能亮点：不只是个看板](#功能亮点不只是个看板)
-- [你要的模型这里都有](#你要的模型这里都有)
-- [1 分钟上手：接入 www.aifast.club/v1](#1-分钟上手接入-wwwaifastclubv1)
-- [代码示例：从 Python 到 cURL](#代码示例从-python-到-curl)
-- [接入各种第三方工具](#接入各种第三方工具)
-- [OpenClaw 一键部署：你的专属 AI 智能体](#openclaw-一键部署你的专属-ai-智能体)
-- [和官方直连、其他中转比，差在哪](#和官方直连其他中转比差在哪)
-- [常见问题](#常见问题)
-- [一起聊聊](#一起聊聊)
-
----
-
-## 这项目到底是干啥的
-
-说实话，2026 年的 AI 圈子就是一个"乱"字——模型多得眼花缭乱，接口五花八门，支付门槛一个比一个高。
-
-你在国内想用个 Claude，发现官方 API 被墙了。想用个 GPT，得搞张海外信用卡。DeepSeek 倒是国产的，但官方隔三差五 503，生产环境根本不敢用。更别提 Grok、Gemini 这些——每个平台一套认证方式，每个都得单独充值对账，开发维护成本直接起飞。
-
-**这个仓库存在的意义很简单：**
-
-把市面上你能想到的、想不到的 AI 模型，全部聚合到一个统一的监控看板里，实时告诉你每个模型能不能用、响应快不快。同时对接 [www.aifast.club](https://www.aifast.club) 这个中转服务，让你一套 API Key 就能调用全部模型。
-
-说白了——**你不用再关心哪个模型走什么协议、哪个平台怎么充值、哪个 API 又挂了。** 全都帮你兜住了。
-
----
-
-## 功能亮点：不只是个看板
-
-我拉个清单，这项目到底能做什么：
-
-### 1. 实时状态监控
-
-看板上每个模型都标了颜色——绿的表示正常，红的有问题，黄的在喘气。你不用去挨个翻官方状态页，一个页面扫完 模型广场当前目录的状态。
-
-目前监控的指标包括：
-- **官方 API 状态** — 原始供应商服务是否正常
-- **国内直连可达性** — 从国内网络能不能正常访问
-- **响应延迟** — 首字响应时间 (TTFT)
-- **推荐接入方式** — 官方直连还是走中转
-
-### 2. 聚合 16+ 供应商的 模型广场当前目录
-
-这不是那种只接三五家的小打小闹。覆盖的供应商包括：
-
-**国际巨头：**
-- OpenAI（GPT-5.6 Sol / Terra / Luna、GPT-5.5 Pro、GPT Image 2 等）
-- Anthropic（Claude Sonnet 5、Claude Opus 4.8、Claude Fable 5 等）
-- Google（Gemini 3.5 Flash、Gemini 3.1 Pro、Gemini 3.1 Flash-Lite 等）
-- DeepSeek（V4 Pro、V4 Flash 等）
-- xAI（Grok 4.5、Grok 4.3、Grok 4.20 等）
-
-**国产模型：**
-- 阿里百炼通义千问（Qwen3.7-Max、Qwen3.7-Plus 等）
-- 豆包字节跳动（Doubao Seed 2.1 Pro（Turbo 维护中） 等）
-- 智谱 GLM（GLM-5、GLM-5 Flash、GLM-5.2 系列）— 17+ 个模型（官方文档已出现“迁移至 GLM-5.2”，状态看板已同步跟进。）
-- 月之暗面（Kimi K2.7 Code / Highspeed、Kimi K2.5 等）
-- MiniMax（MiniMax Max、MiniMax Turbo）— 13 个模型
-
-**图像 & 视频：**
-- Midjourney（v7 系列）— 14 个模型
-- Flux（Pro、Dev）— 8 个模型
-- 可灵 Kling（2.0、1.6）— 15 个模型
-
-**开源生态：**
-- Ollama — 19 个模型
-- Mistral — 3 个模型
-
-> 完整列表戳这里 👉 [全部 模型广场当前目录清单](https://kkwang4444.github.io/api-status/models)
-
-### 3. 一个 API 调全部
-
-不管你用 Python、curl、JavaScript 还是什么工具，统一走 OpenAI 兼容格式。base_url 设成 `https://www.aifast.club/v1`，换模型只需要改 model 名字。一套 Key 走天下。
-
-### 4. 多节点 绕过封锁
-
-Anthropic API 的可用性会受到地区、账号状态、供应商政策和网络环境影响。aifast 通过多节点路由改善连接稳定性，但不承诺绕过供应商风控，实际结果以请求响应为准。
-
-### 5. 智能路由 + 故障自动切换
-
-每个模型背后不是只有一个上游节点。aifast 维护了多节点冗余，如果一个上游挂了，自动切到另外一个，你那边完全无感。这也是为什么它的并发成功率会随模型、节点与请求时间变化。
-
----
-
-## 你要的模型这里都有
-
-下面挑几个重点模型说下当前的状态和价格。不是全部——全部开放型号你去看 [模型列表页](https://kkwang4444.github.io/api-status/models)。
-
-### 旗舰模型速览
-
-| 模型 | 用途 | 现状 |
-|:---|:---|:---:|
-| **Claude Opus 4.8** | 编程/复杂推理/Agent | ⚠️ 状态以模型广场和实际请求为准 |
-| **Claude Code** | 编程工具场景 | ⚠️ 先确认客户端与模型配置 |
-| **GPT-5.6 Sol** | 推理/编码/Agent | ✅ 模型广场已上架 | `gpt-5.6-sol` |
-| **GPT-5.6 Terra** | 均衡推理/编码 | ✅ 模型广场已上架 | `gpt-5.6-terra` |
-| **GPT-5.6 Luna** | 轻量任务 | ✅ 模型广场已上架 | `gpt-5.6-luna` |
-| **GPT-5.5 Pro** | 高阶推理 | ⚠️ 可用性以平台控制台和实际请求为准 |
-| **GPT-5.5** | 通用大语言模型 | ⚠️ 按任务需求选择 |
-| **DeepSeek V4 Pro** | 推理模型 | ⚠️ 状态以实际请求为准 |
-| **DeepSeek V4 Flash** | 高吞吐场景 | ⚠️ 状态以实际请求为准 |
-| **Gemini 3.1 Flash** | 快速推理 | ⚠️ 状态以实际请求为准 |
-| **Grok 4.5** | 通用推理与工具调用 | ⚠️ 官方型号；平台可用性以控制台为准 | 500K 上下文 |
-| **Grok 4.2** | 推理/非推理 | 🟢 官方正常，国内需中转 |
-| **Qwen3.7-Max** | 通用文本模型 | ⚠️ 较新版本请参考阿里云官方模型目录；平台可用性以控制台为准 |
-
-### 价格参考
-
-不是所有模型价格都一样，选之前看一眼心里有数：
-
-- **输入价格** 是指你发给模型的内容（prompt）按 token 计费
-- **输出价格** 是指模型生成的内容按 token 计费
-- M = 百万 tokens
-
-几个有代表性的：
-
-
-
-### 怎么选模型
-
-说句大实话——模型不是越贵越好，关键是"匹不匹配你的场景"：
-
-- **写代码、做 Agent** → `claude-code` 或 `claude-opus-4-8`。Claude 在编程和工具调用方面确实有两把刷子
-- **日常聊天、内容生成** → `gpt-5.5` 或 `gemini-3.1-flash-preview`，又快又稳
-- **高并发、低成本大批量处理** → `deepseek-v4-flash` 或 `gpt-5.4-nano`，价格能打到几分钱一次调用
-- **需要国产合规**（政府、国企项目）→ `qwen3.7-max` 或 `glm-5`，数据留在中国
-- **画图** → `gpt-image-2` 或 `midjourney-v7`，看你要什么风格
-- **视频生成** → `kling-2.0` 或 `grok-videos`
-
-刚开始不知道选哪个的话，先试 `claude-opus-4-8` 和 `deepseek-v4-flash` 两个——一个强一个便宜，覆盖了绝大部分场景。
-
----
-
-## 1 分钟上手：接入 www.aifast.club/v1
-
-接入这东西比你想的简单得多。不管你是写代码的、用 Cursor 写代码的、还是用 Dify 搭工作流的，本质就两件事：
-
-**1. 注册拿 Key**
-去 [www.aifast.club](https://www.aifast.club) 注册个账号，进控制台创建 API Key，复制。
-
-**2. 改 Base URL**
-把你工具或代码里的 API 地址改成：
-```
-https://www.aifast.club/v1
-```
-
-完事。就是这么简单。下面我展开写几个具体的场景。
-
----
-
-## 代码示例：从 Python 到 cURL
-
-不管你用什么语言，aifast 暴露的是标准 OpenAI 兼容接口，所以任何支持 OpenAI API 的 SDK 都能直接用。我挑了三种最常用的语言来演示。
-
-### 前提条件
-
-```
-pip install openai
-```
-
-就这么一个依赖。Node.js 的话 `npm install openai`。不需要装任何 aifast 专用的库。
-
-### Python（OpenAI SDK）
-
-最常见的用法，用 OpenAI 的 Python 库直接调：
+## 最小接入测试
 
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="sk-you...here"
+    api_key="your-api-key",
 )
 
-# 调用 Claude Opus 4.8
 response = client.chat.completions.create(
-    model="claude-opus-4-8",
-    messages=[{"role": "user", "content": "用通俗的语言解释一下量子计算"}]
+    model="gpt-5.6-terra",
+    messages=[{"role": "user", "content": "你好"}],
+    timeout=60,
 )
 print(response.choices[0].message.content)
 ```
 
-想换个模型？把 model 名字改成 `gpt-5.5`、`deepseek-v4-flash`、`qwen3.7-max` 之类的就行。**其他代码一个字都不用改。**
-
-### cURL
-
-适合在命令行里快速测试：
-
-```bash
-curl https://www.aifast.club/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer *** \
-  -d '{
-    "model": "gpt-5.5",
-    "messages": [{"role": "user", "content": "今天天气怎么样？"}]
-  }'
-```
-
-### 流式输出
-
-支持 OpenAI 的 SSE 流式协议，直接加 `stream: true`：
-
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    base_url="https://www.aifast.club/v1",
-    api_key="sk-you...here"
-)
-
-stream = client.chat.completions.create(
-    model="claude-opus-4-7",
-    messages=[{"role": "user", "content": "写一篇 500 字的短文"}],
-    stream=True
-)
-
-for chunk in stream:
-    if chunk.choices[0].delta.content:
-        print(chunk.choices[0].delta.content, end="")
-```
-
-### Function Calling / Tool Use
-
-如果你在用 Claude 或 GPT 的 tool use 功能，也是完全兼容的：
-
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    base_url="https://www.aifast.club/v1",
-    api_key="sk-you...here"
-)
-
-response = client.chat.completions.create(
-    model="claude-opus-4-8",
-    messages=[{"role": "user", "content": "帮我查一下北京和上海的天气"}],
-    tools=[{
-        "type": "function",
-        "function": {
-            "name": "get_weather",
-            "description": "获取指定城市的天气",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "city": {"type": "string"}
-                }
-            }
-        }
-    }]
-)
-```
-
-### Node.js
-
-```javascript
-import OpenAI from 'openai';
-
-const client = new OpenAI({
-  baseURL: 'https://www.aifast.club/v1',
-  apiKey: ***
-});
-
-const response = await client.chat.completions.create({
-  model: 'deepseek-v4-flash',
-  messages: [{ role: 'user', content: '讲个冷笑话' }]
-});
-
-console.log(response.choices[0].message.content);
-```
-
----
-
-## 接入各种第三方工具
-
-### Cursor（编程 IDE）
-
-很多人用 Cursor 写代码，想接入 Claude Opus 4.8 或者 GPT-5.5：
-
-1. 打开 Cursor → Settings → Models
-2. OpenAI API Base URL 改为 `https://www.aifast.club/v1`
-3. 填入你的 API Key
-4. 模型名填 `claude-code`（编程专用）、`claude-opus-4-8`（最强）、`gpt-5.5`（通用）
-
-推荐顺序：`claude-code` → `claude-opus-4-8` → `gpt-5.5`
-
-### Dify（AI 工作流）
-
-做企业内部 AI 应用、知识库、客服机器人的，Dify 很常见：
-
-1. Dify 后台 → Settings → Model Provider
-2. 添加自定义 API 提供商
-3. Base URL: `https://www.aifast.club/v1`
-4. 填你的 Key
-5. 模型列表会自动出现
-
-推荐：`deepseek-v4-flash`（高吞吐便宜）、`qwen3.7-max`（国产合规）、`claude-opus-4-8`（复杂工作流）
-
-### LobeChat / Chatbox / Cherry Studio
-
-这类聊天客户端配置极度相似：
-
-1. 设置 → 语言模型 → OpenAI 兼容模式
-2. API 地址: `https://www.aifast.club/v1`
-3. 填入 API Key
-4. 手动添加你想要用的模型名（比如 `gpt-5.5`、`gemini-3.1-flash-preview`）
-
-### OpenWebUI
-
-自建 AI 聊天界面的同学：
-
-```bash
-export OPENAI_API_BASE_URL=https://www.aifast.club/v1
-```
-
-或者在 UI 的设置面板里直接填。
-
-### n8n（自动化工作流）
-
-用 HTTP Request 节点：
-
-- URL: `https://www.aifast.club/v1/chat/completions`
-- Header: `Authorization: Bearer ***
-- Body: 标准的 OpenAI chat completions JSON
-
----
-
-## OpenClaw 一键部署：你的专属 AI 智能体
-
-说到部署，必须提一下 OpenClaw。
-
-[OpenClaw](https://www.aifast.club/openclaw) 是跑在 [www.aifast.club](https://www.aifast.club) 上面的一个 AI 智能体一键部署平台。你不需要自己配服务器、不用管 Docker、不用搞什么反向代理——点几下鼠标，几分钟就能上线一个自己的 AI 智能体。
-
-**它能做什么？**
-- 给你一个能独立运行的 AI Agent，可以接 API、查数据库、发邮件
-- 自动调用 aifast 后台的 模型广场当前目录，你选哪个用哪个
-- 多节点智能调度，不会因为一个节点挂了就崩
-- 控制台一键管理，所见即所得
-
-**适合谁？**
-- 想搭一个公司内部 AI 助手但不想从头写后端的人
-- 想快速验证 AI 产品想法、不想在基础设施上花时间的创业者
-- 想给客户部署私有 AI 服务的开发者
-
-> 👉 [https://www.aifast.club/openclaw](https://www.aifast.club/openclaw) — 体验一键部署
-
----
-
-## 和官方直连、其他中转比，差在哪
-
-我知道你肯定在对比各个方案，我直接把差异摆桌面上：
-
-| 维度 | 官方直连（自己搭代理） | 普通中转站 | **www.aifast.club** |
-|:---|:---:|:---:|:---:|
-| 国内直连 | ❌ 必须代理 | ✅ 部分支持 | ✅ 国内节点稳定直连 |
-| 首字响应 | 1.5s – 3s | 0.8s – 1.2s | **0.2s – 0.4s** |
-| 支付 | 海外信用卡 | 部分支持国内 | **微信/支付宝/银行卡** |
-| 模型数量 | 单一供应商 | 几十到一百出头 | **以模型广场当前目录为准** |
-| 多节点 | ❌ | ❌ | ✅ |
-| 中文客服 | ❌ | 有限 | **实时在线** |
-| 封号风险 | ⚠️ 极高 | 低 | **极低** |
-
-**为什么 aifast 更快？** 三个原因：
-1. 国内专属加速节点，不走境外代理绕路
-2. HTTP/2 多路复用长连接，减少握手损耗
-3. 智能路由自动选延迟最低的上游
-
-**为什么 aifast 更稳？** 也是三个原因：
-1. 多供应商冗余，一个上游挂了自动切到另一个
-2. 多节点 池不被封
-3. 多地部署，单点故障不影响整体
-
-你跟 OpenRouter 比的话更明显——OpenRouter 在国内需要代理才能访问、只能用海外卡支付、没中文客服、模型只有 200 多个。aifast 这些短板全补上了。
-
----
-
-## 常见问题
-
-### 用中转站会被封号吗？
-
-无法对所有账号和模型作绝对保证。平台通过多节点路由改善连接稳定性，模型可用性仍取决于供应商政策、账号状态和实时网络环境。
-
-### 价格比官方贵吗？
-
-**真不贵。** 大部分模型跟官方价格持平。DeepSeek V4 Flash 这种国产模型，因为 aifast 有国内直连节点，甚至比你自己通过海外代理调官方还便宜。而且你算算省下的时间——不用折腾代理、不用为每个平台单独注册充值，这些隐性成本远大于那点差价。
-
-### API 返回 401 怎么办？
-
-先检查三件事：
-1. API Key 有没有复制完整（注意前面的 sk- 前缀）
-2. Base URL 有没有写对：`https://www.aifast.club/v1`（不是 /v1/，也不是少了 s 的 http）
-3. 如果上面都没问题，去控制台重新生成一个 Key
-
-### 支持流式输出吗？
-
-**支持。** 和 OpenAI 的 SSE 标准完全一致，`stream: true` 就行。上面有 Python 示例代码。
-
-### 支持 Vision 识图吗？
-
-**支持。** Claude Opus 4.8 / Opus 4.7 / Sonnet 4.6、GPT-5.5 都支持图像输入。代码里把图片用 base64 编码放 message content 里就行，和 OpenAI 的标准格式一样。
-
-### 支持 Function Calling 和 Tool Use 吗？
-
-**支持。** Claude 和 GPT 的 tool use 功能都兼容了。还是上面那句——一套接口跑所有模型。
-
-### 有速率限制吗？
-
-不同模型有不同限制，但正常使用完全够。真需要高并发的可以联系客服提配额，企业用户还能签 SLA。
-
-### 可以接 Cursor 吗？
-
-**完全可以。** 上面专门有一段写 Cursor 配置。`claude-code` 模型在 Cursor 里体验非常好，写代码的朋友可以重点试试。
-
-### 企业能用吗？
-
-支持对公充值、SLA 保障、专属通道。直接联系客服聊就行。
-
----
-
-## 一起聊聊
-
-有问题、有建议、或者就是想找人聊聊 AI 的，欢迎加群：
-
-📱 **aifast.club 用户交流群** — 交流 API 使用心得、模型动态、问题互助
-[Telegram 群组](https://t.me/+WYrmge-lYRFhOTFl)
-
----
-
-## 相关链接
-
-| 链接 | 说明 |
-|:---|:---|
-| [🌐 www.aifast.club](https://www.aifast.club) | 官网 / 注册 / 控制台 |
-| [📊 实时状态看板](https://kkwang4444.github.io/api-status/) | 模型广场当前目录实时连接状态 |
-| [🏪 全部模型列表](https://kkwang4444.github.io/api-status/models) | 完整模型清单与价格 |
-| [📖 开发者接入指南](https://kkwang4444.github.io/api-status/guide) | Cursor/Dify/LobeChat 详细配置 |
-| [❓ 常见问题](https://kkwang4444.github.io/api-status/faq) | 封号/支付/技术解答 |
-| [⚖️ 性能对比](https://kkwang4444.github.io/api-status/compare) | 各中转站横向对比 |
-| [🚀 OpenClaw 一键部署](https://www.aifast.club/openclaw) | 专属 AI 智能体 |
-
----
-
-## 相关仓库
-
-| 仓库 | 说明 |
-|:---|:---|
-| [📊 api-status](https://github.com/KKWANG4444/api-status) | 模型广场当前目录实时状态看板（就是这里） |
-| [📈 AI-API-Stability-Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | Claude/GPT 稳定性追踪 |
-| [📖 ai-api-proxy-china-guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | AI 中转站完整指南 |
-
----
-
-<p align="center">
-  <strong>一个接口，一把 Key，接入全球 模型广场当前目录。</strong><br>
-  兼容接口 · 国内支付 · 模型接入与状态参考
-</p>
-
-
-## 核心项目导航
-
-| 你要解决的问题 | 入口 |
-|:---|:---|
-| 复制可运行的接入代码 | [AI API 接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide) |
-| 判断模型当前是否可用 | [API 状态看板](https://github.com/KKWANG4444/api-status) |
-| 比较官方、自建与托管方案 | [国内大模型 API 方案](https://github.com/KKWANG4444/llm-api-proxy-china) |
-| 查看阶段性稳定性观察 | [稳定性追踪](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
-| 查看全部项目 | [KKWANG4444 Profile](https://github.com/KKWANG4444) |
-| 测试 OpenAI 兼容接口 | [www.aifast.club](https://www.aifast.club) |
-
-<p align="center">
-  <small>Proudly maintained by the 2026 AI Developer Community.<br>
-  Sponsored by <a href="https://www.aifast.club">www.aifast.club</a> — 一个接口，接入全球 模型广场当前目录。</small>
-</p>
-
-*📖 更多资源：[AI中转站完整指南](https://github.com/KKWANG4444/llm-api-proxy-china) · [API稳定性追踪](https://github.com/KKWANG4444/AI-API-Stability-Tracker) · [AI中转站推荐](https://github.com/KKWANG4444/ai-api-proxy-china-guide)*
-
----
-
-**⭐ 觉得有用？点个 Star 支持一下 →** [github.com/KKWANG4444/api-status](https://github.com/KKWANG4444/api-status)
+上线前应验证：
+
+1. 当前网络能否访问接口；
+2. API Key 和精确模型 ID；
+3. 普通文本与流式输出；
+4. 项目需要的工具调用或图片能力；
+5. 429、超时、5xx 和维护状态的不同处理策略。
+
+## 页面导航
+
+- [状态与维护参考](https://kkwang4444.github.io/api-status/)
+- [模型目录](https://kkwang4444.github.io/api-status/models/)
+- [开发者接入指南](https://kkwang4444.github.io/api-status/guide/)
+- [常见问题](https://kkwang4444.github.io/api-status/faq/)
+- [接入方案对比](https://kkwang4444.github.io/api-status/compare/)
+
+## 口径说明
+
+- 不硬编码模型总数；倍率配置条目不等于当前可用模型数量。
+- 不发布模型价格；账户与定价以 [www.aifast.club](https://www.aifast.club) 当前页面为准。
+- 不承诺固定延迟、成功率、节点能力或 SLA。
+- 本项目由 AI快站运营方维护，与平台存在利益关系。

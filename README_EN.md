@@ -1,88 +1,59 @@
-# AI API Status Dashboard: Availability and Latency Observations
+# AI API Model Status and Integration Reference
 
-> Check model availability before wiring it into production. The dashboard publishes time-bound observations and setup links without presenting snapshots as an SLA.
->
-> **Use it now:** [open dashboard](https://kkwang4444.github.io/api-status/) · [browse models](https://kkwang4444.github.io/api-status/models/) · [copy setup](#quick-setup)
+> Marketplace listings, maintenance notes and OpenAI-compatible integration examples. This project does not present historical snapshots as real-time monitoring, an SLA, fixed latency or a performance ranking.
 
-[![Live](https://img.shields.io/badge/Live-Online-brightgreen)](https://kkwang4444.github.io/api-status/)
-[![Updated](https://img.shields.io/badge/Updated-2026--07--12-blue)](https://github.com/KKWANG4444/api-status)
-[![Models](https://img.shields.io/badge/Models-current-FF6B35)](https://www.aifast.club)
+[![Website](https://img.shields.io/badge/Website-www.aifast.club-FF6B35)](https://www.aifast.club)
+[![Status reference](https://img.shields.io/badge/Status-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
+[![Reviewed](https://img.shields.io/badge/Reviewed-2026--07--13-green)](https://github.com/KKWANG4444/api-status)
 
-> **Published status observations for models in the current marketplace catalog across 16+ providers.** Tracks connection rates, latency, and China accessibility. Availability data is a published snapshot and may vary over time.
+[中文](README.md) · [Gitee mirror](https://gitee.com/kkwwww4444/api-status)
 
-## 🚦 Live Dashboard
+## Current marketplace examples
 
-![API Status Dashboard](assets/img/api-status-screenshot.png)
+These IDs were checked against AIFast's public model configuration. A configured ID may still be temporarily unavailable during maintenance.
 
-👉 **[View Live Dashboard](https://kkwang4444.github.io/api-status/)**
+| Provider | Example model IDs |
+|:---|:---|
+| OpenAI | `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
+| Anthropic | `claude-sonnet-5`, `claude-opus-4-8`, `claude-fable-5` |
+| xAI | `grok-4.5`, `grok-4.3`, `grok-4-20-reasoning` |
+| Google | `gemini-3.5-flash`, `gemini-3.1-pro-preview` |
+| DeepSeek | `deepseek-v4-pro`, `deepseek-v4-flash` |
+| Alibaba | `qwen3.7-max`, `qwen3.7-plus` |
+| Zhipu | `glm-5.2` |
+| ByteDance | `doubao-seed-2-1-pro-260628` |
+| Moonshot | `kimi-k2.7-code` |
 
-## Why This Exists
+Doubao Seed 2.1 Turbo is not shown as available because the 2026-07-09 AIFast notice says it is temporarily offline for maintenance.
 
-If you're a developer in China (or serving Chinese users), you know the pain:
-- OpenAI direct access may be limited on some mainland China networks
-- Anthropic regional and risk controls detects data center proxies
-- DeepSeek's official API is unreliable under load
-
-This dashboard monitors which models are accessible from China via proxy gateways, updated on the project maintenance schedule.
-
-## Supported Providers
-
-| Provider | Models | Status |
-|:---|:---:|:---:|
-| **OpenAI** | 103 (GPT-5.5, o4, etc.) | 🟢 |
-| **Anthropic** | 20 (Claude Sonnet 5, Opus 4.8, Code, etc.) | 🟢 |
-| **xAI (Grok)** | 26 (Grok 4.5, Grok 4.2) | 🟢 |
-| **Google** | 55 (Gemini 3.1 Flash, Gemini 3) | 🟢 |
-| **DeepSeek** | 28 (V4 Pro, V4 Flash) | 🟢 |
-| **Alibaba (Qwen)** | 90 (Qwen3.7-Max, Qwen-Max) | 🟢 |
-| **ByteDance** | 21 (Doubao Seed 2.1 Pro（Turbo 维护中）) | 🟢 |
-| **Zhipu (GLM)** | 17+ (GLM-5, GLM-5.2) | 🟢 |
-| **Others** | 200+ (Kimi, Yi, Mistral, Cohere, etc.) | 🟢 |
-
-## Availability Snapshot
-
-Model status and latency change over time. Use the live dashboard and test from your own environment before production deployment.
-
-## Quick Setup
+## Minimal API test
 
 ```python
-import openai
+from openai import OpenAI
 
-client = openai.OpenAI(
+client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="your-api-key"
+    api_key="your-api-key",
 )
 
-# Use any of the current marketplace catalog
 response = client.chat.completions.create(
-    model="claude-sonnet-5",
-    messages=[{"role": "user", "content": "Test connection"}]
+    model="gpt-5.6-terra",
+    messages=[{"role": "user", "content": "Hello"}],
+    timeout=60,
 )
+print(response.choices[0].message.content)
 ```
 
-## Developer Guide
+Before production use, test the exact model from the target network. Verify text, streaming, required tools or image inputs, and separate handling for 429, timeout, 5xx and maintenance responses.
 
-- **[Integration Guide](https://kkwang4444.github.io/api-status/guide/)** — Cursor, Dify, LobeChat, Claude Code setup
-- **[FAQ](https://kkwang4444.github.io/api-status/faq/)** — Common issues and solutions
-- **[Model List](https://kkwang4444.github.io/api-status/models/)** — Full model pricing and details
+## Pages
 
-## Sponsored by
+- [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
+- [Model directory](https://kkwang4444.github.io/api-status/models/)
+- [Integration guide](https://kkwang4444.github.io/api-status/guide/)
+- [FAQ](https://kkwang4444.github.io/api-status/faq/)
+- [Integration options](https://kkwang4444.github.io/api-status/compare/)
 
-[www.aifast.club](https://www.aifast.club) — One OpenAI-compatible endpoint; model availability varies by region and time.
+## Disclosure
 
-
-## Project map
-
-| Need | Resource |
-|:---|:---|
-| Copy working integration code | [AI API gateway guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) |
-| Check current model conditions | [API status dashboard](https://github.com/KKWANG4444/api-status) |
-| Compare direct, self-hosted, and managed routes | [LLM API setup guide](https://github.com/KKWANG4444/llm-api-proxy-china) |
-| Review time-bound stability observations | [Stability tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
-| Test an OpenAI-compatible endpoint | [www.aifast.club](https://www.aifast.club) |
-
-> If this saved you debugging time, star the repository so the guide is easier for the next developer to find.
-
-## License
-
-MIT
+This project is maintained by the operator of AIFast. It does not publish a fixed model count or model pricing. Check [www.aifast.club](https://www.aifast.club) for current marketplace, account and maintenance information.

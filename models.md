@@ -1,119 +1,50 @@
 ---
 layout: default
-title: 全部模型列表 - 模型广场当前目录完整清单与价格 | ChatGPT Claude 大模型 API
+title: AI 模型目录 - 当前模型 ID 与维护说明
 permalink: /models/
 ---
 
-# 🏪 全部模型列表
+# 🏪 AI 模型目录参考
 
-**[www.aifast.club](https://www.aifast.club) 聚合 16+ 供应商、共 模型广场当前目录，一个 API 统一接入。**
+下列 ID 来自 AI快站公开模型配置，复核日期为 **2026-07-13**。配置存在不等于模型持续在线，实际可用性以模型广场、最新公告与当前请求为准。
 
----
+| 供应商 | 模型 ID 示例 |
+|:---|:---|
+| OpenAI | `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
+| Anthropic | `claude-sonnet-5`、`claude-opus-4-8`、`claude-fable-5` |
+| xAI | `grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
+| Google | `gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
+| Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
+| Zhipu | `glm-5.2` |
+| ByteDance | `doubao-seed-2-1-pro-260628` |
+| Moonshot | `kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
 
-## 🤖 国际巨头
+## 维护提醒
 
-### OpenAI — 103 个模型
+- `doubao-seed-2-1-turbo-260628`：2026-07-09 公告显示维护中、暂时下线。
+- 模型 ID 对点号、连字符和日期后缀敏感，应从模型广场复制。
+- 本页不提供模型价格。AI快站有自己的定价体系，请以控制台为准。
+- 不同模型对工具调用、图片、结构化输出和采样参数的支持并不相同。
 
-| 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
-|:---|:---:|:---:|:---:|:---|
-| `gpt-5.6-sol` | 推理/编码 | — | — | GPT-5.6 Sol |
-| `gpt-5.6-terra` | 通用 | — | — | GPT-5.6 Terra |
-| `gpt-5.6-luna` | 轻量 | — | — | GPT-5.6 Luna |
-| `gpt-4.1` | 文本 | — | — | 稳定版 |
-| `gpt-4o` | 多模态 | — | — | 多模态通用 |
-| `o4` | 文本 | — | — | 推理模型 |
-| `o4-mini` | 文本 | — | — | 推理轻量版 |
-| `dall-e-3` | 图像 | — | — | 图像生成 |
+## 使用示例
 
-> 另有 gpt-5.4-mini-2026-03-17、gpt-5.4-nano-2026-03-17 等时间戳版本。
+```bash
+curl https://www.aifast.club/v1/chat/completions \
+  -H "Authorization: Bearer $AIFAST_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "gpt-5.6-terra",
+    "messages": [{"role": "user", "content": "你好"}]
+  }'
+```
 
-### Anthropic (Claude) — 20 个模型
-
-| 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
-|:---|:---:|:---:|:---:|:---|
-| `claude-sonnet-4-6` | 文本 | — | — | 性价比首选，主力模型 |
-| `claude-code` | 文本 | — | — | 编程专用智能体 |
-| `claude-haiku-4-5-20251001` | 文本 | — | — | 轻量快速 |
-
-### Google Gemini — 55 个模型
-
-| 模型名 | 类型 | 说明 |
-|:---|:---:|:---|
-| `gemini-3.5-flash` | 文本/多模态 | Gemini 3.5 Flash |
-| `gemini-3.1-pro-preview` | 文本/多模态 | Gemini 3.1 Pro Preview |
-| `gemini-3-flash-preview` | 文本 | 主力模型 |
-| `gemini-3-pro-preview` | 文本 | 专业推理 |
-| `gemini-2.5-pro` | 文本 | 上一代旗舰 |
-| `gemini-2.0-flash` | 文本 | 轻量版 |
-| `gemini-cli` | 文本 | CLI 工具 |
-
-### DeepSeek — 28 个模型
-
-| 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
-|:---|:---:|:---:|:---:|:---|
-| `deepseek-r1` | 文本 | — | — | 推理模型 |
-| `deepseek-v3` | 文本 | — | — | 上一代 |
-
-
-### xAI (Grok) — 26 个模型
-
-| 模型名 | 类型 | 输入价格 | 输出价格 | 说明 |
-|:---|:---:|:---:|:---:|:---|
-| `grok-4.5` | 文本 | — | — | xAI 官方型号，500K 上下文；勿与 Grok 4.20 或 Grok 4.3 混写 |
-| `grok-3` / `grok-3-mini` / `grok-3-vision` | 多模态 | — | — | 上一代系列 |
-
----
-
-## 🇨🇳 国产模型
-
-### 阿里云百炼 (通义千问) — 90 个模型
-
-| 模型名 | 类型 | 说明 |
-|:---|:---:|:---|
-| `qwen-max` | 文本 | 通义千问旗舰版 |
-| `qwen-plus` | 文本 | 增强版 |
-| `qwen-turbo` | 文本 | 快速版 |
-| `qwen-vl-max` | 多模态 | 视觉理解 |
-
-### 豆包 (字节跳动) — 21 个模型
-
-| 模型名 | 类型 | 说明 |
-|:---|:---:|:---|
-| `doubao-seed-2-0-code-preview-260215` | 文本 | 代码专用 |
-| `doubao-seed-2-1-pro-260628` | 文本 | 旗舰版 |
-| `doubao-seed-2-0-lite-260428` | 文本 | 轻量版 |
-
-### 其他国产模型
-
-| 供应商 | 模型数 | 代表模型 |
-|:---|:---:|:---|
-| **智谱 GLM** | 以控制台为准 | `glm-5.2`, `glm-5.1`, `glm-5` |
-| **Moonshot (月之暗面)** | 11 | `kimi-k2.7-code`, `kimi-k2.7-code-highspeed`, `kimi-k2.5` |
-| **MiniMax** | 13 | `MiniMax-M3`, `MiniMax-M2.7-highspeed` |
-
----
-
-## 🎨 图像 & 视频生成
-
-| 供应商 | 模型数 | 代表模型 |
-|:---|:---:|:---|
-| **Midjourney** | 14 | `midjourney-v7` — 图像生成旗舰 |
-| **Flux** | 8 | `flux-pro`, `flux-dev` — 图像生成 |
-| **可灵 (Kling)** | 15 | `kling-2.0`, `kling-1.6` — 视频生成 |
-
----
-
-## 🦙 开源模型生态
-
-| 供应商 | 模型数 | 代表模型 |
-|:---|:---:|:---|
-| **Ollama** | 19 | `llama-4`, `mistral-large` |
-| **Mistral** | 3 | Mistral 系列 |
+如果返回模型不存在，请先检查 ID 是否拼写正确，再查看最新维护公告。
 
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>立即体验 模型广场当前目录 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.club"><strong>查看当前模型广场 → www.aifast.club</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

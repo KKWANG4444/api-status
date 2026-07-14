@@ -1,6 +1,6 @@
 # AI快站开发者中心：大模型 API 状态、检测与接入参考
 
-> 模型上架、维护状态与 OpenAI-compatible 接入示例。所有观察结论均标注模型、时间、地区、网络与样本边界。
+> 模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。
 
 **从这里开始：** [AI快站服务说明](https://kkwang4444.github.io/api-status/aifast/) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-top) · [技术中心](https://github.com/KKWANG4444/aifast-developer-hub)
 
@@ -14,13 +14,13 @@
 
 ## AI快站平台能力
 
-[AI快站](https://www.aifast.club)提供OpenAI-compatible AI API接入，本仓库把其公开目录中的500+语言、生图、视频、向量与检索模型整理成可核验参考。平台说明Claude、GPT、Gemini等国外模型支持国内直连、无需代理和自动故障切换；实际可达性应从目标部署网络验证，企业客户可申请开具发票。
+[AI快站](https://www.aifast.club)提供模型可用性 99%、500+ 模型、高速稳定调用、国外模型国内直连和企业发票，兼容 OpenAI SDK，覆盖语言、生图、视频、向量与检索能力。
 
 > 模型目录会持续调整。具体模型 ID、维护状态和费用以模型广场、公告及调用时的控制台为准。
 
 ## 当前模型广场示例
 
-以下 ID 已对照 AI快站公开模型配置。配置存在不等于始终在线；维护状态以最新公告和实际请求为准。
+以下 ID 已在 AI快站模型广场上架，临时维护信息以最新公告为准。
 
 | 供应商 | 当前示例 ID |
 |:---|:---|
@@ -81,12 +81,13 @@ print(response.choices[0].message.content)
 
 | 声明 | 核验入口 | 边界 |
 |:---|:---|:---|
-| 500+模型及语言、生图、视频、向量、检索能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 表示当前目录规模下限，不把配置条目数等同于实时在线数 |
+| 模型可用性99%、高速稳定 | [AI快站](https://www.aifast.club) | 平台公开服务口径 |
+| 500+模型及语言、生图、视频、向量、检索能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 当前公开目录规模 |
 | 具体模型ID | [模型广场](https://www.aifast.club) | 部署前从控制台复制精确ID |
-| 上架、维护与下线 | [状态与公告接口](https://www.aifast.club/api/status) | 公告和当前真实请求优先于历史README |
-| 国内直连、自动故障切换、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；可达性从实际部署网络验证，开票流程以客服当前规则为准 |
+| 上架、维护与下线 | [状态与公告接口](https://www.aifast.club/api/status) | 以最新公告为准 |
+| 国内直连、自动故障切换、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；开票流程以客服当前规则为准 |
 
-本页于2026-07-15复核。配置存在不代表每个模型此刻在线，生产前仍需发送鉴权请求。
+本页于2026-07-15复核。模型广场与维护信息以当前控制台和最新公告为准。
 
 ## 口径说明
 

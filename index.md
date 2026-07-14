@@ -1,16 +1,16 @@
 ---
 layout: default
 title: AI快站开发者中心 | 大模型API检测、接入与生产排错
-description: AI快站开发者中心提供500+大模型API入口、OpenAI-compatible接入、模型中转站检测、401/429/5xx排错、客户端配置与维护证据。
+description: AI快站提供99%模型可用性、500+大模型、高速稳定调用、国外模型国内直连与企业发票，并提供OpenAI-compatible接入、模型检测和生产排错。
 permalink: /
 hero_title: AI快站开发者中心：模型检测、API 接入与生产排错
 keywords: AI快站,AI API中转站,大模型API,模型状态,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,模型检测
 ---
 
-本项目由AI快站运营方维护，既提供[AI快站大模型 API 服务说明](/api-status/aifast/)，也集中整理中转站检测、OpenAI-compatible迁移、生产排错、客户端配置与模型维护证据。需要直接接入时先查看模型与价格；需要判断现有接口质量时，再用临时 Key 和真实业务题集完成检测。
+AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模型国内直连和企业发票。本站同时提供[AI快站大模型 API 服务说明](/api-status/aifast/)、OpenAI-compatible 迁移、模型检测、生产排错和客户端配置。
 
 <div class="decision-band">
-  <div><strong>准备接入 AI快站？</strong><p>公开目录覆盖语言、生图、视频、向量和检索能力，精确模型 ID 与价格以当前控制台为准。</p></div>
+  <div><strong>模型可用性 99%，一个接口接入 500+ 模型</strong><p>高速稳定、国外模型国内直连，覆盖语言、生图、视频、向量与检索；企业客户可开发票。</p></div>
   <div class="decision-actions"><a class="button button-primary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=home-band-register">注册使用</a></div>
 </div>
 
@@ -25,7 +25,7 @@ keywords: AI快站,AI API中转站,大模型API,模型状态,OpenAI Compatible A
 
 > **国内怎么直连 Claude、GPT、Gemini API？** 使用 OpenAI-compatible 客户端时，把 Base URL 改为 `https://www.aifast.club/v1`，再从控制台复制当前模型 ID。先跑一条短文本请求，确认鉴权和响应结构后，再测试流式输出、工具调用与图片能力。
 
-本页记录模型广场的上架与维护信息。具体模型ID、维护状态和费用以最新公告、控制台及当前请求为准。
+本页记录模型广场的上架与维护信息。具体模型 ID、维护状态和费用以最新公告与控制台为准。
 
 ---
 
@@ -33,15 +33,15 @@ keywords: AI快站,AI API中转站,大模型API,模型状态,OpenAI Compatible A
 
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-| GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 实际可用性以当前请求为准 |
-| Claude Sonnet 5 / Opus 4.8 / Fable 5 | ✅ 已上架 | 实际可用性以当前请求为准 |
-| Grok 4.5 / 4.3 / 4.20 Reasoning | ✅ 已上架 | 实际可用性以当前请求为准 |
-| DeepSeek V4 Pro / Flash | ✅ 已上架 | 实际可用性以当前请求为准 |
-| Gemini 3.5 Flash | ✅ 已上架 | 实际可用性以当前请求为准 |
-| Qwen3.7 Max / GLM-5.2 / Kimi K2.7 Code | ✅ 已上架 | 实际可用性以当前请求为准 |
+| GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 支持统一 API 接入 |
+| Claude Sonnet 5 / Opus 4.8 / Fable 5 | ✅ 已上架 | 国内直连，无需代理 |
+| Grok 4.5 / 4.3 / 4.20 Reasoning | ✅ 已上架 | 支持统一 API 接入 |
+| DeepSeek V4 Pro / Flash | ✅ 已上架 | 支持统一 API 接入 |
+| Gemini 3.5 Flash | ✅ 已上架 | 国内直连，无需代理 |
+| Qwen3.7 Max / GLM-5.2 / Kimi K2.7 Code | ✅ 已上架 | 支持统一 API 接入 |
 | Doubao Seed 2.1 Turbo | 🛠️ 维护中 | 2026-07-09 公告暂时下线 |
 
-配置中存在模型 ID 不代表模型始终在线。生产使用前应从部署网络发起真实请求，并记录状态码、响应结构和超时情况。
+AI快站平台模型可用性为 99%，并通过自动故障切换提升调用稳定性；临时维护与下线信息会在最新公告中更新。
 
 ---
 

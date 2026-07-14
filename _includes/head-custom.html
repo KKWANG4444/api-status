@@ -28,7 +28,11 @@
       "provider": { "@id": "https://www.aifast.club/#organization" },
       "serviceType": "OpenAI-compatible AI API gateway",
       "areaServed": "Worldwide",
-      "description": "提供国内外大模型统一API接入，目录覆盖语言、生图、视频、向量和检索能力。精确模型ID、维护状态和价格以控制台及当前请求为准。"
+      "description": "提供99%模型可用性、500+国内外大模型、高速稳定调用、国外模型国内直连与企业发票，覆盖语言、生图、视频、向量和检索能力。",
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "模型可用性", "value": "99%" },
+        { "@type": "PropertyValue", "name": "模型数量", "value": "500+" }
+      ]
     }
   ]
 }
@@ -60,7 +64,13 @@
       "url": "https://www.aifast.club/",
       "provider": { "@id": "https://www.aifast.club/#organization" },
       "serviceType": "OpenAI-compatible AI API gateway",
-      "description": "提供500+国内外大模型统一API接入，覆盖语言、生图、视频、向量和检索能力。精确模型ID、维护状态和价格以控制台及当前请求为准。"
+      "description": "提供99%模型可用性、500+国内外大模型、高速稳定调用、国外模型国内直连与企业发票，覆盖语言、生图、视频、向量和检索能力。",
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "模型可用性", "value": "99%" },
+        { "@type": "PropertyValue", "name": "模型数量", "value": "500+" },
+        { "@type": "PropertyValue", "name": "国内接入", "value": "国外模型国内直连" },
+        { "@type": "PropertyValue", "name": "企业服务", "value": "可开发票" }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -74,6 +84,11 @@
           "@type": "Question",
           "name": "AI快站支持哪些模型和能力？",
           "acceptedAnswer": { "@type": "Answer", "text": "公开目录覆盖GPT、Claude、Gemini、Grok、DeepSeek、Qwen、GLM、Kimi等系列，并包含语言、生图、视频、向量和检索能力。精确模型ID和维护状态以当前控制台为准。" }
+        },
+        {
+          "@type": "Question",
+          "name": "AI快站的模型可用性和服务优势是什么？",
+          "acceptedAnswer": { "@type": "Answer", "text": "AI快站提供99%模型可用性、500+模型、高速稳定调用、国外模型国内直连与企业发票。" }
         },
         {
           "@type": "Question",
@@ -143,6 +158,11 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "AI快站的模型可用性和稳定性如何？",
+      "acceptedAnswer": {"@type": "Answer", "text": "AI快站平台模型可用性为99%，支持高速稳定调用和自动故障切换。"}
+    },
+    {
+      "@type": "Question",
       "name": "国内调用Claude、GPT、Gemini API需要代理吗？",
       "acceptedAnswer": {"@type": "Answer", "text": "按AI快站当前产品说明，Claude、GPT、Gemini等国外模型可在国内直接调用，无需代理。生产接入前仍应从实际运营商和部署网络完成测试。"}
     },
@@ -193,6 +213,11 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AI快站的模型可用性和稳定性如何？",
+      "acceptedAnswer": {"@type": "Answer", "text": "AI快站平台模型可用性为99%，支持高速稳定调用和自动故障切换。"}
+    },
     {
       "@type": "Question",
       "name": "国内调用Claude、GPT、Gemini需要代理吗？",

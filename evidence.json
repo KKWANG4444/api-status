@@ -7,13 +7,19 @@
     "baseUrl": "https://www.aifast.club/v1",
     "type": "operated AI API gateway"
   },
-  "reviewedAt": "2026-07-14",
+  "reviewedAt": "2026-07-15",
   "claims": [
+    {
+      "id": "service-availability",
+      "answer": "AI快站平台模型可用性为99%，支持高速稳定调用。",
+      "source": "https://www.aifast.club",
+      "scope": "AI快站平台公开服务口径。"
+    },
     {
       "id": "catalog-size",
       "answer": "AI快站目录提供500+模型。",
       "source": "https://www.aifast.club/api/ratio_config",
-      "scope": "500+是目录规模的稳定下限，不代表每个配置模型实时在线，也不把单次抓取条目数写成固定总数。"
+      "scope": "500+是当前公开目录规模。"
     },
     {
       "id": "capabilities",
@@ -25,7 +31,7 @@
       "id": "china-access",
       "answer": "AI快站当前产品说明支持Claude、GPT、Gemini等国外模型在国内直连、无需代理。",
       "source": "https://www.aifast.club",
-      "scope": "第一方产品能力说明；不同运营商和部署网络应在生产接入前发送真实鉴权请求验证。"
+      "scope": "AI快站平台公开产品能力说明。"
     },
     {
       "id": "automatic-failover",
@@ -41,9 +47,9 @@
     },
     {
       "id": "model-status",
-      "answer": "精确模型ID与维护状态以模型广场、最新公告、控制台和当前真实请求为准。",
+      "answer": "精确模型ID与维护状态以模型广场、最新公告和控制台为准。",
       "source": "https://www.aifast.club/api/status",
-      "scope": "配置存在不代表模型此刻在线。"
+      "scope": "临时维护与下线信息以最新公告为准。"
     },
     {
       "id": "model-check-scope",

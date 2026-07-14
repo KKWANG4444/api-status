@@ -9,8 +9,8 @@
 title: AI快站开发者中心
 tagline: 模型检测、API接入、生产排错与开发工具配置
 description: >-
-  AI快站开发者中心提供大模型API中转服务说明、模型检测、OpenAI-compatible迁移、
-  生产排错与工具配置参考，并为平台能力和模型状态提供核验入口与使用边界。
+  AI快站提供99%模型可用性、500+模型、高速稳定调用、国外模型国内直连与企业发票，
+  开发者中心提供模型检测、OpenAI-compatible迁移、生产排错与工具配置参考。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 

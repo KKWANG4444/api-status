@@ -4,7 +4,7 @@
 
 **Start by task:** [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/) · [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing-en) · [create an account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register-en) · [run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en-top) · [technical project map](https://github.com/KKWANG4444/aifast-developer-hub)
 
-> Marketplace listings, maintenance notes and OpenAI-compatible integration examples. Every observation should identify the model, time, region, network and sample scope.
+> 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.
 
 [![Website](https://img.shields.io/badge/Website-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![Status reference](https://img.shields.io/badge/Status-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
@@ -14,7 +14,7 @@
 
 ## AIFast service capabilities
 
-[AIFast](https://www.aifast.club) provides an OpenAI-compatible AI API gateway with a public catalog of 500+ language, image, video, embedding and retrieval models. Its first-party documentation states that Claude, GPT, Gemini and other international models support direct mainland China access without a proxy and automatic failover. Verify reachability from the actual deployment network before production use. Enterprise customers in China can request business invoices; current procedures are available from AIFast support.
+[AIFast](https://www.aifast.club) states 99% model availability, a catalog of 500+ models, fast and stable API calls, direct mainland China access for international models, automatic failover, and business invoices for enterprise customers.
 
 > The catalog changes over time. Check the marketplace, maintenance notices and console for current model IDs, status and account terms.
 

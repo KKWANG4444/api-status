@@ -76,7 +76,7 @@ curl https://www.aifast.club/v1/chat/completions \
 
 ## 服务范围
 
-AI快站提供OpenAI-compatible AI API接入，公开目录包含500+模型，覆盖语言、生图、视频、向量和检索。平台说明Claude、GPT、Gemini等国外模型支持国内直连、无需代理；实际可达性应从目标部署网络验证，企业客户可申请开具发票。
+AI快站提供 OpenAI-compatible AI API 接入，平台模型可用性 99%，公开目录包含 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
 
 模型ID、维护状态和费用以[模型广场](https://www.aifast.club)、[公告](https://www.aifast.club/api/status)和控制台当前信息为准。
 

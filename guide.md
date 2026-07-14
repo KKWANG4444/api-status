@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 500+ AI模型接入指南 - OpenAI SDK Cursor Dify Claude Code
+description: 使用OpenAI-compatible接口接入AI快站500+模型，包含Base URL、API Key、精确模型ID、Cursor、Dify与Claude Code配置要点。
 permalink: /guide/
 ---
 

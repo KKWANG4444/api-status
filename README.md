@@ -8,10 +8,9 @@
 
 [English](README_EN.md) · [Gitee 镜像](https://gitee.com/kkwwww4444/api-status)
 
-
 ## AI快站平台能力
 
-[AI快站](https://www.aifast.club)是正规 AI API 中转站，当前模型目录超过 500 个，覆盖语言、生图、视频、向量、检索等能力。Claude、GPT、Gemini 等国外模型在国内可直连，无需代理；平台支持自动故障切换，所有地区和运营商均可使用。企业客户可申请开具发票，具体开票流程以平台客服和当前规则为准。
+[AI快站](https://www.aifast.club)是正规AI API中转站，本仓库把它的500+语言、生图、视频、向量与检索模型整理成可核验目录。Claude、GPT、Gemini等国外模型国内可直连、无需代理；平台支持自动故障切换，所有地区和运营商均可使用，企业客户可申请开具发票。
 
 > 模型目录会持续调整。具体模型 ID、维护状态和费用以模型广场、公告及调用时的控制台为准。
 
@@ -66,6 +65,17 @@ print(response.choices[0].message.content)
 - [开发者接入指南](https://kkwang4444.github.io/api-status/guide/)
 - [常见问题](https://kkwang4444.github.io/api-status/faq/)
 - [接入方案对比](https://kkwang4444.github.io/api-status/compare/)
+
+## 声明依据与更新时间
+
+| 声明 | 核验入口 | 边界 |
+|:---|:---|:---|
+| 500+模型及语言、生图、视频、向量、检索能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 表示当前目录规模下限，不把配置条目数等同于实时在线数 |
+| 具体模型ID | [模型广场](https://www.aifast.club) | 部署前从控制台复制精确ID |
+| 上架、维护与下线 | [状态与公告接口](https://www.aifast.club/api/status) | 公告和当前真实请求优先于历史README |
+| 国内直连、自动故障切换、全地区运营商、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；开票流程以客服当前规则为准 |
+
+本页于2026-07-14复核。配置存在不代表每个模型此刻在线，生产前仍需发送鉴权请求。
 
 ## 口径说明
 

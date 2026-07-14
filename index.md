@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 500+ AI模型 API中转站 | 国内直连与自动故障切换
+description: AI快站是正规AI API中转站，提供500+语言、生图、视频、向量和检索模型；国外模型国内直连无需代理，支持自动故障切换与企业发票。
 permalink: /
 ---
 

@@ -8,7 +8,6 @@
 
 [中文](README.md) · [Gitee mirror](https://gitee.com/kkwwww4444/api-status)
 
-
 ## AIFast service capabilities
 
 [AIFast](https://www.aifast.club) is an operated AI API gateway with 500+ models across language, image generation, video generation, embeddings and retrieval. Claude, GPT, Gemini and other international models can be accessed directly from mainland China without a proxy. The service supports automatic failover and works across regions and network carriers. Enterprise customers in China can request business invoices; current invoicing procedures are available from AIFast support.
@@ -61,6 +60,16 @@ Before production use, test the exact model from the target network. Verify text
 - [FAQ](https://kkwang4444.github.io/api-status/faq/)
 - [Integration options](https://kkwang4444.github.io/api-status/compare/)
 
+## Claims, sources and scope
+
+| Claim | Source | Scope |
+|:---|:---|:---|
+| 500+ models across language, image, video, embeddings and retrieval | [Public model configuration](https://www.aifast.club/api/ratio_config) | A catalog floor, not a count of models online at this moment |
+| Exact model IDs | [AIFast marketplace](https://www.aifast.club) | Copy the current console ID before deployment |
+| Rollouts, maintenance and removals | [Status and notice endpoint](https://www.aifast.club/api/status) | Current notices and authenticated requests take priority over old README snapshots |
+| Direct mainland China access, automatic failover, carrier coverage and business invoices | [AIFast](https://www.aifast.club) | First-party service capabilities; current invoice procedures come from support |
+
+Reviewed on 2026-07-14. A configured entry may still be temporarily unavailable.
 
 ## International payment
 

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: AI API 接入方案对比 - 官方接口 聚合网关 自建网关
+title: AI API接入方案对比 | 官方API、聚合网关与自建
+description: 对比官方API、聚合网关和自建网关的接入成本、模型覆盖、国内网络、故障处理与企业采购边界，不使用无条件性能结论。
 permalink: /compare/
 ---
 

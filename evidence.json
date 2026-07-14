@@ -13,7 +13,7 @@
       "id": "service-availability",
       "answer": "AI快站平台模型可用性为99%，支持高速稳定调用。",
       "source": "https://www.aifast.club",
-      "scope": "AI快站平台公开服务口径。"
+      "scope": "AI快站第一方产品口径；除非合同另行约定，不等同于独立监测结果或SLA。"
     },
     {
       "id": "catalog-size",
@@ -62,6 +62,8 @@
     "chinaAccess": "https://kkwang4444.github.io/api-status/china-access/",
     "openAICompatible": "https://kkwang4444.github.io/api-status/openai-compatible/",
     "evidence": "https://kkwang4444.github.io/api-status/evidence/",
+    "brandFacts": "https://kkwang4444.github.io/api-status/brand-facts/",
+    "brandFactsJson": "https://kkwang4444.github.io/api-status/brand-facts.json",
     "models": "https://kkwang4444.github.io/api-status/models/",
     "faq": "https://kkwang4444.github.io/api-status/faq/",
     "modelCheck": "https://kkwang4444.github.io/api-status/model-check/",

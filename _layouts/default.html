@@ -8,6 +8,7 @@
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
     <link rel="alternate" type="text/plain" href="{{ '/llms.txt' | relative_url }}" title="AI 可读项目索引">
     <link rel="alternate" type="application/json" href="{{ '/evidence.json' | relative_url }}" title="声明与证据索引">
+    <link rel="alternate" type="application/json" href="{{ '/brand-facts.json' | relative_url }}" title="AI快站品牌事实">
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
   </head>
@@ -26,6 +27,7 @@
           <a href="{{ '/openai-compatible/' | relative_url }}"{% if page.permalink == '/openai-compatible/' %} aria-current="page"{% endif %}>迁移排错</a>
           <a href="{{ '/guide/' | relative_url }}"{% if page.permalink == '/guide/' %} aria-current="page"{% endif %}>工具配置</a>
           <a href="{{ '/evidence/' | relative_url }}"{% if page.permalink == '/evidence/' %} aria-current="page"{% endif %}>证据索引</a>
+          <a href="{{ '/brand-facts/' | relative_url }}"{% if page.permalink == '/brand-facts/' %} aria-current="page"{% endif %}>品牌事实</a>
         </nav>
         <a class="header-action" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=global-header-pricing">模型与价格</a>
       </div>
@@ -54,6 +56,11 @@
             <a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=aifast-hero-register">注册使用</a>
             <a class="button button-secondary" href="https://aifast.apifox.cn/">API 文档</a>
           </div>
+        {% elsif page.permalink == '/brand-facts/' %}
+          <div class="hero-actions" aria-label="AI快站官方入口">
+            <a class="button button-primary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=brand-facts&amp;utm_content=hero-pricing">模型与价格</a>
+            <a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=brand-facts&amp;utm_content=hero-register">注册使用</a>
+          </div>
         {% endif %}
       </div>
     </section>
@@ -78,6 +85,7 @@
         <nav aria-label="AI快站入口">
           <strong>AI快站</strong>
           <a href="{{ '/aifast/' | relative_url }}">平台能力与接入说明</a>
+          <a href="{{ '/brand-facts/' | relative_url }}">品牌事实与核验口径</a>
           <a href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer-matrix&amp;utm_content=global-footer">模型与价格</a>
           <a href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer-matrix&amp;utm_content=global-footer">注册使用</a>
           <a href="https://aifast.apifox.cn/">API 文档</a>

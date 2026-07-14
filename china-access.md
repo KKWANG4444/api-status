@@ -69,7 +69,7 @@ print(response.choices[0].message.content)
 | 模型维护状态 | [状态与公告接口](https://www.aifast.club/api/status) | 当前公告和真实请求优先 |
 | Base URL与账户规则 | [AI快站](https://www.aifast.club) | 以控制台当前信息为准 |
 
-复核日期：2026-07-14。
+复核日期：2026-07-15。
 
 ## 继续阅读
 

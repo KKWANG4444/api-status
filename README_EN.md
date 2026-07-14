@@ -39,11 +39,12 @@ Check the current [models and pricing](https://www.aifast.club/pricing?utm_sourc
 3. Change the Base URL in your application to `https://www.aifast.club/v1`.
 
 ```python
+import os
 from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="your-api-key",
+    api_key=os.environ["AIFAST_API_KEY"],
 )
 
 response = client.chat.completions.create(

@@ -54,11 +54,12 @@ claude
 ## 💻 OpenAI SDK
 
 ```python
+import os
 from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="your-api-key"
+    api_key=os.environ["AIFAST_API_KEY"]
 )
 
 response = client.chat.completions.create(

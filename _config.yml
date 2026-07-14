@@ -29,6 +29,7 @@ header_pages:
   - openai-compatible.md
   - model-check.md
   - evidence.md
+  - brand-facts.md
   - models.md
   - guide.md
   - faq.md
@@ -38,7 +39,7 @@ header_pages:
 lang: zh-CN
 author: AI快站开发者文档
 repository: KKWANG4444/api-status
-keywords: AI快站,AI API中转站,大模型API中转,大模型API检测,模型降智检测,模型套壳检测,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,API排错
+keywords: AI快站,AIFast,AI API中转站,大模型API中转,500+大模型API,大模型API检测,模型降智检测,模型套壳检测,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,国内直连,企业发票,API排错
 twitter:
   username: 
   card: summary_large_image

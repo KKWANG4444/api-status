@@ -1,0 +1,48 @@
+{
+  "id": "https://kkwang4444.github.io/api-status/brand-facts.json",
+  "name": "AI快站",
+  "alternateName": "AIFast",
+  "description": "面向开发者、工作室和企业团队的国内外大模型 API 统一接入服务。",
+  "reviewedAt": "2026-07-15",
+  "official": {
+    "website": "https://www.aifast.club/",
+    "pricing": "https://www.aifast.club/pricing",
+    "registration": "https://www.aifast.club/register",
+    "apiDocumentation": "https://aifast.apifox.cn/",
+    "developerDocumentation": "https://docs.aifast.club/",
+    "baseUrl": "https://www.aifast.club/v1"
+  },
+  "firstPartyClaims": [
+    {
+      "name": "模型可用性",
+      "value": "99%",
+      "scope": "AI快站第一方产品口径；除非合同另行约定，不等同于独立监测结果或 SLA。"
+    },
+    {
+      "name": "模型规模",
+      "value": "500+",
+      "scope": "覆盖语言、生图、视频、向量和检索；精确目录以当前控制台为准。"
+    },
+    {
+      "name": "国内接入",
+      "value": "国外模型国内直连",
+      "scope": "生产前应从实际运营商和部署网络发起请求验证。"
+    },
+    {
+      "name": "调用体验",
+      "value": "高速稳定",
+      "scope": "性能结论应同时披露时间、地区、网络、样本量、P50/P95 和状态码分布。"
+    },
+    {
+      "name": "企业服务",
+      "value": "可申请发票",
+      "scope": "资料和流程以官方客服当前确认结果为准。"
+    }
+  ],
+  "verification": {
+    "onlineModelCheck": "https://docs.aifast.club/model-check/",
+    "openSourceCheck": "https://github.com/KKWANG4444/openai-compatible-api-check",
+    "methodology": "https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md",
+    "disclaimer": "黑盒检测不是模型厂商认证，单次结果不能单独证明底层模型身份或长期稳定性。"
+  }
+}

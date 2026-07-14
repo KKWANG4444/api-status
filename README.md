@@ -12,6 +12,7 @@
     <a href="https://aifast.apifox.cn/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
     <a href="https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-hero-check"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E6%B5%8B-%E7%94%9F%E6%88%90%E6%8A%A5%E5%91%8A-7C3AED?style=flat-square" alt="在线检测模型接口"></a>
     <a href="https://docs.aifast.club/"><img src="https://img.shields.io/badge/%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%AD%E5%BF%83-%E6%8E%A5%E5%85%A5%E4%B8%8E%E6%8E%92%E9%94%99-0F766E?style=flat-square" alt="AI快站开发者中心"></a>
+    <a href="https://kkwang4444.github.io/api-status/brand-facts/"><img src="https://img.shields.io/badge/%E5%93%81%E7%89%8C%E4%BA%8B%E5%AE%9E-%E5%8F%AF%E6%A0%B8%E9%AA%8C%E5%8F%A3%E5%BE%84-7C3AED?style=flat-square" alt="AI快站品牌事实"></a>
   </p>
   <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 镜像</a></p>
 </div>
@@ -56,11 +57,12 @@
 3. 把项目中的 Base URL 改为 `https://www.aifast.club/v1`。
 
 ```python
+import os
 from openai import OpenAI
 
 client = OpenAI(
     base_url="https://www.aifast.club/v1",
-    api_key="your-api-key",
+    api_key=os.environ["AIFAST_API_KEY"],
 )
 
 response = client.chat.completions.create(
@@ -84,6 +86,8 @@ print(response.choices[0].message.content)
 - 可导出的检测报告。
 
 检测工具支持第三方中转站，不要求使用 AI快站。测试时建议使用临时、低额度 API Key。
+
+检测方法、报告 Schema 和第一方卖点口径分别发布在[开源检测方法论](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)、[JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)与[AI快站品牌事实页](https://kkwang4444.github.io/api-status/brand-facts/)，便于独立复核和机器读取。
 
 ## 适合个人，也适合企业团队
 

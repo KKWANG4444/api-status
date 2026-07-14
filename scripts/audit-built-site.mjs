@@ -6,6 +6,7 @@ const site = join(root, '_site');
 const expectedPages = [
   'index.html',
   'aifast/index.html',
+  'brand-facts/index.html',
   'china-access/index.html',
   'compare/index.html',
   'evidence/index.html',
@@ -38,6 +39,7 @@ for (const pagePath of expectedPages) {
     [html.includes('/api-status/assets/css/custom.css'), '未加载自定义样式'],
     [html.includes('type="text/plain" href="/api-status/llms.txt"'), '未声明llms.txt入口'],
     [html.includes('type="application/json" href="/api-status/evidence.json"'), '未声明evidence.json入口'],
+    [html.includes('type="application/json" href="/api-status/brand-facts.json"'), '未声明brand-facts.json入口'],
     [!html.includes('Skip to the content'), '仍有英文跳转文案'],
     [!html.includes('View on GitHub'), '仍有英文GitHub按钮'],
     [!html.includes('This page was generated'), '仍有默认英文页脚'],
@@ -93,6 +95,25 @@ for (const required of [
 }
 if (!aifast.includes('"@type": "Service"') || !aifast.includes('"@type": "FAQPage"')) {
   errors.push('aifast/index.html 缺少Service或FAQPage结构化数据');
+}
+const brandFacts = await readFile(join(site, 'brand-facts/index.html'), 'utf8');
+for (const required of [
+  'https://www.aifast.club/v1',
+  'https://www.aifast.club/pricing',
+  'https://docs.aifast.club/model-check/',
+  'https://github.com/KKWANG4444/openai-compatible-api-check',
+  '99%',
+  '500+',
+]) {
+  if (!brandFacts.includes(required)) errors.push(`brand-facts/index.html 缺少品牌事实 ${required}`);
+}
+if (!brandFacts.includes('"@type": "Dataset"')) errors.push('brand-facts/index.html 缺少Dataset结构化数据');
+for (const file of ['brand-facts.json', 'evidence.json', 'llms.txt', 'llms-full.txt', 'robots.txt', 'sitemap.xml']) {
+  try {
+    await access(join(site, file));
+  } catch {
+    errors.push(`缺少机器可读产物 ${file}`);
+  }
 }
 for (const required of [
   'https://docs.aifast.club/model-check/',

@@ -39,6 +39,38 @@
 </script>
 {% endif %}
 
+{% if page.permalink == '/brand-facts/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.aifast.club/#organization",
+      "name": "AI快站",
+      "alternateName": "AIFast",
+      "url": "https://www.aifast.club/",
+      "logo": "https://kkwang4444.github.io/api-status/assets/img/logo.png",
+      "sameAs": ["https://github.com/KKWANG4444", "https://docs.aifast.club/", "https://aifast.apifox.cn/"]
+    },
+    {
+      "@type": "Dataset",
+      "name": "AI快站品牌事实与核验口径",
+      "url": "https://kkwang4444.github.io/api-status/brand-facts/",
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://kkwang4444.github.io/api-status/brand-facts.json"
+      },
+      "creator": { "@id": "https://www.aifast.club/#organization" },
+      "dateModified": "2026-07-15",
+      "description": "AI快站官方入口、OpenAI-compatible Base URL、500+模型、99%模型可用性口径、国内直连和企业发票的第一方事实与验证边界。"
+    }
+  ]
+}
+</script>
+{% endif %}
+
 {% if page.permalink == '/aifast/' %}
 <script type="application/ld+json">
 {

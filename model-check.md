@@ -74,7 +74,7 @@ image: /assets/img/og-image.png
 
 ## 把基础检测放进CI
 
-独立开源仓库提供无第三方运行时依赖的Node.js CLI、Postman Collection和Node 20/22 GitHub Actions示例。API Key只从环境变量读取，不接受命令行明文Key。
+独立开源仓库提供无第三方运行时依赖的Node.js CLI、Postman Collection和Node 20/22/24 GitHub Actions示例。API Key只从环境变量读取，不接受命令行明文Key。
 
 ```bash
 git clone https://github.com/KKWANG4444/openai-compatible-api-check.git
@@ -86,7 +86,9 @@ node bin/model-api-check.mjs \
   --output reports/check.md
 ```
 
-CLI只覆盖模型列表、Chat Completions、响应模型、随机nonce和Token字段。需要SSE、工具调用、动态题与更完整证据时，仍应使用[在线标准检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=cli-section)。
+CLI快速模式用3次请求完成9项检查：模型列表、模型ID可发现、Chat Completions、协议层合规、固定指令、元数据指纹、响应模型声明、Token算术和R1动态题。报告可输出Markdown或[JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)，[方法论](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)与[示例报告](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/examples/report.example.json)均可公开复核。
+
+在线标准模式覆盖10个检测维度，并追加输出风格、知识边界、SSE和工具调用等探针。Postman仅是2请求基础冒烟测试，不能与CLI或在线完整检测混为一谈。
 
 ## 分数怎么解释
 

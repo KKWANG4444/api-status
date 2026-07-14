@@ -6,8 +6,6 @@ permalink: /model-check/
 image: /assets/img/og-image.png
 ---
 
-# 大模型API中转站怎么检测
-
 ![大模型API中转站检测](https://docs.aifast.club/og-default.png)
 
 拿到一个Claude、GPT或DeepSeek中转接口，最容易犯的错误是只问一句“你是谁”。模型自述会受系统提示、网关改写和角色设定影响，回答像某个模型，也不能证明底层身份。

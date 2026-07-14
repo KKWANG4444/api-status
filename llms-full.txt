@@ -47,6 +47,8 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 - [Status and catalog reference](https://kkwang4444.github.io/api-status/): current marketplace and maintenance context.
 - [China access guide](https://kkwang4444.github.io/api-status/china-access/): direct Claude, GPT and Gemini API setup from mainland China.
 - [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration plus error handling.
+- [Model-check methodology](https://kkwang4444.github.io/api-status/model-check/): evidence hierarchy and report interpretation for public HTTPS OpenAI Chat Completions-compatible gateways. A compatibility score is not proof of model identity or long-term stability.
+- [Run the public check](https://docs.aifast.club/model-check/): use a temporary limited key; the test sends real requests and may incur token charges at the target gateway.
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): source links, review date and scope boundaries.
 - [Model directory](https://kkwang4444.github.io/api-status/models/): selected current IDs.
 - [Tool setup](https://kkwang4444.github.io/api-status/guide/): Cursor, Dify and compatible clients.

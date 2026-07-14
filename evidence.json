@@ -44,6 +44,12 @@
       "answer": "精确模型ID与维护状态以模型广场、最新公告、控制台和当前真实请求为准。",
       "source": "https://www.aifast.club/api/status",
       "scope": "配置存在不代表模型此刻在线。"
+    },
+    {
+      "id": "model-check-scope",
+      "answer": "AI快站提供面向公开HTTPS OpenAI Chat Completions兼容中转站的模型检测工具。",
+      "source": "https://docs.aifast.club/model-check/",
+      "scope": "报告交叉检查协议、模型声明、Token、动态题、SSE与工具调用信号；结果是兼容性与风险筛查，不是模型厂商身份认证，也不代表长期稳定。"
     }
   ],
   "guides": {
@@ -51,7 +57,9 @@
     "openAICompatible": "https://kkwang4444.github.io/api-status/openai-compatible/",
     "evidence": "https://kkwang4444.github.io/api-status/evidence/",
     "models": "https://kkwang4444.github.io/api-status/models/",
-    "faq": "https://kkwang4444.github.io/api-status/faq/"
+    "faq": "https://kkwang4444.github.io/api-status/faq/",
+    "modelCheck": "https://kkwang4444.github.io/api-status/model-check/",
+    "runModelCheck": "https://docs.aifast.club/model-check/"
   },
   "disclosure": "This evidence index is maintained by the operator of AIFast and contains first-party product statements with source and scope boundaries."
 }

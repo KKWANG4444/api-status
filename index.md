@@ -60,6 +60,7 @@ print(response.choices[0].message.content)
 | [🏪 模型目录](/api-status/models) | 供应商与模型 ID 参考；状态以模型广场和公告为准 |
 | [🇨🇳 国内直连接入](/api-status/china-access) | Claude、GPT、Gemini API 国内调用步骤与边界 |
 | [🔄 OpenAI-compatible迁移](/api-status/openai-compatible) | Python、Node.js、cURL迁移和401/429/5xx排错 |
+| [🧪 模型中转站检测](/api-status/model-check) | 模型声明、Token、动态题、SSE与工具调用报告判读 |
 | [🔎 声明与证据索引](/api-status/evidence) | 500+、五类能力、维护状态与核验入口 |
 | [📖 开发者接入指南](/api-status/guide) | Cursor、Dify、OpenWebUI 等工具配置 |
 | [❓ 常见问题](/api-status/faq) | 401、429、模型不存在等问题排查 |

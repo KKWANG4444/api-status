@@ -60,6 +60,8 @@ Before production use, test the exact model from the target network. Verify text
 
 - [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
 - [Model directory](https://kkwang4444.github.io/api-status/models/)
+- [Model-check methodology and report interpretation](https://kkwang4444.github.io/api-status/model-check/)
+- [Run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en)
 - [Integration guide](https://kkwang4444.github.io/api-status/guide/)
 - [FAQ](https://kkwang4444.github.io/api-status/faq/)
 - [Integration options](https://kkwang4444.github.io/api-status/compare/)

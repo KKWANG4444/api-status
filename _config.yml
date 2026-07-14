@@ -26,6 +26,7 @@ header_pages:
   - index.md
   - china-access.md
   - openai-compatible.md
+  - model-check.md
   - evidence.md
   - models.md
   - guide.md

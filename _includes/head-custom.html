@@ -10,27 +10,17 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
-      "@id": "https://kkwang4444.github.io/api-status/#website",
-      "name": "AI模型API目录与接入参考",
-      "url": "https://kkwang4444.github.io/api-status/",
-      "inLanguage": "zh-CN",
-      "publisher": {"@id": "https://www.aifast.club/#organization"}
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.aifast.club/#organization",
-      "name": "AI快站",
-      "alternateName": "AIFast",
-      "url": "https://www.aifast.club"
-    },
-    {
       "@type": "Service",
       "@id": "https://www.aifast.club/#service",
       "name": "AI快站 AI API中转服务",
       "alternateName": "AIFast AI API Gateway",
       "url": "https://www.aifast.club",
-      "provider": {"@id": "https://www.aifast.club/#organization"},
+      "provider": {
+        "@type": "Organization",
+        "name": "AI快站",
+        "alternateName": "AIFast",
+        "url": "https://www.aifast.club"
+      },
       "serviceType": "OpenAI-compatible AI API gateway",
       "areaServed": "Worldwide",
       "description": "正规AI API中转站，提供500+模型，覆盖语言、生图、视频、向量和检索；Claude、GPT、Gemini等国外模型国内直连无需代理，支持自动故障切换、所有地区和运营商接入及企业发票。"

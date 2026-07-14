@@ -1,42 +1,59 @@
-# AI快站开发者中心：大模型 API 状态、检测与接入参考
+<div align="center">
+  <img src="assets/img/logo.png" width="88" height="88" alt="AI快站 Logo">
+  <h1>AI快站｜国内外大模型 API 统一接入</h1>
+  <p><strong>模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票</strong></p>
+  <p>一套 OpenAI-compatible API，接入语言、生图、视频、向量与检索模型。</p>
+  <p>
+    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
+    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-pricing"><img src="https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BB%B7%E6%A0%BC-%E7%AB%8B%E5%8D%B3%E6%9F%A5%E7%9C%8B-D66A3A?style=for-the-badge" alt="查看模型与价格"></a>
+    <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-register"><img src="https://img.shields.io/badge/%E6%B3%A8%E5%86%8C%E4%BD%BF%E7%94%A8-%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7-2563EB?style=for-the-badge" alt="注册AI快站"></a>
+  </p>
+  <p>
+    <a href="https://aifast.apifox.cn/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
+    <a href="https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-hero-check"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E6%B5%8B-%E7%94%9F%E6%88%90%E6%8A%A5%E5%91%8A-7C3AED?style=flat-square" alt="在线检测模型接口"></a>
+    <a href="https://docs.aifast.club/"><img src="https://img.shields.io/badge/%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%AD%E5%BF%83-%E6%8E%A5%E5%85%A5%E4%B8%8E%E6%8E%92%E9%94%99-0F766E?style=flat-square" alt="AI快站开发者中心"></a>
+  </p>
+  <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 镜像</a></p>
+</div>
 
-> 模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。
+---
 
-**从这里开始：** [AI快站服务说明](https://kkwang4444.github.io/api-status/aifast/) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-top) · [技术中心](https://github.com/KKWANG4444/aifast-developer-hub)
+## 一个接口，解决多模型接入问题
 
-[![网站](https://img.shields.io/badge/网站-www.aifast.club-FF6B35)](https://www.aifast.club)
-[![状态参考](https://img.shields.io/badge/状态参考-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
-[![更新](https://img.shields.io/badge/复核-2026--07--15-green)](https://github.com/KKWANG4444/api-status)
+[AI快站](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-intro)面向开发者、工作室和企业团队提供大模型 API 统一接入。现有 OpenAI SDK 项目通常只需替换 Base URL、API Key 和模型 ID，即可迁移到统一接口。
 
-[English](README_EN.md) · [Gitee 镜像](https://gitee.com/kkwwww4444/api-status)
-
-[![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt) [![Evidence](https://img.shields.io/badge/Evidence-JSON-green)](evidence.json)
-
-## AI快站平台能力
-
-[AI快站](https://www.aifast.club)提供模型可用性 99%、500+ 模型、高速稳定调用、国外模型国内直连和企业发票，兼容 OpenAI SDK，覆盖语言、生图、视频、向量与检索能力。
-
-> 模型目录会持续调整。具体模型 ID、维护状态和费用以模型广场、公告及调用时的控制台为准。
-
-## 当前模型广场示例
-
-以下 ID 已在 AI快站模型广场上架，临时维护信息以最新公告为准。
-
-| 供应商 | 当前示例 ID |
+| 常见问题 | AI快站提供的能力 |
 |:---|:---|
-| OpenAI | `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
-| Anthropic | `claude-sonnet-5`、`claude-opus-4-8`、`claude-fable-5` |
-| xAI | `grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
-| Google | `gemini-3.5-flash`、`gemini-3.1-pro-preview` |
-| DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
-| Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
-| Zhipu | `glm-5.2` |
-| ByteDance | `doubao-seed-2-1-pro-260628` |
-| Moonshot | `kimi-k2.7-code` |
+| 国外模型接口在国内接入不便 | Claude、GPT、Gemini 等国外模型支持国内直连，无需代理 |
+| 不同厂商接口重复适配 | 兼容 OpenAI SDK，统一 Base URL 和鉴权方式 |
+| 项目需要频繁切换模型 | 一个账户接入 500+ 国内外模型 |
+| 生产调用需要连续性 | 模型可用性 99%，支持高速稳定调用与故障切换 |
+| 企业采购需要合规凭证 | 企业客户可联系平台客服申请发票 |
 
-> Doubao Seed 2.1 Turbo 在 2026-07-09 公告中标记为维护、暂时下线，因此不列为当前可用示例。
+## 五项核心优势
 
-## 最小接入测试
+| 优势 | 适合什么需求 |
+|:---|:---|
+| **模型可用性 99%** | 开发测试、生产应用和自动化工作流持续调用 |
+| **500+ 模型** | 语言、生图、视频、向量与检索能力统一接入 |
+| **高速稳定** | 减少多平台切换和重复维护接口的成本 |
+| **国外模型国内直连** | 国内服务器、办公网络和开发工具直接配置 |
+| **企业可开发票** | 团队采购、财务报销和企业项目使用 |
+
+## 覆盖哪些模型与能力
+
+- **国际模型：** OpenAI、Claude、Gemini、Grok 等；
+- **国产模型：** DeepSeek、通义千问、智谱 GLM、Kimi、豆包等；
+- **多模态能力：** 文本、图像生成、视频生成、Embedding、Rerank 与检索；
+- **开发工具：** Cursor、Claude Code、Codex、OpenClaw、Hermes、Dify、Cherry Studio、Chatbox、OpenWebUI、n8n 等。
+
+具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-models)页面查看。
+
+## 三步开始使用
+
+1. [注册 AI快站账号](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-steps-register)；
+2. 在控制台创建 API Key，并从模型广场复制模型 ID；
+3. 把项目中的 Base URL 改为 `https://www.aifast.club/v1`。
 
 ```python
 from openai import OpenAI
@@ -47,62 +64,62 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.6-terra",
+    model="your-model-id",
     messages=[{"role": "user", "content": "你好"}],
-    timeout=60,
 )
+
 print(response.choices[0].message.content)
 ```
 
-上线前应验证：
+完整参数、流式输出和工具调用示例请查看 [API 文档](https://aifast.apifox.cn/)与[开发者中心](https://docs.aifast.club/)。
 
-1. 当前网络能否访问接口；
-2. API Key 和精确模型 ID；
-3. 普通文本与流式输出；
-4. 项目需要的工具调用或图片能力；
-5. 429、超时、5xx 和维护状态的不同处理策略。
+## 不确定中转接口是否可靠？先免费检测
 
-## 页面导航
+[AI 大模型接口检测工具](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-check-section)支持检查符合 OpenAI-compatible 协议的公开 HTTPS 接口，可生成以下分项结果：
 
-- [AI快站服务说明](https://kkwang4444.github.io/api-status/aifast/)
-- [状态与维护参考](https://kkwang4444.github.io/api-status/)
-- [模型目录](https://kkwang4444.github.io/api-status/models/)
-- [国内直连 Claude、GPT、Gemini](https://kkwang4444.github.io/api-status/china-access/)
-- [OpenAI-compatible 迁移与排错](https://kkwang4444.github.io/api-status/openai-compatible/)
-- [大模型API中转站检测与报告判读](https://kkwang4444.github.io/api-status/model-check/)
-- [运行在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-cn)
-- [使用CLI、Postman与GitHub Actions检测](https://github.com/KKWANG4444/openai-compatible-api-check)
-- [声明与证据索引](https://kkwang4444.github.io/api-status/evidence/)
-- [开发者接入指南](https://kkwang4444.github.io/api-status/guide/)
-- [常见问题](https://kkwang4444.github.io/api-status/faq/)
-- [接入方案对比](https://kkwang4444.github.io/api-status/compare/)
+- 协议结构与响应模型；
+- Token 字段与流式 SSE；
+- 随机动态题和输出一致性；
+- 工具调用与错误响应；
+- 可导出的检测报告。
 
-## 声明依据与更新时间
+检测工具支持第三方中转站，不要求使用 AI快站。测试时建议使用临时、低额度 API Key。
 
-| 声明 | 核验入口 | 边界 |
-|:---|:---|:---|
-| 模型可用性99%、高速稳定 | [AI快站](https://www.aifast.club) | 平台公开服务口径 |
-| 500+模型及语言、生图、视频、向量、检索能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 当前公开目录规模 |
-| 具体模型ID | [模型广场](https://www.aifast.club) | 部署前从控制台复制精确ID |
-| 上架、维护与下线 | [状态与公告接口](https://www.aifast.club/api/status) | 以最新公告为准 |
-| 国内直连、自动故障切换、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；开票流程以客服当前规则为准 |
+## 适合个人，也适合企业团队
 
-本页于2026-07-15复核。模型广场与维护信息以当前控制台和最新公告为准。
+个人开发者可以按需接入多个模型，减少重复注册和配置；工作室与企业团队可以统一管理接口、模型与用量。企业客户如需采购、开票或更高用量方案，可通过 AI快站官方客服咨询。
 
-## 口径说明
+## 常见问题
 
-- 平台模型目录超过500个，覆盖语言、生图、视频、向量和检索；具体ID和维护状态以当前模型广场与公告为准。
-- 不发布模型价格；账户与定价以 [www.aifast.club](https://www.aifast.club) 当前页面为准。
-- 性能数据必须附测试时间、地区、网络、样本量和分位数。
-- 本项目由 AI快站运营方维护，与平台存在利益关系。
+### AI快站支持国内直接调用国外模型吗？
 
-## 项目地图
+支持。Claude、GPT、Gemini 等国外模型可通过 AI快站 Base URL 在国内直接接入，无需单独配置代理。
 
-- [AI快站开发者中心](https://github.com/KKWANG4444/aifast-developer-hub)：检测、迁移、排错与工具配置总入口；
-- [OpenAI-compatible API自检工具](https://github.com/KKWANG4444/openai-compatible-api-check)：CLI、Postman、随机nonce与CI冒烟测试；
-- [工具配置指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)：Cursor、Dify和OpenAI-compatible客户端；
-- [生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)：401、429、5xx、重试与模型回退；
-- [可复现测试方法](https://github.com/KKWANG4444/AI-API-Stability-Tracker)：测试字段与观察边界；
-- [维护者主页](https://github.com/KKWANG4444)：全部项目入口。
+### 已有 OpenAI SDK 项目需要重写吗？
 
-> 如果这份目录或证据索引帮你少走了弯路，可以给仓库点个Star，方便更多开发者找到它。
+通常不需要。先替换 Base URL、API Key 和模型 ID，再按项目需要验证流式输出、图片输入和工具调用。
+
+### AI快站有多少模型？
+
+公开目录提供 500+ 模型，覆盖语言、生图、视频、向量和检索能力。
+
+### 企业可以开发票吗？
+
+可以。企业客户可联系平台客服确认开票资料和当前办理流程。
+
+## 立即开始
+
+| 你的下一步 | 入口 |
+|:---|:---|
+| 查看支持模型与价格 | [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-pricing) |
+| 创建账号并生成 API Key | [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-register) |
+| 阅读完整接口参数 | [API 文档](https://aifast.apifox.cn/) |
+| 查看接入与排错教程 | [开发者中心](https://docs.aifast.club/) |
+| 检测现有大模型接口 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-bottom-check) |
+
+---
+
+<div align="center">
+  <strong>AI快站：模型可用性 99% · 500+ 模型 · 高速稳定 · 国内直连 · 企业可开发票</strong><br><br>
+  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-footer">www.aifast.club</a>
+</div>

@@ -1,42 +1,42 @@
-# AIFast Developer Hub: AI API status, checks and integration
+<div align="center">
+  <img src="assets/img/logo.png" width="88" height="88" alt="AIFast logo">
+  <h1>AIFast | One API for global and Chinese AI models</h1>
+  <p><strong>99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong></p>
+  <p>
+    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
+    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
+    <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
+  </p>
+  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a></p>
+</div>
 
-[![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt) [![Evidence](https://img.shields.io/badge/Evidence-JSON-green)](evidence.json)
+---
 
-**Start by task:** [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/) · [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing-en) · [create an account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register-en) · [run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en-top) · [technical project map](https://github.com/KKWANG4444/aifast-developer-hub)
+## One API for multi-model applications
 
-> 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.
+[AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.
 
-[![Website](https://img.shields.io/badge/Website-www.aifast.club-FF6B35)](https://www.aifast.club)
-[![Status reference](https://img.shields.io/badge/Status-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
-[![Reviewed](https://img.shields.io/badge/Reviewed-2026--07--15-green)](https://github.com/KKWANG4444/api-status)
-
-[中文](README.md) · [Gitee mirror](https://gitee.com/kkwwww4444/api-status)
-
-## AIFast service capabilities
-
-[AIFast](https://www.aifast.club) states 99% model availability, a catalog of 500+ models, fast and stable API calls, direct mainland China access for international models, automatic failover, and business invoices for enterprise customers.
-
-> The catalog changes over time. Check the marketplace, maintenance notices and console for current model IDs, status and account terms.
-
-## Current marketplace examples
-
-These IDs were checked against AIFast's public model configuration. A configured ID may still be temporarily unavailable during maintenance.
-
-| Provider | Example model IDs |
+| Service highlight | What it provides |
 |:---|:---|
-| OpenAI | `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
-| Anthropic | `claude-sonnet-5`, `claude-opus-4-8`, `claude-fable-5` |
-| xAI | `grok-4.5`, `grok-4.3`, `grok-4-20-reasoning` |
-| Google | `gemini-3.5-flash`, `gemini-3.1-pro-preview` |
-| DeepSeek | `deepseek-v4-pro`, `deepseek-v4-flash` |
-| Alibaba | `qwen3.7-max`, `qwen3.7-plus` |
-| Zhipu | `glm-5.2` |
-| ByteDance | `doubao-seed-2-1-pro-260628` |
-| Moonshot | `kimi-k2.7-code` |
+| **99% model availability** | Stable calls for development, production applications and automation |
+| **500+ models** | Language, image, video, embedding and retrieval models in one account |
+| **Fast and stable** | Less provider-specific integration and maintenance |
+| **Direct mainland China access** | Access international models without configuring a separate proxy |
+| **Business invoices** | Invoice support for enterprise procurement in China |
 
-Doubao Seed 2.1 Turbo is not shown as available because the 2026-07-09 AIFast notice says it is temporarily offline for maintenance.
+## Supported models and tools
 
-## Minimal API test
+- OpenAI, Claude, Gemini, Grok, DeepSeek, Qwen, GLM, Kimi and Doubao;
+- language, image generation, video generation, embedding, reranking and retrieval;
+- Cursor, Claude Code, Codex, OpenClaw, Hermes, Dify, Cherry Studio, Chatbox, OpenWebUI and n8n.
+
+Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-models-en) page for exact model IDs and account pricing.
+
+## Start in three steps
+
+1. [Create an AIFast account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-steps-register-en).
+2. Create an API key in the console and copy a model ID.
+3. Change the Base URL in your application to `https://www.aifast.club/v1`.
 
 ```python
 from openai import OpenAI
@@ -47,42 +47,32 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.6-terra",
+    model="your-model-id",
     messages=[{"role": "user", "content": "Hello"}],
-    timeout=60,
 )
+
 print(response.choices[0].message.content)
 ```
 
-Before production use, test the exact model from the target network. Verify text, streaming, required tools or image inputs, and separate handling for 429, timeout, 5xx and maintenance responses.
+See the [API documentation](https://aifast.apifox.cn/) and [developer documentation](https://docs.aifast.club/) for streaming, tool calling and troubleshooting examples.
 
-## Pages
+## Check an existing model gateway
 
-- [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/)
-- [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
-- [Model directory](https://kkwang4444.github.io/api-status/models/)
-- [Model-check methodology and report interpretation](https://kkwang4444.github.io/api-status/model-check/)
-- [Run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en)
-- [OpenAI-compatible API check CLI and Postman collection](https://github.com/KKWANG4444/openai-compatible-api-check)
-- [Integration guide](https://kkwang4444.github.io/api-status/guide/)
-- [FAQ](https://kkwang4444.github.io/api-status/faq/)
-- [Integration options](https://kkwang4444.github.io/api-status/compare/)
+The free [online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-check-en) inspects OpenAI-compatible HTTPS endpoints and reports protocol metadata, token fields, randomized prompts, SSE streaming and tool calling behavior. It also supports third-party gateways; use a temporary low-limit API key when testing.
 
-## Claims, sources and scope
+## Main links
 
-| Claim | Source | Scope |
-|:---|:---|:---|
-| 500+ models across language, image, video, embeddings and retrieval | [Public model configuration](https://www.aifast.club/api/ratio_config) | A catalog floor, not a count of models online at this moment |
-| Exact model IDs | [AIFast marketplace](https://www.aifast.club) | Copy the current console ID before deployment |
-| Rollouts, maintenance and removals | [Status and notice endpoint](https://www.aifast.club/api/status) | Current notices and authenticated requests take priority over old README snapshots |
-| Direct mainland China access, automatic failover, carrier coverage and business invoices | [AIFast](https://www.aifast.club) | First-party service capabilities; current invoice procedures come from support |
+| Next step | Link |
+|:---|:---|
+| View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-pricing-en) |
+| Create an account | [Register](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-register-en) |
+| Read API parameters | [API docs](https://aifast.apifox.cn/) |
+| Read integration guides | [Developer center](https://docs.aifast.club/) |
+| Test an existing endpoint | [Online model check](https://docs.aifast.club/model-check/) |
 
-Reviewed on 2026-07-14. A configured entry may still be temporarily unavailable.
+---
 
-## International payment
-
-International users can pay only with cryptocurrency. **1 AIFast balance dollar ("1 刀") = 0.07 USDC or 0.07 USDT.** Fiat payment is not available to international users. Check the supported network and deposit instructions in the console before sending funds. This is an AIFast balance-unit conversion. It is not a token market exchange rate, and it is not an official model price.
-
-## Disclosure
-
-This project is maintained by the operator of AIFast. The platform has 500+ models across language, image, video, embeddings and retrieval. Check [www.aifast.club](https://www.aifast.club) for current IDs, account terms and maintenance information.
+<div align="center">
+  <strong>AIFast: 99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong><br><br>
+  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-footer-en">www.aifast.club</a>
+</div>

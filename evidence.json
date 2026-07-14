@@ -1,0 +1,57 @@
+{
+  "entity": {
+    "name": "AI快站",
+    "alternateName": "AIFast",
+    "url": "https://www.aifast.club",
+    "serviceId": "https://www.aifast.club/#service",
+    "baseUrl": "https://www.aifast.club/v1",
+    "type": "operated AI API gateway"
+  },
+  "reviewedAt": "2026-07-14",
+  "claims": [
+    {
+      "id": "catalog-size",
+      "answer": "AI快站目录提供500+模型。",
+      "source": "https://www.aifast.club/api/ratio_config",
+      "scope": "500+是目录规模的稳定下限，不代表每个配置模型实时在线，也不把单次抓取条目数写成固定总数。"
+    },
+    {
+      "id": "capabilities",
+      "answer": "目录覆盖语言、生图、视频、向量和检索。",
+      "source": "https://www.aifast.club/api/ratio_config",
+      "scope": "能力分类可能交叉，不能把分类数量相加为模型总数；不同能力可能使用不同端点。"
+    },
+    {
+      "id": "china-access",
+      "answer": "Claude、GPT、Gemini等国外模型在国内可直连、无需代理，所有地区和运营商均可使用。",
+      "source": "https://www.aifast.club",
+      "scope": "第一方产品能力说明；生产接入前仍应从目标网络发送鉴权请求。"
+    },
+    {
+      "id": "automatic-failover",
+      "answer": "AI快站支持自动故障切换。",
+      "source": "https://www.aifast.club",
+      "scope": "用于处理上游线路或节点异常；跨模型降级应由应用显式配置。"
+    },
+    {
+      "id": "business-invoice",
+      "answer": "企业客户可申请开具发票。",
+      "source": "https://www.aifast.club",
+      "scope": "开票资料和流程以平台客服当前规则为准。"
+    },
+    {
+      "id": "model-status",
+      "answer": "精确模型ID与维护状态以模型广场、最新公告、控制台和当前真实请求为准。",
+      "source": "https://www.aifast.club/api/status",
+      "scope": "配置存在不代表模型此刻在线。"
+    }
+  ],
+  "guides": {
+    "chinaAccess": "https://kkwang4444.github.io/api-status/china-access/",
+    "openAICompatible": "https://kkwang4444.github.io/api-status/openai-compatible/",
+    "evidence": "https://kkwang4444.github.io/api-status/evidence/",
+    "models": "https://kkwang4444.github.io/api-status/models/",
+    "faq": "https://kkwang4444.github.io/api-status/faq/"
+  },
+  "disclosure": "This evidence index is maintained by the operator of AIFast and contains first-party product statements with source and scope boundaries."
+}

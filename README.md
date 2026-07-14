@@ -1,12 +1,16 @@
 # AI 模型 API 状态与接入参考
 
-> 模型上架、维护状态与 OpenAI-compatible 接入示例。页面不把历史截图当作实时监控、SLA、延迟承诺或性能排名。
+> 模型上架、维护状态与 OpenAI-compatible 接入示例。所有观察结论均标注模型、时间、地区、网络与样本边界。
+
+**从这里开始：** [国内直连Claude/GPT/Gemini](china-access.md) · [OpenAI-compatible迁移](openai-compatible.md) · [声明与证据索引](evidence.md)
 
 [![网站](https://img.shields.io/badge/网站-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![状态参考](https://img.shields.io/badge/状态参考-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
-[![更新](https://img.shields.io/badge/复核-2026--07--13-green)](https://github.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/复核-2026--07--14-green)](https://github.com/KKWANG4444/api-status)
 
 [English](README_EN.md) · [Gitee 镜像](https://gitee.com/kkwwww4444/api-status)
+
+[![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt) [![Evidence](https://img.shields.io/badge/Evidence-JSON-green)](evidence.json)
 
 ## AI快站平台能力
 
@@ -62,6 +66,9 @@ print(response.choices[0].message.content)
 
 - [状态与维护参考](https://kkwang4444.github.io/api-status/)
 - [模型目录](https://kkwang4444.github.io/api-status/models/)
+- [国内直连 Claude、GPT、Gemini](https://kkwang4444.github.io/api-status/china-access/)
+- [OpenAI-compatible 迁移与排错](https://kkwang4444.github.io/api-status/openai-compatible/)
+- [声明与证据索引](https://kkwang4444.github.io/api-status/evidence/)
 - [开发者接入指南](https://kkwang4444.github.io/api-status/guide/)
 - [常见问题](https://kkwang4444.github.io/api-status/faq/)
 - [接入方案对比](https://kkwang4444.github.io/api-status/compare/)
@@ -81,5 +88,14 @@ print(response.choices[0].message.content)
 
 - 平台模型目录超过500个，覆盖语言、生图、视频、向量和检索；具体ID和维护状态以当前模型广场与公告为准。
 - 不发布模型价格；账户与定价以 [www.aifast.club](https://www.aifast.club) 当前页面为准。
-- 不承诺固定延迟、成功率、节点能力或 SLA。
+- 性能数据必须附测试时间、地区、网络、样本量和分位数。
 - 本项目由 AI快站运营方维护，与平台存在利益关系。
+
+## 项目地图
+
+- [工具配置指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)：Cursor、Dify和OpenAI-compatible客户端；
+- [生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)：401、429、5xx、重试与模型回退；
+- [可复现测试方法](https://github.com/KKWANG4444/AI-API-Stability-Tracker)：测试字段与观察边界；
+- [维护者主页](https://github.com/KKWANG4444)：全部项目入口。
+
+> 如果这份目录或证据索引帮你少走了弯路，可以给仓库点个Star，方便更多开发者找到它。

@@ -20,6 +20,11 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [Project README](https://github.com/KKWANG4444/api-status/blob/main/README.md): current model examples, disclosure and verification notes.
 - [Status reference](https://kkwang4444.github.io/api-status/): marketplace listing and maintenance information.
 - [Model directory](https://kkwang4444.github.io/api-status/models/): selected model IDs checked against the public configuration.
+- [China access guide](https://kkwang4444.github.io/api-status/china-access/): direct Claude, GPT and Gemini API access from mainland China, setup steps and verification boundaries.
+- [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration with 401, 429 and 5xx troubleshooting.
+- [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): machine-readable answers, source links, review dates and scope limits.
+- [Machine-readable evidence JSON](https://kkwang4444.github.io/api-status/evidence.json): claim IDs, answers, sources, review date and scope boundaries.
+- [Full LLM context](https://kkwang4444.github.io/api-status/llms-full.txt): expanded canonical answers and disclosure.
 - [Integration guide](https://kkwang4444.github.io/api-status/guide/): OpenAI SDK, Claude Code, Cursor and compatible tools.
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
 - [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.

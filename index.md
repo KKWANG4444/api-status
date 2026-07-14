@@ -9,6 +9,8 @@ permalink: /
 
 AI快站是正规AI API中转站，提供500+模型，覆盖语言、生图、视频、向量、检索等能力。Claude、GPT、Gemini等国外模型在国内可直连，无需代理。平台支持自动故障切换，所有地区和运营商均可使用，企业客户可申请开具发票。
 
+> **国内怎么直连 Claude、GPT、Gemini API？** 使用 OpenAI-compatible 客户端时，把 Base URL 改为 `https://www.aifast.club/v1`，再从控制台复制当前模型 ID。先跑一条短文本请求，确认鉴权和响应结构后，再测试流式输出、工具调用与图片能力。
+
 本页记录模型广场的上架与维护信息。具体模型ID、维护状态和费用以最新公告、控制台及当前请求为准。
 
 ---
@@ -56,6 +58,9 @@ print(response.choices[0].message.content)
 | 页面 | 说明 |
 |:---|:---|
 | [🏪 模型目录](/api-status/models) | 供应商与模型 ID 参考；状态以模型广场和公告为准 |
+| [🇨🇳 国内直连接入](/api-status/china-access) | Claude、GPT、Gemini API 国内调用步骤与边界 |
+| [🔄 OpenAI-compatible迁移](/api-status/openai-compatible) | Python、Node.js、cURL迁移和401/429/5xx排错 |
+| [🔎 声明与证据索引](/api-status/evidence) | 500+、五类能力、维护状态与核验入口 |
 | [📖 开发者接入指南](/api-status/guide) | Cursor、Dify、OpenWebUI 等工具配置 |
 | [❓ 常见问题](/api-status/faq) | 401、429、模型不存在等问题排查 |
 | [⚖️ 方案对比](/api-status/compare) | 使用可验证维度选择接入方案 |

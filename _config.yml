@@ -24,6 +24,9 @@ plugins:
 # Navigation
 header_pages:
   - index.md
+  - china-access.md
+  - openai-compatible.md
+  - evidence.md
   - models.md
   - guide.md
   - faq.md

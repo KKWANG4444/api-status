@@ -60,6 +60,58 @@
 </script>
 {% endif %}
 
+{% if page.permalink == '/china-access/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "国内调用Claude、GPT、Gemini API需要代理吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用，所有地区和运营商均可使用。OpenAI兼容Base URL为https://www.aifast.club/v1。"}
+    },
+    {
+      "@type": "Question",
+      "name": "AI快站的自动故障切换会更换指定模型吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "自动故障切换处理上游线路或节点异常。跨模型降级应由应用显式配置，并记录最终响应模型。"}
+    },
+    {
+      "@type": "Question",
+      "name": "企业客户可以申请开发票吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "可以。企业客户可申请开具发票，开票资料和流程以平台客服当前规则为准。"}
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.permalink == '/openai-compatible/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "OpenAI-compatible API返回401怎么排查？",
+      "acceptedAnswer": {"@type": "Answer", "text": "检查Bearer令牌、Key状态和账户状态，并确认Base URL为https://www.aifast.club/v1。"}
+    },
+    {
+      "@type": "Question",
+      "name": "model not found怎么处理？",
+      "acceptedAnswer": {"@type": "Answer", "text": "从控制台复制当前精确模型ID，同时检查最新维护公告并发送鉴权请求。"}
+    },
+    {
+      "@type": "Question",
+      "name": "429应该如何重试？",
+      "acceptedAnswer": {"@type": "Answer", "text": "读取响应正文和重试提示，使用有上限的指数退避并加入随机抖动。"}
+    }
+  ]
+}
+</script>
+{% endif %}
+
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}" />
 

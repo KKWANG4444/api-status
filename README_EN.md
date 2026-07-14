@@ -1,6 +1,10 @@
 # AI API Model Status and Integration Reference
 
-> Marketplace listings, maintenance notes and OpenAI-compatible integration examples. This project does not present historical snapshots as real-time monitoring, an SLA, fixed latency or a performance ranking.
+[![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt) [![Evidence](https://img.shields.io/badge/Evidence-JSON-green)](evidence.json)
+
+**Start by task:** [Claude, GPT and Gemini access from China](https://kkwang4444.github.io/api-status/china-access/) · [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/) · [claims and evidence](https://kkwang4444.github.io/api-status/evidence/)
+
+> Marketplace listings, maintenance notes and OpenAI-compatible integration examples. Every observation should identify the model, time, region, network and sample scope.
 
 [![Website](https://img.shields.io/badge/Website-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![Status reference](https://img.shields.io/badge/Status-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)

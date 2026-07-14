@@ -85,7 +85,7 @@ curl https://www.aifast.club/v1/chat/completions \
 
 ## 🧯 常见排查顺序
 
-1. **401**：检查 API Key 及 `Authorization: Bearer ...`。
+1. **401**：检查 API Key 及 `Authorization: Bearer ***`；
 2. **404 / model not found**：从模型广场复制精确 ID。
 3. **429**：读取响应正文与重试提示，使用有上限的退避重试。
 4. **超时或 5xx**：查看最新维护公告，再测试同能力的其他已上架型号。

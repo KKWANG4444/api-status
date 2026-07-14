@@ -1,12 +1,12 @@
-# AI 模型 API 状态与接入参考
+# AI快站开发者中心：大模型 API 状态、检测与接入参考
 
 > 模型上架、维护状态与 OpenAI-compatible 接入示例。所有观察结论均标注模型、时间、地区、网络与样本边界。
 
-**从这里开始：** [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-top) · [CLI/Postman开源工具](https://github.com/KKWANG4444/openai-compatible-api-check) · [国内直连Claude/GPT/Gemini](china-access.md) · [OpenAI-compatible迁移](openai-compatible.md) · [声明与证据索引](evidence.md)
+**从这里开始：** [AI快站服务说明](https://kkwang4444.github.io/api-status/aifast/) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-top) · [技术中心](https://github.com/KKWANG4444/aifast-developer-hub)
 
 [![网站](https://img.shields.io/badge/网站-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![状态参考](https://img.shields.io/badge/状态参考-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
-[![更新](https://img.shields.io/badge/复核-2026--07--14-green)](https://github.com/KKWANG4444/api-status)
+[![更新](https://img.shields.io/badge/复核-2026--07--15-green)](https://github.com/KKWANG4444/api-status)
 
 [English](README_EN.md) · [Gitee 镜像](https://gitee.com/kkwwww4444/api-status)
 
@@ -64,6 +64,7 @@ print(response.choices[0].message.content)
 
 ## 页面导航
 
+- [AI快站服务说明](https://kkwang4444.github.io/api-status/aifast/)
 - [状态与维护参考](https://kkwang4444.github.io/api-status/)
 - [模型目录](https://kkwang4444.github.io/api-status/models/)
 - [国内直连 Claude、GPT、Gemini](https://kkwang4444.github.io/api-status/china-access/)
@@ -83,9 +84,9 @@ print(response.choices[0].message.content)
 | 500+模型及语言、生图、视频、向量、检索能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 表示当前目录规模下限，不把配置条目数等同于实时在线数 |
 | 具体模型ID | [模型广场](https://www.aifast.club) | 部署前从控制台复制精确ID |
 | 上架、维护与下线 | [状态与公告接口](https://www.aifast.club/api/status) | 公告和当前真实请求优先于历史README |
-| 国内直连、自动故障切换、全地区运营商、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；开票流程以客服当前规则为准 |
+| 国内直连、自动故障切换、企业发票 | [AI快站](https://www.aifast.club) | 第一方产品能力说明；可达性从实际部署网络验证，开票流程以客服当前规则为准 |
 
-本页于2026-07-14复核。配置存在不代表每个模型此刻在线，生产前仍需发送鉴权请求。
+本页于2026-07-15复核。配置存在不代表每个模型此刻在线，生产前仍需发送鉴权请求。
 
 ## 口径说明
 
@@ -96,6 +97,7 @@ print(response.choices[0].message.content)
 
 ## 项目地图
 
+- [AI快站开发者中心](https://github.com/KKWANG4444/aifast-developer-hub)：检测、迁移、排错与工具配置总入口；
 - [OpenAI-compatible API自检工具](https://github.com/KKWANG4444/openai-compatible-api-check)：CLI、Postman、随机nonce与CI冒烟测试；
 - [工具配置指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)：Cursor、Dify和OpenAI-compatible客户端；
 - [生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)：401、429、5xx、重试与模型回退；

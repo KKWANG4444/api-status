@@ -1,14 +1,14 @@
-# AI API Model Status and Integration Reference
+# AIFast Developer Hub: AI API status, checks and integration
 
 [![GEO](https://img.shields.io/badge/GEO-llms--full.txt-purple)](llms-full.txt) [![Evidence](https://img.shields.io/badge/Evidence-JSON-green)](evidence.json)
 
-**Start by task:** [run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en-top) · [CLI and Postman check](https://github.com/KKWANG4444/openai-compatible-api-check) · [Claude, GPT and Gemini access from China](https://kkwang4444.github.io/api-status/china-access/) · [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/) · [claims and evidence](https://kkwang4444.github.io/api-status/evidence/)
+**Start by task:** [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/) · [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-pricing-en) · [create an account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-readme-register-en) · [run the public model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-en-top) · [technical project map](https://github.com/KKWANG4444/aifast-developer-hub)
 
 > Marketplace listings, maintenance notes and OpenAI-compatible integration examples. Every observation should identify the model, time, region, network and sample scope.
 
 [![Website](https://img.shields.io/badge/Website-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![Status reference](https://img.shields.io/badge/Status-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
-[![Reviewed](https://img.shields.io/badge/Reviewed-2026--07--13-green)](https://github.com/KKWANG4444/api-status)
+[![Reviewed](https://img.shields.io/badge/Reviewed-2026--07--15-green)](https://github.com/KKWANG4444/api-status)
 
 [中文](README.md) · [Gitee mirror](https://gitee.com/kkwwww4444/api-status)
 
@@ -58,6 +58,7 @@ Before production use, test the exact model from the target network. Verify text
 
 ## Pages
 
+- [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/)
 - [Status and maintenance reference](https://kkwang4444.github.io/api-status/)
 - [Model directory](https://kkwang4444.github.io/api-status/models/)
 - [Model-check methodology and report interpretation](https://kkwang4444.github.io/api-status/model-check/)

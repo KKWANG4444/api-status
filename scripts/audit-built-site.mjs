@@ -5,6 +5,7 @@ const root = resolve(new URL('..', import.meta.url).pathname);
 const site = join(root, '_site');
 const expectedPages = [
   'index.html',
+  'aifast/index.html',
   'china-access/index.html',
   'compare/index.html',
   'evidence/index.html',
@@ -77,6 +78,21 @@ for (const pagePath of expectedPages) {
 const modelCheck = await readFile(join(site, 'model-check/index.html'), 'utf8');
 if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
   errors.push('model-check/index.html 未使用本地检测工具预览图');
+}
+
+const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
+for (const required of [
+  'https://www.aifast.club/pricing',
+  'https://www.aifast.club/register',
+  'https://www.aifast.club/v1',
+  'https://aifast.apifox.cn/',
+  'https://docs.aifast.club/model-check/',
+  'https://github.com/KKWANG4444/aifast-developer-hub',
+]) {
+  if (!aifast.includes(required)) errors.push(`aifast/index.html 缺少品牌承接入口 ${required}`);
+}
+if (!aifast.includes('"@type": "Service"') || !aifast.includes('"@type": "FAQPage"')) {
+  errors.push('aifast/index.html 缺少Service或FAQPage结构化数据');
 }
 for (const required of [
   'https://docs.aifast.club/model-check/',

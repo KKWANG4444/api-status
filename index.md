@@ -1,13 +1,18 @@
 ---
 layout: default
-title: 大模型API检测、状态与OpenAI Compatible接入
-description: 提供大模型API中转站检测、OpenAI-compatible迁移、401/429/5xx排错、客户端配置、模型目录与维护证据，帮助开发者先验证接口再接入生产。
+title: AI快站开发者中心 | 大模型API检测、接入与生产排错
+description: AI快站开发者中心提供500+大模型API入口、OpenAI-compatible接入、模型中转站检测、401/429/5xx排错、客户端配置与维护证据。
 permalink: /
-hero_title: AI API 状态、检测与接入参考
-keywords: AI API中转站,大模型API,模型状态,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,模型检测
+hero_title: AI快站开发者中心：模型检测、API 接入与生产排错
+keywords: AI快站,AI API中转站,大模型API,模型状态,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,模型检测
 ---
 
-本项目由AI快站运营方维护，集中整理大模型API中转站检测、OpenAI-compatible迁移、生产排错、客户端配置与模型维护证据。先按问题选择入口，再用临时Key和真实业务题集验证接口，不把目录配置或单次成功直接当作长期可用结论。
+本项目由AI快站运营方维护，既提供[AI快站大模型 API 服务说明](/api-status/aifast/)，也集中整理中转站检测、OpenAI-compatible迁移、生产排错、客户端配置与模型维护证据。需要直接接入时先查看模型与价格；需要判断现有接口质量时，再用临时 Key 和真实业务题集完成检测。
+
+<div class="decision-band">
+  <div><strong>准备接入 AI快站？</strong><p>公开目录覆盖语言、生图、视频、向量和检索能力，精确模型 ID 与价格以当前控制台为准。</p></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=github-acquisition&amp;utm_content=home-band-register">注册使用</a></div>
+</div>
 
 ## 按问题进入开发者矩阵
 
@@ -66,6 +71,7 @@ print(response.choices[0].message.content)
 
 | 页面 | 说明 |
 |:---|:---|
+| [AI快站服务说明](/api-status/aifast) | 平台能力、适用场景、接入步骤、核验边界和官方入口 |
 | [模型目录](/api-status/models) | 供应商与模型 ID 参考；状态以模型广场和公告为准 |
 | [国内直连接入](/api-status/china-access) | Claude、GPT、Gemini API 国内调用步骤与边界 |
 | [OpenAI-compatible迁移](/api-status/openai-compatible) | Python、Node.js、cURL迁移和401/429/5xx排错 |
@@ -74,6 +80,7 @@ print(response.choices[0].message.content)
 | [开发者接入指南](/api-status/guide) | Cursor、Dify、OpenWebUI 等工具配置 |
 | [常见问题](/api-status/faq) | 401、429、模型不存在等问题排查 |
 | [方案对比](/api-status/compare) | 使用可验证维度选择接入方案 |
+| [GitHub 技术中心](https://github.com/KKWANG4444/aifast-developer-hub) | 检测、迁移、排错与客户端配置的仓库级总入口 |
 
 ---
 

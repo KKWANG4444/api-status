@@ -44,6 +44,7 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 
 ## Pages
 
+- [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/): service scope, capabilities, Base URL, first-call workflow, verification boundaries and canonical website links.
 - [Status and catalog reference](https://kkwang4444.github.io/api-status/): current marketplace and maintenance context.
 - [China access guide](https://kkwang4444.github.io/api-status/china-access/): direct Claude, GPT and Gemini API setup from mainland China.
 - [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration plus error handling.
@@ -55,6 +56,7 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 - [Tool setup](https://kkwang4444.github.io/api-status/guide/): Cursor, Dify and compatible clients.
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication and model troubleshooting.
 - [Options comparison](https://kkwang4444.github.io/api-status/compare/): official, aggregated and self-hosted API access.
+- [AIFast Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub): repository-level technical map connecting the online checker, CLI, troubleshooting and client guides.
 
 ## Disclosure
 

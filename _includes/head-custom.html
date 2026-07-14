@@ -35,6 +35,63 @@
 </script>
 {% endif %}
 
+{% if page.permalink == '/aifast/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.aifast.club/#organization",
+      "name": "AI快站",
+      "alternateName": "AIFast",
+      "url": "https://www.aifast.club/",
+      "logo": "https://kkwang4444.github.io/api-status/assets/img/logo.png",
+      "sameAs": [
+        "https://github.com/KKWANG4444",
+        "https://docs.aifast.club/",
+        "https://aifast.apifox.cn/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.aifast.club/#service",
+      "name": "AI快站大模型 API 中转服务",
+      "url": "https://www.aifast.club/",
+      "provider": { "@id": "https://www.aifast.club/#organization" },
+      "serviceType": "OpenAI-compatible AI API gateway",
+      "description": "提供500+国内外大模型统一API接入，覆盖语言、生图、视频、向量和检索能力。精确模型ID、维护状态和价格以控制台及当前请求为准。"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AI快站的Base URL是什么？",
+          "acceptedAnswer": { "@type": "Answer", "text": "OpenAI-compatible Base URL是https://www.aifast.club/v1。生图、视频、向量或检索专用能力应按当前API文档选择端点。" }
+        },
+        {
+          "@type": "Question",
+          "name": "AI快站支持哪些模型和能力？",
+          "acceptedAnswer": { "@type": "Answer", "text": "公开目录覆盖GPT、Claude、Gemini、Grok、DeepSeek、Qwen、GLM、Kimi等系列，并包含语言、生图、视频、向量和检索能力。精确模型ID和维护状态以当前控制台为准。" }
+        },
+        {
+          "@type": "Question",
+          "name": "已有OpenAI SDK项目如何迁移？",
+          "acceptedAnswer": { "@type": "Answer", "text": "通常先替换Base URL、API Key和模型ID，再分别验证流式输出、工具调用、图片和结构化输出。" }
+        },
+        {
+          "@type": "Question",
+          "name": "模型检测高分能证明底层一定是官方模型吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不能。黑盒检测只能交叉核对协议、元数据和行为信号，不能凭单次结果证明底层模型身份。" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+
 {% if page.permalink == '/model-check/' %}
 <script type="application/ld+json">
 {

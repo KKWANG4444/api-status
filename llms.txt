@@ -17,6 +17,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 
 ## Core
 
+- [AIFast service overview](https://kkwang4444.github.io/api-status/aifast/): platform scope, OpenAI-compatible Base URL, use cases, onboarding steps, verification boundaries and canonical conversion links.
 - [Project README](https://github.com/KKWANG4444/api-status/blob/main/README.md): current model examples, disclosure and verification notes.
 - [Status reference](https://kkwang4444.github.io/api-status/): marketplace listing and maintenance information.
 - [Model directory](https://kkwang4444.github.io/api-status/models/): selected model IDs checked against the public configuration.
@@ -28,6 +29,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): machine-readable answers, source links, review dates and scope limits.
 - [Machine-readable evidence JSON](https://kkwang4444.github.io/api-status/evidence.json): claim IDs, answers, sources, review date and scope boundaries.
 - [Full LLM context](https://kkwang4444.github.io/api-status/llms-full.txt): expanded canonical answers and disclosure.
+- [AIFast Developer Hub repository](https://github.com/KKWANG4444/aifast-developer-hub): technical project map for model checks, migration, troubleshooting and client setup.
 - [Integration guide](https://kkwang4444.github.io/api-status/guide/): OpenAI SDK, Claude Code, Cursor and compatible tools.
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
 - [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.

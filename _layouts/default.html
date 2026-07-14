@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102a2c">
+    {% seo %}
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+    <link rel="alternate" type="text/plain" href="{{ '/llms.txt' | relative_url }}" title="AI 可读项目索引">
+    <link rel="alternate" type="application/json" href="{{ '/evidence.json' | relative_url }}" title="声明与证据索引">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="shell site-header-inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="AI API 开发者参考首页">
+          <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="" width="34" height="34">
+          <span><strong>AI API 开发者参考</strong><small>状态、检测与接入</small></span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="{{ '/' | relative_url }}"{% if page.permalink == '/' %} aria-current="page"{% endif %}>状态首页</a>
+          <a href="{{ '/model-check/' | relative_url }}"{% if page.permalink == '/model-check/' %} aria-current="page"{% endif %}>模型检测</a>
+          <a href="{{ '/openai-compatible/' | relative_url }}"{% if page.permalink == '/openai-compatible/' %} aria-current="page"{% endif %}>迁移排错</a>
+          <a href="{{ '/guide/' | relative_url }}"{% if page.permalink == '/guide/' %} aria-current="page"{% endif %}>工具配置</a>
+          <a href="{{ '/evidence/' | relative_url }}"{% if page.permalink == '/evidence/' %} aria-current="page"{% endif %}>证据索引</a>
+        </nav>
+        <a class="header-action" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=global-header">开始检测</a>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="shell page-hero-inner">
+        <div>
+          <h1>{{ page.hero_title | default: page.title }}</h1>
+          {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+        </div>
+        {% if page.permalink == '/model-check/' %}
+          <div class="hero-actions" aria-label="模型检测操作">
+            <a class="button button-primary" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=hero-primary">运行在线检测</a>
+            <a class="button button-secondary" href="https://github.com/KKWANG4444/openai-compatible-api-check">使用 CLI / Postman</a>
+          </div>
+        {% elsif page.permalink == '/' %}
+          <div class="hero-actions" aria-label="常用入口">
+            <a class="button button-primary" href="{{ '/model-check/' | relative_url }}">检测模型接口</a>
+            <a class="button button-secondary" href="{{ '/guide/' | relative_url }}">查看接入教程</a>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <main id="content" class="shell content-shell">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <strong>AI API 开发者参考</strong>
+          <p>用可复现步骤核对模型目录、接口兼容性、维护信息和生产接入边界。</p>
+        </div>
+        <nav aria-label="项目矩阵">
+          <strong>项目矩阵</strong>
+          <a href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=global-footer">在线模型检测</a>
+          <a href="https://github.com/KKWANG4444/openai-compatible-api-check">CLI 与 Postman</a>
+          <a href="https://github.com/KKWANG4444/llm-api-proxy-china">生产排错</a>
+          <a href="https://github.com/KKWANG4444/ai-api-proxy-china-guide">工具配置</a>
+        </nav>
+        <nav aria-label="AI快站入口">
+          <strong>AI快站</strong>
+          <a href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer-matrix&amp;utm_content=global-footer">模型与价格</a>
+          <a href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer-matrix&amp;utm_content=global-footer">注册使用</a>
+          <a href="https://aifast.apifox.cn/">API 文档</a>
+          <a href="https://gitee.com/kkwwww4444/api-status">Gitee 国内镜像</a>
+        </nav>
+      </div>
+      <div class="shell footer-bottom">
+        <span>由 AI快站维护，涉及平台能力的内容属于第一方说明。</span>
+        <a href="https://github.com/KKWANG4444/api-status">查看本站源码</a>
+      </div>
+    </footer>
+  </body>
+</html>

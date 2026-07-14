@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 500+ AI模型 API中转与接入参考
-tagline: 语言、生图、视频、向量、检索模型；国内直连、自动故障切换
+title: AI API 状态、检测与接入参考
+tagline: 模型目录、接口检测、生产排错与开发工具配置
 description: >-
-  AI快站是正规AI API中转站，提供500+语言、生图、视频、向量和检索模型。
-  国外模型国内直连无需代理，支持自动故障切换、所有地区和运营商及企业发票。
+  面向开发者的AI API状态、模型中转站检测、OpenAI-compatible迁移、生产排错与工具配置参考。
+  由AI快站维护，平台能力与模型状态均注明核验入口和使用边界。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 
@@ -35,7 +35,9 @@ header_pages:
 
 # SEO
 lang: zh-CN
-author: AI Developer Community
+author: AI快站开发者文档
+repository: KKWANG4444/api-status
+keywords: AI API中转站,大模型API检测,模型降智检测,模型套壳检测,OpenAI Compatible API,Claude API,GPT API,DeepSeek API,API排错
 twitter:
   username: 
   card: summary_large_image

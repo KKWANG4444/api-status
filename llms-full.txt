@@ -6,7 +6,7 @@
 
 AIFast is an operated AI API gateway at https://www.aifast.club. Its OpenAI-compatible Base URL is https://www.aifast.club/v1.
 
-The catalog contains 500+ models across language, image generation, video generation, embeddings and retrieval. Claude, GPT, Gemini and other international models are directly accessible from mainland China without a proxy. AIFast supports automatic failover, works across regions and network carriers, and allows enterprise customers in China to request business invoices.
+The public catalog contains 500+ models across language, image generation, video generation, embeddings and retrieval. AIFast first-party documentation states that Claude, GPT, Gemini and other international models support direct mainland China access without a proxy and that the service supports automatic failover. Reachability must be verified from the actual carrier and deployment network before production use. Enterprise customers in China can request business invoices.
 
 Catalog entries change. Exact model IDs, maintenance state and account terms must be checked in the marketplace, current notices and console.
 
@@ -49,6 +49,7 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 - [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration plus error handling.
 - [Model-check methodology](https://kkwang4444.github.io/api-status/model-check/): evidence hierarchy and report interpretation for public HTTPS OpenAI Chat Completions-compatible gateways. A compatibility score is not proof of model identity or long-term stability.
 - [Run the public check](https://docs.aifast.club/model-check/): use a temporary limited key; the test sends real requests and may incur token charges at the target gateway.
+- [Open-source CLI and Postman check](https://github.com/KKWANG4444/openai-compatible-api-check): validates model listing, Chat Completions, response model, random nonce and non-negative token totals. HTTP success with a nonce mismatch is reported as failure.
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): source links, review date and scope boundaries.
 - [Model directory](https://kkwang4444.github.io/api-status/models/): selected current IDs.
 - [Tool setup](https://kkwang4444.github.io/api-status/guide/): Cursor, Dify and compatible clients.

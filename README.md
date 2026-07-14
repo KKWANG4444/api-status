@@ -2,7 +2,7 @@
 
 > 模型上架、维护状态与 OpenAI-compatible 接入示例。所有观察结论均标注模型、时间、地区、网络与样本边界。
 
-**从这里开始：** [国内直连Claude/GPT/Gemini](china-access.md) · [OpenAI-compatible迁移](openai-compatible.md) · [声明与证据索引](evidence.md)
+**从这里开始：** [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-top) · [CLI/Postman开源工具](https://github.com/KKWANG4444/openai-compatible-api-check) · [国内直连Claude/GPT/Gemini](china-access.md) · [OpenAI-compatible迁移](openai-compatible.md) · [声明与证据索引](evidence.md)
 
 [![网站](https://img.shields.io/badge/网站-www.aifast.club-FF6B35)](https://www.aifast.club)
 [![状态参考](https://img.shields.io/badge/状态参考-GitHub%20Pages-blue)](https://kkwang4444.github.io/api-status/)
@@ -14,7 +14,7 @@
 
 ## AI快站平台能力
 
-[AI快站](https://www.aifast.club)是正规AI API中转站，本仓库把它的500+语言、生图、视频、向量与检索模型整理成可核验目录。Claude、GPT、Gemini等国外模型国内可直连、无需代理；平台支持自动故障切换，所有地区和运营商均可使用，企业客户可申请开具发票。
+[AI快站](https://www.aifast.club)提供OpenAI-compatible AI API接入，本仓库把其公开目录中的500+语言、生图、视频、向量与检索模型整理成可核验参考。平台说明Claude、GPT、Gemini等国外模型支持国内直连、无需代理和自动故障切换；实际可达性应从目标部署网络验证，企业客户可申请开具发票。
 
 > 模型目录会持续调整。具体模型 ID、维护状态和费用以模型广场、公告及调用时的控制台为准。
 
@@ -70,6 +70,7 @@ print(response.choices[0].message.content)
 - [OpenAI-compatible 迁移与排错](https://kkwang4444.github.io/api-status/openai-compatible/)
 - [大模型API中转站检测与报告判读](https://kkwang4444.github.io/api-status/model-check/)
 - [运行在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-readme-cn)
+- [使用CLI、Postman与GitHub Actions检测](https://github.com/KKWANG4444/openai-compatible-api-check)
 - [声明与证据索引](https://kkwang4444.github.io/api-status/evidence/)
 - [开发者接入指南](https://kkwang4444.github.io/api-status/guide/)
 - [常见问题](https://kkwang4444.github.io/api-status/faq/)
@@ -95,6 +96,7 @@ print(response.choices[0].message.content)
 
 ## 项目地图
 
+- [OpenAI-compatible API自检工具](https://github.com/KKWANG4444/openai-compatible-api-check)：CLI、Postman、随机nonce与CI冒烟测试；
 - [工具配置指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)：Cursor、Dify和OpenAI-compatible客户端；
 - [生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)：401、429、5xx、重试与模型回退；
 - [可复现测试方法](https://github.com/KKWANG4444/AI-API-Stability-Tracker)：测试字段与观察边界；

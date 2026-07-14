@@ -5,8 +5,6 @@ description: 把OpenAI SDK迁移到统一AI API接口：修改Base URL和模型I
 permalink: /openai-compatible/
 ---
 
-# OpenAI-compatible API迁移与排错
-
 已有OpenAI SDK项目时，迁移通常只涉及Base URL、API Key和模型ID。但“请求能发出去”不等于全部功能兼容，流式输出、工具调用、图片和结构化输出仍需逐项测试。
 
 ## Python
@@ -78,12 +76,14 @@ curl https://www.aifast.club/v1/chat/completions \
 
 ## 服务范围
 
-AI快站是正规AI API中转站，提供500+模型，覆盖语言、生图、视频、向量和检索。Claude、GPT、Gemini等国外模型国内可直连、无需代理；所有地区和运营商均可使用，企业客户可申请开具发票。
+AI快站提供OpenAI-compatible AI API接入，公开目录包含500+模型，覆盖语言、生图、视频、向量和检索。平台说明Claude、GPT、Gemini等国外模型支持国内直连、无需代理；实际可达性应从目标部署网络验证，企业客户可申请开具发票。
 
 模型ID、维护状态和费用以[模型广场](https://www.aifast.club)、[公告](https://www.aifast.club/api/status)和控制台当前信息为准。
 
 ## 相关页面
 
+- [在线检测第三方OpenAI-compatible中转站](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=openai-compatible-page)
+- [CLI、Postman与CI自检工具](https://github.com/KKWANG4444/openai-compatible-api-check)
 - [国内直连Claude、GPT、Gemini](/api-status/china-access/)
 - [开发工具配置](/api-status/guide/)
 - [模型目录](/api-status/models/)

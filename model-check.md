@@ -1,25 +1,47 @@
 ---
 layout: default
 title: 大模型API中转站检测：排查降智、套壳与协议兼容问题
-description: 免费检测公开HTTPS OpenAI Compatible API中转站，从模型声明、Token、动态题、SSE与工具调用等证据排查路由不一致、能力降级和协议兼容风险。
+hero_title: 检测大模型 API 中转站的降智、套壳与兼容性风险
+description: 免费检测公开HTTPS OpenAI Compatible API中转站，从模型声明、Token、随机动态题、SSE与工具调用等证据排查路由不一致、能力降级和协议兼容风险。
+keywords: 大模型API中转站检测,模型降智检测,模型套壳检测,API中转站真假,OpenAI Compatible API检测,Claude API检测,GPT API检测,DeepSeek API检测,Token检测,SSE检测
 permalink: /model-check/
 image: /assets/img/og-image.png
 ---
 
-![大模型API中转站检测](https://docs.aifast.club/og-default.png)
+<div class="matrix-intro">
+  <div class="matrix-intro-copy">
+    <strong>先验证接口，再决定是否迁移</strong>
+    <p>只问模型“你是谁”几乎没有判断力。更可靠的做法是把协议结构、响应模型、Token、随机nonce、SSE和工具调用放在同一轮测试中交叉核对。在线工具支持符合协议范围的第三方公开中转站，不要求使用AI快站。</p>
+  </div>
+  <a class="tool-preview" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=preview" aria-label="打开大模型API中转站检测工具">
+    <img src="{{ '/assets/img/model-check-preview.jpg' | relative_url }}" alt="大模型API中转站在线检测工具界面" width="1280" height="720">
+  </a>
+</div>
 
-拿到一个Claude、GPT或DeepSeek中转接口，最容易犯的错误是只问一句“你是谁”。模型自述会受系统提示、网关改写和角色设定影响，回答像某个模型，也不能证明底层身份。
+## 根据你的使用场景选择入口
 
-[AI快站模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=api-status-page)采用另一种做法：把协议字段、响应模型、Token、随机动态题、SSE流式输出和工具调用放到同一份报告里。它适合筛查明显的路由差异、能力异常和兼容层缺陷，但不是模型厂商认证。
+<div class="matrix-grid">
+  <a class="matrix-card" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=matrix-online"><small>浏览器检测</small><strong>在线生成完整报告</strong><span>适合第一次检查第三方中转站，覆盖模型声明、Token、动态题、SSE、工具调用和分项证据。</span><em>立即运行检测 →</em></a>
+  <a class="matrix-card" href="https://github.com/KKWANG4444/openai-compatible-api-check"><small>开源工具</small><strong>CLI、Postman 与 GitHub Actions</strong><span>适合开发者在本地或CI中复测。使用随机nonce，HTTP 200但内容不匹配仍会退出失败。</span><em>查看源码与用法 →</em></a>
+  <a class="matrix-card" href="https://github.com/KKWANG4444/llm-api-proxy-china"><small>生产排错</small><strong>401、429、5xx 与回退策略</strong><span>基础调用失败时，按鉴权、模型ID、限流、重试和流式输出顺序定位问题。</span><em>查看排错仓库 →</em></a>
+  <a class="matrix-card" href="https://github.com/KKWANG4444/ai-api-proxy-china-guide"><small>客户端配置</small><strong>Cursor、Dify、Claude Code 等工具</strong><span>接口通过后，再按客户端填写Base URL、API Key和模型ID，逐项启用高级能力。</span><em>查看配置指南 →</em></a>
+</div>
 
-> 检测对象不限于AI快站。只要目标是公开HTTPS地址、使用Bearer API Key，并提供OpenAI Chat Completions兼容接口，就可以测试。
+<div class="path-strip" aria-label="模型接口验证路径">
+  <div><strong>01 临时凭据</strong><span>创建低额度临时Key，测试后立即撤销。</span></div>
+  <div><strong>02 基础协议</strong><span>检查鉴权、模型列表和Chat Completions。</span></div>
+  <div><strong>03 能力证据</strong><span>核对nonce、Token、SSE、tools和动态题。</span></div>
+  <div><strong>04 业务复测</strong><span>使用自己的题集，在低峰与高峰重复测试。</span></div>
+</div>
+
+> **检测边界：** 这是一套黑盒协议与行为筛查，不是OpenAI、Anthropic、Google、DeepSeek或其他模型厂商认证。网关可以改写`model`等元数据，单轮行为也可能受系统提示、路由和采样影响。
 
 ## 开始前准备什么
 
 1. 从目标中转站创建一个临时、低额度API Key；
 2. 从控制台或`/models`返回中复制准确的模型ID；
 3. Base URL填写到版本路径，例如`https://api.example.com/v1`，不要附加`/models`或`/chat/completions`；
-4. 先选快速模式，确认基础协议后再跑标准模式；
+4. 先选快速模式确认基础协议，再运行标准模式；
 5. 检测结束后撤销临时Key。
 
 检测会向目标接口发送真实模型请求，可能按目标中转站的计费规则产生少量Token费用。快速模式约3次请求；标准模式约7次请求，并增加输出风格、知识边界、SSE和工具调用探针。
@@ -28,7 +50,11 @@ image: /assets/img/og-image.png
 
 ### 请求模型与响应模型
 
-请求的模型ID和响应`model`字段持续不同，可能来自模型别名、网关改写或实际路由变化。这个字段本身也能被网关改写，因此它是一条一致性证据，不是身份证明。
+请求的模型ID和响应`model`字段持续不同，可能来自模型别名、网关改写或实际路由变化。该字段本身也能被网关改写，因此它是一条一致性证据，不是身份证明。
+
+### 固定指令与随机nonce
+
+检测会要求模型原样返回本轮随机字符串。仅返回HTTP 200不算通过；内容为空、增加解释、改写标点或nonce不匹配，都说明当前接口无法稳定完成这项固定指令。
 
 ### Token与元数据
 
@@ -36,7 +62,7 @@ image: /assets/img/og-image.png
 
 ### R1随机动态题
 
-服务端每次随机生成参数和nonce，并精确核对答案与随机值。动态题比固定题更难被提前适配，但它仍然只反映本轮行为，不能单独证明模型来源。
+服务端每次随机生成参数和nonce，并精确核对答案与随机值。动态题比固定题更难被提前适配，但它仍只反映本轮行为，不能单独证明模型来源。
 
 ### SSE流式输出
 
@@ -45,6 +71,22 @@ image: /assets/img/og-image.png
 ### 工具调用
 
 检测会要求模型调用一个带JSON Schema的固定函数，并核对工具名、参数结构与随机nonce。目标站如果没有完整实现工具调用，可能在这里失败；这说明该能力不适合直接投入生产，但不自动等于“套壳”。
+
+## 把基础检测放进CI
+
+独立开源仓库提供无第三方运行时依赖的Node.js CLI、Postman Collection和Node 20/22 GitHub Actions示例。API Key只从环境变量读取，不接受命令行明文Key。
+
+```bash
+git clone https://github.com/KKWANG4444/openai-compatible-api-check.git
+cd openai-compatible-api-check
+export OPENAI_API_KEY="你的临时限额Key"
+node bin/model-api-check.mjs \
+  --base-url https://api.example.com/v1 \
+  --model your-model-id \
+  --output reports/check.md
+```
+
+CLI只覆盖模型列表、Chat Completions、响应模型、随机nonce和Token字段。需要SSE、工具调用、动态题与更完整证据时，仍应使用[在线标准检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=cli-section)。
 
 ## 分数怎么解释
 
@@ -63,19 +105,35 @@ image: /assets/img/og-image.png
 - 响应`model`一致，不代表底层一定来自该厂商；
 - 一次检测通过，不代表高并发、账单、延迟和长期路由都稳定。
 
-需要比较多个中转站时，保持模型、参数、地区、网络和业务题集一致，并在低峰、高峰各跑一次。真正有价值的是保存多次报告，看相同条件下的结果是否持续漂移。
+比较多个中转站时，应保持模型、参数、地区、网络和业务题集一致，并在低峰、高峰各跑一次。真正有价值的是保存多次报告，看相同条件下的结果是否持续漂移。
 
 ## 隐私与协议边界
 
-页面前端不使用`localStorage`或`sessionStorage`保存Key。Key只随本次`POST /api/model-check`请求发送；页面声明它不会写入URL、数据库、缓存或报告。为了降低风险，仍应使用临时限额Key并在检测后撤销。
+在线工具声明不会使用`localStorage`或`sessionStorage`保存Key。Key只随本次`POST /api/model-check`请求发送，不写入URL、数据库、缓存或报告。CLI同样不会把Key写入报告，并对恶意上游回显执行脱敏。即便如此，仍应使用临时限额Key并在检测后撤销。
 
-当前固定探针只覆盖OpenAI Chat Completions兼容入口。Anthropic Messages、Gemini `generateContent`、OpenAI Responses API以及私有自定义协议不在检测范围内。
+当前固定探针只覆盖OpenAI Chat Completions兼容入口。Anthropic Messages、Gemini `generateContent`、OpenAI Responses API以及私有自定义协议不在这套固定探针范围内。
 
-## 立即检测
+## 常见问题
 
-- [运行大模型API中转站检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=api-status-cta)
-- [查看OpenAI-compatible迁移与排错](/api-status/openai-compatible/)
-- [查看模型目录与维护状态](/api-status/models/)
-- [查看声明与证据索引](/api-status/evidence/)
+### 模型检测能证明底层一定是官方模型吗？
 
-**披露：** 本页与检测工具由AI快站运营方维护。工具可以检测符合协议范围的第三方公开中转站。报告是兼容性与风险筛查结果，不属于OpenAI、Anthropic、Google、DeepSeek或其他模型厂商认证。
+不能。黑盒检测只能交叉核对协议、元数据和行为信号。报告可以暴露明显异常，但不是模型厂商认证，也不能仅凭单轮结果证明模型身份。
+
+### 检测第三方中转站会保存API Key吗？
+
+在线工具声明Key只用于本次检测，不写入URL、数据库、缓存或报告。建议始终创建临时限额Key，并在检测后撤销。
+
+### HTTP 200是否代表接口兼容？
+
+不代表。还需要核对随机nonce、响应结构、usage、SSE、工具调用和真实业务题集。HTTP成功但内容错误，在CLI中仍会返回失败退出码。
+
+### 检测通过后可以直接投入生产吗？
+
+不建议。生产上线还应测试并发、p50/p95延迟、429和5xx分布、重试、账单、数据条款以及不同时段的路由变化。
+
+<div class="decision-band">
+  <div><strong>先检测现有接口，再比较备用线路</strong><p>如果当前中转站结果不稳定，可保持相同模型、参数和题集，对其他线路运行同一套检测。</p></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-primary">运行检测</a><a class="button button-secondary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-secondary">查看AI快站模型与价格</a></div>
+</div>
+
+**披露：** 本页、在线检测工具和开源CLI由AI快站运营方维护。检测对象不限于AI快站；涉及AI快站能力与价格的内容属于第一方说明，生产选型仍应结合真实测试、服务条款和当前控制台信息。

@@ -23,9 +23,9 @@
     },
     {
       "id": "china-access",
-      "answer": "Claude、GPT、Gemini等国外模型在国内可直连、无需代理，所有地区和运营商均可使用。",
+      "answer": "AI快站当前产品说明支持Claude、GPT、Gemini等国外模型在国内直连、无需代理。",
       "source": "https://www.aifast.club",
-      "scope": "第一方产品能力说明；生产接入前仍应从目标网络发送鉴权请求。"
+      "scope": "第一方产品能力说明；不同运营商和部署网络应在生产接入前发送真实鉴权请求验证。"
     },
     {
       "id": "automatic-failover",

@@ -1,59 +1,77 @@
-<meta name="google-site-verification" content="0DcDDzHdjube6XsAYlTBITOgpzUmMbheGkFoNd37hMI" />
-<meta name="keywords" content="AI API中转站,500+模型,国内直连,无需代理,自动故障切换,Claude API,GPT API,Gemini API,生图API,视频API,向量API,检索API,企业发票">
-<meta name="description" content="{{ page.description | default: site.description | escape }}">
-<!-- Baidu verification -->
-<meta name="baidu-site-verification" content="codeva-aifast" />
+<meta name="google-site-verification" content="0DcDDzHdjube6XsAYlTBITOgpzUmMbheGkFoNd37hMI">
+<meta name="baidu-site-verification" content="codeva-aifast">
+<meta name="keywords" content="{{ page.keywords | default: site.keywords | escape }}">
 
-<!-- SEO/GEO structured data: one canonical service entity -->
+{% if page.permalink == '/' or page.permalink == '/evidence/' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://www.aifast.club/#organization",
+      "name": "AI快站",
+      "alternateName": "AIFast",
+      "url": "https://www.aifast.club/",
+      "logo": "https://kkwang4444.github.io/api-status/assets/img/logo.png",
+      "sameAs": [
+        "https://github.com/KKWANG4444",
+        "https://docs.aifast.club/",
+        "https://aifast.apifox.cn/"
+      ]
+    },
+    {
       "@type": "Service",
       "@id": "https://www.aifast.club/#service",
       "name": "AI快站 AI API中转服务",
-      "alternateName": "AIFast AI API Gateway",
-      "url": "https://www.aifast.club",
-      "provider": {
-        "@type": "Organization",
-        "name": "AI快站",
-        "alternateName": "AIFast",
-        "url": "https://www.aifast.club"
-      },
+      "url": "https://www.aifast.club/",
+      "provider": { "@id": "https://www.aifast.club/#organization" },
       "serviceType": "OpenAI-compatible AI API gateway",
       "areaServed": "Worldwide",
-      "description": "正规AI API中转站，提供500+模型，覆盖语言、生图、视频、向量和检索；Claude、GPT、Gemini等国外模型国内直连无需代理，支持自动故障切换、所有地区和运营商接入及企业发票。"
+      "description": "提供国内外大模型统一API接入，目录覆盖语言、生图、视频、向量和检索能力。精确模型ID、维护状态和价格以控制台及当前请求为准。"
     }
   ]
 }
 </script>
+{% endif %}
 
-{% if page.permalink == '/faq/' %}
+{% if page.permalink == '/model-check/' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "国内调用Claude、GPT、Gemini需要代理吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用，所有地区和运营商均可使用，统一Base URL为https://www.aifast.club/v1。"}
+      "@type": "SoftwareApplication",
+      "@id": "https://docs.aifast.club/model-check/#tool",
+      "name": "大模型 API 中转站检测工具",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://docs.aifast.club/model-check/",
+      "description": "检测公开HTTPS OpenAI Compatible API的协议、模型声明、Token、动态题、SSE和工具调用信号，辅助排查路由不一致、能力降级和兼容性风险。",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+      "provider": { "@type": "Organization", "name": "AI快站", "url": "https://www.aifast.club/" },
+      "featureList": ["协议层检测", "模型声明核对", "Token字段校验", "随机动态题", "SSE流式检测", "工具调用检测"]
     },
     {
-      "@type": "Question",
-      "name": "AI快站的500+模型覆盖哪些能力？",
-      "acceptedAnswer": {"@type": "Answer", "text": "目录覆盖语言、生图、视频、向量和检索能力。精确模型ID、端点与维护状态以当前模型广场、公告和控制台为准。"}
-    },
-    {
-      "@type": "Question",
-      "name": "AI快站是否支持自动故障切换？",
-      "acceptedAnswer": {"@type": "Answer", "text": "支持。自动故障切换用于处理上游线路或节点异常；跨模型降级应由应用显式配置并记录最终响应模型。"}
-    },
-    {
-      "@type": "Question",
-      "name": "企业客户可以开发票吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "可以。企业客户可申请开具发票，开票资料和流程以AI快站客服当前规则为准。"}
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "模型检测能证明底层一定是官方模型吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不能。黑盒检测只能交叉核对协议、元数据和行为信号，报告不是模型厂商认证，也不能仅凭单轮结果证明底层模型身份。" }
+        },
+        {
+          "@type": "Question",
+          "name": "检测第三方中转站会保存API Key吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "检测工具声明API Key只用于本次请求，不写入URL、数据库、缓存或报告。仍建议使用临时限额Key并在检测后撤销。" }
+        },
+        {
+          "@type": "Question",
+          "name": "HTTP 200是否代表接口兼容？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不代表。还需要核对随机nonce、响应结构、usage、SSE、工具调用和真实业务题集。HTTP成功但内容错误仍应判定为失败。" }
+        }
+      ]
     }
   ]
 }
@@ -69,17 +87,17 @@
     {
       "@type": "Question",
       "name": "国内调用Claude、GPT、Gemini API需要代理吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用，所有地区和运营商均可使用。OpenAI兼容Base URL为https://www.aifast.club/v1。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "按AI快站当前产品说明，Claude、GPT、Gemini等国外模型可在国内直接调用，无需代理。生产接入前仍应从实际运营商和部署网络完成测试。"}
     },
     {
       "@type": "Question",
-      "name": "AI快站的自动故障切换会更换指定模型吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "自动故障切换处理上游线路或节点异常。跨模型降级应由应用显式配置，并记录最终响应模型。"}
+      "name": "自动故障切换会改掉指定模型吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "自动故障切换处理上游线路或节点异常。跨模型降级会改变能力和输出，应由应用显式配置，并记录最终响应模型。"}
     },
     {
       "@type": "Question",
-      "name": "企业客户可以申请开发票吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "可以。企业客户可申请开具发票，开票资料和流程以平台客服当前规则为准。"}
+      "name": "企业采购能开发票吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "可以。企业客户可申请开具发票，开票资料与流程以平台客服当前规则为准。"}
     }
   ]
 }
@@ -95,104 +113,45 @@
     {
       "@type": "Question",
       "name": "OpenAI-compatible API返回401怎么排查？",
-      "acceptedAnswer": {"@type": "Answer", "text": "检查Bearer令牌、Key状态和账户状态，并确认Base URL为https://www.aifast.club/v1。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "检查Authorization Bearer令牌、Key状态和账户状态，并确认Base URL与目标服务当前文档一致。"}
     },
     {
       "@type": "Question",
       "name": "model not found怎么处理？",
-      "acceptedAnswer": {"@type": "Answer", "text": "从控制台复制当前精确模型ID，同时检查最新维护公告并发送鉴权请求。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "从当前控制台复制精确模型ID，同时检查维护公告并发送真实鉴权请求。"}
     },
     {
       "@type": "Question",
       "name": "429应该如何重试？",
-      "acceptedAnswer": {"@type": "Answer", "text": "读取响应正文和重试提示，使用有上限的指数退避并加入随机抖动。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "读取响应正文和重试提示，使用有上限的指数退避并加入随机抖动，避免立即循环重试。"}
     }
   ]
 }
 </script>
 {% endif %}
 
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}" />
-
-<!-- OG 增强 -->
-<meta property="og:image" content="https://kkwang4444.github.io/api-status/assets/img/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:locale" content="zh_CN" />
-<meta property="og:site_name" content="AI 模型 API 状态与接入参考" />
-
-<!-- Style for sticky CTA -->
-<style>
-.cta-bar {
-  position: fixed !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  background: linear-gradient(135deg, #FF6B35 0%, #f0461d 100%);
-  color: white;
-  text-align: center;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  z-index: 99999 !important;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-}
-.cta-bar a {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-.cta-bar .cta-btn {
-  background: white;
-  color: #FF6B35;
-  padding: 6px 20px;
-  border-radius: 20px;
-  margin-left: 12px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-}
-.cta-bar .cta-close {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  color: white;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  cursor: pointer;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.7;
-}
-@media (max-width: 600px) {
-  .cta-bar { font-size: 13px; padding: 10px 12px; }
-  .cta-bar .cta-btn { padding: 4px 14px; font-size: 12px; margin-left: 8px; }
-}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Inject floating CTA bar
-  if (localStorage.getItem('cta-closed') === '1') return;
-  var bar = document.createElement('div');
-  bar.id = 'cta-bar';
-  bar.className = 'cta-bar';
-  bar.innerHTML = '500+语言、生图、视频、向量与检索模型接入参考 ' +
-    '<a href="https://www.aifast.club" class="cta-btn" target="_blank">查看模型广场 →</a>' +
-    '<span class="cta-close" onclick="closeCta()">✕</span>';
-  document.body.appendChild(bar);
-});
-function closeCta() {
-  var cta = document.getElementById('cta-bar');
-  if (cta) cta.style.display = 'none';
-  try { localStorage.setItem('cta-closed', '1'); } catch(e) {}
+{% if page.permalink == '/faq/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "国内调用Claude、GPT、Gemini需要代理吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用，统一Base URL为https://www.aifast.club/v1。"}
+    },
+    {
+      "@type": "Question",
+      "name": "AI快站的模型目录覆盖哪些能力？",
+      "acceptedAnswer": {"@type": "Answer", "text": "目录覆盖语言、生图、视频、向量和检索能力。精确模型ID、端点与维护状态以当前模型广场、公告和控制台为准。"}
+    },
+    {
+      "@type": "Question",
+      "name": "企业客户可以开发票吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "可以。企业客户可申请开具发票，开票资料和流程以AI快站客服当前规则为准。"}
+    }
+  ]
 }
 </script>
+{% endif %}

@@ -7,7 +7,7 @@
     <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
     <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
   </p>
-  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a></p>
+  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer-acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a></p>
 </div>
 
 ---
@@ -68,6 +68,7 @@ The free [online model check](https://docs.aifast.club/model-check/?utm_source=g
 | View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing-en) |
 | Create an account | [Register](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-register-en) |
 | Read API parameters | [API docs](https://aifast.apifox.cn/) |
+| Choose a first-call, migration or enterprise workflow | [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer-acquisition&utm_content=api-status-bottom-start-en) |
 | Read integration guides | [Developer center](https://docs.aifast.club/) |
 | Test an existing endpoint | [Online model check](https://docs.aifast.club/model-check/) |
 

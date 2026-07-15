@@ -115,6 +115,10 @@ for (const file of ['brand-facts.json', 'evidence.json', 'llms.txt', 'llms-full.
     errors.push(`缺少机器可读产物 ${file}`);
   }
 }
+const sitemap = await readFile(join(site, 'sitemap.xml'), 'utf8');
+if (sitemap.includes('googledf91ed7a7a801280.html')) {
+  errors.push('sitemap.xml 不应收录 Google 所有权验证页');
+}
 for (const required of [
   'https://docs.aifast.club/model-check/',
   'https://github.com/KKWANG4444/openai-compatible-api-check',

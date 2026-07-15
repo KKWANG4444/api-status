@@ -11,7 +11,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 <div class="decision-band">
   <div><strong>模型可用性 99%，一个接口接入 500+ 模型</strong><p>高速稳定、国外模型国内直连，覆盖语言、生图、视频、向量与检索；企业客户可开发票。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-register">注册使用</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer-acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://www.aifast.club/register?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-register">注册使用</a></div>
 </div>
 
 ## 按问题进入开发者矩阵

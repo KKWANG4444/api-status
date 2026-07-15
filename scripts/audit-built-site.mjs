@@ -82,6 +82,15 @@ if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
   errors.push('model-check/index.html 未使用本地检测工具预览图');
 }
 
+const home = await readFile(join(site, 'index.html'), 'utf8');
+for (const required of [
+  'https://docs.aifast.club/start/',
+  'utm_campaign=developer-acquisition',
+  'utm_content=home-hero-start',
+]) {
+  if (!home.includes(required)) errors.push(`index.html 缺少任务型承接入口 ${required}`);
+}
+
 const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
 for (const required of [
   'https://www.aifast.club/pricing',

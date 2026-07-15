@@ -18,7 +18,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 <div class="matrix-grid">
   <a class="matrix-card" href="/api-status/model-check/"><small>检测</small><strong>中转站模型与协议检测</strong><span>核对响应模型、Token、随机动态题、SSE和工具调用，辅助排查降智、套壳或兼容层问题。</span><em>查看检测方法 →</em></a>
-  <a class="matrix-card" href="https://github.com/KKWANG4444/openai-compatible-api-check"><small>开源工具</small><strong>CLI、Postman 与 CI 冒烟测试</strong><span>不安装第三方依赖，把随机nonce和接口结构检查放进本地或持续集成流程。</span><em>查看 GitHub 仓库 →</em></a>
+  <a class="matrix-card" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=home-matrix-online"><small>在线工具</small><strong>浏览器生成分项检测结果</strong><span>无需下载程序，直接检查模型声明、Token、随机nonce、SSE与工具调用。</span><em>立即在线检测 →</em></a>
   <a class="matrix-card" href="/api-status/openai-compatible/"><small>排错</small><strong>OpenAI-compatible 迁移</strong><span>逐项处理401、model not found、429、5xx、流式输出和工具调用差异。</span><em>查看迁移指南 →</em></a>
   <a class="matrix-card" href="/api-status/guide/"><small>配置</small><strong>Cursor、Dify 与 Claude Code</strong><span>按工具填写Base URL、API Key和模型ID，再从最小文本请求逐步增加能力。</span><em>查看工具教程 →</em></a>
 </div>

@@ -87,7 +87,7 @@ print(response.choices[0].message.content)
 
 检测工具支持第三方中转站，不要求使用 AI快站。测试时建议使用临时、低额度 API Key。
 
-检测方法、报告 Schema 和第一方卖点口径分别发布在[开源检测方法论](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)、[JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)与[AI快站品牌事实页](https://kkwang4444.github.io/api-status/brand-facts/)，便于独立复核和机器读取。
+检测方法、报告判读和第一方卖点口径分别发布在[网站检测方法](https://docs.aifast.club/guides/model-api-downgrade-detection/)、[报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/)与[AI快站品牌事实页](https://kkwang4444.github.io/api-status/brand-facts/)，便于复核和继续阅读。
 
 ## 适合个人，也适合企业团队
 

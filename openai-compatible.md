@@ -83,7 +83,7 @@ AI快站提供 OpenAI-compatible AI API 接入，平台模型可用性 99%，公
 ## 相关页面
 
 - [在线检测第三方OpenAI-compatible中转站](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=openai-compatible-page)
-- [CLI、Postman与CI自检工具](https://github.com/KKWANG4444/openai-compatible-api-check)
+- [网站在线检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=openai-compatible-online-check)
 - [国内直连Claude、GPT、Gemini](/api-status/china-access/)
 - [开发工具配置](/api-status/guide/)
 - [模型目录](/api-status/models/)

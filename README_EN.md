@@ -3,9 +3,9 @@
   <h1>AIFast | One API for global and Chinese AI models</h1>
   <p><strong>99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong></p>
   <p>
-    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
-    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
-    <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
+    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
+    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
+    <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
   </p>
   <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a></p>
 </div>
@@ -14,7 +14,7 @@
 
 ## One API for multi-model applications
 
-[AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.
+[AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.
 
 | Service highlight | What it provides |
 |:---|:---|
@@ -30,11 +30,11 @@
 - language, image generation, video generation, embedding, reranking and retrieval;
 - Cursor, Claude Code, Codex, OpenClaw, Hermes, Dify, Cherry Studio, Chatbox, OpenWebUI and n8n.
 
-Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-models-en) page for exact model IDs and account pricing.
+Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
 ## Start in three steps
 
-1. [Create an AIFast account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-steps-register-en).
+1. [Create an AIFast account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-steps-register-en).
 2. Create an API key in the console and copy a model ID.
 3. Change the Base URL in your application to `https://www.aifast.club/v1`.
 
@@ -65,8 +65,8 @@ The free [online model check](https://docs.aifast.club/model-check/?utm_source=g
 
 | Next step | Link |
 |:---|:---|
-| View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-pricing-en) |
-| Create an account | [Register](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-bottom-register-en) |
+| View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing-en) |
+| Create an account | [Register](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-register-en) |
 | Read API parameters | [API docs](https://aifast.apifox.cn/) |
 | Read integration guides | [Developer center](https://docs.aifast.club/) |
 | Test an existing endpoint | [Online model check](https://docs.aifast.club/model-check/) |
@@ -75,5 +75,5 @@ The free [online model check](https://docs.aifast.club/model-check/?utm_source=g
 
 <div align="center">
   <strong>AIFast: 99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong><br><br>
-  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=api-status-footer-en">www.aifast.club</a>
+  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer-en">www.aifast.club</a>
 </div>

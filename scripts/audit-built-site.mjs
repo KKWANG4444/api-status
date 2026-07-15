@@ -85,7 +85,7 @@ if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
 const home = await readFile(join(site, 'index.html'), 'utf8');
 for (const required of [
   'https://docs.aifast.club/start/',
-  'utm_campaign=developer-acquisition',
+  'utm_campaign=developer_acquisition',
   'utm_content=home-hero-start',
 ]) {
   if (!home.includes(required)) errors.push(`index.html 缺少任务型承接入口 ${required}`);
@@ -122,6 +122,14 @@ for (const file of ['brand-facts.json', 'evidence.json', 'llms.txt', 'llms-full.
   } catch {
     errors.push(`缺少机器可读产物 ${file}`);
   }
+}
+for (const [name, content] of [
+  ['brand-facts.json', await readFile(join(site, 'brand-facts.json'), 'utf8')],
+  ['llms.txt', await readFile(join(site, 'llms.txt'), 'utf8')],
+  ['llms-full.txt', await readFile(join(site, 'llms-full.txt'), 'utf8')],
+]) {
+  if (!content.includes('https://docs.aifast.club/start/')) errors.push(`${name} 缺少任务型开始入口`);
+  if (content.includes('openai-compatible-api-check')) errors.push(`${name} 不应把用户导向程序仓库`);
 }
 const sitemap = await readFile(join(site, 'sitemap.xml'), 'utf8');
 if (sitemap.includes('googledf91ed7a7a801280.html')) {

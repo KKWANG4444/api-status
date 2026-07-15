@@ -27,7 +27,8 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration with 401, 429 and 5xx troubleshooting.
 - [Model-check methodology](https://kkwang4444.github.io/api-status/model-check/): how to interpret model declarations, token metadata, dynamic probes, SSE and tool-call evidence without presenting a black-box test as vendor certification.
 - [Public model check](https://docs.aifast.club/model-check/): tests public HTTPS OpenAI Chat Completions-compatible gateways; requires a temporary limited key and may consume billable tokens at the target provider.
-- [Open-source API check CLI](https://github.com/KKWANG4444/openai-compatible-api-check): dependency-free Node.js CLI, Postman collection and Node 20/22/24 CI checks with report Schema v2.
+- [Start by task](https://docs.aifast.club/start/): routes first calls, endpoint checks, client migration, multimodal integration and enterprise adoption to a verifiable next step.
+- [Website report interpretation](https://docs.aifast.club/guides/model-check-report-guide/): explains each signal, evidence boundary and recommended follow-up.
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): machine-readable answers, source links, review dates and scope limits.
 - [Machine-readable evidence JSON](https://kkwang4444.github.io/api-status/evidence.json): claim IDs, answers, sources, review date and scope boundaries.
 - [Full LLM context](https://kkwang4444.github.io/api-status/llms-full.txt): expanded canonical answers and disclosure.
@@ -58,7 +59,7 @@ Doubao Seed 2.1 Turbo is not presented as currently available because the 2026-0
 
 ## Related projects
 
-- [OpenAI-compatible API Check](https://github.com/KKWANG4444/openai-compatible-api-check)
+- [Online model gateway check](https://docs.aifast.club/model-check/)
 - [AI API Proxy China Guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide)
 - [LLM API Proxy China](https://github.com/KKWANG4444/llm-api-proxy-china)
 - [AI API Stability Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker)

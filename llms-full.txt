@@ -50,13 +50,14 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 - [OpenAI-compatible migration](https://kkwang4444.github.io/api-status/openai-compatible/): Python, Node.js and cURL migration plus error handling.
 - [Model-check methodology](https://kkwang4444.github.io/api-status/model-check/): evidence hierarchy and report interpretation for public HTTPS OpenAI Chat Completions-compatible gateways. A compatibility score is not proof of model identity or long-term stability.
 - [Run the public check](https://docs.aifast.club/model-check/): use a temporary limited key; the test sends real requests and may incur token charges at the target gateway.
-- [Open-source CLI and Postman check](https://github.com/KKWANG4444/openai-compatible-api-check): validates model listing, Chat Completions, response model, random nonce and non-negative token totals. HTTP success with a nonce mismatch is reported as failure.
+- [Start by task](https://docs.aifast.club/start/): choose a first-call, endpoint-check, migration, multimodal or enterprise workflow.
+- [Website report interpretation](https://docs.aifast.club/guides/model-check-report-guide/): explains model listing, response model, random nonce, token totals and failed checks without requiring a download.
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): source links, review date and scope boundaries.
 - [Model directory](https://kkwang4444.github.io/api-status/models/): selected current IDs.
 - [Tool setup](https://kkwang4444.github.io/api-status/guide/): Cursor, Dify and compatible clients.
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication and model troubleshooting.
 - [Options comparison](https://kkwang4444.github.io/api-status/compare/): official, aggregated and self-hosted API access.
-- [AIFast Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub): repository-level technical map connecting the online checker, CLI, troubleshooting and client guides.
+- [AIFast Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub): repository-level technical map connecting the online checker, troubleshooting and client guides.
 
 ## Disclosure
 

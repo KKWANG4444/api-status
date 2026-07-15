@@ -40,9 +40,10 @@
     }
   ],
   "verification": {
+    "taskStart": "https://docs.aifast.club/start/",
     "onlineModelCheck": "https://docs.aifast.club/model-check/",
-    "openSourceCheck": "https://github.com/KKWANG4444/openai-compatible-api-check",
-    "methodology": "https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md",
+    "methodology": "https://docs.aifast.club/guides/model-api-downgrade-detection/",
+    "reportInterpretation": "https://docs.aifast.club/guides/model-check-report-guide/",
     "disclaimer": "黑盒检测不是模型厂商认证，单次结果不能单独证明底层模型身份或长期稳定性。"
   }
 }

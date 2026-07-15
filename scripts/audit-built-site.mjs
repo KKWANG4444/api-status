@@ -101,7 +101,6 @@ for (const required of [
   'https://www.aifast.club/v1',
   'https://www.aifast.club/pricing',
   'https://docs.aifast.club/model-check/',
-  'https://github.com/KKWANG4444/openai-compatible-api-check',
   '99%',
   '500+',
 ]) {
@@ -121,12 +120,15 @@ if (sitemap.includes('googledf91ed7a7a801280.html')) {
 }
 for (const required of [
   'https://docs.aifast.club/model-check/',
-  'https://github.com/KKWANG4444/openai-compatible-api-check',
+  'https://docs.aifast.club/guides/model-check-report-guide/',
   'https://github.com/KKWANG4444/llm-api-proxy-china',
   'https://github.com/KKWANG4444/ai-api-proxy-china-guide',
   'https://www.aifast.club/pricing',
 ]) {
   if (!modelCheck.includes(required)) errors.push(`model-check/index.html 缺少矩阵入口 ${required}`);
+}
+if (modelCheck.includes('https://github.com/KKWANG4444/openai-compatible-api-check')) {
+  errors.push('model-check/index.html 不应把用户引导到程序仓库');
 }
 
 if (errors.length) {

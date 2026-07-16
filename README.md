@@ -6,7 +6,7 @@
   <p>
     <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
     <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing"><img src="https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BB%B7%E6%A0%BC-%E7%AB%8B%E5%8D%B3%E6%9F%A5%E7%9C%8B-D66A3A?style=for-the-badge" alt="查看模型与价格"></a>
-    <a href="https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-register"><img src="https://img.shields.io/badge/%E6%B3%A8%E5%86%8C%E4%BD%BF%E7%94%A8-%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7-2563EB?style=for-the-badge" alt="注册AI快站"></a>
+    <a href="https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-register"><img src="https://img.shields.io/badge/%E6%B3%A8%E5%86%8C%E4%BD%BF%E7%94%A8-%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7-2563EB?style=for-the-badge" alt="注册AI快站"></a>
   </p>
   <p>
     <a href="https://aifast.apifox.cn/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
@@ -52,7 +52,7 @@
 
 ## 三步开始使用
 
-1. [注册 AI快站账号](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-steps-register)；
+1. [注册 AI快站账号](https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-steps-register)；
 2. 在控制台创建 API Key，并从模型广场复制模型 ID；
 3. 把项目中的 Base URL 改为 `https://www.aifast.club/v1`。
 
@@ -118,7 +118,7 @@ print(response.choices[0].message.content)
 | 你的下一步 | 入口 |
 |:---|:---|
 | 查看支持模型与价格 | [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing) |
-| 创建账号并生成 API Key | [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-register) |
+| 创建账号并生成 API Key | [注册使用](https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-register) |
 | 阅读完整接口参数 | [API 文档](https://aifast.apifox.cn/) |
 | 按需求查看首次调用、工具迁移与企业接入 | [开始使用](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start) |
 | 查看全部接入与排错教程 | [开发者中心](https://docs.aifast.club/) |

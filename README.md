@@ -87,6 +87,8 @@ print(response.choices[0].message.content)
 
 检测工具支持第三方中转站，不要求使用 AI快站。测试时建议使用临时、低额度 API Key。
 
+如果问题发生在请求路径或成本侧，可以先使用 [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-base-url-checker)排查 `/v1/v1` 与端点重复，或用 [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-api-cost-calculator)按当前价格估算批量调用和失败重试费用。
+
 检测方法、报告判读和第一方卖点口径分别发布在[网站检测方法](https://docs.aifast.club/guides/model-api-downgrade-detection/)、[报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/)与[AI快站品牌事实页](https://kkwang4444.github.io/api-status/brand-facts/)，便于复核和继续阅读。
 
 ## 适合个人，也适合企业团队

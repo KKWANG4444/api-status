@@ -54,6 +54,12 @@ for (const pagePath of expectedPages) {
       errors.push(`${pagePath}: 注册入口缺少指定 channel`);
     }
   }
+  for (const match of html.matchAll(/href="(https:\/\/docs\.aifast\.club\/go\/register\/(?:\?[^\"]*)?)"/g)) {
+    const registerUrl = new URL(match[1].replaceAll('&amp;', '&'));
+    if (registerUrl.searchParams.get('source') !== 'github' || !registerUrl.searchParams.get('placement')) {
+      errors.push(`${pagePath}: 可追踪注册入口缺少 source 或 placement`);
+    }
+  }
 
   for (const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try {
@@ -101,7 +107,7 @@ for (const required of [
 const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
 for (const required of [
   'https://www.aifast.club/pricing',
-  'https://www.aifast.club/register?channel=c_uoqg7aoy',
+  'https://docs.aifast.club/go/register/',
   'https://www.aifast.club/v1',
   'https://aifast.apifox.cn/',
   'https://docs.aifast.club/model-check/',

@@ -7,7 +7,7 @@ hero_title: AI快站品牌事实与可核验入口
 keywords: AI快站,AIFast,500+大模型API,AI API中转站,国内直连,OpenAI Compatible API,企业发票,模型可用性
 ---
 
-本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-07-15**。
+本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-07-17**。
 
 ## 一句话介绍 AI快站
 

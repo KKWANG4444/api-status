@@ -65,4 +65,4 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 
 This reference is maintained by the operator of AIFast. Product capabilities are first-party statements. Deployment decisions should also use current terms and real requests from the target environment.
 
-Last reviewed: 2026-07-15.
+Last reviewed: 2026-07-17.

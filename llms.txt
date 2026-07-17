@@ -39,7 +39,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
 - [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.
 
-## Current AIFast marketplace examples (reviewed 2026-07-15)
+## Current AIFast marketplace examples (reviewed 2026-07-17)
 
 - OpenAI: `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
 - Anthropic: `claude-sonnet-5`, `claude-opus-4-8`, `claude-fable-5`
@@ -49,7 +49,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - Alibaba: `qwen3.7-max`, `qwen3.7-plus`
 - Zhipu: `glm-5.2`
 - ByteDance: `doubao-seed-2-1-pro-260628`
-- Moonshot: `kimi-k2.7-code`, `kimi-k2.7-code-highspeed`
+- Moonshot: `kimi-k3`, `kimi-k2.7-code`, `kimi-k2.7-code-highspeed`
 
 Doubao Seed 2.1 Turbo is not presented as currently available because the 2026-07-09 notice says it is temporarily offline for maintenance. Configuration entries do not guarantee availability.
 

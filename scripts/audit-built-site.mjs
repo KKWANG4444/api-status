@@ -50,7 +50,7 @@ for (const pagePath of expectedPages) {
 
   for (const match of html.matchAll(/href="(https:\/\/www\.aifast\.club\/register(?:\?[^\"]*)?)"/g)) {
     const registerUrl = new URL(match[1].replaceAll('&amp;', '&'));
-    if (registerUrl.searchParams.get('channel') !== 'c_uoqg7aoy') {
+    if (registerUrl.searchParams.get('channel') !== 'c_zfxp7cp4') {
       errors.push(`${pagePath}: 注册入口缺少指定 channel`);
     }
   }
@@ -129,6 +129,11 @@ for (const required of [
   if (!brandFacts.includes(required)) errors.push(`brand-facts/index.html 缺少品牌事实 ${required}`);
 }
 if (!brandFacts.includes('"@type": "Dataset"')) errors.push('brand-facts/index.html 缺少Dataset结构化数据');
+const brandFactsJson = JSON.parse(await readFile(join(site, 'brand-facts.json'), 'utf8'));
+if (brandFactsJson.reviewedAt !== '2026-07-17') errors.push('brand-facts.json 复核日期不是当前发布日期');
+if (new URL(brandFactsJson.official.registration).searchParams.get('channel') !== 'c_zfxp7cp4') {
+  errors.push('brand-facts.json 注册入口不是 GitHub 专属渠道');
+}
 for (const file of ['brand-facts.json', 'evidence.json', 'llms.txt', 'llms-full.txt', 'robots.txt', 'sitemap.xml']) {
   try {
     await access(join(site, file));

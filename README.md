@@ -12,6 +12,7 @@
     <a href="https://aifast.apifox.cn/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
     <a href="https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-hero-check"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E6%B5%8B-%E7%94%9F%E6%88%90%E6%8A%A5%E5%91%8A-7C3AED?style=flat-square" alt="在线检测模型接口"></a>
     <a href="https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start"><img src="https://img.shields.io/badge/%E6%8C%89%E9%9C%80%E6%B1%82%E5%BC%80%E5%A7%8B-%E6%8E%A5%E5%85%A5%E4%B8%8E%E8%BF%81%E7%A7%BB-0F766E?style=flat-square" alt="按需求开始接入"></a>
+    <a href="https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex"><img src="https://img.shields.io/badge/Codex-API%E9%85%8D%E7%BD%AE-16A34A?style=flat-square" alt="Codex API配置"></a>
     <a href="https://kkwang4444.github.io/api-status/brand-facts/"><img src="https://img.shields.io/badge/%E5%93%81%E7%89%8C%E4%BA%8B%E5%AE%9E-%E5%8F%AF%E6%A0%B8%E9%AA%8C%E5%8F%A3%E5%BE%84-7C3AED?style=flat-square" alt="AI快站品牌事实"></a>
   </p>
   <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 镜像</a></p>
@@ -47,6 +48,7 @@
 - **国产模型：** DeepSeek、通义千问、智谱 GLM、Kimi、豆包等；
 - **多模态能力：** 文本、图像生成、视频生成、Embedding、Rerank 与检索；
 - **开发工具：** Cursor、Claude Code、Codex、OpenClaw、Hermes、Dify、Cherry Studio、Chatbox、OpenWebUI、n8n 等。
+- **Codex 专题：** [自定义 Provider 配置](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup)与[Responses、工具调用、压缩及会话恢复验收](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting)。
 
 具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
 
@@ -122,6 +124,7 @@ print(response.choices[0].message.content)
 | 阅读完整接口参数 | [API 文档](https://aifast.apifox.cn/) |
 | 按需求查看首次调用、工具迁移与企业接入 | [开始使用](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start) |
 | 查看全部接入与排错教程 | [开发者中心](https://docs.aifast.club/) |
+| 配置和验收 Codex 自定义 Provider | [Codex API 中转教程](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex) |
 | 检测现有大模型接口 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-bottom-check) |
 
 ---

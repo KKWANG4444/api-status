@@ -28,6 +28,8 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [Model-check methodology](https://kkwang4444.github.io/api-status/model-check/): how to interpret model declarations, token metadata, dynamic probes, SSE and tool-call evidence without presenting a black-box test as vendor certification.
 - [Public model check](https://docs.aifast.club/model-check/): tests public HTTPS OpenAI Chat Completions-compatible gateways; requires a temporary limited key and may consume billable tokens at the target provider.
 - [Start by task](https://docs.aifast.club/start/): routes first calls, endpoint checks, client migration, multimodal integration and enterprise adoption to a verifiable next step.
+- [Codex custom provider setup](https://docs.aifast.club/tools/codex/): config.toml, Responses API, Base URL, environment key and minimum task validation.
+- [Codex gateway validation](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/): provider selection, Responses events, tool calls, context compaction and thread resume.
 - [Website report interpretation](https://docs.aifast.club/guides/model-check-report-guide/): explains each signal, evidence boundary and recommended follow-up.
 - [Claims and evidence](https://kkwang4444.github.io/api-status/evidence/): machine-readable answers, source links, review dates and scope limits.
 - [Machine-readable evidence JSON](https://kkwang4444.github.io/api-status/evidence.json): claim IDs, answers, sources, review date and scope boundaries.

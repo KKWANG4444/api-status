@@ -7,7 +7,7 @@
     <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
     <a href="https://docs.aifast.club/go/register/?source=github&placement=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
   </p>
-  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a></p>
+  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a> · <a href="https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
 </div>
 
 ---
@@ -29,6 +29,7 @@
 - OpenAI, Claude, Gemini, Grok, DeepSeek, Qwen, GLM, Kimi and Doubao;
 - language, image generation, video generation, embedding, reranking and retrieval;
 - Cursor, Claude Code, Codex, OpenClaw, Hermes, Dify, Cherry Studio, Chatbox, OpenWebUI and n8n.
+- Codex custom-provider setup: [configuration](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup-en) and [Responses, tool-call, compaction and thread-resume validation](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting-en).
 
 Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
@@ -70,6 +71,7 @@ The free [online model check](https://docs.aifast.club/model-check/?utm_source=g
 | Read API parameters | [API docs](https://aifast.apifox.cn/) |
 | Choose a first-call, migration or enterprise workflow | [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start-en) |
 | Read integration guides | [Developer center](https://docs.aifast.club/) |
+| Configure and validate a Codex custom provider | [Codex API guide](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex-en) |
 | Test an existing endpoint | [Online model check](https://docs.aifast.club/model-check/) |
 
 ---

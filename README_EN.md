@@ -5,9 +5,9 @@
   <p>
     <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
     <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
-    <a href="https://docs.aifast.club/go/register/?source=github&placement=api-status-hero-register-en"><img src="https://img.shields.io/badge/Create-Account-2563EB?style=for-the-badge" alt="Create an AIFast account"></a>
+    <a href="https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-hero-payment-en"><img src="https://img.shields.io/badge/Payment-Account_Setup-2563EB?style=for-the-badge" alt="Review payment and create an AIFast account"></a>
   </p>
-  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/model-check/">Online model check</a> · <a href="https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
+  <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/en/model-check/">Online model check</a> · <a href="https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
 </div>
 
 ---
@@ -29,13 +29,13 @@
 - OpenAI, Claude, Gemini, Grok, DeepSeek, Qwen, GLM, Kimi and Doubao;
 - language, image generation, video generation, embedding, reranking and retrieval;
 - Cursor, Claude Code, Codex, OpenClaw, Hermes, Dify, Cherry Studio, Chatbox, OpenWebUI and n8n.
-- Codex custom-provider setup: [configuration](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup-en) and [Responses, tool-call, compaction and thread-resume validation](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting-en).
+- Codex custom-provider setup: [configuration](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup-en) and [Responses, tool-call, compaction and thread-resume validation](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting-en).
 
 Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
 ## Start in three steps
 
-1. [Create an AIFast account](https://docs.aifast.club/go/register/?source=github&placement=api-status-steps-register-en).
+1. Review [payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-steps-payment-en).
 2. Create an API key in the console and copy a model ID.
 3. Change the Base URL in your application to `https://www.aifast.club/v1`.
 
@@ -56,23 +56,23 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-See the [API documentation](https://aifast.apifox.cn/) and [developer documentation](https://docs.aifast.club/) for streaming, tool calling and troubleshooting examples.
+See the [API documentation](https://aifast.apifox.cn/) and [developer documentation](https://docs.aifast.club/en/) for streaming, tool calling and troubleshooting examples.
 
 ## Check an existing model gateway
 
-The free [online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-check-en) inspects OpenAI-compatible HTTPS endpoints and reports protocol metadata, token fields, randomized prompts, SSE streaming and tool calling behavior. It also supports third-party gateways; use a temporary low-limit API key when testing.
+The free [online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-check-en) inspects OpenAI-compatible HTTPS endpoints and reports protocol metadata, token fields, randomized prompts, SSE streaming and tool calling behavior. It also supports third-party gateways; use a temporary low-limit API key when testing.
 
 ## Main links
 
 | Next step | Link |
 |:---|:---|
 | View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing-en) |
-| Create an account | [Register](https://docs.aifast.club/go/register/?source=github&placement=api-status-bottom-register-en) |
+| Payment and account setup | [Review options](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-bottom-payment-en) |
 | Read API parameters | [API docs](https://aifast.apifox.cn/) |
-| Choose a first-call, migration or enterprise workflow | [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start-en) |
-| Read integration guides | [Developer center](https://docs.aifast.club/) |
-| Configure and validate a Codex custom provider | [Codex API guide](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex-en) |
-| Test an existing endpoint | [Online model check](https://docs.aifast.club/model-check/) |
+| Choose a first-call, migration or enterprise workflow | [Start by task](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start-en) |
+| Read integration guides | [Developer center](https://docs.aifast.club/en/) |
+| Configure and validate a Codex custom provider | [Codex API guide](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex-en) |
+| Test an existing endpoint | [Online model check](https://docs.aifast.club/en/model-check/) |
 
 ---
 

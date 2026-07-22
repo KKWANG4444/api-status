@@ -34,7 +34,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
 | GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 支持统一 API 接入 |
-| Claude Sonnet 5 / Opus 4.8 / Fable 5 | ✅ 已上架 | 国内直连，无需代理 |
+| Claude Sonnet 5 / Opus 4.8 | ✅ 已上架 | 国内直连，无需代理 |
 | Grok 4.5 / 4.3 / 4.20 Reasoning | ✅ 已上架 | 支持统一 API 接入 |
 | DeepSeek V4 Pro / Flash | ✅ 已上架 | 支持统一 API 接入 |
 | Gemini 3.5 Flash | ✅ 已上架 | 国内直连，无需代理 |

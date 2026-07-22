@@ -21,6 +21,7 @@ const stalePatterns = [
   /572\s*(?:个\s*模型|models?)/iu,
   /GPT[-‐‑‒–—― .]?5\.5/iu,
   /Claude[-‐‑‒–—― .]?4\.7/iu,
+  /Claude[-‐‑‒–—― .]?Fable[-‐‑‒–—― .]?5/iu,
 ];
 
 const count = (source, pattern) => (source.match(pattern) || []).length;

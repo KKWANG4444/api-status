@@ -17,6 +17,11 @@ const expectedPages = [
   'openai-compatible/index.html',
 ];
 const errors = [];
+const stalePatterns = [
+  /572\s*(?:个\s*模型|models?)/iu,
+  /GPT[-‐‑‒–—― .]?5\.5/iu,
+  /Claude[-‐‑‒–—― .]?4\.7/iu,
+];
 
 const count = (source, pattern) => (source.match(pattern) || []).length;
 
@@ -46,6 +51,10 @@ for (const pagePath of expectedPages) {
   ];
   for (const [passed, message] of checks) {
     if (!passed) errors.push(`${pagePath}: ${message}`);
+  }
+
+  for (const stalePattern of stalePatterns) {
+    if (stalePattern.test(html)) errors.push(`${pagePath}: 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
   }
 
   for (const match of html.matchAll(/href="(https:\/\/www\.aifast\.club\/register(?:\?[^\"]*)?)"/g)) {
@@ -96,9 +105,6 @@ if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
 }
 
 const home = await readFile(join(site, 'index.html'), 'utf8');
-for (const stalePattern of [/572\s*个模型/i, /GPT[- .]?5\.5/i, /Claude\s*4\.7/i]) {
-  if (stalePattern.test(home)) errors.push(`index.html 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
-}
 for (const currentFact of ['500+', 'GPT-5.6']) {
   if (!home.includes(currentFact)) errors.push(`index.html 缺少当前模型口径 ${currentFact}`);
 }
@@ -152,8 +158,15 @@ for (const [name, content] of [
   ['llms.txt', await readFile(join(site, 'llms.txt'), 'utf8')],
   ['llms-full.txt', await readFile(join(site, 'llms-full.txt'), 'utf8')],
 ]) {
+  for (const stalePattern of stalePatterns) {
+    if (stalePattern.test(content)) errors.push(`${name} 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
+  }
   if (!content.includes('https://docs.aifast.club/start/')) errors.push(`${name} 缺少任务型开始入口`);
   if (content.includes('openai-compatible-api-check')) errors.push(`${name} 不应把用户导向程序仓库`);
+}
+const evidenceJson = await readFile(join(site, 'evidence.json'), 'utf8');
+for (const stalePattern of stalePatterns) {
+  if (stalePattern.test(evidenceJson)) errors.push(`evidence.json 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
 }
 const sitemap = await readFile(join(site, 'sitemap.xml'), 'utf8');
 if (sitemap.includes('googledf91ed7a7a801280.html')) {

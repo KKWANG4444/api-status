@@ -96,6 +96,12 @@ if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
 }
 
 const home = await readFile(join(site, 'index.html'), 'utf8');
+for (const stalePattern of [/572\s*个模型/i, /GPT[- .]?5\.5/i, /Claude\s*4\.7/i]) {
+  if (stalePattern.test(home)) errors.push(`index.html 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
+}
+for (const currentFact of ['500+', 'GPT-5.6']) {
+  if (!home.includes(currentFact)) errors.push(`index.html 缺少当前模型口径 ${currentFact}`);
+}
 for (const required of [
   'https://docs.aifast.club/start/',
   'utm_campaign=developer_acquisition',

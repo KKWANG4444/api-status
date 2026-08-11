@@ -9,7 +9,7 @@
     "pricing": "https://www.aifast.hk/pricing",
     "registration": "https://www.aifast.hk/register?channel=c_zfxp7cp4",
     "apiDocumentation": "https://aifast.apifox.cn/",
-    "developerDocumentation": "https://docs.aifast.club/",
+    "developerDocumentation": "https://docs.aifast.hk/",
     "baseUrl": "https://www.aifast.hk/v1"
   },
   "firstPartyClaims": [
@@ -40,10 +40,10 @@
     }
   ],
   "verification": {
-    "taskStart": "https://docs.aifast.club/start/",
-    "onlineModelCheck": "https://docs.aifast.club/model-check/",
-    "methodology": "https://docs.aifast.club/guides/model-api-downgrade-detection/",
-    "reportInterpretation": "https://docs.aifast.club/guides/model-check-report-guide/",
+    "taskStart": "https://docs.aifast.hk/start/",
+    "onlineModelCheck": "https://docs.aifast.hk/model-check/",
+    "methodology": "https://docs.aifast.hk/guides/model-api-downgrade-detection/",
+    "reportInterpretation": "https://docs.aifast.hk/guides/model-check-report-guide/",
     "disclaimer": "黑盒检测不是模型厂商认证，单次结果不能单独证明底层模型身份或长期稳定性。"
   }
 }

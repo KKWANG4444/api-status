@@ -110,7 +110,7 @@ for (const currentFact of ['500+', 'GPT-5.6']) {
   if (!home.includes(currentFact)) errors.push(`index.html 缺少当前模型口径 ${currentFact}`);
 }
 for (const required of [
-  'https://docs.aifast.club/start/',
+  'https://docs.aifast.hk/start/',
   'utm_campaign=developer_acquisition',
   'utm_content=home-hero-start',
 ]) {
@@ -120,10 +120,10 @@ for (const required of [
 const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
 for (const required of [
   'https://www.aifast.hk/pricing',
-  'https://docs.aifast.club/go/register/',
+  'https://docs.aifast.hk/go/register/',
   'https://www.aifast.hk/v1',
   'https://aifast.apifox.cn/',
-  'https://docs.aifast.club/model-check/',
+  'https://docs.aifast.hk/model-check/',
   'https://github.com/KKWANG4444/aifast-developer-hub',
 ]) {
   if (!aifast.includes(required)) errors.push(`aifast/index.html 缺少品牌承接入口 ${required}`);
@@ -135,7 +135,7 @@ const brandFacts = await readFile(join(site, 'brand-facts/index.html'), 'utf8');
 for (const required of [
   'https://www.aifast.hk/v1',
   'https://www.aifast.hk/pricing',
-  'https://docs.aifast.club/model-check/',
+  'https://docs.aifast.hk/model-check/',
   '99%',
   '500+',
 ]) {
@@ -162,7 +162,7 @@ for (const [name, content] of [
   for (const stalePattern of stalePatterns) {
     if (stalePattern.test(content)) errors.push(`${name} 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
   }
-  if (!content.includes('https://docs.aifast.club/start/')) errors.push(`${name} 缺少任务型开始入口`);
+  if (!content.includes('https://docs.aifast.hk/start/')) errors.push(`${name} 缺少任务型开始入口`);
   if (content.includes('openai-compatible-api-check')) errors.push(`${name} 不应把用户导向程序仓库`);
 }
 const evidenceJson = await readFile(join(site, 'evidence.json'), 'utf8');
@@ -174,8 +174,8 @@ if (sitemap.includes('googledf91ed7a7a801280.html')) {
   errors.push('sitemap.xml 不应收录 Google 所有权验证页');
 }
 for (const required of [
-  'https://docs.aifast.club/model-check/',
-  'https://docs.aifast.club/guides/model-check-report-guide/',
+  'https://docs.aifast.hk/model-check/',
+  'https://docs.aifast.hk/guides/model-check-report-guide/',
   'https://github.com/KKWANG4444/llm-api-proxy-china',
   'https://github.com/KKWANG4444/ai-api-proxy-china-guide',
   'https://www.aifast.hk/pricing',

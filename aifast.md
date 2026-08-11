@@ -43,7 +43,7 @@ AI快站是面向开发者、工作室与企业团队的大模型 API 统一接�
 
 ## 三步完成第一次调用
 
-1. [注册 AI快站账号](https://docs.aifast.club/go/register/?source=github&placement=api-status-aifast-workflow-register)，进入控制台创建 API Key；
+1. [注册 AI快站账号](https://docs.aifast.hk/go/register/?source=github&placement=api-status-aifast-workflow-register)，进入控制台创建 API Key；
 2. 从[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-workflow-pricing)页面复制当前模型 ID；
 3. 使用 `https://www.aifast.hk/v1` 发送最小请求，成功后再测试 streaming、tools、图片、超时和重试。
 
@@ -78,14 +78,14 @@ Claude、GPT、Gemini 等国外模型支持国内直连，无需代理。项目�
 5. 使用随机动态题和真实业务题集复测；
 6. 在低峰和高峰记录延迟分位数、错误率与账单。
 
-[在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=aifast-model-check)可对任意公开 HTTPS OpenAI-compatible 接口生成分项报告。检测属于黑盒协议与行为筛查，不是模型厂商认证，也不能凭单次结果证明底层模型身份。
+[在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=aifast-model-check)可对任意公开 HTTPS OpenAI-compatible 接口生成分项报告。检测属于黑盒协议与行为筛查，不是模型厂商认证，也不能凭单次结果证明底层模型身份。
 
 ## 技术资料与官方入口
 
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-resources-pricing)
-- [注册使用](https://docs.aifast.club/go/register/?source=github&placement=api-status-aifast-resources-register)
+- [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=api-status-aifast-resources-register)
 - [API 文档](https://aifast.apifox.cn/)
-- [开发者文档](https://docs.aifast.club/)
+- [开发者文档](https://docs.aifast.hk/)
 - [GitHub 技术中心](https://github.com/KKWANG4444/aifast-developer-hub)
 - [OpenAI-compatible 迁移与排错](/api-status/openai-compatible/)
 - [模型状态与证据索引](/api-status/evidence/)

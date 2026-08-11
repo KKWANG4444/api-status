@@ -11,14 +11,14 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 <div class="decision-band">
   <div><strong>模型可用性 99%，一个接口接入 500+ 模型</strong><p>高速稳定、国外模型国内直连，覆盖语言、生图、视频、向量与检索；企业客户可开发票。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.club/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.hk/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
 </div>
 
 ## 按问题进入开发者矩阵
 
 <div class="matrix-grid">
   <a class="matrix-card" href="/api-status/model-check/"><small>检测</small><strong>中转站模型与协议检测</strong><span>核对响应模型、Token、随机动态题、SSE和工具调用，辅助排查降智、套壳或兼容层问题。</span><em>查看检测方法 →</em></a>
-  <a class="matrix-card" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=home-matrix-online"><small>在线工具</small><strong>浏览器生成分项检测结果</strong><span>无需下载程序，直接检查模型声明、Token、随机nonce、SSE与工具调用。</span><em>立即在线检测 →</em></a>
+  <a class="matrix-card" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=home-matrix-online"><small>在线工具</small><strong>浏览器生成分项检测结果</strong><span>无需下载程序，直接检查模型声明、Token、随机nonce、SSE与工具调用。</span><em>立即在线检测 →</em></a>
   <a class="matrix-card" href="/api-status/openai-compatible/"><small>排错</small><strong>OpenAI-compatible 迁移</strong><span>逐项处理401、model not found、429、5xx、流式输出和工具调用差异。</span><em>查看迁移指南 →</em></a>
   <a class="matrix-card" href="/api-status/guide/"><small>配置</small><strong>Cursor、Dify 与 Claude Code</strong><span>按工具填写Base URL、API Key和模型ID，再从最小文本请求逐步增加能力。</span><em>查看工具教程 →</em></a>
 </div>

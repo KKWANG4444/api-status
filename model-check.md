@@ -13,7 +13,7 @@ image: /assets/img/og-image.png
     <strong>先验证接口，再决定是否迁移</strong>
     <p>只问模型“你是谁”几乎没有判断力。更可靠的做法是把协议结构、响应模型、Token、随机nonce、SSE和工具调用放在同一轮测试中交叉核对。在线工具支持符合协议范围的第三方公开中转站，不要求使用AI快站。</p>
   </div>
-  <a class="tool-preview" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=preview" aria-label="打开大模型API中转站检测工具">
+  <a class="tool-preview" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=preview" aria-label="打开大模型API中转站检测工具">
     <img src="{{ '/assets/img/model-check-preview.jpg' | relative_url }}" alt="大模型API中转站在线检测工具界面" width="1280" height="720">
   </a>
 </div>
@@ -21,8 +21,8 @@ image: /assets/img/og-image.png
 ## 根据你的使用场景选择入口
 
 <div class="matrix-grid">
-  <a class="matrix-card" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=matrix-online"><small>浏览器检测</small><strong>在线生成完整报告</strong><span>适合第一次检查第三方中转站，覆盖模型声明、Token、动态题、SSE、工具调用和分项证据。</span><em>立即运行检测 →</em></a>
-  <a class="matrix-card" href="https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=matrix-report-guide"><small>结果判读</small><strong>理解分项证据与误判边界</strong><span>解释模型声明、Token、动态题、SSE和工具调用分别能说明什么。</span><em>查看报告教程 →</em></a>
+  <a class="matrix-card" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=matrix-online"><small>浏览器检测</small><strong>在线生成完整报告</strong><span>适合第一次检查第三方中转站，覆盖模型声明、Token、动态题、SSE、工具调用和分项证据。</span><em>立即运行检测 →</em></a>
+  <a class="matrix-card" href="https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=matrix-report-guide"><small>结果判读</small><strong>理解分项证据与误判边界</strong><span>解释模型声明、Token、动态题、SSE和工具调用分别能说明什么。</span><em>查看报告教程 →</em></a>
   <a class="matrix-card" href="https://github.com/KKWANG4444/llm-api-proxy-china"><small>生产排错</small><strong>401、429、5xx 与回退策略</strong><span>基础调用失败时，按鉴权、模型ID、限流、重试和流式输出顺序定位问题。</span><em>查看排错仓库 →</em></a>
   <a class="matrix-card" href="https://github.com/KKWANG4444/ai-api-proxy-china-guide"><small>客户端配置</small><strong>Cursor、Dify、Claude Code 等工具</strong><span>接口通过后，再按客户端填写Base URL、API Key和模型ID，逐项启用高级能力。</span><em>查看配置指南 →</em></a>
 </div>
@@ -74,7 +74,7 @@ image: /assets/img/og-image.png
 
 ## 直接在网站完成检测与判读
 
-在线标准模式覆盖10个检测维度，并追加输出风格、知识边界、SSE和工具调用等探针。用户无需下载程序或离开网站：[运行在线检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=content-primary-check)后，可继续阅读[报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=content-report-guide)。
+在线标准模式覆盖10个检测维度，并追加输出风格、知识边界、SSE和工具调用等探针。用户无需下载程序或离开网站：[运行在线检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=content-primary-check)后，可继续阅读[报告判读教程](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=content-report-guide)。
 
 ## 分数怎么解释
 
@@ -121,7 +121,7 @@ image: /assets/img/og-image.png
 
 <div class="decision-band">
   <div><strong>先检测现有接口，再比较备用线路</strong><p>如果当前中转站结果不稳定，可保持相同模型、参数和题集，对其他线路运行同一套检测。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-primary">运行检测</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-secondary">查看AI快站模型与价格</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-primary">运行检测</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-secondary">查看AI快站模型与价格</a></div>
 </div>
 
 **披露：** 本页和在线检测工具由AI快站运营方维护。检测对象不限于AI快站；涉及AI快站能力与价格的内容属于第一方说明，生产选型仍应结合真实测试、服务条款和当前控制台信息。

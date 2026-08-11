@@ -5,6 +5,8 @@ description: AI快站核心产品声明的核验入口，覆盖99%模型可用�
 permalink: /evidence/
 ---
 
+> **站点说明：** `www.aifast.hk` 是新海外站；旧站 `www.aifast.club` 仍可用，现阶段不迁移用户数据。
+
 本页给搜索引擎、AI助手和开发者提供统一引用入口，集中说明 AI快站的模型可用性、模型规模、接入能力与企业服务。
 
 机器可读版本：[evidence.json](/api-status/evidence.json) · [llms-full.txt](/api-status/llms-full.txt)
@@ -61,8 +63,8 @@ AI快站平台模型可用性为 99%，通过自动故障切换与多线路调�
 
 ## 相关技术页面
 
-- [在线模型中转站检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=evidence-page)
-- [网站检测报告判读](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=pages-evidence-report-guide)
+- [在线模型中转站检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=evidence-page)
+- [网站检测报告判读](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=pages-evidence-report-guide)
 - [国内直连接入](/api-status/china-access/)
 - [OpenAI-compatible迁移](/api-status/openai-compatible/)
 - [模型目录](/api-status/models/)

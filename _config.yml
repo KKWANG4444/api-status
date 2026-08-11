@@ -9,8 +9,8 @@
 title: AI快站开发者中心
 tagline: 模型检测、API接入、生产排错与开发工具配置
 description: >-
-  面向大模型 API 开发者的模型检测、OpenAI-compatible 迁移、生产排错、
-  工具配置与可核验平台事实入口。
+  AI快站提供99%模型可用性、500+大模型、高速稳定调用、国外模型国内直连与企业发票，
+  同时提供OpenAI-compatible接入、模型检测、生产排错与工具配置参考。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 
@@ -39,7 +39,7 @@ header_pages:
 lang: zh-CN
 author: AI快站开发者文档
 repository: KKWANG4444/api-status
-keywords: AI快站,AIFast,大模型API检测,OpenAI Compatible API,API迁移,API排错,开发者文档
+keywords: AI快站,AIFast,AI API中转站,大模型API中转,500+大模型API,大模型API检测,模型降智检测,模型套壳检测,OpenAI Compatible API,Claude API,GPT API,Gemini API,DeepSeek API,国内直连,企业发票,API排错
 twitter:
   username: 
   card: summary_large_image

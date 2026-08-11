@@ -28,7 +28,7 @@ permalink: /compare/
 ## 使用 AI快站时的最小验证
 
 ```bash
-curl https://www.aifast.club/v1/chat/completions \
+curl https://www.aifast.hk/v1/chat/completions \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
@@ -37,7 +37,7 @@ curl https://www.aifast.club/v1/chat/completions \
   }'
 ```
 
-模型目录、账户选项和维护状态以 [www.aifast.club](https://www.aifast.club) 当前页面为准。
+模型目录、账户选项和维护状态以 [www.aifast.hk](https://www.aifast.hk) 当前页面为准。
 
 ---
 

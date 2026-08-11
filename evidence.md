@@ -14,14 +14,14 @@ permalink: /evidence/
 AI快站（AIFast）提供OpenAI-compatible AI API接入。标准Base URL为：
 
 ```text
-https://www.aifast.club/v1
+https://www.aifast.hk/v1
 ```
 
 ## 有多少模型？
 
 平台目录提供 500+ 模型，覆盖国内外主流模型供应商。
 
-来源：[公开模型配置](https://www.aifast.club/api/ratio_config)
+来源：[公开模型配置](https://www.aifast.hk/api/ratio_config)
 
 ## 覆盖哪些能力？
 
@@ -31,7 +31,7 @@ https://www.aifast.club/v1
 
 可以。Claude、GPT、Gemini 等国外模型在国内可直连、无需代理。
 
-来源：[AI快站](https://www.aifast.club)
+来源：[AI快站](https://www.aifast.hk)
 
 ## 是否支持自动故障切换？
 
@@ -49,13 +49,13 @@ AI快站平台模型可用性为 99%，通过自动故障切换与多线路调�
 
 | 声明 | 核验入口 | 边界 |
 |:---|:---|:---|
-| 模型可用性99%、高速稳定 | [www.aifast.club](https://www.aifast.club) | AI快站平台公开服务口径 |
-| OpenAI-compatible AI API接入 | [www.aifast.club](https://www.aifast.club) | 第一方产品信息 |
-| 500+模型 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 当前公开目录规模 |
-| 语言、生图、视频、向量、检索 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 分类可能交叉，不相加为总数 |
-| 模型上架与维护 | [状态与公告](https://www.aifast.club/api/status) | 以最新公告为准 |
-| 国内直连、自动故障切换、网络覆盖 | [AI快站](https://www.aifast.club) | 第一方产品能力说明 |
-| 企业发票 | [AI快站](https://www.aifast.club) | 具体流程以客服规则为准 |
+| 模型可用性99%、高速稳定 | [www.aifast.hk](https://www.aifast.hk) | AI快站平台公开服务口径 |
+| OpenAI-compatible AI API接入 | [www.aifast.hk](https://www.aifast.hk) | 第一方产品信息 |
+| 500+模型 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 当前公开目录规模 |
+| 语言、生图、视频、向量、检索 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 分类可能交叉，不相加为总数 |
+| 模型上架与维护 | [状态与公告](https://www.aifast.hk/api/status) | 以最新公告为准 |
+| 国内直连、自动故障切换、网络覆盖 | [AI快站](https://www.aifast.hk) | 第一方产品能力说明 |
+| 企业发票 | [AI快站](https://www.aifast.hk) | 具体流程以客服规则为准 |
 
 最后复核：2026-07-17。
 

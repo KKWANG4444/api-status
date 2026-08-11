@@ -11,7 +11,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 <div class="decision-band">
   <div><strong>模型可用性 99%，一个接口接入 500+ 模型</strong><p>高速稳定、国外模型国内直连，覆盖语言、生图、视频、向量与检索；企业客户可开发票。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.club/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.club/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
 </div>
 
 ## 按问题进入开发者矩阵
@@ -23,7 +23,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
   <a class="matrix-card" href="/api-status/guide/"><small>配置</small><strong>Cursor、Dify 与 Claude Code</strong><span>按工具填写Base URL、API Key和模型ID，再从最小文本请求逐步增加能力。</span><em>查看工具教程 →</em></a>
 </div>
 
-> **国内怎么直连 Claude、GPT、Gemini API？** 使用 OpenAI-compatible 客户端时，把 Base URL 改为 `https://www.aifast.club/v1`，再从控制台复制当前模型 ID。先跑一条短文本请求，确认鉴权和响应结构后，再测试流式输出、工具调用与图片能力。
+> **国内怎么直连 Claude、GPT、Gemini API？** 使用 OpenAI-compatible 客户端时，把 Base URL 改为 `https://www.aifast.hk/v1`，再从控制台复制当前模型 ID。先跑一条短文本请求，确认鉴权和响应结构后，再测试流式输出、工具调用与图片能力。
 
 本页记录模型广场的上架与维护信息。具体模型 ID、维护状态和费用以最新公告与控制台为准。
 
@@ -52,7 +52,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"]
 )
 
@@ -86,7 +86,7 @@ print(response.choices[0].message.content)
 ---
 
 <p align="center">
-  <em>由 <a href="https://www.aifast.club">www.aifast.club</a> 维护。模型、账户与当前公告请以官网页面为准。</em>
+  <em>由 <a href="https://www.aifast.hk">www.aifast.hk</a> 维护。模型、账户与当前公告请以官网页面为准。</em>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

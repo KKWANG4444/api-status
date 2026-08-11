@@ -119,9 +119,9 @@ for (const required of [
 
 const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
 for (const required of [
-  'https://www.aifast.club/pricing',
+  'https://www.aifast.hk/pricing',
   'https://docs.aifast.club/go/register/',
-  'https://www.aifast.club/v1',
+  'https://www.aifast.hk/v1',
   'https://aifast.apifox.cn/',
   'https://docs.aifast.club/model-check/',
   'https://github.com/KKWANG4444/aifast-developer-hub',
@@ -133,8 +133,8 @@ if (!aifast.includes('"@type": "Service"') || !aifast.includes('"@type": "FAQPag
 }
 const brandFacts = await readFile(join(site, 'brand-facts/index.html'), 'utf8');
 for (const required of [
-  'https://www.aifast.club/v1',
-  'https://www.aifast.club/pricing',
+  'https://www.aifast.hk/v1',
+  'https://www.aifast.hk/pricing',
   'https://docs.aifast.club/model-check/',
   '99%',
   '500+',
@@ -178,7 +178,7 @@ for (const required of [
   'https://docs.aifast.club/guides/model-check-report-guide/',
   'https://github.com/KKWANG4444/llm-api-proxy-china',
   'https://github.com/KKWANG4444/ai-api-proxy-china-guide',
-  'https://www.aifast.club/pricing',
+  'https://www.aifast.hk/pricing',
 ]) {
   if (!modelCheck.includes(required)) errors.push(`model-check/index.html 缺少矩阵入口 ${required}`);
 }

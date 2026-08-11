@@ -31,7 +31,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台�
 ## 使用示例
 
 ```bash
-curl https://www.aifast.club/v1/chat/completions \
+curl https://www.aifast.hk/v1/chat/completions \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
@@ -45,7 +45,7 @@ curl https://www.aifast.club/v1/chat/completions \
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>查看当前模型广场 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.hk"><strong>查看当前模型广场 → www.aifast.hk</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

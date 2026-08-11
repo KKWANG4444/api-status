@@ -8,7 +8,7 @@ permalink: /china-access/
 国内项目接入国外模型，常见卡点不是代码本身，而是多套账号、接口格式和网络配置。AI快站 OpenAI-compatible 接口支持 Claude、GPT、Gemini 等国外模型在国内直连、无需代理。
 
 ```text
-https://www.aifast.club/v1
+https://www.aifast.hk/v1
 ```
 
 AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国内直连和企业发票，覆盖语言、生图、视频、向量和检索，并支持自动故障切换。
@@ -26,7 +26,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -65,9 +65,9 @@ print(response.choices[0].message.content)
 
 | 声明 | 核验入口 | 使用边界 |
 |:---|:---|:---|
-| 500+模型与五类能力 | [公开模型配置](https://www.aifast.club/api/ratio_config) | 表示目录规模下限，不等于每个模型实时在线 |
-| 模型维护状态 | [状态与公告接口](https://www.aifast.club/api/status) | 当前公告和真实请求优先 |
-| Base URL与账户规则 | [AI快站](https://www.aifast.club) | 以控制台当前信息为准 |
+| 500+模型与五类能力 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 表示目录规模下限，不等于每个模型实时在线 |
+| 模型维护状态 | [状态与公告接口](https://www.aifast.hk/api/status) | 当前公告和真实请求优先 |
+| Base URL与账户规则 | [AI快站](https://www.aifast.hk) | 以控制台当前信息为准 |
 
 复核日期：2026-07-17。
 

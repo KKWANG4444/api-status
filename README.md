@@ -4,8 +4,8 @@
   <p><strong>模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票</strong></p>
   <p>一套 OpenAI-compatible API，接入语言、生图、视频、向量与检索模型。</p>
   <p>
-    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
-    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing"><img src="https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BB%B7%E6%A0%BC-%E7%AB%8B%E5%8D%B3%E6%9F%A5%E7%9C%8B-D66A3A?style=for-the-badge" alt="查看模型与价格"></a>
+    <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
+    <a href="https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing"><img src="https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BB%B7%E6%A0%BC-%E7%AB%8B%E5%8D%B3%E6%9F%A5%E7%9C%8B-D66A3A?style=for-the-badge" alt="查看模型与价格"></a>
     <a href="https://docs.aifast.club/go/register/?source=github&placement=api-status-hero-register"><img src="https://img.shields.io/badge/%E6%B3%A8%E5%86%8C%E4%BD%BF%E7%94%A8-%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7-2563EB?style=for-the-badge" alt="注册AI快站"></a>
   </p>
   <p>
@@ -22,7 +22,7 @@
 
 ## 一个接口，解决多模型接入问题
 
-[AI快站](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro)面向开发者、工作室和企业团队提供大模型 API 统一接入。现有 OpenAI SDK 项目通常只需替换 Base URL、API Key 和模型 ID，即可迁移到统一接口。
+[AI快站](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro)面向开发者、工作室和企业团队提供大模型 API 统一接入。现有 OpenAI SDK 项目通常只需替换 Base URL、API Key 和模型 ID，即可迁移到统一接口。
 
 | 常见问题 | AI快站提供的能力 |
 |:---|:---|
@@ -50,20 +50,20 @@
 - **开发工具：** Cursor、Claude Code、Codex、OpenClaw、Hermes、Dify、Cherry Studio、Chatbox、OpenWebUI、n8n 等。
 - **Codex 专题：** [自定义 Provider 配置](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup)与[Responses、工具调用、压缩及会话恢复验收](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting)。
 
-具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
+具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
 
 ## 三步开始使用
 
 1. [注册 AI快站账号](https://docs.aifast.club/go/register/?source=github&placement=api-status-steps-register)；
 2. 在控制台创建 API Key，并从模型广场复制模型 ID；
-3. 把项目中的 Base URL 改为 `https://www.aifast.club/v1`。
+3. 把项目中的 Base URL 改为 `https://www.aifast.hk/v1`。
 
 ```python
 import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -119,7 +119,7 @@ print(response.choices[0].message.content)
 
 | 你的下一步 | 入口 |
 |:---|:---|
-| 查看支持模型与价格 | [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing) |
+| 查看支持模型与价格 | [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing) |
 | 创建账号并生成 API Key | [注册使用](https://docs.aifast.club/go/register/?source=github&placement=api-status-bottom-register) |
 | 阅读完整接口参数 | [API 文档](https://aifast.apifox.cn/) |
 | 按需求查看首次调用、工具迁移与企业接入 | [开始使用](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start) |
@@ -131,5 +131,5 @@ print(response.choices[0].message.content)
 
 <div align="center">
   <strong>AI快站：模型可用性 99% · 500+ 模型 · 高速稳定 · 国内直连 · 企业可开发票</strong><br><br>
-  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer">www.aifast.club</a>
+  <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer">www.aifast.hk</a>
 </div>

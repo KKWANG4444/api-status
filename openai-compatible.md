@@ -14,7 +14,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -31,7 +31,7 @@ print(result.choices[0].message.content)
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  baseURL: "https://www.aifast.club/v1",
+  baseURL: "https://www.aifast.hk/v1",
   apiKey: process.env.AIFAST_API_KEY,
 });
 
@@ -45,7 +45,7 @@ console.log(result.choices[0].message.content);
 ## cURL
 
 ```bash
-curl https://www.aifast.club/v1/chat/completions \
+curl https://www.aifast.hk/v1/chat/completions \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
@@ -56,7 +56,7 @@ curl https://www.aifast.club/v1/chat/completions \
 
 ## 401怎么排查？
 
-确认请求头使用`Authorization: Bearer <key>`，Key完整且处于启用状态。Base URL应为`https://www.aifast.club/v1`。
+确认请求头使用`Authorization: Bearer <key>`，Key完整且处于启用状态。Base URL应为`https://www.aifast.hk/v1`。
 
 ## 404或model not found怎么办？
 
@@ -78,7 +78,7 @@ curl https://www.aifast.club/v1/chat/completions \
 
 AI快站提供 OpenAI-compatible AI API 接入，平台模型可用性 99%，公开目录包含 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
 
-模型ID、维护状态和费用以[模型广场](https://www.aifast.club)、[公告](https://www.aifast.club/api/status)和控制台当前信息为准。
+模型ID、维护状态和费用以[模型广场](https://www.aifast.hk)、[公告](https://www.aifast.hk/api/status)和控制台当前信息为准。
 
 ## 相关页面
 

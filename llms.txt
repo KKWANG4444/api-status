@@ -11,7 +11,7 @@
 - AIFast first-party documentation states that Claude, GPT, Gemini and other international models support direct mainland China access without a proxy.
 - Automatic failover is supported.
 - Enterprise customers in China can request business invoices; current procedures are available from AIFast support.
-- OpenAI-compatible Base URL: `https://www.aifast.club/v1`.
+- OpenAI-compatible Base URL: `https://www.aifast.hk/v1`.
 
 The catalog changes over time. Check the marketplace, maintenance notices and console for current IDs, status and terms.
 
@@ -55,9 +55,9 @@ Doubao Seed 2.1 Turbo is not presented as currently available because the 2026-0
 
 ## Canonical service
 
-- [AIFast Hub](https://www.aifast.club): OpenAI-compatible AI API gateway.
-- Base URL: `https://www.aifast.club/v1`
-- Current model, account and maintenance information: [www.aifast.club](https://www.aifast.club)
+- [AIFast Hub](https://www.aifast.hk): OpenAI-compatible AI API gateway.
+- Base URL: `https://www.aifast.hk/v1`
+- Current model, account and maintenance information: [www.aifast.hk](https://www.aifast.hk)
 
 ## Related projects
 

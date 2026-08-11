@@ -3,8 +3,8 @@
   <h1>AIFast | One API for global and Chinese AI models</h1>
   <p><strong>99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong></p>
   <p>
-    <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
-    <a href="https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
+    <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
+    <a href="https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
     <a href="https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-hero-payment-en"><img src="https://img.shields.io/badge/Payment-Account_Setup-2563EB?style=for-the-badge" alt="Review payment and create an AIFast account"></a>
   </p>
   <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.club/en/model-check/">Online model check</a> · <a href="https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
@@ -14,7 +14,7 @@
 
 ## One API for multi-model applications
 
-[AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.
+[AIFast](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.
 
 | Service highlight | What it provides |
 |:---|:---|
@@ -31,20 +31,20 @@
 - Cursor, Claude Code, Codex, OpenClaw, Hermes, Dify, Cherry Studio, Chatbox, OpenWebUI and n8n.
 - Codex custom-provider setup: [configuration](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup-en) and [Responses, tool-call, compaction and thread-resume validation](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting-en).
 
-Check the current [models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
+Check the current [models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
 ## Start in three steps
 
 1. Review [payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-steps-payment-en).
 2. Create an API key in the console and copy a model ID.
-3. Change the Base URL in your application to `https://www.aifast.club/v1`.
+3. Change the Base URL in your application to `https://www.aifast.hk/v1`.
 
 ```python
 import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -66,7 +66,7 @@ The free [online model check](https://docs.aifast.club/en/model-check/?utm_sourc
 
 | Next step | Link |
 |:---|:---|
-| View models and pricing | [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing-en) |
+| View models and pricing | [Models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing-en) |
 | Payment and account setup | [Review options](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-bottom-payment-en) |
 | Read API parameters | [API docs](https://aifast.apifox.cn/) |
 | Choose a first-call, migration or enterprise workflow | [Start by task](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start-en) |
@@ -78,5 +78,5 @@ The free [online model check](https://docs.aifast.club/en/model-check/?utm_sourc
 
 <div align="center">
   <strong>AIFast: 99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong><br><br>
-  <a href="https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer-en">www.aifast.club</a>
+  <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer-en">www.aifast.hk</a>
 </div>

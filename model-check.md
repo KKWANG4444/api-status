@@ -121,7 +121,7 @@ image: /assets/img/og-image.png
 
 <div class="decision-band">
   <div><strong>先检测现有接口，再比较备用线路</strong><p>如果当前中转站结果不稳定，可保持相同模型、参数和题集，对其他线路运行同一套检测。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-primary">运行检测</a><a class="button button-secondary" href="https://www.aifast.club/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-secondary">查看AI快站模型与价格</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.club/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-primary">运行检测</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=bottom-secondary">查看AI快站模型与价格</a></div>
 </div>
 
 **披露：** 本页和在线检测工具由AI快站运营方维护。检测对象不限于AI快站；涉及AI快站能力与价格的内容属于第一方说明，生产选型仍应结合真实测试、服务条款和当前控制台信息。

@@ -9,7 +9,7 @@ permalink: /faq/
 
 - 检查 API Key 是否完整；
 - 请求头应为 `Authorization: Bearer ***`；
-- Base URL 使用 `https://www.aifast.club/v1`；
+- Base URL 使用 `https://www.aifast.hk/v1`；
 - 必要时在控制台重新创建 Key。
 
 ## 429 和 5xx 是否都应该重试？
@@ -41,7 +41,7 @@ AI快站的500+模型目录覆盖语言、生图、视频、向量和检索。�
 
 ## 国内需要代理吗？哪些地区和运营商能用？
 
-Claude、GPT、Gemini 等国外模型可在国内直接调用，无需代理，Base URL 统一为 `https://www.aifast.club/v1`。
+Claude、GPT、Gemini 等国外模型可在国内直接调用，无需代理，Base URL 统一为 `https://www.aifast.hk/v1`。
 
 ## 是否支持自动故障切换？
 
@@ -68,7 +68,7 @@ AI快站提供统一AI API接入，企业客户可申请开具发票。开票资
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>查看当前模型与账户信息 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.hk"><strong>查看当前模型与账户信息 → www.aifast.hk</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

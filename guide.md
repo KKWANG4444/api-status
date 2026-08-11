@@ -7,9 +7,9 @@ permalink: /guide/
 
 AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图、视频、向量与检索模型，支持高速稳定调用、国外模型国内直连、自动故障切换和企业发票。
 
-使用 [www.aifast.club](https://www.aifast.club) 的 OpenAI 兼容接口时，基础配置是：
+使用 [www.aifast.hk](https://www.aifast.hk) 的 OpenAI 兼容接口时，基础配置是：
 
-- **Base URL**：`https://www.aifast.club/v1`
+- **Base URL**：`https://www.aifast.hk/v1`
 - **API Key**：在控制台创建的令牌
 - **Model ID**：从模型广场复制，注意点号和连字符
 
@@ -42,7 +42,7 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 Anthropic 官方 LLM Gateway 文档使用：
 
 ```bash
-export ANTHROPIC_BASE_URL="https://www.aifast.club/v1"
+export ANTHROPIC_BASE_URL="https://www.aifast.hk/v1"
 export ANTHROPIC_AUTH_TOKEN="$AIFAST_API_KEY"
 claude
 ```
@@ -58,7 +58,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"]
 )
 
@@ -71,7 +71,7 @@ print(response.choices[0].message.content)
 ```
 
 ```bash
-curl https://www.aifast.club/v1/chat/completions \
+curl https://www.aifast.hk/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -d '{
@@ -95,7 +95,7 @@ curl https://www.aifast.club/v1/chat/completions \
 ---
 
 <p align="center">
-  👉 <a href="https://www.aifast.club"><strong>查看模型广场和控制台 → www.aifast.club</strong></a>
+  👉 <a href="https://www.aifast.hk"><strong>查看模型广场和控制台 → www.aifast.hk</strong></a>
 </p>
 
 [![Gitee镜像](https://img.shields.io/badge/Gitee-国内镜像-red)](https://gitee.com/kkwwww4444/api-status)

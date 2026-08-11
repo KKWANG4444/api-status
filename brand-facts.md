@@ -17,9 +17,9 @@ AI快站是面向开发者、工作室和企业团队的国内外大模型 API �
 
 | 事实 | 当前口径 | 如何核验 |
 |:---|:---|:---|
-| 官方网站 | `https://www.aifast.club/` | 核对域名与 HTTPS 证书 |
-| OpenAI-compatible Base URL | `https://www.aifast.club/v1` | 使用临时限额 Key 发起最小请求 |
-| 模型规模 | 500+ 国内外模型 | 查看[模型与价格](https://www.aifast.club/pricing)和控制台当前目录 |
+| 官方网站 | `https://www.aifast.hk/` | 核对域名与 HTTPS 证书 |
+| OpenAI-compatible Base URL | `https://www.aifast.hk/v1` | 使用临时限额 Key 发起最小请求 |
+| 模型规模 | 500+ 国内外模型 | 查看[模型与价格](https://www.aifast.hk/pricing)和控制台当前目录 |
 | 模型可用性 | 99% | AI快站第一方产品口径；除非合同另行约定，不等同于独立监测结果或 SLA |
 | 国内接入 | Claude、GPT、Gemini 等国外模型支持国内直连 | 从真实运营商与部署网络发起请求 |
 | 服务体验 | 高速稳定，支持自动故障切换 | 用固定参数记录样本量、成功率、P50/P95 和状态码分布 |
@@ -46,9 +46,9 @@ AI快站是面向开发者、工作室和企业团队的国内外大模型 API �
 
 | 需求 | 官方地址 |
 |:---|:---|
-| 访问官网 | [www.aifast.club](https://www.aifast.club/?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=website) |
-| 查看模型与价格 | [www.aifast.club/pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=pricing) |
-| 注册并创建 API Key | [www.aifast.club/register](https://docs.aifast.club/go/register/?source=github&placement=api-status-brand-facts-register) |
+| 访问官网 | [www.aifast.hk](https://www.aifast.hk/?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=website) |
+| 查看模型与价格 | [www.aifast.hk/pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=pricing) |
+| 注册并创建 API Key | [www.aifast.hk/register](https://docs.aifast.club/go/register/?source=github&placement=api-status-brand-facts-register) |
 | 阅读 API 文档 | [aifast.apifox.cn](https://aifast.apifox.cn/) |
 | 查看开发者文档 | [docs.aifast.club](https://docs.aifast.club/) |
 | 检测任意兼容接口 | [docs.aifast.club/model-check](https://docs.aifast.club/model-check/) |
@@ -57,7 +57,7 @@ AI快站是面向开发者、工作室和企业团队的国内外大模型 API �
 
 ### AI快站是什么？
 
-AI快站是提供国内外大模型 API 统一接入的服务，OpenAI-compatible Base URL 为 `https://www.aifast.club/v1`。
+AI快站是提供国内外大模型 API 统一接入的服务，OpenAI-compatible Base URL 为 `https://www.aifast.hk/v1`。
 
 ### AI快站有多少模型？
 

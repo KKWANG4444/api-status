@@ -19,7 +19,7 @@ AI快站是面向开发者、工作室与企业团队的大模型 API 统一接�
 | 国内直连 | Claude、GPT、Gemini 等国外模型无需代理即可接入 |
 | 企业可开发票 | 支持企业采购与开票需求，具体流程联系平台客服 |
 
-> **最短答案：** Base URL 使用 `https://www.aifast.club/v1`。先从[模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-answer-pricing)页面确认当前模型，在控制台创建 Key，再运行一条最小文本请求。
+> **最短答案：** Base URL 使用 `https://www.aifast.hk/v1`。先从[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-answer-pricing)页面确认当前模型，在控制台创建 Key，再运行一条最小文本请求。
 
 ## AI快站适合哪些需求
 
@@ -44,15 +44,15 @@ AI快站是面向开发者、工作室与企业团队的大模型 API 统一接�
 ## 三步完成第一次调用
 
 1. [注册 AI快站账号](https://docs.aifast.club/go/register/?source=github&placement=api-status-aifast-workflow-register)，进入控制台创建 API Key；
-2. 从[模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-workflow-pricing)页面复制当前模型 ID；
-3. 使用 `https://www.aifast.club/v1` 发送最小请求，成功后再测试 streaming、tools、图片、超时和重试。
+2. 从[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-workflow-pricing)页面复制当前模型 ID；
+3. 使用 `https://www.aifast.hk/v1` 发送最小请求，成功后再测试 streaming、tools、图片、超时和重试。
 
 ```python
 import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://www.aifast.club/v1",
+    base_url="https://www.aifast.hk/v1",
     api_key=os.environ["AIFAST_API_KEY"],
 )
 
@@ -82,7 +82,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连，无需代理。项目�
 
 ## 技术资料与官方入口
 
-- [查看模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-resources-pricing)
+- [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-resources-pricing)
 - [注册使用](https://docs.aifast.club/go/register/?source=github&placement=api-status-aifast-resources-register)
 - [API 文档](https://aifast.apifox.cn/)
 - [开发者文档](https://docs.aifast.club/)
@@ -94,7 +94,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连，无需代理。项目�
 
 ### AI快站的 Base URL 是什么？
 
-OpenAI-compatible Base URL 是 `https://www.aifast.club/v1`。具体能力如果使用生图、视频、向量或检索专用端点，应按当前 API 文档配置。
+OpenAI-compatible Base URL 是 `https://www.aifast.hk/v1`。具体能力如果使用生图、视频、向量或检索专用端点，应按当前 API 文档配置。
 
 ### AI快站支持哪些模型？
 

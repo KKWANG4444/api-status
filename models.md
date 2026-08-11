@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 500+ AI模型目录 | 语言、生图、视频、向量与检索 API
-description: 查看AI快站99%模型可用性与500+模型目录，覆盖语言、生图、视频、Embedding向量与检索能力，支持高速稳定调用和国内直连。
+title: AI模型目录 | 语言、生图、视频、向量与检索 API
+description: 按语言、生图、视频、Embedding 向量和检索能力查找模型系列、精确模型 ID、维护状态与调用入口。
 permalink: /models/
 ---
 

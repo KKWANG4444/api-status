@@ -7,7 +7,7 @@
     "baseUrl": "https://www.aifast.hk/v1",
     "type": "operated AI API gateway"
   },
-  "reviewedAt": "2026-07-17",
+  "reviewedAt": "2026-08-12",
   "claims": [
     {
       "id": "service-availability",
@@ -44,6 +44,12 @@
       "answer": "企业客户可申请开具发票。",
       "source": "https://www.aifast.hk",
       "scope": "开票资料和流程以平台客服当前规则为准。"
+    },
+    {
+      "id": "account-funding",
+      "answer": "新站使用美元（USD）充值并按1:1计入账户余额：⭐️ 1 AIFast Credit = US$1。",
+      "source": "https://www.aifast.hk/api/status",
+      "scope": "支付方式、折扣、支付网络、通道费用和最终到账属于动态信息，以控制台与结账页当前显示为准。"
     },
     {
       "id": "model-status",

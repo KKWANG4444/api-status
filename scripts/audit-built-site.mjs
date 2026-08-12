@@ -58,13 +58,13 @@ for (const pagePath of expectedPages) {
     if (stalePattern.test(html)) errors.push(`${pagePath}: 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
   }
 
-  for (const match of html.matchAll(/href="(https:\/\/www\.aifast\.club\/register(?:\?[^\"]*)?)"/g)) {
+  for (const match of html.matchAll(/href="(https:\/\/www\.aifast\.hk\/register(?:\?[^\"]*)?)"/g)) {
     const registerUrl = new URL(match[1].replaceAll('&amp;', '&'));
     if (registerUrl.searchParams.get('channel') !== 'c_zfxp7cp4') {
       errors.push(`${pagePath}: 注册入口缺少指定 channel`);
     }
   }
-  for (const match of html.matchAll(/href="(https:\/\/docs\.aifast\.club\/go\/register\/(?:\?[^\"]*)?)"/g)) {
+  for (const match of html.matchAll(/href="(https:\/\/docs\.aifast\.hk\/go\/register\/(?:\?[^\"]*)?)"/g)) {
     const registerUrl = new URL(match[1].replaceAll('&amp;', '&'));
     if (registerUrl.searchParams.get('source') !== 'github' || !registerUrl.searchParams.get('placement')) {
       errors.push(`${pagePath}: 可追踪注册入口缺少 source 或 placement`);
@@ -143,7 +143,10 @@ for (const required of [
 }
 if (!brandFacts.includes('"@type": "Dataset"')) errors.push('brand-facts/index.html 缺少Dataset结构化数据');
 const brandFactsJson = JSON.parse(await readFile(join(site, 'brand-facts.json'), 'utf8'));
-if (brandFactsJson.reviewedAt !== '2026-07-17') errors.push('brand-facts.json 复核日期不是当前发布日期');
+if (brandFactsJson.reviewedAt !== '2026-08-12') errors.push('brand-facts.json 复核日期不是当前发布日期');
+if (!brandFactsJson.firstPartyClaims.some((claim) => claim.name === '账户结算' && claim.value.includes('USD'))) {
+  errors.push('brand-facts.json 缺少 USD 1:1 账户结算事实');
+}
 if (new URL(brandFactsJson.official.registration).searchParams.get('channel') !== 'c_zfxp7cp4') {
   errors.push('brand-facts.json 注册入口不是 GitHub 专属渠道');
 }

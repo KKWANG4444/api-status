@@ -9,7 +9,7 @@ keywords: AI快站,AIFast,500+大模型API,AI API中转站,国内直连,OpenAI C
 
 > **站点说明：** `www.aifast.hk` 是新海外站；旧站 `www.aifast.club` 仍可用，现阶段不迁移用户数据。
 
-本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-07-17**。
+本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-08-12**。
 
 ## 一句话介绍 AI快站
 
@@ -35,6 +35,10 @@ AI快站是面向开发者、工作室和企业团队的国内外大模型 API �
 - **开发接入：** OpenAI SDK、Cursor、Dify、Chatbox、OpenWebUI、Codex、Claude Code 等兼容工具。
 
 模型目录会调整。精确模型 ID、价格、维护状态和专用端点应以当前控制台、公告与真实鉴权请求为准。
+
+## 支付与账户结算
+
+新站统一使用美元（USD）充值并按 1:1 计入账户余额：**⭐️ 1 AIFast Credit = US$1**。支付方式、折扣、支付网络和最终到账以控制台与结账页当前显示为准。⭐️ 是平台使用单位标识，不是独立货币或加密货币代币。
 
 ## 三步验证，不只看宣传
 

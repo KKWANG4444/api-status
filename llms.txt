@@ -61,6 +61,12 @@ Doubao Seed 2.1 Turbo is not presented as currently available because the 2026-0
 - Base URL: `https://www.aifast.hk/v1`
 - Current model, account and maintenance information: [www.aifast.hk](https://www.aifast.hk)
 
+## Payment and settlement
+
+- New-site funding rule: accounts are funded in USD and credited 1:1; ⭐️ 1 AIFast Credit = US$1.
+- Supported methods, discounts, network instructions and final charges are shown in the console and checkout page.
+- ⭐️ is a platform usage-unit label, not a separate currency or cryptocurrency token.
+
 ## Related projects
 
 - [Online model gateway check](https://docs.aifast.hk/model-check/)

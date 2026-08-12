@@ -63,6 +63,9 @@ See the [API documentation](https://aifast.apifox.cn/) and [developer documentat
 ## Check an existing model gateway
 
 The free [online model check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-check-en) inspects OpenAI-compatible HTTPS endpoints and reports protocol metadata, token fields, randomized prompts, SSE streaming and tool calling behavior. It also supports third-party gateways; use a temporary low-limit API key when testing.
+## Payment and account settlement
+
+The new site funds accounts in USD and credits balances 1:1: **⭐️ 1 AIFast Credit = US$1**. Supported methods, discounts, network instructions and final charges are shown in the console and checkout page. ⭐️ is a platform usage-unit label, not a separate currency or cryptocurrency token.
 
 ## Main links
 

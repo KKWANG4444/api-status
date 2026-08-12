@@ -3,7 +3,7 @@
   "name": "AI快站",
   "alternateName": "AIFast",
   "description": "面向开发者、工作室和企业团队的国内外大模型 API 统一接入服务。",
-  "reviewedAt": "2026-07-17",
+  "reviewedAt": "2026-08-12",
   "official": {
     "website": "https://www.aifast.hk/",
     "pricing": "https://www.aifast.hk/pricing",
@@ -37,6 +37,11 @@
       "name": "企业服务",
       "value": "可申请发票",
       "scope": "资料和流程以官方客服当前确认结果为准。"
+    },
+    {
+      "name": "账户结算",
+      "value": "USD 充值按 1:1 计入 AIFast Credits",
+      "scope": "⭐️ 1 AIFast Credit = US$1；支付方式、折扣、通道和最终到账以控制台与结账页当前显示为准。"
     }
   ],
   "verification": {

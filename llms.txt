@@ -1,6 +1,6 @@
 # AI API Model Status and Integration Reference
 
-Site note: www.aifast.hk is the new overseas site; www.aifast.club remains available and user data is not being migrated at this stage.
+Site note: www.aifast.hk is the current official site and the only primary promotion entry. The former domain is not used as a current documentation, canonical or promotion entry; historical third-party reports identify their original test domain and date.
 
 > Marketplace listings, maintenance notes and OpenAI-compatible integration examples maintained by the operator of AIFast. Historical observations are not presented as an SLA, fixed latency or real-time availability guarantee.
 

@@ -10,7 +10,7 @@
   <p><a href="README.md">中文</a> · <a href="https://aifast.apifox.cn/">API docs</a> · <a href="https://docs.aifast.hk/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.hk/en/model-check/">Online model check</a> · <a href="https://docs.aifast.hk/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
 </div>
 
-> **Site note:** `www.aifast.hk` is the new overseas site; the existing `www.aifast.club` site remains available. User data is not being migrated at this stage.
+> **Site note:** `www.aifast.hk` is the current official site and the only primary promotion entry. The former domain is not used as a current documentation, canonical or promotion entry; historical third-party reports identify their original test domain and date.
 
 ---
 

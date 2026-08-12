@@ -18,7 +18,7 @@
   <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 镜像</a></p>
 </div>
 
-> **站点说明：** `www.aifast.hk` 是新海外站；旧站 `www.aifast.club` 仍可用，现阶段不迁移用户数据。
+> **站点说明：** `www.aifast.hk` 是当前官方站点和唯一主推广入口。旧域名不作为本仓库的当前文档、Canonical 或推广入口；历史第三方报告如需引用，会明确标注原始测试域名和日期。
 
 ---
 

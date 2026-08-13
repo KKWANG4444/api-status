@@ -7,9 +7,8 @@ permalink: /faq/
 
 ## API 返回 401 怎么办？
 
-- 检查 API Key 是否完整；
-- 请求头应为 `Authorization: Bearer ***`；
 - Base URL 使用 `https://www.aifast.hk/v1`；
+- 请求头应为 `Authorization: Bearer $AIFAST_API_KEY`；
 - 必要时在控制台重新创建 Key。
 
 ## 429 和 5xx 是否都应该重试？

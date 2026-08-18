@@ -13,8 +13,8 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台�
 |:---|:---|
 | OpenAI | `gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
 | Anthropic | `claude-sonnet-5`、`claude-opus-4-8` |
-| xAI | `grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
-| Google | `gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| xAI | `grok-4.6`、`grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
+| Google | `gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
 | Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
 | Zhipu | `glm-5.2` |

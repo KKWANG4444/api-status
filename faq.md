@@ -56,7 +56,7 @@ Claude、GPT、Gemini 等国外模型可在国内直接调用，无需代理，B
 
 - 通用任务：`gpt-5.6-terra`
 - 编程：`claude-sonnet-5` 或 `kimi-k2.7-code`
-- 高吞吐文本：`deepseek-v4-flash` 或 `gemini-3.5-flash`
+- 高吞吐文本：`gemini-3.7-flash` 或 `deepseek-v4-flash`
 
 这些是当前目录中的接入示例，具体模型 ID 与维护信息以模型广场和最新公告为准。
 

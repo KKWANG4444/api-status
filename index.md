@@ -35,7 +35,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 |:---|:---:|:---|
 | GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 支持统一 API 接入 |
 | Claude Sonnet 5 / Opus 4.8 | ✅ 已上架 | 国内直连，无需代理 |
-| Grok 4.6 / 4.5 / 4.3 / 4.20 Reasoning | ✅ 已上架 | `grok-4.6` 已支持统一 API 接入 |
+| Grok 4.6 / 4.5 / 4.3 / 4.2 Reasoning | ✅ 已上架 | `grok-4.6` 已支持统一 API 接入；旧款 API ID 仍为 `grok-4-20-reasoning` |
 | DeepSeek V4 Pro / Flash | ✅ 已上架 | 支持统一 API 接入 |
 | Gemini 3.7 Flash / 3.5 Flash | ✅ 已上架 | `gemini-3.7-flash` 国内直连，无需代理 |
 | Qwen3.7 Max / GLM-5.2 / Kimi K3 / K2.7 Code | ✅ 已上架 | 支持统一 API 接入；Kimi K3 于 2026-07-17 公告上架 |

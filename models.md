@@ -17,7 +17,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台�
 | Google | `gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
 | Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
-| Zhipu | `glm-5.2` |
+| Zhipu | `glm-5.3`、`glm-5.2` |
 | ByteDance | `doubao-seed-2-1-pro-260628` |
 | Moonshot | `kimi-k3`、`kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
 

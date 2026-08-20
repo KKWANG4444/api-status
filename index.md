@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AI快站 API 状态与证据中心 | OpenAI-compatible 模型检测
+title: OpenAI-compatible 模型检测、API 状态与证据
 description: 记录 AI API 模型目录、维护状态、OpenAI-compatible 协议检测与可核验证据；先确认接口状态和能力，再决定是否接入生产。
 permalink: /
 hero_title: AI快站 API 状态与证据中心：模型状态、接口检测与核验方法

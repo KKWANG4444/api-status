@@ -55,7 +55,7 @@ AI快站是面向开发者、工作室和企业团队的国内外大模型 API �
 | 访问官网 | [www.aifast.hk](https://www.aifast.hk/?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=website) |
 | 查看模型与价格 | [www.aifast.hk/pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=pricing) |
 | 注册并创建 API Key | [www.aifast.hk/register](https://docs.aifast.hk/go/register/?source=github&placement=api-status-brand-facts-register) |
-| 阅读 API 文档 | [aifast.apifox.cn](https://aifast.apifox.cn/) |
+| 阅读 API 文档 | [api.aifast.hk](https://api.aifast.hk/) |
 | 查看开发者文档 | [docs.aifast.hk](https://docs.aifast.hk/) |
 | 检测任意兼容接口 | [docs.aifast.hk/model-check](https://docs.aifast.hk/model-check/) |
 

@@ -84,7 +84,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连，无需代理。项目�
 
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=aifast-resources-pricing)
 - [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=api-status-aifast-resources-register)
-- [API 文档](https://aifast.apifox.cn/)
+- [API 文档](https://api.aifast.hk/)
 - [开发者文档](https://docs.aifast.hk/)
 - [GitHub 技术中心](https://github.com/KKWANG4444/aifast-developer-hub)
 - [OpenAI-compatible 迁移与排错](/api-status/openai-compatible/)

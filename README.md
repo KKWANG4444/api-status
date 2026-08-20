@@ -9,7 +9,7 @@
     <a href="https://docs.aifast.hk/go/register/?source=github&placement=api-status-hero-register"><img src="https://img.shields.io/badge/%E6%B3%A8%E5%86%8C%E4%BD%BF%E7%94%A8-%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7-2563EB?style=for-the-badge" alt="注册AI快站"></a>
   </p>
   <p>
-    <a href="https://aifast.apifox.cn/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
+    <a href="https://api.aifast.hk/"><img src="https://img.shields.io/badge/API_%E6%96%87%E6%A1%A3-%E6%9F%A5%E7%9C%8B%E6%95%99%E7%A8%8B-334155?style=flat-square" alt="查看API文档"></a>
     <a href="https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-hero-check"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E6%A3%80%E6%B5%8B-%E7%94%9F%E6%88%90%E6%8A%A5%E5%91%8A-7C3AED?style=flat-square" alt="在线检测模型接口"></a>
     <a href="https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start"><img src="https://img.shields.io/badge/%E6%8C%89%E9%9C%80%E6%B1%82%E5%BC%80%E5%A7%8B-%E6%8E%A5%E5%85%A5%E4%B8%8E%E8%BF%81%E7%A7%BB-0F766E?style=flat-square" alt="按需求开始接入"></a>
     <a href="https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex"><img src="https://img.shields.io/badge/Codex-API%E9%85%8D%E7%BD%AE-16A34A?style=flat-square" alt="Codex API配置"></a>
@@ -77,7 +77,7 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-完整参数、流式输出和工具调用示例请查看 [API 文档](https://aifast.apifox.cn/)与[开发者中心](https://docs.aifast.hk/)。
+完整参数、流式输出和工具调用示例请查看 [API 文档](https://api.aifast.hk/)与[开发者中心](https://docs.aifast.hk/)。
 
 ## 不确定中转接口是否可靠？先免费检测
 
@@ -127,7 +127,7 @@ print(response.choices[0].message.content)
 |:---|:---|
 | 查看支持模型与价格 | [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-pricing) |
 | 创建账号并生成 API Key | [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=api-status-bottom-register) |
-| 阅读完整接口参数 | [API 文档](https://aifast.apifox.cn/) |
+| 阅读完整接口参数 | [API 文档](https://api.aifast.hk/) |
 | 按需求查看首次调用、工具迁移与企业接入 | [开始使用](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-bottom-start) |
 | 查看全部接入与排错教程 | [开发者中心](https://docs.aifast.hk/) |
 | 配置和验收 Codex 自定义 Provider | [Codex API 中转教程](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex) |

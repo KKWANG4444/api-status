@@ -122,7 +122,7 @@ for (const required of [
   'https://www.aifast.hk/pricing',
   'https://docs.aifast.hk/go/register/',
   'https://www.aifast.hk/v1',
-  'https://aifast.apifox.cn/',
+  'https://api.aifast.hk/',
   'https://docs.aifast.hk/model-check/',
   'https://github.com/KKWANG4444/aifast-developer-hub',
 ]) {

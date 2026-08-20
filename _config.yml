@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: AI快站开发者中心
-tagline: 模型检测、API接入、生产排错与开发工具配置
+title: AI快站 API 状态与证据中心
+tagline: OpenAI-compatible 模型状态、接口检测与可核验证据
 description: >-
-  AI快站提供99%模型可用性、500+大模型、高速稳定调用、国外模型国内直连与企业发票，
-  同时提供OpenAI-compatible接入、模型检测、生产排错与工具配置参考。
+  AI快站 API 状态与证据中心：记录 OpenAI-compatible 模型目录、接口检测方法、维护信息、
+  协议兼容性与第一方声明的核验边界，帮助开发者在接入前完成可复现检查。
 url: "https://kkwang4444.github.io"
 baseurl: "/api-status"
 

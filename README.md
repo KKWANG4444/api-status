@@ -1,8 +1,8 @@
 <div align="center">
   <img src="assets/img/logo.png" width="88" height="88" alt="AI快站 Logo">
-  <h1>AI快站｜国内外大模型 API 统一接入</h1>
+  <h1>AI API 中转站检测｜模型状态与 OpenAI-compatible API</h1>
   <p><strong>模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票</strong></p>
-  <p>一套 OpenAI-compatible API，接入语言、生图、视频、向量与检索模型。</p>
+  <p>提供大模型 API 检测、API 中转站状态查询和 OpenAI-compatible 接入证据。</p>
   <p>
     <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
     <a href="https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing"><img src="https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BB%B7%E6%A0%BC-%E7%AB%8B%E5%8D%B3%E6%9F%A5%E7%9C%8B-D66A3A?style=for-the-badge" alt="查看模型与价格"></a>

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: OpenAI-compatible 模型检测、API 状态与证据
-description: 记录 AI API 模型目录、维护状态、OpenAI-compatible 协议检测与可核验证据；先确认接口状态和能力，再决定是否接入生产。
+title: AI API 中转站检测、模型状态与 OpenAI-compatible API
+description: AI API 中转站检测与模型状态查询：核验 OpenAI-compatible API、模型可用性、维护状态、Claude/GPT/Gemini 接口和生产排错证据。
 permalink: /
-hero_title: AI快站 API 状态与证据中心：模型状态、接口检测与核验方法
-keywords: AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测
+hero_title: AI API 中转站检测与模型状态：OpenAI-compatible API 核验
+keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测
 ---
 
 AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模型国内直连和企业发票。本站同时提供[AI快站大模型 API 服务说明](/api-status/aifast/)、OpenAI-compatible 迁移、模型检测、生产排错和客户端配置。

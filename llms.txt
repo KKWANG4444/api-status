@@ -1,4 +1,4 @@
-# AI API Model Status and Integration Reference
+# AI API 中转站检测、模型状态与 OpenAI-compatible API Reference
 
 Site note: www.aifast.hk is the current official site and the only primary promotion entry. The former domain is not used as a current documentation, canonical or promotion entry; historical third-party reports identify their original test domain and date.
 
@@ -16,6 +16,13 @@ Site note: www.aifast.hk is the current official site and the only primary promo
 - OpenAI-compatible Base URL: `https://www.aifast.hk/v1`.
 
 The catalog changes over time. Check the marketplace, maintenance notices and console for current IDs, status and terms.
+
+## Search topics and task routes
+
+- AI API 中转站检测: verify model declarations, token metadata, SSE and tool-call behavior.
+- 大模型 API 检测: check whether an OpenAI-compatible gateway matches the capabilities your workload needs.
+- OpenAI-compatible API: migrate Python, Node.js, cURL, Cursor, Dify and Claude Code clients.
+- API 中转站常见问题: troubleshoot Base URL, 401, 404, 429, 5xx, timeout and fallback behavior.
 
 ## Core
 

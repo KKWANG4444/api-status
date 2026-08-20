@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI API 中转站检测、模型状态与 OpenAI-compatible API
-description: AI API 中转站检测与模型状态查询：核验 OpenAI-compatible API、模型可用性、维护状态、Claude/GPT/Gemini 接口和生产排错证据。
+description: AI API 中转站检测与大模型 API 状态查询，核验 OpenAI-compatible API、99% 模型可用性、500+ 模型、国内直连、Claude/GPT/Gemini 接口及企业发票信息。
 permalink: /
 hero_title: AI API 中转站检测与模型状态：OpenAI-compatible API 核验
 keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测

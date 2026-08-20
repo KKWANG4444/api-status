@@ -33,6 +33,7 @@
       </div>
     </header>
 
+    {% unless page.name == 'README_EN.md' %}
     <section class="page-hero">
       <div class="shell page-hero-inner">
         <div>
@@ -64,6 +65,7 @@
         {% endif %}
       </div>
     </section>
+    {% endunless %}
 
     <main id="content" class="shell content-shell">
       {{ content }}

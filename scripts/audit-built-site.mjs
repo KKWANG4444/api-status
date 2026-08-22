@@ -15,6 +15,7 @@ const expectedPages = [
   'model-check/index.html',
   'models/index.html',
   'openai-compatible/index.html',
+  'openai-api-status-check/index.html',
 ];
 const errors = [];
 const stalePatterns = [
@@ -103,6 +104,11 @@ for (const pagePath of expectedPages) {
 const modelCheck = await readFile(join(site, 'model-check/index.html'), 'utf8');
 if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
   errors.push('model-check/index.html 未使用本地检测工具预览图');
+}
+
+const statusCheck = await readFile(join(site, 'openai-api-status-check/index.html'), 'utf8');
+for (const required of ['OPENAI_BASE_URL', '401 / 403', '429', '502 / 503 / 504', '故障记录模板']) {
+  if (!statusCheck.includes(required)) errors.push(`openai-api-status-check/index.html 缺少诊断内容 ${required}`);
 }
 
 const home = await readFile(join(site, 'index.html'), 'utf8');

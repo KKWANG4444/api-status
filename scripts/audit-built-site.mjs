@@ -16,6 +16,7 @@ const expectedPages = [
   'models/index.html',
   'openai-compatible/index.html',
   'openai-api-status-check/index.html',
+  'status/index.html',
 ];
 const errors = [];
 const stalePatterns = [
@@ -109,6 +110,11 @@ if (!modelCheck.includes('/api-status/assets/img/model-check-preview.jpg')) {
 const statusCheck = await readFile(join(site, 'openai-api-status-check/index.html'), 'utf8');
 for (const required of ['OPENAI_BASE_URL', '401 / 403', '429', '502 / 503 / 504', '故障记录模板']) {
   if (!statusCheck.includes(required)) errors.push(`openai-api-status-check/index.html 缺少诊断内容 ${required}`);
+}
+
+const statusPage = await readFile(join(site, 'status/index.html'), 'utf8');
+for (const required of ['公开边缘可达性', 'status.json', 'probe-edge.mjs', '不代表所有模型']) {
+  if (!statusPage.includes(required)) errors.push(`status/index.html 缺少状态方法内容 ${required}`);
 }
 
 const home = await readFile(join(site, 'index.html'), 'utf8');

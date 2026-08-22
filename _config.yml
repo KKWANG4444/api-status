@@ -35,6 +35,7 @@ header_pages:
   - faq.md
   - compare.md
   - openai-api-status-check.md
+  - status.md
 
 # SEO
 lang: zh-CN

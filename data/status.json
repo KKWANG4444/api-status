@@ -1,0 +1,40 @@
+{
+  "status": "operational",
+  "checked_at": "2026-08-22T17:07:58.910Z",
+  "duration_ms": 873,
+  "overall": true,
+  "components": [
+    {
+      "id": "website",
+      "name": "Website",
+      "url": "https://www.aifast.hk/",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 708,
+      "content_type": "text/html; charset=utf-8",
+      "detail": "Expected public edge response"
+    },
+    {
+      "id": "docs",
+      "name": "API documentation",
+      "url": "https://api.aifast.hk/",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 832,
+      "content_type": "text/html",
+      "detail": "Expected public edge response"
+    },
+    {
+      "id": "models",
+      "name": "OpenAI-compatible models endpoint",
+      "url": "https://www.aifast.hk/v1/models",
+      "ok": true,
+      "status": 401,
+      "elapsed_ms": 568,
+      "content_type": "application/json; charset=utf-8",
+      "detail": "Expected public edge response"
+    }
+  ],
+  "methodology_url": "https://kkwang4444.github.io/api-status/status/",
+  "limitations": "Public edge reachability only; this does not measure every model, account quota, latency SLA, or provider health."
+}

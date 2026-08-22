@@ -21,6 +21,7 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
   <a class="matrix-card" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=home-matrix-online"><small>在线工具</small><strong>浏览器生成分项检测结果</strong><span>无需下载程序，直接检查模型声明、Token、随机nonce、SSE与工具调用。</span><em>立即在线检测 →</em></a>
   <a class="matrix-card" href="/api-status/openai-compatible/"><small>排错</small><strong>OpenAI-compatible 迁移</strong><span>逐项处理401、model not found、429、5xx、流式输出和工具调用差异。</span><em>查看迁移指南 →</em></a>
   <a class="matrix-card" href="/api-status/openai-api-status-check/"><small>状态检查</small><strong>5分钟定位API故障</strong><span>用可复制的curl命令区分DNS/TLS、401、404、429、5xx和客户端超时。</span><em>开始状态检查 →</em></a>
+  <a class="matrix-card" href="/api-status/status/"><small>公开状态</small><strong>官网与接口边缘状态</strong><span>查看官网、API文档和模型入口的公开可达性探测，带检查时间和方法边界。</span><em>查看当前状态 →</em></a>
   <a class="matrix-card" href="/api-status/guide/"><small>配置</small><strong>Cursor、Dify 与 Claude Code</strong><span>按工具填写Base URL、API Key和模型ID，再从最小文本请求逐步增加能力。</span><em>查看工具教程 →</em></a>
 </div>
 
@@ -78,6 +79,7 @@ print(response.choices[0].message.content)
 | [国内直连接入](/api-status/china-access) | Claude、GPT、Gemini API 国内调用步骤与边界 |
 | [OpenAI-compatible迁移](/api-status/openai-compatible) | Python、Node.js、cURL迁移和401/429/5xx排错 |
 | [OpenAI API状态检查](/api-status/openai-api-status-check) | 用curl区分网络、鉴权、路径、限流、上游故障和客户端超时 |
+| [公开API状态](/api-status/status) | 官网、API文档和模型入口的公共边缘可达性与检查方法 |
 | [模型中转站检测](/api-status/model-check) | 模型声明、Token、动态题、SSE与工具调用报告判读 |
 | [声明与证据索引](/api-status/evidence) | 500+、五类能力、维护状态与核验入口 |
 | [开发者接入指南](/api-status/guide) | Cursor、Dify、OpenWebUI 等工具配置 |

@@ -132,6 +132,11 @@ print(response.choices[0].message.content)
 | 查看全部接入与排错教程 | [开发者中心](https://docs.aifast.hk/) |
 | 配置和验收 Codex 自定义 Provider | [Codex API 中转教程](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-bottom-codex) |
 | 检测现有大模型接口 | [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=api-status-bottom-check) |
+| 在 CI 中持续验收 OpenAI-compatible 接口 | [API Check GitHub Action](https://github.com/KKWANG4444/openai-compatible-api-check) |
+| 统计成功率、P50/P95 与错误分布 | [AI API Stability Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
+| 查看迁移、排错与客户端配置 | [AI快站 Developer Hub](https://github.com/KKWANG4444/aifast-developer-hub) |
+
+> ⭐ 如果这些状态与核验资料帮到了你，欢迎给仓库点个 Star。
 
 ---
 

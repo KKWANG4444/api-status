@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: AI快站开发者文档
+    url: https://docs.aifast.hk/
+    about: Check setup, troubleshooting and model-check documentation first.
+  - name: AI快站官方客服
+    url: https://www.aifast.hk/customersupport
+    about: Account, billing or service questions belong in official support, not public issues.

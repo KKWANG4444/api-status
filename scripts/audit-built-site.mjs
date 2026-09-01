@@ -118,7 +118,7 @@ for (const required of ['公开边缘可达性', 'status.json', 'probe-edge.mjs'
 }
 
 const home = await readFile(join(site, 'index.html'), 'utf8');
-for (const currentFact of ['500+', 'GPT-5.6']) {
+for (const currentFact of ['500+', 'gpt-5.6']) {
   if (!home.includes(currentFact)) errors.push(`index.html 缺少当前模型口径 ${currentFact}`);
 }
 for (const required of [

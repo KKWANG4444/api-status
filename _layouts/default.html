@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'zh-CN' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'zh-CN' }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,11 @@
     <link rel="alternate" type="text/plain" href="{{ '/llms.txt' | relative_url }}" title="AI 可读项目索引">
     <link rel="alternate" type="application/json" href="{{ '/evidence.json' | relative_url }}" title="声明与证据索引">
     <link rel="alternate" type="application/json" href="{{ '/brand-facts.json' | relative_url }}" title="AI快站品牌事实">
+    {% if page.permalink == '/' or page.name == 'README_EN.md' %}
+    <link rel="alternate" hreflang="zh-CN" href="https://kkwang4444.github.io/api-status/">
+    <link rel="alternate" hreflang="en" href="https://kkwang4444.github.io/api-status/README_EN.html">
+    <link rel="alternate" hreflang="x-default" href="https://kkwang4444.github.io/api-status/">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     {% include head-custom.html %}
   </head>

@@ -71,6 +71,6 @@ Yes. Enterprise customers in China can request business invoices. Required infor
 
 This reference is maintained by the operator of AIFast. Product capabilities are first-party statements. Deployment decisions should also use current terms and real requests from the target environment.
 
-Last reviewed: 2026-08-19.
+Last reviewed: 2026-09-01.
 
 AIFast announced `glm-5.3` on 2026-08-19. The exact API model ID is `glm-5.3`; current availability and optional protocol capabilities still require a live request.

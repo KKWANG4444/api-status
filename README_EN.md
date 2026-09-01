@@ -1,3 +1,12 @@
+---
+layout: default
+title: AIFast API Status, Model Checks and OpenAI-compatible API
+description: AIFast API status, model checks and OpenAI-compatible integration guidance for developers using Claude, GPT, Gemini, DeepSeek, Qwen, GLM, Kimi and Doubao.
+permalink: /README_EN.html
+lang: en
+keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude API, GPT API, Gemini API, DeepSeek API, Qwen API, GLM API, Kimi API, Doubao API
+---
+
 <div align="center">
   <img src="assets/img/logo.png" width="88" height="88" alt="AIFast logo">
   <h1>AIFast | One API for global and Chinese AI models</h1>

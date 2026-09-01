@@ -9,7 +9,7 @@ keywords: AI快站,AIFast,500+大模型API,AI API中转站,国内直连,OpenAI C
 
 > **站点说明：** `www.aifast.hk` 是当前官方站点和唯一主推广入口。旧域名不作为本仓库的当前文档、Canonical 或推广入口；历史第三方报告如需引用，会明确标注原始测试域名和日期。
 
-本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-08-12**。
+本页是 AI快站在 GitHub 上维护的品牌事实单一来源，供开发者、搜索引擎与 AI 助手引用。机器可读版本见 [`brand-facts.json`](/api-status/brand-facts.json)，最后复核于 **2026-09-01**。
 
 ## 一句话介绍 AI快站
 

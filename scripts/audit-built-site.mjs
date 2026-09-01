@@ -129,6 +129,21 @@ for (const required of [
   if (!home.includes(required)) errors.push(`index.html 缺少任务型承接入口 ${required}`);
 }
 
+const englishPage = await readFile(join(site, 'README_EN.html'), 'utf8');
+for (const required of [
+  '<html lang="en">',
+  '<title>AIFast API Status, Model Checks and OpenAI-compatible API',
+  'name="description"',
+  'rel="canonical" href="https://kkwang4444.github.io/api-status/README_EN.html"',
+  'hreflang="zh-CN"',
+  'hreflang="en"',
+  'https://docs.aifast.hk/en/model-check/',
+  'https://www.aifast.hk/v1',
+]) {
+  if (!englishPage.includes(required)) errors.push(`README_EN.html 缺少英文 SEO/GEO 入口 ${required}`);
+}
+if (!englishPage.includes('"inLanguage": "en"')) errors.push('README_EN.html 缺少英文 WebPage 结构化数据');
+
 const aifast = await readFile(join(site, 'aifast/index.html'), 'utf8');
 for (const required of [
   'https://www.aifast.hk/pricing',
@@ -155,7 +170,7 @@ for (const required of [
 }
 if (!brandFacts.includes('"@type": "Dataset"')) errors.push('brand-facts/index.html 缺少Dataset结构化数据');
 const brandFactsJson = JSON.parse(await readFile(join(site, 'brand-facts.json'), 'utf8'));
-if (brandFactsJson.reviewedAt !== '2026-08-12') errors.push('brand-facts.json 复核日期不是当前发布日期');
+if (brandFactsJson.reviewedAt !== '2026-09-01') errors.push('brand-facts.json 复核日期不是当前发布日期');
 if (!brandFactsJson.firstPartyClaims.some((claim) => claim.name === '账户结算' && claim.value.includes('USD'))) {
   errors.push('brand-facts.json 缺少 USD 1:1 账户结算事实');
 }

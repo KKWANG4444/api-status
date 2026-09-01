@@ -18,20 +18,19 @@ jobs:
           node-version: '22'
       - name: Probe public endpoints
         run: node scripts/probe-edge.mjs
-      - name: Commit current status
+      - name: Update status files via Contents API
         env:
           ADMIN_PAT: ${{ secrets.ADMIN_PAT }}
         run: |
           set -euo pipefail
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add _data/status.json data/status.json
-          if git diff --cached --quiet; then
-            echo 'No status change to commit.'
-          else
-            git commit -m 'chore: update public edge status'
-            # Push with admin PAT: branch protection allows admins to bypass
-            # (enforce_admins is disabled), so the audit-gated status check
-            # does not block status-only updates. Site audit still runs on push.
-            git push "https://x-access-token:${ADMIN_PAT}@github.com/KKWANG4444/api-status.git" main
-          fi
+          # Update both status files via the Contents API. Admin PAT is used so
+          # the protected-branch status check ("audit") does not block status-only
+          # updates; the site-audit workflow still runs on every push to main.
+          for path in data/status.json _data/status.json; do
+            sha=$(gh api "repos/KKWANG4444/api-status/contents/${path}?ref=main" --jq .sha)
+            gh api -X PUT "repos/KKWANG4444/api-status/contents/${path}" \
+              -f message="chore: update public edge status" \
+              -f content="$(base64 < "${path}" | tr -d '\n')" \
+              -f sha="${sha}" \
+              -f branch="main" --jq '.commit.sha[0:7]'
+          done

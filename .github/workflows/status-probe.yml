@@ -8,9 +8,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: api-status-probe
+  cancel-in-progress: true
+
 jobs:
   probe:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
@@ -23,14 +28,16 @@ jobs:
           GH_TOKEN: ${{ secrets.ADMIN_PAT }}
         run: |
           set -euo pipefail
-          # Update both status files via the Contents API. Admin PAT is used so
-          # the protected-branch status check ("audit") does not block status-only
-          # updates; the site-audit workflow still runs on every push to main.
-          for path in data/status.json _data/status.json; do
-            sha=$(gh api "repos/KKWANG4444/api-status/contents/${path}?ref=main" --jq .sha)
-            gh api -X PUT "repos/KKWANG4444/api-status/contents/${path}" \
-              -f message="chore: update public edge status" \
-              -f content="$(base64 < "${path}" | tr -d '\n')" \
-              -f sha="${sha}" \
-              -f branch="main" --jq '.commit.sha[0:7]'
-          done
+          # Commit both generated files together. Two Contents API PUTs create
+          # two commits and two Pages builds, which can leave deploy-pages with
+          # multiple github-pages artifacts from the same probe cycle.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/status.json _data/status.json
+          if git diff --cached --quiet; then
+            echo "No status changes to publish"
+            exit 0
+          fi
+          git commit -m "chore: update public edge status"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push origin HEAD:main

@@ -1,7 +1,7 @@
 {
   "status": "operational",
-  "checked_at": "2026-09-01T21:32:12.869Z",
-  "duration_ms": 628,
+  "checked_at": "2026-09-01T23:33:18.527Z",
+  "duration_ms": 647,
   "overall": true,
   "components": [
     {
@@ -10,7 +10,7 @@
       "url": "https://www.aifast.hk/",
       "ok": true,
       "status": 200,
-      "elapsed_ms": 392,
+      "elapsed_ms": 377,
       "content_type": "text/html; charset=utf-8",
       "detail": "Expected public edge response"
     },
@@ -20,7 +20,7 @@
       "url": "https://api.aifast.hk/",
       "ok": true,
       "status": 200,
-      "elapsed_ms": 581,
+      "elapsed_ms": 599,
       "content_type": "text/html",
       "detail": "Expected public edge response"
     },
@@ -30,7 +30,7 @@
       "url": "https://www.aifast.hk/v1/models",
       "ok": true,
       "status": 401,
-      "elapsed_ms": 348,
+      "elapsed_ms": 331,
       "content_type": "application/json; charset=utf-8",
       "detail": "Expected public edge response"
     }

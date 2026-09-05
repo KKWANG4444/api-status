@@ -11,7 +11,7 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 
 - **Base URL**：`https://www.aifast.hk/v1`
 - **API Key**：在控制台创建的令牌
-- **Model ID**：从模型广场复制，注意点号和连字符
+- **Model ID**：从模型广场复制，注意点号和连字符；GPT-6 Astra 的当前 ID 为 `gpt-6-astra`；GPT-6 Astra 的当前 ID 为 `gpt-6-astra`
 
 先用一个短文本请求验证密钥、模型 ID 和响应结构，再配置工具调用或工作流。
 
@@ -22,7 +22,7 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 1. 打开设置中的模型/API Key 页面。
 2. 选择 OpenAI 或 OpenAI-compatible 接入方式。
 3. 填写 Base URL 和 API Key。
-4. 添加模型广场中的精确 ID，例如 `gpt-5.6-terra`、`claude-sonnet-5` 或 `deepseek-v4-pro`。
+4. 添加模型广场中的精确 ID，例如 `gpt-6-astra`、`gpt-5.6-terra`、`claude-sonnet-5` 或 `deepseek-v4-pro`。
 5. 发起短对话验证。
 
 不同版本的 Cursor 对自定义 Base URL 和模型能力支持可能不同，以当前官方文档和软件界面为准。

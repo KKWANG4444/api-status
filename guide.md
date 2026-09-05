@@ -11,7 +11,7 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 
 - **Base URL**：`https://www.aifast.hk/v1`
 - **API Key**：在控制台创建的令牌
-- **Model ID**：从模型广场复制，注意点号和连字符；GPT-6 Astra 的当前 ID 为 `gpt-6-astra`；GPT-6 Astra 的当前 ID 为 `gpt-6-astra`
+- **Model ID**：从模型广场复制，注意点号和连字符；GPT-6 Astra 的当前 ID 为 `gpt-6-astra`
 
 先用一个短文本请求验证密钥、模型 ID 和响应结构，再配置工具调用或工作流。
 

@@ -35,23 +35,13 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-<<<<<<< HEAD
-| OpenAI | ✅ 公开配置可见 | 示例：`gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
+| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
 | Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | ✅ 公开配置可见 | 示例：`grok-4.6`、`grok-4.5`、`grok-4.3` |
 | Google | ✅ 公开配置可见 | 示例：`gemini-3.7-flash`、`gemini-3.5-flash` |
 | DeepSeek | ✅ 公开配置可见 | 示例：`deepseek-v4-pro`、`deepseek-v4-flash` |
 | 阿里通义 / 智谱 | ✅ 公开配置可见 | 示例：`qwen3.8-flash`、`glm-5.3`、`glm-5.3-flash` |
 | Kimi / 豆包 | ✅ 公开配置可见 | 示例：`kimi-k3`、`doubao-seed-2-1-pro-260628` |
-=======
-| GPT-6 Astra / GPT-5.6 Sol / Terra / Luna | ✅ 已上架 | 支持统一 API 接入 |
-| Claude Sonnet 5 / Opus 4.8 | ✅ 已上架 | 国内直连，无需代理 |
-| Grok 4.6 / 4.5 / 4.3 / 4.2 Reasoning | ✅ 已上架 | `grok-4.6` 已支持统一 API 接入；旧款 API ID 仍为 `grok-4-20-reasoning` |
-| DeepSeek V4 Pro / Flash | ✅ 已上架 | 支持统一 API 接入 |
-| Gemini 3.7 Flash / 3.5 Flash | ✅ 已上架 | `gemini-3.7-flash` 国内直连，无需代理 |
-| Qwen3.7 Max / GLM-5.3 / GLM-5.2 / Kimi K3 / K2.7 Code | ✅ 已上架 | `glm-5.3` 于 2026-08-19 公告上架，支持统一 API 接入 |
-| Doubao Seed 2.1 Turbo | 🛠️ 维护中 | 2026-07-09 公告暂时下线 |
->>>>>>> 499752e (feat: add GPT-6 Astra to status and catalog)
 
 2026-09-01 最新公告显示，`gpt-realtime-1.5-2026-02-23` 与 `gpt-realtime-2025-08-28` 已下架。模型目录、维护状态和可用分组会变化，正式接入前请以模型广场、最新公告和真实鉴权请求为准。AI快站平台模型可用性为 99%，并通过自动故障切换提升调用稳定性；该数值属于平台公开口径，不等同于独立监测结果或 SLA。
 

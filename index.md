@@ -35,8 +35,8 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
-| Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5`、`claude-opus-4-8` |
+| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6-astra`、`gpt-6-sol`、`gpt-6-luna`、`gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
+| Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5`、`claude-opus-5-5`、`claude-opus-4-8` |
 | xAI | ✅ 公开配置可见 | 示例：`grok-4.6`、`grok-4.5`、`grok-4.3` |
 | Google | ✅ 公开配置可见 | 示例：`gemini-3.7-flash`、`gemini-3.5-flash` |
 | DeepSeek | ✅ 公开配置可见 | 示例：`deepseek-v4-pro`、`deepseek-v4-flash` |

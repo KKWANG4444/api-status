@@ -48,10 +48,10 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
 - [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.
 
-## Current AIFast marketplace examples (reviewed 2026-09-01)
+## Current AIFast marketplace examples (reviewed 2026-09-30)
 
-- OpenAI: `gpt-6-astra`, `gpt-6-sol`, `gpt-6-luna`, `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`
-- Anthropic: `claude-sonnet-5`, `claude-opus-5-5`, `claude-opus-4-8`
+- OpenAI: `gpt-6.1-sol`, `gpt-6-sol`, `gpt-6-luna`, `gpt-6-astra`, `gpt-5.6-sol`, `gpt-5.6-terra`
+- Anthropic: `claude-sonnet-5-5`, `claude-opus-5-5`, `claude-sonnet-5`, `claude-opus-4-8`
 - xAI: `grok-4.6`, `grok-4.5`, `grok-4.3`, `grok-4-20-reasoning`
 - Google: `gemini-3.7-flash`, `gemini-3.5-flash`, `gemini-3.1-pro-preview`
 - DeepSeek: `deepseek-v4-pro`, `deepseek-v4-flash`

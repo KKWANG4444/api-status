@@ -31,19 +31,19 @@ AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模
 
 ---
 
-## 模型目录与维护提示（核验于 2026-09-01）
+## 模型目录与维护提示（核验于 2026-09-30）
 
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6-astra`、`gpt-6-sol`、`gpt-6-luna`、`gpt-5.6-sol`、`gpt-5.6-terra`、`gpt-5.6-luna` |
-| Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5`、`claude-opus-5-5`、`claude-opus-4-8` |
+| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol` |
+| Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5-5`、`claude-opus-5-5`、`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | ✅ 公开配置可见 | 示例：`grok-4.6`、`grok-4.5`、`grok-4.3` |
 | Google | ✅ 公开配置可见 | 示例：`gemini-3.7-flash`、`gemini-3.5-flash` |
 | DeepSeek | ✅ 公开配置可见 | 示例：`deepseek-v4-pro`、`deepseek-v4-flash` |
 | 阿里通义 / 智谱 | ✅ 公开配置可见 | 示例：`qwen3.8-flash`、`glm-5.3`、`glm-5.3-flash` |
 | Kimi / 豆包 | ✅ 公开配置可见 | 示例：`kimi-k3`、`doubao-seed-2-1-pro-260628` |
 
-2026-09-01 最新公告显示，`gpt-realtime-1.5-2026-02-23` 与 `gpt-realtime-2025-08-28` 已下架。模型目录、维护状态和可用分组会变化，正式接入前请以模型广场、最新公告和真实鉴权请求为准。AI快站平台模型可用性为 99%，并通过自动故障切换提升调用稳定性；该数值属于平台公开口径，不等同于独立监测结果或 SLA。
+2026-09-29 与 2026-09-30 的最新公告显示，`claude-sonnet-5-5` 和 `gpt-6.1-sol` 已上架。模型目录、维护状态和可用分组会变化，正式接入前请以模型广场、最新公告和真实鉴权请求为准。AI快站平台模型可用性为 99%，并通过自动故障切换提升调用稳定性；该数值属于平台公开口径，不等同于独立监测结果或 SLA。
 
 ---
 
@@ -59,7 +59,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.6-terra",
+    model="gpt-6.1-sol",
     messages=[{"role": "user", "content": "你好"}],
     timeout=60,
 )

@@ -1,16 +1,35 @@
 ---
 layout: default
 title: AI API 中转站检测、模型状态与 OpenAI-compatible API
-description: AI API 中转站检测与大模型 API 状态查询，核验 OpenAI-compatible API、99% 模型可用性、500+ 模型、国内直连、Claude/GPT/Gemini 接口及企业发票信息。
+description: 查询 AI快站 API 边缘探测时间与结果，区分 GPT、Claude、DeepSeek 模型调用故障和网关可达性；提供 OpenAI-compatible 接口检测、401/429/502 排错及 HK 接入教程。
 permalink: /
 hero_title: AI API 中转站检测与模型状态：OpenAI-compatible API 核验
 keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测
 ---
 
-AI快站提供模型可用性 99%、500+ 模型、高速稳定调用、国外模型国内直连和企业发票。本站聚焦 **AI API 中转站检测、大模型 API 检测、模型状态查询与 OpenAI-compatible API 核验**，同时提供[AI快站大模型 API 服务说明](/api-status/aifast/)、生产排错和客户端配置。
+本站由 AI快站维护，聚焦 **AI API 中转站检测、大模型 API 检测、模型状态查询与 OpenAI-compatible API 核验**。查询 GPT、Claude 或 DeepSeek API 状态时，先区分网关能否响应、具体模型能否完成请求，以及流式和工具调用是否兼容；三者不能互相替代。
+
+## 最近一次公开探测
+
+{% if site.data.status.checked_at %}
+**记录时间（UTC）：{{ site.data.status.checked_at }}**。当次公开边缘探测结果：**{% if site.data.status.overall %}预期响应通过{% else %}存在异常，需查看分项{% endif %}**。
+{% else %}
+当前尚无公开探测记录，不能判断接口状态。
+{% endif %}
+
+此记录只检查 HK 官网、API 文档和无 Key 的模型列表入口；不是 GPT、Claude、DeepSeek 的逐模型实时状态，也不证明模型生成成功。请先核对时间，再查看[探测明细与方法](/api-status/status/)或[原始 JSON](/api-status/data/status.json)。记录未更新时，不能把旧结果当成当前状态。
+
+| 你要确认的问题 | 推荐检查 |
+|:---|:---|
+| GPT / DeepSeek API 是否故障 | [按网络、401、429、5xx 分层排错](/api-status/openai-api-status-check/)，再用自己的模型 ID 验证真实请求 |
+| 中转站是否降智或存在协议差异 | [查看模型检测方法](/api-status/model-check/)，核对分项证据与误判边界 |
+| Cursor 自定义 API 无法使用 | [HK Cursor 配置与排错](https://docs.aifast.hk/tools/cursor/?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=status-home-cursor) |
+| Base URL 是否多拼了 /v1 | [本地地址检查器](https://kkwang4444.github.io/aifast-developer-hub/tools/base-url-checker/)，只检查路径，不发送 Key |
+
+## AI快站接入入口
 
 <div class="decision-band">
-  <div><strong>模型可用性 99%，一个接口接入 500+ 模型</strong><p>高速稳定、国外模型国内直连，覆盖语言、生图、视频、向量与检索；企业客户可开发票。</p></div>
+  <div><strong>查看模型目录，验证自己的接入场景</strong><p>平台公布 500+ 模型目录及 99% 模型可用性口径；这些是第一方服务说明，不是本站公开探测测出的全模型成功率。具体模型、费用与服务条款以当前控制台为准。</p></div>
   <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.hk/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
 </div>
 

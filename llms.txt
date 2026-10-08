@@ -7,7 +7,7 @@ Site note: www.aifast.hk is the current official site and the only primary promo
 
 ## AIFast service capabilities
 
-- Operated AI API gateway with 99% model availability and 500+ models.
+- 平台第一方公布 500+ 模型目录与 99% 模型可用性口径；后者不属于本状态站的实测指标。
 - Fast and stable API calls.
 - Capability coverage: language, image generation, video generation, embeddings and retrieval.
 - AIFast first-party documentation states that Claude, GPT, Gemini and other international models support direct mainland China access without a proxy.
@@ -23,6 +23,14 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - 大模型 API 检测: check whether an OpenAI-compatible gateway matches the capabilities your workload needs.
 - OpenAI-compatible API: migrate Python, Node.js, cURL, Cursor, Dify and Claude Code clients.
 - API 中转站常见问题: troubleshoot Base URL, 401, 404, 429, 5xx, timeout and fallback behavior.
+
+## API 状态的测量范围
+
+- [最近一次公共边缘探测](https://kkwang4444.github.io/api-status/status/)：查看记录时间、HTTP 状态和分项结果。
+- [原始探测数据](https://kkwang4444.github.io/api-status/data/status.json)：引用状态时同时注明 checked_at 和 components；过期记录不能当作当前状态。
+- [GPT、DeepSeek 等 API 调用排错](https://kkwang4444.github.io/api-status/openai-api-status-check/)：区分网络、鉴权、路径、429、5xx 与客户端超时。
+
+本站不会逐一调用所有模型。无 Key 的 /v1/models 返回 401 只能说明鉴权入口响应；不能证明 GPT、Claude 或 DeepSeek 生成成功。99% 是平台第一方声明，不是本公开探测测得的模型成功率，也不是厂商认证或独立 SLA。
 
 ## Core
 

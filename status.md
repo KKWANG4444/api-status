@@ -40,6 +40,20 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 
 ## 遇到调用错误怎么办？
 
+### GPT 或 DeepSeek API 状态正常，为什么调用仍失败？
+
+本页的“正常”只表示当次公共入口按预期响应。探测没有携带 Key，也没有逐一调用 GPT、Claude 或 DeepSeek，因此无法判断你的账户额度、所选分组和模型上游是否可用。
+
+| 真实请求现象 | 先检查什么 | 后续操作 |
+|:---|:---|:---|
+| 未带 Key 的 `/v1/models` 返回 401 | 鉴权入口能响应，不代表模型调用成功 | 使用自己的限额 Key 和精确模型 ID 测一条短文本 |
+| 带 Key 的请求仍返回 401 | Key 是否完整、启用，鉴权头和站点是否对应 | [401 排错](https://docs.aifast.hk/troubleshooting/401-invalid-api-key/?utm_source=github&utm_medium=pages&utm_campaign=api-doctor&utm_content=status-table-401) |
+| 返回 429 | 响应正文中的限流、余额或并发提示 | [429 排错](https://docs.aifast.hk/troubleshooting/429-rate-limit/?utm_source=github&utm_medium=pages&utm_campaign=api-doctor&utm_content=status-table-429)，避免无上限重试 |
+| 返回 502/503 或流式中断 | 请求时间、模型 ID、Request ID、是否只在流式时失败 | [502 与 SSE 排错](https://docs.aifast.hk/troubleshooting/502-stream-disconnected/?utm_source=github&utm_medium=pages&utm_campaign=api-doctor&utm_content=status-table-502) |
+| HTTP 200，但结果不符合要求 | 有效文本、响应格式、usage、SSE 与工具调用 | [分项检测报告判读](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=status-table-report) |
+
+保存故障记录时注明时区、网络地区、端点和错误正文，并移除 Key 与私人内容。不同地区、模型和时间的请求不能直接视为同一测量条件。
+
 先看[OpenAI API状态检查](/api-status/openai-api-status-check/)，按 DNS/TLS、鉴权、路径、限流、上游错误的顺序保留证据；再用[在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=pages&utm_campaign=model-check&utm_content=status-page-online-check)检查具体模型和协议能力。
 
 > 这是公共边缘可达性观察，不是厂商认证、模型质量保证或支付/账户可用性承诺。动态状态以最新探测、控制台和实际请求为准。

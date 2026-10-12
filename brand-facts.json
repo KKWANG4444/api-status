@@ -7,7 +7,7 @@
   "official": {
     "website": "https://www.aifast.hk/",
     "pricing": "https://www.aifast.hk/pricing",
-    "registration": "https://www.aifast.hk/register?channel=c_zfxp7cp4",
+    "registration": "https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=pages&utm_campaign=developer_acquisition&utm_content=api-status-brand-facts-json-register",
     "apiDocumentation": "https://api.aifast.hk/",
     "developerDocumentation": "https://docs.aifast.hk/",
     "baseUrl": "https://www.aifast.hk/v1"

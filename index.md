@@ -30,7 +30,7 @@ keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI�
 
 <div class="decision-band">
   <div><strong>查看模型目录，验证自己的接入场景</strong><p>平台公布 500+ 模型目录及 99% 模型可用性口径；这些是第一方服务说明，不是本站公开探测测出的全模型成功率。具体模型、费用与服务条款以当前控制台为准。</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://docs.aifast.hk/go/register/?source=github&amp;placement=api-status-home-band-register">注册使用</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/start/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=home-band-start">按需求开始</a><a class="button button-secondary" href="https://www.aifast.hk/pricing?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=integration-guide&amp;utm_content=home-band-pricing">模型与价格</a><a class="button button-secondary" href="https://www.aifast.hk/register?channel=c_zfxp7cp4&amp;utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=api-status-home-band-register">注册使用</a></div>
 </div>
 
 ## 按问题进入开发者矩阵

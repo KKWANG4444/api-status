@@ -13,7 +13,7 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 
 <div class="decision-band">
   <div><strong>当前状态：{{ site.data.status.status | default: '等待首次探测' }}</strong><p>最近检查：{{ site.data.status.checked_at | default: '尚未生成' }}</p></div>
-  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=status-page-check">运行模型检测</a><a class="button button-secondary" href="https://docs.aifast.hk/go/register/?source=github&amp;placement=api-status-status-register">注册使用</a></div>
+  <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=status-page-check">运行模型检测</a><a class="button button-secondary" href="https://www.aifast.hk/register?channel=c_zfxp7cp4&amp;utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=api-status-status-register">注册使用</a></div>
 </div>
 
 ## 当前组件

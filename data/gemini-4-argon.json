@@ -1,0 +1,25 @@
+{
+  "model_id": "gemini-4-argon",
+  "observed_at": "2026-10-15T07:40:24.734193+00:00",
+  "evidence_type": "public_catalog_and_launch_notice",
+  "sources": {
+    "catalog": "https://www.aifast.hk/api/pricing",
+    "announcements": "https://www.aifast.hk/api/status"
+  },
+  "catalog": {
+    "model_name": "gemini-4-argon",
+    "available": true,
+    "supported_endpoint_types": [
+      "gemini",
+      "openai"
+    ]
+  },
+  "announcements": [
+    {
+      "content": "模型上架：gemini-4-argon",
+      "publishDate": "2026-10-14T01:37:58.000Z"
+    }
+  ],
+  "inference_tested": false,
+  "limitations": "Catalog availability is not an authenticated generation test, uptime measurement, or verification of streaming, tools or long-context/long-decoding support."
+}

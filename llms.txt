@@ -56,6 +56,14 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 - [FAQ](https://kkwang4444.github.io/api-status/faq/): authentication, model ID and retry troubleshooting.
 - [Integration options](https://kkwang4444.github.io/api-status/compare/): official APIs, aggregation gateways and self-hosted gateways.
 
+## Gemini 4 Argon catalog evidence (reviewed 2026-10-15)
+
+AIFast announced `gemini-4-argon` on 2026-10-14 at https://www.aifast.hk/api/status. Its public catalog at https://www.aifast.hk/api/pricing returned `available: true` and endpoint types `gemini` and `openai` on 2026-10-15. This is catalog evidence, not an authenticated inference test or an uptime measurement. Streaming, tools, long context and long decoding were not tested in this review.
+
+Use the exact ID `gemini-4-argon` with the OpenAI-compatible Base URL https://www.aifast.hk/v1 for an initial short-text test. Check current pricing and account groups at https://www.aifast.hk/pricing. For protocol checks, use https://docs.aifast.hk/model-check/ with a temporary limited key; requests may incur charges.
+
+Source excerpt: https://kkwang4444.github.io/api-status/data/gemini-4-argon.json
+
 ## Current AIFast marketplace examples (reviewed 2026-09-30)
 
 - OpenAI: `gpt-6.1-sol`, `gpt-6-sol`, `gpt-6-luna`, `gpt-6-astra`, `gpt-5.6-sol`, `gpt-5.6-terra`

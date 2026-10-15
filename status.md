@@ -28,6 +28,10 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 状态数据尚未生成。请等待 GitHub Actions 首次运行。
 {% endif %}
 
+## Gemini 4 Argon：目录状态与探测分开看
+
+`gemini-4-argon` 的 2026-10-14 上架公告和 2026-10-15 目录核验已收录在[模型目录](/api-status/models/)与[原始目录摘录](/api-status/data/gemini-4-argon.json)。目录返回 `available: true`，不表示本页探测调用过该模型。下方边缘探测方法及历史原始数据保持独立，不据此推断 Gemini 4 Argon 的生成成功率。
+
 ## 方法与边界
 
 - 官网入口预期返回 `200`；

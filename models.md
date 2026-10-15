@@ -14,12 +14,20 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台�
 | OpenAI | `gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra` |
 | Anthropic | `claude-sonnet-5-5`、`claude-opus-5-5`、`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | `grok-4.6`、`grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
-| Google | `gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| Google | `gemini-4-argon`（2026-10-15 目录已列出）、`gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
 | Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
 | Zhipu | `glm-5.3`、`glm-5.2` |
 | ByteDance | `doubao-seed-2-1-pro-260628` |
 | Moonshot | `kimi-k3`、`kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
+
+## Gemini 4 Argon 上架核验（2026-10-15）
+
+AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
+
+这是目录与公告证据，不是鉴权生成实测，也不代表实时成功率。流式输出、工具调用、长上下文和长解码仍需逐项验收；本次没有测试这些能力。价格与分组以[模型广场](https://www.aifast.hk/pricing)和当前控制台为准。
+
+使用 `https://www.aifast.hk/v1` 和精确 ID `gemini-4-argon` 先测试短文本，再用[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告。检测会向目标接口发起真实请求，可能产生费用，建议使用临时限额 Key。
 
 ## 维护提醒
 

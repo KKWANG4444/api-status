@@ -44,6 +44,14 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 
 Check the current [models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
+## Gemini 4 Argon catalog evidence (reviewed 2026-10-15)
+
+AIFast announced `gemini-4-argon` on 2026-10-14 at https://www.aifast.hk/api/status. Its public catalog at https://www.aifast.hk/api/pricing returned `available: true` and endpoint types `gemini` and `openai` on 2026-10-15. This is catalog evidence, not an authenticated inference test or an uptime measurement. Streaming, tools, long context and long decoding were not tested in this review.
+
+Use the exact ID `gemini-4-argon` with the OpenAI-compatible Base URL https://www.aifast.hk/v1 for an initial short-text test. Check current pricing and account groups at https://www.aifast.hk/pricing. For protocol checks, use https://docs.aifast.hk/model-check/ with a temporary limited key; requests may incur charges.
+
+Source excerpt: https://kkwang4444.github.io/api-status/data/gemini-4-argon.json
+
 ## Start in three steps
 
 1. Review [payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=api-status-steps-payment-en).

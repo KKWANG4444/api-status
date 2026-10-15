@@ -10,6 +10,15 @@
   "reviewedAt": "2026-08-12",
   "claims": [
     {
+      "id": "gemini-4-argon-launch",
+      "reviewedAt": "2026-10-15",
+      "answer": "Gemini 4 Argon (gemini-4-argon) was announced on 2026-10-14; the public catalog returned available=true with gemini and openai endpoint types.",
+      "source": "https://www.aifast.hk/api/pricing",
+      "announcementSource": "https://www.aifast.hk/api/status",
+      "snapshot": "https://kkwang4444.github.io/api-status/data/gemini-4-argon.json",
+      "scope": "Public catalog and announcement evidence only; authenticated inference, streaming, tools and long decoding were not tested."
+    },
+    {
       "id": "service-availability",
       "answer": "AI快站平台模型可用性为99%，支持高速稳定调用。",
       "source": "https://www.aifast.hk",

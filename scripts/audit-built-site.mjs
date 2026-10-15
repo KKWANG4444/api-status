@@ -216,6 +216,21 @@ if (modelCheck.includes('https://github.com/KKWANG4444/openai-compatible-api-che
   errors.push('model-check/index.html 不应把用户引导到程序仓库');
 }
 
+// A launch listing must remain separate from public-edge probe metrics.
+for (const file of ['index.html', 'README_EN.html', 'models/index.html', 'guide/index.html', 'status/index.html', 'evidence/index.html', 'llms.txt', 'llms-full.txt']) {
+  const content = await readFile(join(site, file), 'utf8');
+  if (!content.includes('gemini-4-argon')) errors.push(`${file} missing Argon catalog entry`);
+}
+const launch = JSON.parse(await readFile(join(site, 'data/gemini-4-argon.json'), 'utf8'));
+if (launch.model_id !== 'gemini-4-argon' || launch.inference_tested !== false ||
+    launch.catalog.available !== true || !launch.observed_at ||
+    !['gemini', 'openai'].every((endpoint) => launch.catalog.supported_endpoint_types.includes(endpoint)) ||
+    !launch.announcements.some((notice) => notice.publishDate.startsWith('2026-10-14'))) {
+  errors.push('Argon launch evidence or inference-test boundary invalid');
+}
+const launchClaim = JSON.parse(evidenceJson).claims.find((claim) => claim.id === 'gemini-4-argon-launch');
+if (!launchClaim || launchClaim.reviewedAt !== '2026-10-15') errors.push('Missing dated Argon evidence claim');
+
 if (errors.length) {
   console.error(`站点审计失败：\n- ${errors.join('\n- ')}`);
   process.exit(1);

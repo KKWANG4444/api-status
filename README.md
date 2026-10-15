@@ -54,6 +54,14 @@
 
 具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
 
+## Gemini 4 Argon 上架核验（2026-10-15）
+
+AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
+
+这是目录与公告证据，不是鉴权生成实测，也不代表实时成功率。流式输出、工具调用、长上下文和长解码仍需逐项验收；本次没有测试这些能力。价格与分组以[模型广场](https://www.aifast.hk/pricing)和当前控制台为准。
+
+使用 `https://www.aifast.hk/v1` 和精确 ID `gemini-4-argon` 先测试短文本，再用[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告。检测会向目标接口发起真实请求，可能产生费用，建议使用临时限额 Key。
+
 ## 三步开始使用
 
 1. [注册 AI快站账号](https://docs.aifast.hk/go/register/?source=github&placement=api-status-steps-register)；

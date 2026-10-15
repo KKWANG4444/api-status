@@ -11,7 +11,7 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 
 - **Base URL**：`https://www.aifast.hk/v1`
 - **API Key**：在控制台创建的令牌
-- **Model ID**：从模型广场复制，注意点号和连字符；当前新模型 ID 为 `gpt-6.1-sol` 和 `claude-sonnet-5-5`
+- **Model ID**：从模型广场复制，注意点号和连字符；模型 ID 示例为 `gemini-4-argon`、`gpt-6.1-sol` 和 `claude-sonnet-5-5`
 
 先用一个短文本请求验证密钥、模型 ID 和响应结构，再配置工具调用或工作流。
 
@@ -51,6 +51,14 @@ claude
 
 ---
 
+## Gemini 4 Argon 上架核验（2026-10-15）
+
+AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
+
+这是目录与公告证据，不是鉴权生成实测，也不代表实时成功率。流式输出、工具调用、长上下文和长解码仍需逐项验收；本次没有测试这些能力。价格与分组以[模型广场](https://www.aifast.hk/pricing)和当前控制台为准。
+
+使用 `https://www.aifast.hk/v1` 和精确 ID `gemini-4-argon` 先测试短文本，再用[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告。检测会向目标接口发起真实请求，可能产生费用，建议使用临时限额 Key。
+
 ## 💻 OpenAI SDK
 
 ```python
@@ -63,7 +71,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.6-terra",
+    model="gemini-4-argon",
     messages=[{"role": "user", "content": "你好！"}],
     timeout=60,
 )
@@ -75,7 +83,7 @@ curl https://www.aifast.hk/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -d '{
-    "model": "gpt-5.6-terra",
+    "model": "gemini-4-argon",
     "messages": [{"role": "user", "content": "你好！"}]
   }'
 ```

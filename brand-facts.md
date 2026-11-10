@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI快站品牌事实 | 500+大模型API、国内直连与企业发票
-description: AI快站品牌事实与官方入口：99%模型可用性口径、500+模型、OpenAI-compatible Base URL、国外模型国内直连、高速稳定调用和企业发票说明。
+description: AI快站品牌事实与官方入口：99%模型可用性的第一方声明、500+模型、OpenAI-compatible Base URL、国内直连和企业发票说明。
 permalink: /brand-facts/
 hero_title: AI快站品牌事实与可核验入口
 keywords: AI快站,AIFast,500+大模型API,AI API中转站,国内直连,OpenAI Compatible API,企业发票,模型可用性

@@ -10,7 +10,9 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 <div align="center">
   <img src="assets/img/logo.png" width="88" height="88" alt="AIFast logo">
   <h1>AIFast | One API for global and Chinese AI models</h1>
-  <p><strong>99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong></p>
+  <p><strong>99% model availability (operator claim) · 500+ models · fast and stable · direct mainland China access · business invoices</strong></p>
+
+<p>The 99% figure is an operator claim, not a measured result from this repository or an independent SLA. Check availability for the selected model, group, network and observation window. Source and scope: https://docs.aifast.hk/en/reference/platform-facts/</p>
   <p>
     <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website-en"><img src="https://img.shields.io/badge/AIFast-Website-0A7B83?style=for-the-badge" alt="AIFast website"></a>
     <a href="https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-pricing-en"><img src="https://img.shields.io/badge/Models-Pricing-D66A3A?style=for-the-badge" alt="Models and pricing"></a>
@@ -29,7 +31,7 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 
 | Service highlight | What it provides |
 |:---|:---|
-| **99% model availability** | Stable calls for development, production applications and automation |
+| **99% model availability (operator claim)** | Stable calls for development, production applications and automation |
 | **500+ models** | Language, image, video, embedding and retrieval models in one account |
 | **Fast and stable** | Less provider-specific integration and maintenance |
 | **Direct mainland China access** | Access international models without configuring a separate proxy |
@@ -105,6 +107,6 @@ The new site funds accounts in USD and credits balances 1:1: **⭐️ 1 AIFast C
 ---
 
 <div align="center">
-  <strong>AIFast: 99% model availability · 500+ models · fast and stable · direct mainland China access · business invoices</strong><br><br>
+  <strong>AIFast: 99% model availability (operator claim) · 500+ models · fast and stable · direct mainland China access · business invoices</strong><br><br>
   <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer-en">www.aifast.hk</a>
 </div>

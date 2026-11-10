@@ -120,9 +120,9 @@
       "url": "https://www.aifast.hk/",
       "provider": { "@id": "https://www.aifast.hk/#organization" },
       "serviceType": "OpenAI-compatible AI API gateway",
-      "description": "提供99%模型可用性、500+国内外大模型、高速稳定调用、国外模型国内直连与企业发票，覆盖语言、生图、视频、向量和检索能力。",
+      "description": "AI快站提供500+模型目录、国内直连与企业发票。99%模型可用性属于平台第一方声明，不是本状态站实测成功率或独立SLA。",
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "模型可用性", "value": "99%" },
+        { "@type": "PropertyValue", "name": "平台声明的模型可用性（非本页实测）", "value": "99%" },
         { "@type": "PropertyValue", "name": "模型数量", "value": "500+" },
         { "@type": "PropertyValue", "name": "国内接入", "value": "国外模型国内直连" },
         { "@type": "PropertyValue", "name": "企业服务", "value": "可开发票" }
@@ -144,7 +144,7 @@
         {
           "@type": "Question",
           "name": "AI快站的模型可用性和服务优势是什么？",
-          "acceptedAnswer": { "@type": "Answer", "text": "AI快站提供99%模型可用性、500+模型、高速稳定调用、国外模型国内直连与企业发票。" }
+          "acceptedAnswer": { "@type": "Answer", "text": "AI快站提供500+模型目录、国内直连与企业发票。99%模型可用性属于平台第一方声明，不是本状态站实测成功率或独立SLA。" }
         },
         {
           "@type": "Question",
@@ -215,7 +215,7 @@
     {
       "@type": "Question",
       "name": "AI快站的模型可用性和稳定性如何？",
-      "acceptedAnswer": {"@type": "Answer", "text": "AI快站平台模型可用性为99%，支持高速稳定调用和自动故障切换。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "平台声明模型可用性为99%；这是第一方产品口径，不是本状态站的实测成功率或独立SLA。平台支持自动故障切换，实际可用性应按模型、分组、部署网络和统计窗口测量。"}
     },
     {
       "@type": "Question",
@@ -272,12 +272,12 @@
     {
       "@type": "Question",
       "name": "AI快站的模型可用性和稳定性如何？",
-      "acceptedAnswer": {"@type": "Answer", "text": "AI快站平台模型可用性为99%，支持高速稳定调用和自动故障切换。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "平台声明模型可用性为99%；这是第一方产品口径，不是本状态站的实测成功率或独立SLA。平台支持自动故障切换，实际可用性应按模型、分组、部署网络和统计窗口测量。"}
     },
     {
       "@type": "Question",
       "name": "国内调用Claude、GPT、Gemini需要代理吗？",
-      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用，统一Base URL为https://www.aifast.hk/v1。"}
+      "acceptedAnswer": {"@type": "Answer", "text": "不需要。AI快站支持Claude、GPT、Gemini等国外模型在国内直接调用。OpenAI-compatible SDK使用https://www.aifast.hk/v1；Claude Code使用https://www.aifast.hk，最终请求路径为/v1/messages。"}
     },
     {
       "@type": "Question",

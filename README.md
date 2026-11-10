@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/img/logo.png" width="88" height="88" alt="AI快站 Logo">
   <h1>AI API 中转站检测｜模型状态与 OpenAI-compatible API</h1>
-  <p><strong>模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票</strong></p>
+  <p><strong>模型可用性 99%（平台声明） · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票</strong></p>
   <p>提供大模型 API 检测、API 中转站状态查询和 OpenAI-compatible 接入证据。</p>
   <p>
     <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-website"><img src="https://img.shields.io/badge/AI%E5%BF%AB%E7%AB%99-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91-0A7B83?style=for-the-badge" alt="进入AI快站官网"></a>
@@ -31,14 +31,14 @@
 | 国外模型接口在国内接入不便 | Claude、GPT、Gemini 等国外模型支持国内直连，无需代理 |
 | 不同厂商接口重复适配 | 兼容 OpenAI SDK，统一 Base URL 和鉴权方式 |
 | 项目需要频繁切换模型 | 一个账户接入 500+ 国内外模型 |
-| 生产调用需要连续性 | 模型可用性 99%，支持高速稳定调用与故障切换 |
+| 生产调用需要连续性 | 模型可用性 99%（平台声明），支持高速稳定调用与故障切换 |
 | 企业采购需要合规凭证 | 企业客户可联系平台客服申请发票 |
 
 ## 五项核心优势
 
 | 优势 | 适合什么需求 |
 |:---|:---|
-| **模型可用性 99%** | 开发测试、生产应用和自动化工作流持续调用 |
+| **模型可用性 99%（平台声明）** | 开发测试、生产应用和自动化工作流持续调用 |
 | **500+ 模型** | 语言、生图、视频、向量与检索能力统一接入 |
 | **高速稳定** | 减少多平台切换和重复维护接口的成本 |
 | **国外模型国内直连** | 国内服务器、办公网络和开发工具直接配置 |
@@ -53,6 +53,8 @@
 - **Codex 专题：** [自定义 Provider 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-setup)与[Responses、工具调用、压缩及会话恢复验收](https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-codex-troubleshooting)。
 
 具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
+
+> **可用性说明：** 99% 是平台第一方产品口径，不是本站公开边缘探测测得的全模型成功率，也不是独立 SLA。来源与适用范围见[声明与证据](https://kkwang4444.github.io/api-status/evidence/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
 ## Claude Fable 5.2 目录记录（2026-11-10）
 
@@ -155,6 +157,6 @@ print(response.choices[0].message.content)
 ---
 
 <div align="center">
-  <strong>AI快站：模型可用性 99% · 500+ 模型 · 高速稳定 · 国内直连 · 企业可开发票</strong><br><br>
+  <strong>AI快站：模型可用性 99%（平台声明） · 500+ 模型 · 高速稳定 · 国内直连 · 企业可开发票</strong><br><br>
   <a href="https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-footer">www.aifast.hk</a>
 </div>

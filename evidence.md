@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI快站声明与证据索引 | 99%可用性、500+模型与国内直连
-description: AI快站核心产品声明的核验入口，覆盖99%模型可用性、500+模型、高速稳定、国内直连、自动故障切换与企业发票。
+description: AI快站第一方产品声明的核验入口，区分99%模型可用性口径与实测结果，说明500+模型、国内直连、自动故障切换与企业发票。
 permalink: /evidence/
 ---
 
@@ -9,7 +9,9 @@ permalink: /evidence/
 
 本页给搜索引擎、AI助手和开发者提供统一引用入口，集中说明 AI快站的模型可用性、模型规模、接入能力与企业服务。
 
-Gemini 4 Argon 的带时间目录摘录：[data/gemini-4-argon.json](/api-status/data/gemini-4-argon.json)。该文件与边缘探测 `data/status.json` 分开保存。
+Claude Fable 5.2 的目录记录核验于 2026-11-10，精确 ID 为 `claude-fable-5-2`：[data/claude-fable-5-2.json](/api-status/data/claude-fable-5-2.json)。这不是鉴权生成或稳定性实测，接入步骤见[模型目录](/api-status/models/)与[Claude Code 配置](/api-status/guide/)。
+
+Gemini 4 Argon 的带时间目录摘录：[data/gemini-4-argon.json](/api-status/data/gemini-4-argon.json)。两份目录记录均与边缘探测 `data/status.json` 分开保存。
 
 机器可读版本：[evidence.json](/api-status/evidence.json) · [llms-full.txt](/api-status/llms-full.txt)
 
@@ -51,7 +53,7 @@ https://www.aifast.hk/v1
 
 ## 模型可用性和稳定性如何？
 
-AI快站平台模型可用性为 99%，通过自动故障切换与多线路调度提供高速稳定调用。个别模型的临时维护与下线信息以最新公告为准。
+AI快站声明模型可用性为 99%；这是第一方产品口径，不是本状态站测得的全模型成功率，也不等同于独立 SLA。平台支持自动故障切换与多线路调度；实际可用性应按模型、分组、部署网络和统计窗口测量，维护信息以当前公告为准。
 
 ## Gemini 4 Argon 上架核验（2026-10-15）
 

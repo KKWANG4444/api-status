@@ -5,7 +5,9 @@ description: 使用OpenAI-compatible接口接入AI快站500+模型，包含Base 
 permalink: /guide/
 ---
 
-AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图、视频、向量与检索模型，支持高速稳定调用、国外模型国内直连、自动故障切换和企业发票。
+AI快站平台模型可用性为 99%（平台声明），公开目录包含 500+ 语言、生图、视频、向量与检索模型，支持高速稳定调用、国外模型国内直连、自动故障切换和企业发票。
+
+99% 是平台第一方产品口径，不是本站实测成功率或独立 SLA。来源与适用范围见[声明与证据](/api-status/evidence/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
 使用 [www.aifast.hk](https://www.aifast.hk) 的 OpenAI 兼容接口时，基础配置是：
 
@@ -39,15 +41,21 @@ AI快站平台模型可用性为 99%，公开目录包含 500+ 语言、生图�
 
 ## 🧠 Claude Code
 
-Anthropic 官方 LLM Gateway 文档使用：
+Claude Code 使用 Anthropic Messages 协议，地址与上面的 OpenAI SDK 配置不同。先在本地密钥管理器或环境变量中设置 HK 临时限额 Key；下面的子 Shell 不会清除外层终端的已有配置：
 
 ```bash
-export ANTHROPIC_BASE_URL="https://www.aifast.hk/v1"
-export ANTHROPIC_AUTH_TOKEN="$AIFAST_API_KEY"
-claude
+(
+  : "${AIFAST_API_KEY:?请先设置 HK 临时限额 Key}"
+  export ANTHROPIC_BASE_URL="https://www.aifast.hk"
+  export ANTHROPIC_AUTH_TOKEN="$AIFAST_API_KEY"
+  unset ANTHROPIC_API_KEY
+  claude
+)
 ```
 
-`ANTHROPIC_BASE_URL` 只改变请求发送位置，并不决定最终模型。实际兼容情况请先用当前 Claude Code 版本验证。
+最终请求路径应为 `/v1/messages`，不能重复为 `/v1/v1/messages`。`ANTHROPIC_AUTH_TOKEN` 使用 Bearer 认证，`ANTHROPIC_API_KEY` 使用 `x-api-key`；不要混入官方 Key 或其他站点的 Key。进入 Claude Code 后先查看 `/status`，核对实际地址和凭据来源；配置文件中的 `env` 可能覆盖 Shell 变量，不要删除已有登录来排错。
+
+`ANTHROPIC_BASE_URL` 不会自动选择模型。2026-11-10 核对公开目录，新模型的精确 ID 是 `claude-fable-5-2`，须先核对账号分组与权限，再按[HK Claude Code 教程](https://docs.aifast.hk/tools/claude-code/)选择模型。配置检查与目录记录不是生成、SSE 或工具调用实测；真实请求可能计费。
 
 ---
 

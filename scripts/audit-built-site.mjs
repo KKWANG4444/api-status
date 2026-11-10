@@ -143,6 +143,18 @@ for (const required of ['OPENAI_BASE_URL', '401 / 403', '429', '502 / 503 / 504'
 }
 
 const statusPage = await readFile(join(site, 'status/index.html'), 'utf8');
+const componentData = JSON.parse(await readFile(join(site, 'data/status.json'), 'utf8')).components;
+if (componentData?.length) {
+  const tables = [...statusPage.matchAll(/<table\b[^>]*id="edge-components"[^>]*>([\s\S]*?)<\/table>/g)];
+  const table = tables[0]?.[1] || '';
+  const head = table.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] || '';
+  const body = table.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] || '';
+  const rows = [...body.matchAll(/<tr>([\s\S]*?)<\/tr>/g)];
+  if (tables.length !== 1 || count(head, /<th\b/g) !== 5 || rows.length !== componentData.length ||
+      rows.some((row) => count(row[1], /<td\b/g) !== 5)) {
+    errors.push('status/index.html 组件记录必须渲染为一个含完整表头和组件行的表格');
+  }
+}
 for (const file of ['index.html', 'status/index.html']) {
   const rendered = await readFile(join(site, file), 'utf8');
   for (const marker of ['data-status-checked-at=', '时效未核验', '/api-status/assets/js/status-freshness.mjs']) {

@@ -19,6 +19,9 @@ keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI�
 
 此记录只检查 HK 官网、API 文档和无 Key 的模型列表入口；不是 GPT、Claude、DeepSeek 的逐模型实时状态，也不证明模型生成成功。请先核对时间，再查看[探测明细与方法](/api-status/status/)或[原始 JSON](/api-status/data/status.json)。记录未更新时，不能把旧结果当成当前状态。
 
+<p data-status-checked-at="{{ site.data.status.checked_at | escape }}" data-freshness="unknown" role="status">时效未核验；记录超过 60 分钟后应视为过期，不能据此判断当前状态。</p>
+<script type="module" src="{{ '/assets/js/status-freshness.mjs' | relative_url }}"></script>
+
 | 你要确认的问题 | 推荐检查 |
 |:---|:---|
 | GPT / DeepSeek API 是否故障 | [按网络、401、429、5xx 分层排错](/api-status/openai-api-status-check/)，再用自己的模型 ID 验证真实请求 |

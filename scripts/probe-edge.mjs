@@ -2,6 +2,7 @@
 /** Probe public edge reachability only; never sends an API key. */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
+import { observationWindow } from '../assets/js/status-freshness.mjs';
 
 const root = resolve(new URL('..', import.meta.url).pathname);
 const output = resolve(root, 'data/status.json');
@@ -27,14 +28,16 @@ async function probe(item) {
 
 const components = await Promise.all(checks.map(probe));
 const failed = components.filter((item) => !item.ok).length;
+const checkedAt = new Date().toISOString();
 const result = {
   status: failed === 0 ? 'operational' : 'degraded',
-  checked_at: new Date().toISOString(),
+  checked_at: checkedAt,
+  ...observationWindow(checkedAt),
   duration_ms: Date.now() - started,
   overall: failed === 0,
   components,
   methodology_url: 'https://kkwang4444.github.io/api-status/status/',
-  limitations: 'Public edge reachability only; this does not measure every model, account quota, latency SLA, or provider health.',
+  limitations: 'Public edge observation at checked_at only. After expires_at, treat current status as unknown. This does not measure every model, account quota, latency SLA, or provider health.',
 };
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(result, null, 2)}\n`);

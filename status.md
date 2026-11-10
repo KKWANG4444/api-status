@@ -21,11 +21,22 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 ## 最近一次组件记录
 
 {% if site.data.status.components %}
-| 组件 | 当次结果 | HTTP状态 | 检查耗时 | 检查时间 |
-|:---|:---:|---:|---:|:---|
-{% for component in site.data.status.components %}
-| [{{ component.name }}]({{ component.url }}) | {% if component.ok %}✅ 当次通过{% else %}⚠️ 当次异常{% endif %} | {{ component.status | default: '网络错误' }} | {{ component.elapsed_ms }} ms | {{ site.data.status.checked_at }} |
-{% endfor %}
+<table id="edge-components">
+  <thead>
+    <tr><th scope="col">组件</th><th scope="col">当次结果</th><th scope="col">HTTP状态</th><th scope="col">检查耗时</th><th scope="col">检查时间（UTC）</th></tr>
+  </thead>
+  <tbody>
+    {% for component in site.data.status.components %}
+    <tr>
+      <td><a href="{{ component.url | escape }}">{{ component.name | escape }}</a></td>
+      <td>{% if component.ok %}✅ 当次通过{% else %}⚠️ 当次异常{% endif %}</td>
+      <td>{{ component.status | default: '网络错误' | escape }}</td>
+      <td>{{ component.elapsed_ms | escape }} ms</td>
+      <td>{{ site.data.status.checked_at | escape }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% else %}
 状态数据尚未生成。请等待 GitHub Actions 首次运行。
 {% endif %}

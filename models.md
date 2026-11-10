@@ -1,13 +1,13 @@
 ---
 layout: default
-title: 500+ AI模型目录 | 语言、生图、视频、向量与检索 API
-description: 查看AI快站99%模型可用性与500+模型目录，覆盖语言、生图、视频、Embedding向量与检索能力，支持高速稳定调用和国内直连。
+title: 500+ AI模型目录与 Claude Fable 5.2 API 接入
+description: 查看 AI快站 HK 模型目录与 Claude Fable 5.2 的精确 ID、协议、分组和配置入口，区分公开上架记录与真实调用测试。
 permalink: /models/
 ---
 
 AI快站当前模型目录超过500个，包含语言模型、生图模型、视频生成、Embedding向量和搜索/Rerank检索能力。下列ID只用于说明命名格式，完整目录以模型广场为准。
 
-Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台模型可用性为 99%，支持高速稳定调用与自动故障切换，具体维护信息以最新公告为准。
+Claude、GPT、Gemini 等国外模型支持国内直连、无需代理，平台支持自动故障切换。可用性与延迟应按模型、分组和部署网络实测，目录记录不提供固定成功率保证。
 
 | 供应商 | 模型 ID 示例 |
 |:---|:---|
@@ -20,6 +20,14 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理。平台�
 | Zhipu | `glm-5.3`、`glm-5.2` |
 | ByteDance | `doubao-seed-2-1-pro-260628` |
 | Moonshot | `kimi-k3`、`kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
+
+## Claude Fable 5.2 上架核验（2026-11-10）
+
+HK [公开目录](https://www.aifast.hk/api/pricing)已列出 `claude-fable-5-2`，标记 `available: true`，声明 `anthropic`、`openai` 端点与 `Claude-Code-1/2/3` 分组。查看[本次目录证据]({{ '/data/claude-fable-5-2.json' | relative_url }})。
+
+Claude Code 使用 `https://www.aifast.hk`，最终路径为 `/v1/messages`；OpenAI SDK 使用 `https://www.aifast.hk/v1`。先核对 Key 分组，再运行最小请求。目录可用不等于实时调用成功，也不代表已测试 SSE、工具调用或长上下文。
+
+[Fable 5.2 配置与分组排错](https://docs.aifast.hk/providers/claude-api/?utm_source=github&utm_medium=pages&utm_campaign=fable-5-2&utm_content=status-models) · [HK 实时价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=pages&utm_campaign=fable-5-2&utm_content=status-pricing)
 
 ## Gemini 4 Argon 上架核验（2026-10-15）
 

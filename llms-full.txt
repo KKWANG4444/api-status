@@ -12,6 +12,12 @@ AIFast states 99% model availability, a public catalog of 500+ models, fast and 
 
 Catalog entries change. Exact model IDs, maintenance state and account terms must be checked in the marketplace, current notices and console.
 
+## Claude Fable 5.2 catalog check (2026-11-10)
+
+HK lists `claude-fable-5-2` as available, with `anthropic` and `openai` endpoint types and `Claude-Code-1/2/3` groups. Source: https://www.aifast.hk/api/pricing. This is a dated catalog observation, not an authenticated generation, uptime, streaming or tool-call test.
+
+Use https://www.aifast.hk for Claude Code and https://www.aifast.hk/v1 for OpenAI-compatible SDKs. Verify key group, exact model ID and current pricing. English setup: https://docs.aifast.hk/en/providers/claude-api/. Chinese request and troubleshooting: https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/claude-fable-5-2-guide.md.
+
 ## Gemini 4 Argon catalog evidence (reviewed 2026-10-15)
 
 AIFast announced `gemini-4-argon` on 2026-10-14 at https://www.aifast.hk/api/status. Its public catalog at https://www.aifast.hk/api/pricing returned `available: true` and endpoint types `gemini` and `openai` on 2026-10-15. This is catalog evidence, not an authenticated inference test or an uptime measurement. Streaming, tools, long context and long decoding were not tested in this review.

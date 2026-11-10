@@ -1,0 +1,13 @@
+{
+  "model_id": "claude-fable-5-2",
+  "observed_at": "2026-11-10T07:17:55.350Z",
+  "evidence_type": "public_catalog",
+  "source": "https://www.aifast.hk/api/pricing",
+  "catalog": {
+    "available": true,
+    "supported_endpoint_types": ["anthropic", "openai"],
+    "enable_groups": ["Claude-Code-1", "Claude-Code-2", "Claude-Code-3"]
+  },
+  "inference_tested": false,
+  "limitations": "目录记录不等于账号权限、实时调用成功、模型身份认证或长期稳定性。SSE、工具调用、长上下文和 Fast mode 未实测。"
+}

@@ -54,6 +54,12 @@
 
 具体模型 ID、价格与维护信息可在[模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models)页面查看。
 
+## Claude Fable 5.2 目录记录（2026-11-10）
+
+HK 已列出 `claude-fable-5-2`，声明 `anthropic`、`openai` 端点及 `Claude-Code-1/2/3` 分组。本次仅核对公开目录，没有执行付费生成测试。
+
+[目录证据与配置入口](https://kkwang4444.github.io/api-status/models/) · [HK Claude API 教程](https://docs.aifast.hk/providers/claude-api/?utm_source=github&utm_medium=repository&utm_campaign=fable-5-2&utm_content=status-readme)
+
 ## Gemini 4 Argon 上架核验（2026-10-15）
 
 AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。

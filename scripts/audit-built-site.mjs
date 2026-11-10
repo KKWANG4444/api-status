@@ -23,8 +23,16 @@ const stalePatterns = [
   /572\s*(?:个\s*模型|models?)/iu,
   /GPT[-‐‑‒–—― .]?5\.5/iu,
   /Claude[-‐‑‒–—― .]?4\.7/iu,
-  /Claude[-‐‑‒–—― .]?Fable[-‐‑‒–—― .]?5/iu,
+  /Claude[-‐‑‒–—― .]?Fable[-‐‑‒–—― .]?5(?![.\-]\d|\d)/iu,
 ];
+
+if (!stalePatterns[3].test('Claude Fable 5') || stalePatterns[3].test('Claude Fable 5.2') || stalePatterns[3].test('claude-fable-5-2')) errors.push('旧 Fable 型号匹配边界错误');
+const fableEvidence = JSON.parse(await readFile(join(site, 'data/claude-fable-5-2.json'), 'utf8'));
+if (fableEvidence.model_id !== 'claude-fable-5-2' || fableEvidence.inference_tested !== false || fableEvidence.source !== 'https://www.aifast.hk/api/pricing') errors.push('Fable 证据缺少精确 ID、HK 来源或未实测边界');
+for (const file of ['models/index.html', 'llms.txt', 'llms-full.txt']) {
+  const content = await readFile(join(site, file), 'utf8');
+  if (!content.includes('claude-fable-5-2') || !content.includes('2026-11-10')) errors.push(`${file}: 缺少 Fable 5.2 及核验日期`);
+}
 
 const count = (source, pattern) => (source.match(pattern) || []).length;
 

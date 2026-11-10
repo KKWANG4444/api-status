@@ -1,7 +1,10 @@
 {
   "status": "operational",
-  "checked_at": "2026-11-10T11:47:56.977Z",
-  "duration_ms": 550,
+  "checked_at": "2026-11-10T16:40:28.310Z",
+  "max_age_seconds": 3600,
+  "expires_at": "2026-11-10T17:40:28.310Z",
+  "status_scope": "observation_at_checked_at",
+  "duration_ms": 663,
   "overall": true,
   "components": [
     {
@@ -10,7 +13,7 @@
       "url": "https://www.aifast.hk/",
       "ok": true,
       "status": 200,
-      "elapsed_ms": 508,
+      "elapsed_ms": 597,
       "content_type": "text/html; charset=utf-8",
       "detail": "Expected public edge response"
     },
@@ -20,7 +23,7 @@
       "url": "https://api.aifast.hk/",
       "ok": true,
       "status": 200,
-      "elapsed_ms": 301,
+      "elapsed_ms": 216,
       "content_type": "text/html",
       "detail": "Expected public edge response"
     },
@@ -30,11 +33,11 @@
       "url": "https://www.aifast.hk/v1/models",
       "ok": true,
       "status": 401,
-      "elapsed_ms": 510,
+      "elapsed_ms": 618,
       "content_type": "application/json; charset=utf-8",
       "detail": "Expected public edge response"
     }
   ],
   "methodology_url": "https://kkwang4444.github.io/api-status/status/",
-  "limitations": "Public edge reachability only; this does not measure every model, account quota, latency SLA, or provider health."
+  "limitations": "Public edge observation at checked_at only. After expires_at, treat current status as unknown. This does not measure every model, account quota, latency SLA, or provider health."
 }

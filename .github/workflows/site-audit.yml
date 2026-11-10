@@ -22,5 +22,7 @@ jobs:
           node-version: "22"
       - name: Build GitHub Pages site
         run: bundle exec jekyll build --trace
+      - name: 验证状态过期处理
+        run: node --test tests/*.test.mjs
       - name: Audit rendered SEO and internal links
         run: node scripts/audit-built-site.mjs

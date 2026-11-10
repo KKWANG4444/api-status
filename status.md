@@ -12,17 +12,19 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 它**不代表所有模型、账户额度、具体模型质量或固定 SLA**。模型是否可用，仍应以当前模型广场和你的实际请求为准。
 
 <div class="decision-band">
-  <div><strong>当前状态：{{ site.data.status.status | default: '等待首次探测' }}</strong><p>最近检查：{{ site.data.status.checked_at | default: '尚未生成' }}</p></div>
+  <div><strong>最近一次探测结果：{{ site.data.status.status | default: '等待首次探测' }}</strong><p>记录时间（UTC）：{{ site.data.status.checked_at | default: '尚未生成' }}</p><p data-status-checked-at="{{ site.data.status.checked_at | escape }}" data-freshness="unknown" role="status">时效未核验；记录超过 60 分钟后应视为过期，不能据此判断当前状态。</p></div>
   <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=status-page-check">运行模型检测</a><a class="button button-secondary" href="https://www.aifast.hk/register?channel=c_zfxp7cp4&amp;utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=api-status-status-register">注册使用</a></div>
 </div>
 
-## 当前组件
+<script type="module" src="{{ '/assets/js/status-freshness.mjs' | relative_url }}"></script>
+
+## 最近一次组件记录
 
 {% if site.data.status.components %}
-| 组件 | 结果 | HTTP状态 | 检查耗时 | 检查时间 |
+| 组件 | 当次结果 | HTTP状态 | 检查耗时 | 检查时间 |
 |:---|:---:|---:|---:|:---|
 {% for component in site.data.status.components %}
-| [{{ component.name }}]({{ component.url }}) | {% if component.ok %}✅ 正常{% else %}⚠️ 需检查{% endif %} | {{ component.status | default: '网络错误' }} | {{ component.elapsed_ms }} ms | {{ site.data.status.checked_at }} |
+| [{{ component.name }}]({{ component.url }}) | {% if component.ok %}✅ 当次通过{% else %}⚠️ 当次异常{% endif %} | {{ component.status | default: '网络错误' }} | {{ component.elapsed_ms }} ms | {{ site.data.status.checked_at }} |
 {% endfor %}
 {% else %}
 状态数据尚未生成。请等待 GitHub Actions 首次运行。
@@ -38,6 +40,8 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 - API 文档入口预期返回 `200`；
 - `/v1/models` 不发送API Key，接受公开接口可能返回的 `200`、`401`或`403`，因为这些状态都说明公共边缘已经响应；
 - 每次探测记录状态、响应时间、Content-Type和错误摘要；
+- 计划每 15 分钟触发，GitHub 调度可能延迟或遗漏，不保证准点；超过 60 分钟的记录视为过期，当前状态未知；
+- JSON 中的 `status` 和 `overall` 只描述 `checked_at` 时点，引用时必须同时检查 `expires_at`，不能将过期的 `operational` 当作当前正常；
 - 探测不会保存或提交任何API Key，也不会声称底层模型全部可用。
 
 完整原始数据：[status.json](/api-status/data/status.json)。探测脚本：[probe-edge.mjs](https://github.com/KKWANG4444/api-status/blob/main/scripts/probe-edge.mjs)。
@@ -46,7 +50,7 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 
 ### GPT 或 DeepSeek API 状态正常，为什么调用仍失败？
 
-本页的“正常”只表示当次公共入口按预期响应。探测没有携带 Key，也没有逐一调用 GPT、Claude 或 DeepSeek，因此无法判断你的账户额度、所选分组和模型上游是否可用。
+本页的“当次通过”只表示记录时点的公共入口按预期响应。探测没有携带 Key，也没有逐一调用 GPT、Claude 或 DeepSeek，因此无法判断你的账户额度、所选分组和模型上游是否可用。
 
 | 真实请求现象 | 先检查什么 | 后续操作 |
 |:---|:---|:---|

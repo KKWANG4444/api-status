@@ -143,6 +143,14 @@ for (const required of ['OPENAI_BASE_URL', '401 / 403', '429', '502 / 503 / 504'
 }
 
 const statusPage = await readFile(join(site, 'status/index.html'), 'utf8');
+for (const file of ['index.html', 'status/index.html']) {
+  const rendered = await readFile(join(site, file), 'utf8');
+  for (const marker of ['data-status-checked-at=', '时效未核验', '/api-status/assets/js/status-freshness.mjs']) {
+    if (!rendered.includes(marker)) errors.push(`${file} 缺少状态时效保护 ${marker}`);
+  }
+  if (/当前状态：\s*(?:operational|degraded)/.test(rendered)) errors.push(`${file} 将静态旧记录标为当前状态`);
+}
+await readFile(join(site, 'assets/js/status-freshness.mjs'), 'utf8');
 for (const required of ['公开边缘可达性', 'status.json', 'probe-edge.mjs', '不代表所有模型']) {
   if (!statusPage.includes(required)) errors.push(`status/index.html 缺少状态方法内容 ${required}`);
 }

@@ -50,6 +50,12 @@ keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI�
 
 ---
 
+## Claude Fable 5.2 接入与目录记录（2026-11-10）
+
+HK [公开目录](https://www.aifast.hk/api/pricing)已列出 `claude-fable-5-2`，声明 `anthropic`、`openai` 两种端点及 `Claude-Code-1/2/3` 分组。先核对 Key 权限：Claude Code 的 `ANTHROPIC_BASE_URL` 使用 `https://www.aifast.hk`，OpenAI SDK 的 Base URL 使用 `https://www.aifast.hk/v1`。
+
+查看[模型目录与核验范围](/api-status/models/)、[最小请求与分组排错](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/claude-fable-5-2-guide.md)及[带时间的目录证据](/api-status/data/claude-fable-5-2.json)。本次仅核对公开目录，未执行付费生成、SSE 或工具调用测试，不代表实时成功率或每个账号都可调用。
+
 ## Gemini 4 Argon 上架核验（2026-10-15）
 
 AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。

@@ -10,6 +10,14 @@
   "reviewedAt": "2026-08-12",
   "claims": [
     {
+      "id": "claude-fable-5-2-launch",
+      "reviewedAt": "2026-11-10",
+      "answer": "HK 公开目录列出 claude-fable-5-2，标记 available=true，声明 anthropic/openai 端点及 Claude-Code-1/2/3 分组。",
+      "source": "https://www.aifast.hk/api/pricing",
+      "snapshot": "https://kkwang4444.github.io/api-status/data/claude-fable-5-2.json",
+      "scope": "仅为带时间的公开目录核验，未执行鉴权生成、SSE 或工具调用测试，不代表账号权限或实时成功率。"
+    },
+    {
       "id": "gemini-4-argon-launch",
       "reviewedAt": "2026-10-15",
       "answer": "Gemini 4 Argon (gemini-4-argon) was announced on 2026-10-14; the public catalog returned available=true with gemini and openai endpoint types.",
@@ -20,7 +28,7 @@
     },
     {
       "id": "service-availability",
-      "answer": "AI快站平台模型可用性为99%，支持高速稳定调用。",
+      "answer": "AI快站声明模型可用性为99%；这是第一方产品口径，不是本状态站实测成功率或独立SLA。",
       "source": "https://www.aifast.hk",
       "scope": "AI快站第一方产品口径；除非合同另行约定，不等同于独立监测结果或SLA。"
     },

@@ -19,6 +19,27 @@ const expectedPages = [
   'status/index.html',
 ];
 const errors = [];
+const invalidClaudeBase = /\bANTHROPIC_BASE_URL\s*=\s*["']?https:\/\/www\.aifast\.hk\/v1(?:[\/"'\s]|$)/u;
+const plainText = (html) => html.replace(/<[^>]*>/g, '').replaceAll('&quot;', '"').replaceAll('&#39;', "'").replaceAll('&amp;', '&');
+for (const [sample, invalid] of [
+  ['export ANTHROPIC_BASE_URL="https://www.aifast.hk/v1"', true],
+  ['ANTHROPIC_BASE_URL=https://www.aifast.hk/v1/', true],
+  ['export <span>ANTHROPIC_BASE_URL</span>=&quot;https://www.aifast.hk/v1&quot;', true],
+  ['export ANTHROPIC_BASE_URL="https://www.aifast.hk"', false],
+  ['base_url="https://www.aifast.hk/v1"', false],
+]) {
+  if (invalidClaudeBase.test(plainText(sample)) !== invalid) errors.push('Claude Code 地址检查回归失败');
+}
+function auditAvailabilitySchema(value, location) {
+  if (!value || typeof value !== 'object') return;
+  for (const [key, child] of Object.entries(value)) {
+    if (['description', 'text'].includes(key) && typeof child === 'string' && /99\s*%/.test(child) && !/第一方|声明|operator claim|first-party/i.test(child)) {
+      errors.push(`${location}: 结构化数据的99%口径缺少第一方声明限定`);
+    }
+    if (key === 'value' && child === '99%' && !/声明|operator/i.test(value.name || '')) errors.push(`${location}: 99%属性名缺少声明限定`);
+    auditAvailabilitySchema(child, location);
+  }
+}
 const stalePatterns = [
   /572\s*(?:个\s*模型|models?)/iu,
   /GPT[-‐‑‒–—― .]?5\.5/iu,
@@ -29,7 +50,7 @@ const stalePatterns = [
 if (!stalePatterns[3].test('Claude Fable 5') || stalePatterns[3].test('Claude Fable 5.2') || stalePatterns[3].test('claude-fable-5-2')) errors.push('旧 Fable 型号匹配边界错误');
 const fableEvidence = JSON.parse(await readFile(join(site, 'data/claude-fable-5-2.json'), 'utf8'));
 if (fableEvidence.model_id !== 'claude-fable-5-2' || fableEvidence.inference_tested !== false || fableEvidence.source !== 'https://www.aifast.hk/api/pricing') errors.push('Fable 证据缺少精确 ID、HK 来源或未实测边界');
-for (const file of ['models/index.html', 'llms.txt', 'llms-full.txt']) {
+for (const file of ['index.html', 'guide/index.html', 'models/index.html', 'evidence/index.html', 'llms.txt', 'llms-full.txt']) {
   const content = await readFile(join(site, file), 'utf8');
   if (!content.includes('claude-fable-5-2') || !content.includes('2026-11-10')) errors.push(`${file}: 缺少 Fable 5.2 及核验日期`);
 }
@@ -67,6 +88,7 @@ for (const pagePath of expectedPages) {
   for (const stalePattern of stalePatterns) {
     if (stalePattern.test(html)) errors.push(`${pagePath}: 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
   }
+  if (invalidClaudeBase.test(plainText(html))) errors.push(`${pagePath}: Claude Code Base URL 不能附加 /v1`);
 
   for (const match of html.matchAll(/href="(https:\/\/www\.aifast\.hk\/register(?:\?[^\"]*)?)"/g)) {
     const registerUrl = new URL(match[1].replaceAll('&amp;', '&'));
@@ -83,7 +105,7 @@ for (const pagePath of expectedPages) {
 
   for (const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try {
-      JSON.parse(match[1]);
+      auditAvailabilitySchema(JSON.parse(match[1]), pagePath);
     } catch (error) {
       errors.push(`${pagePath}: JSON-LD无法解析（${error.message}）`);
     }
@@ -204,6 +226,10 @@ for (const [name, content] of [
   if (content.includes('openai-compatible-api-check')) errors.push(`${name} 不应把用户导向程序仓库`);
 }
 const evidenceJson = await readFile(join(site, 'evidence.json'), 'utf8');
+const claims = JSON.parse(evidenceJson).claims;
+const fableClaim = claims.find((claim) => claim.id === 'claude-fable-5-2-launch');
+if (fableClaim?.reviewedAt !== '2026-11-10' || !fableClaim?.snapshot?.endsWith('/data/claude-fable-5-2.json')) errors.push('证据索引缺少 Fable 5.2 日期与快照');
+if (!/第一方/.test(claims.find((claim) => claim.id === 'service-availability')?.answer || '')) errors.push('可用性证据回答缺少第一方限定');
 for (const stalePattern of stalePatterns) {
   if (stalePattern.test(evidenceJson)) errors.push(`evidence.json 仍包含旧模型数量、旧模型名或旧定位 ${stalePattern}`);
 }

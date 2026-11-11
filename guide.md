@@ -59,6 +59,14 @@ Claude Code 使用 Anthropic Messages 协议，地址与上面的 OpenAI SDK 配
 
 ---
 
+## Gemini 4 Carbon 已上架（2026-11-11）
+
+AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。当前列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
+
+[Google 开发者公告](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/)将 Carbon 定位于复杂软件工程、科学研究和长任务智能体。这里记录的是上架信息；本次没有执行付费生成，也没有验证长输出、工具调用或实时成功率。
+
+OpenAI-compatible Base URL 为 `https://www.aifast.hk/v1`，模型 ID 原样填写 `gemini-4-carbon`。[查看模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gemini-4-carbon&utm_content=api-status-launch) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据 JSON](https://kkwang4444.github.io/api-status/data/gemini-4-carbon.json)。可用临时限额 Key 通过[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告，真实请求可能计费。
+
 ## Gemini 4 Argon 上架核验（2026-10-15）
 
 AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
@@ -79,7 +87,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gemini-4-argon",
+    model="gemini-4-carbon",
     messages=[{"role": "user", "content": "你好！"}],
     timeout=60,
 )
@@ -91,7 +99,7 @@ curl https://www.aifast.hk/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AIFAST_API_KEY" \
   -d '{
-    "model": "gemini-4-argon",
+    "model": "gemini-4-carbon",
     "messages": [{"role": "user", "content": "你好！"}]
   }'
 ```

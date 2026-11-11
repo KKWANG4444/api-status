@@ -14,12 +14,20 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理，平台�
 | OpenAI | `gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra` |
 | Anthropic | `claude-sonnet-5-5`、`claude-opus-5-5`、`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | `grok-4.6`、`grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
-| Google | `gemini-4-argon`（2026-10-15 目录已列出）、`gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
+| Google | `gemini-4-carbon`（2026-11-11 已上架）、`gemini-4-argon`（2026-10-15 目录已列出）、`gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
 | DeepSeek | `deepseek-v4-pro`、`deepseek-v4-flash` |
 | Alibaba | `qwen3.7-max`、`qwen3.7-plus` |
 | Zhipu | `glm-5.3`、`glm-5.2` |
 | ByteDance | `doubao-seed-2-1-pro-260628` |
 | Moonshot | `kimi-k3`、`kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
+
+## Gemini 4 Carbon 已上架（2026-11-11）
+
+AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。当前列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
+
+[Google 开发者公告](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/)将 Carbon 定位于复杂软件工程、科学研究和长任务智能体。这里记录的是上架信息；本次没有执行付费生成，也没有验证长输出、工具调用或实时成功率。
+
+OpenAI-compatible Base URL 为 `https://www.aifast.hk/v1`，模型 ID 原样填写 `gemini-4-carbon`。[查看模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gemini-4-carbon&utm_content=api-status-launch) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据 JSON](https://kkwang4444.github.io/api-status/data/gemini-4-carbon.json)。可用临时限额 Key 通过[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告，真实请求可能计费。
 
 ## Claude Fable 5.2 上架核验（2026-11-10）
 

@@ -56,6 +56,14 @@
 
 > **可用性说明：** 99% 是平台第一方产品口径，不是本站公开边缘探测测得的全模型成功率，也不是独立 SLA。来源与适用范围见[声明与证据](https://kkwang4444.github.io/api-status/evidence/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
+## Gemini 4 Carbon 已上架（2026-11-11）
+
+AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。当前列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
+
+[Google 开发者公告](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/)将 Carbon 定位于复杂软件工程、科学研究和长任务智能体。这里记录的是上架信息；本次没有执行付费生成，也没有验证长输出、工具调用或实时成功率。
+
+OpenAI-compatible Base URL 为 `https://www.aifast.hk/v1`，模型 ID 原样填写 `gemini-4-carbon`。[查看模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gemini-4-carbon&utm_content=api-status-launch) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据 JSON](https://kkwang4444.github.io/api-status/data/gemini-4-carbon.json)。可用临时限额 Key 通过[在线模型检测](https://docs.aifast.hk/model-check/)保存分项报告，真实请求可能计费。
+
 ## Claude Fable 5.2 目录记录（2026-11-10）
 
 HK 已列出 `claude-fable-5-2`，声明 `anthropic`、`openai` 端点及 `Claude-Code-1/2/3` 分组。本次仅核对公开目录，没有执行付费生成测试。

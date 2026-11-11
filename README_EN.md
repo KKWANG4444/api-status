@@ -46,6 +46,16 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 
 Check the current [models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
+## Gemini 4 Carbon is listed (2026-11-11)
+
+AIFast announced `gemini-4-carbon` on November 11. The public catalog marks it `available: true` with `gemini` and `openai` endpoint types. Listed groups: `Aistudio-Gemini-2`, `Aistudio-Gemini-3`, `Aistudio-Gemini-4`, `Vertex-Gemini-2`, `Vertex-Gemini-3`. Check your key's group permissions before calling.
+
+[Google's developer announcement](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/) describes complex software engineering, scientific research and sustained agent workflows. This release note records the listing, not paid generation, long-output, tool-call or uptime tests.
+
+Use model ID `gemini-4-carbon` and Base URL `https://www.aifast.hk/v1`. [Catalog and groups](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gemini-4-carbon&utm_content=api-status-launch-en) · [Dated evidence](https://kkwang4444.github.io/api-status/data/gemini-4-carbon.json) · [Online model check](https://docs.aifast.hk/model-check/). Real requests may incur charges; use a temporary limited key.
+
+Sources: https://www.aifast.hk/api/announcements and https://www.aifast.hk/api/pricing.
+
 ## Claude Fable 5.2 catalog evidence (2026-11-10)
 
 HK lists `claude-fable-5-2` with `anthropic`/`openai` endpoints and `Claude-Code-1/2/3` groups. This is a public catalog observation, not paid generation or a stability test.

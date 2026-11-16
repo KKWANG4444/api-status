@@ -59,9 +59,15 @@ Claude Code 使用 Anthropic Messages 协议，地址与上面的 OpenAI SDK 配
 
 ---
 
+## Gemini 4 Hydrogen / Carbon 目录更新（2026-11-17）
+
+HK 已公告上架 `gemini-4-hydrogen`（11 月 13 日）和 `gemini-4-carbon`（11 月 11 日）。本次公开目录均标记 `available=true`，声明 `gemini`、`openai` 端点类型。Hydrogen 分组为 `Aistudio-Gemini-3/4`；Carbon 分组为 `Aistudio-Gemini-2/3/4`、`Anti-Gemini-2`、`Vertex-Gemini-2/3`，未来可能调整。
+
+OpenAI-compatible Base URL 保持 `https://www.aifast.hk/v1`。先核对 Key 权限，再按[HK Gemini 双语接入教程](https://docs.aifast.hk/providers/gemini-api/?utm_source=github&utm_medium=pages&utm_campaign=integration-guide&utm_content=status-gemini-launch)验证。来源：[公开目录](https://www.aifast.hk/api/pricing)、[上架公告](https://www.aifast.hk/api/announcements)。本次没有执行付费推理；这不是生成、SSE、工具调用或实时成功率实测。
+
 ## Gemini 4 Carbon 已上架（2026-11-11）
 
-AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。当前列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
+AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。2026-11-11 快照列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
 
 [Google 开发者公告](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/)将 Carbon 定位于复杂软件工程、科学研究和长任务智能体。这里记录的是上架信息；本次没有执行付费生成，也没有验证长输出、工具调用或实时成功率。
 

@@ -46,9 +46,17 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 
 Check the current [models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-models-en) page for exact model IDs and account pricing.
 
+## Gemini 4 Hydrogen / Carbon setup update (2026-11-17)
+
+HK [announcements](https://www.aifast.hk/api/announcements) list `gemini-4-hydrogen` (November 13) and `gemini-4-carbon` (November 11). The [public catalog](https://www.aifast.hk/api/pricing), checked on 2026-11-17, marks both as `available=true` with `gemini` and `openai` endpoint types. OpenAI-compatible Base URL: `https://www.aifast.hk/v1`.
+
+This is a catalog and announcement record, not an uptime sample; unauthenticated edge probes do not test generation. No paid inference was run; catalog records do not prove generation, SSE, tool-call support or underlying model identity.
+
+[Hydrogen / Carbon groups and setup](https://docs.aifast.hk/en/providers/gemini-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-gemini-en) · [Current catalog and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-gemini-pricing-en)
+
 ## Gemini 4 Carbon is listed (2026-11-11)
 
-AIFast announced `gemini-4-carbon` on November 11. The public catalog marks it `available: true` with `gemini` and `openai` endpoint types. Listed groups: `Aistudio-Gemini-2`, `Aistudio-Gemini-3`, `Aistudio-Gemini-4`, `Vertex-Gemini-2`, `Vertex-Gemini-3`. Check your key's group permissions before calling.
+AIFast announced `gemini-4-carbon` on November 11. The public catalog marks it `available: true` with `gemini` and `openai` endpoint types. Groups recorded on 2026-11-11: `Aistudio-Gemini-2`, `Aistudio-Gemini-3`, `Aistudio-Gemini-4`, `Vertex-Gemini-2`, `Vertex-Gemini-3`. Check your key's group permissions before calling.
 
 [Google's developer announcement](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/) describes complex software engineering, scientific research and sustained agent workflows. This release note records the listing, not paid generation, long-output, tool-call or uptime tests.
 

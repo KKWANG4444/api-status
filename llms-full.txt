@@ -14,7 +14,7 @@ Catalog entries change. Exact model IDs, maintenance state and account terms mus
 
 ## Gemini 4 Carbon is listed (2026-11-11)
 
-AIFast announced `gemini-4-carbon` on November 11. The public catalog marks it `available: true` with `gemini` and `openai` endpoint types. Listed groups: `Aistudio-Gemini-2`, `Aistudio-Gemini-3`, `Aistudio-Gemini-4`, `Vertex-Gemini-2`, `Vertex-Gemini-3`. Check your key's group permissions before calling.
+AIFast announced `gemini-4-carbon` on November 11. The public catalog marks it `available: true` with `gemini` and `openai` endpoint types. Groups recorded on 2026-11-11: `Aistudio-Gemini-2`, `Aistudio-Gemini-3`, `Aistudio-Gemini-4`, `Vertex-Gemini-2`, `Vertex-Gemini-3`. Check your key's group permissions before calling.
 
 [Google's developer announcement](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/) describes complex software engineering, scientific research and sustained agent workflows. This release note records the listing, not paid generation, long-output, tool-call or uptime tests.
 
@@ -106,3 +106,9 @@ This reference is maintained by the operator of AIFast. Product capabilities are
 Last reviewed: 2026-09-30.
 
 AIFast announced `claude-sonnet-5-5` on 2026-09-29 and `gpt-6.1-sol` on 2026-09-30. These are exact catalog IDs; current availability and optional protocol capabilities still require a live request.
+
+## Gemini 4 Hydrogen / Carbon catalog update (2026-11-17)
+
+HK announced gemini-4-hydrogen on November 13 and gemini-4-carbon on November 11. Checked 2026-11-17: both are available=true with gemini/openai endpoint types. Base URL: https://www.aifast.hk/v1 . This is a catalog and announcement record, not an uptime sample; unauthenticated edge probes do not test generation. No authenticated inference was run; this is not generation, SSE, tool-call or model-identity evidence.
+
+Sources: https://www.aifast.hk/api/pricing and https://www.aifast.hk/api/announcements . Setup: https://docs.aifast.hk/en/providers/gemini-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-gemini-llms .

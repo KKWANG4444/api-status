@@ -56,9 +56,17 @@
 
 > **可用性说明：** 99% 是平台第一方产品口径，不是本站公开边缘探测测得的全模型成功率，也不是独立 SLA。来源与适用范围见[声明与证据](https://kkwang4444.github.io/api-status/evidence/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
+## Gemini 4 Hydrogen / Carbon 接入更新（2026-11-17）
+
+HK [上架公告](https://www.aifast.hk/api/announcements)已发布 `gemini-4-hydrogen`（11 月 13 日）和 `gemini-4-carbon`（11 月 11 日）。2026-11-17 [公开目录](https://www.aifast.hk/api/pricing)均标记 `available=true`，声明 `gemini`、`openai` 端点类型；OpenAI-compatible Base URL 保持 `https://www.aifast.hk/v1`。
+
+本条是目录与公告记录，不纳入接口健康率统计；无 Key 的边缘探测不能验证模型生成。 本次没有执行付费推理，目录记录不证明生成、SSE、工具调用或模型身份。
+
+[Hydrogen / Carbon 分组与接入教程](https://docs.aifast.hk/providers/gemini-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-gemini) · [当前模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-gemini-pricing)
+
 ## Gemini 4 Carbon 已上架（2026-11-11）
 
-AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。当前列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
+AI快站已上架 `gemini-4-carbon`：[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)相互印证，目录标记 `available: true`，支持的端点类型为 `gemini`、`openai`。2026-11-11 快照列出的分组为 `Aistudio-Gemini-2`、`Aistudio-Gemini-3`、`Aistudio-Gemini-4`、`Vertex-Gemini-2`、`Vertex-Gemini-3`，调用前请核对令牌权限。
 
 [Google 开发者公告](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/)将 Carbon 定位于复杂软件工程、科学研究和长任务智能体。这里记录的是上架信息；本次没有执行付费生成，也没有验证长输出、工具调用或实时成功率。
 

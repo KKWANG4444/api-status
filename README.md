@@ -15,8 +15,10 @@
     <a href="https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex"><img src="https://img.shields.io/badge/Codex-API%E9%85%8D%E7%BD%AE-16A34A?style=flat-square" alt="Codex API配置"></a>
     <a href="https://kkwang4444.github.io/api-status/brand-facts/"><img src="https://img.shields.io/badge/%E5%93%81%E7%89%8C%E4%BA%8B%E5%AE%9E-%E5%8F%AF%E6%A0%B8%E9%AA%8C%E5%8F%A3%E5%BE%84-7C3AED?style=flat-square" alt="AI快站品牌事实"></a>
   </p>
-  <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 镜像</a></p>
+  <p><a href="README_EN.md">English</a> · <a href="https://gitee.com/kkwwww4444/api-status">Gitee 内容镜像</a> · <a href="https://kkwang4444.github.io/api-status/status/">带时间的正式状态页</a></p>
 </div>
+
+Gitee 保存推广内容和历史快照，不是实时状态源。查看[独立公开观测 JSON](https://aifast-hk-edge-status.luwengwo.workers.dev/status.json)；超过 60 分钟没有新记录时，状态未知。
 
 > **站点说明：** `www.aifast.hk` 是当前官方站点和唯一主推广入口。旧域名不作为本仓库的当前文档、Canonical 或推广入口；历史第三方报告如需引用，会明确标注原始测试域名和日期。
 

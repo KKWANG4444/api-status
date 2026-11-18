@@ -161,6 +161,7 @@ for (const file of ['index.html', 'status/index.html']) {
     if (!rendered.includes(marker)) errors.push(`${file} 缺少状态时效保护 ${marker}`);
   }
   if (/当前状态：\s*(?:operational|degraded)/.test(rendered)) errors.push(`${file} 将静态旧记录标为当前状态`);
+  if (!rendered.includes('https://aifast-hk-edge-status.luwengwo.workers.dev/status.json') || !rendered.includes('/api-status/assets/js/edge-observation.mjs')) errors.push(`${file} 缺少可直接读取的独立观测入口`);
 }
 await readFile(join(site, 'assets/js/status-freshness.mjs'), 'utf8');
 for (const required of ['公开边缘可达性', 'status.json', 'probe-edge.mjs', '不代表所有模型']) {
@@ -247,6 +248,10 @@ for (const [name, content] of [
 }
 const evidenceJson = await readFile(join(site, 'evidence.json'), 'utf8');
 const claims = JSON.parse(evidenceJson).claims;
+const evidenceMeta = JSON.parse(evidenceJson);
+const latestDate = claims.map((claim) => claim.reviewedAt).filter(Boolean).sort().at(-1);
+if (!latestDate || evidenceMeta.latestClaimReviewedAt !== latestDate || !evidenceMeta.reviewedAtScope ||
+    !(await readFile(join(site, 'evidence/index.html'), 'utf8')).includes(latestDate)) errors.push('逐项核验日期与公开证据索引不一致');
 for (const file of ['evidence/index.html', 'china-access/index.html', 'evidence.json', 'llms-full.txt']) {
   if ((await readFile(join(site, file), 'utf8')).includes('https://www.aifast.hk/api/ratio_config')) errors.push(`${file} 不应把鉴权接口当作公开证据`);
 }

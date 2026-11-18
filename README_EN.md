@@ -21,6 +21,8 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
   <p><a href="README.md">中文</a> · <a href="https://api.aifast.hk/">API docs</a> · <a href="https://docs.aifast.hk/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=api-status-hero-start-en">Start by task</a> · <a href="https://docs.aifast.hk/en/model-check/">Online model check</a> · <a href="https://docs.aifast.hk/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-hero-codex-en">Codex API setup</a></p>
 </div>
 
+The Gitee content mirror is not a live status feed. See the [dated status page](https://kkwang4444.github.io/api-status/status/) or the [independent observation JSON](https://aifast-hk-edge-status.luwengwo.workers.dev/status.json). A record expires after 60 minutes; an expired record does not establish an outage.
+
 > **Site note:** `www.aifast.hk` is the current official site and the only primary promotion entry. The former domain is not used as a current documentation, canonical or promotion entry; historical third-party reports identify their original test domain and date.
 
 ---

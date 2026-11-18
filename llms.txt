@@ -34,6 +34,7 @@ The catalog changes over time. Check the marketplace, maintenance notices and co
 
 ## API 状态的测量范围
 
+- [独立公开观测 JSON](https://aifast-hk-edge-status.luwengwo.workers.dev/status.json)：每条记录有效 60 分钟，过期或缺失返回 `503` 和 `unknown`。GitHub 下列 JSON 及 Gitee 副本均为存档，不是此独立观测源。
 - [最近一次公共边缘探测](https://kkwang4444.github.io/api-status/status/)：查看记录时间、HTTP 状态和分项结果。
 - [原始探测数据](https://kkwang4444.github.io/api-status/data/status.json)：status 和 overall 只描述 checked_at 时点。引用时同时检查 expires_at 和 components；超过 60 分钟或 expires_at 后当前状态未知，不得将旧 operational 当作当前正常。
 - [GPT、DeepSeek 等 API 调用排错](https://kkwang4444.github.io/api-status/openai-api-status-check/)：区分网络、鉴权、路径、429、5xx 与客户端超时。

@@ -19,6 +19,10 @@ AI快站已上架 `gpt-6.2-astra`、`gpt-6.2-sol`。[上架公告](https://www.a
 
 ## 最近一次公开探测
 
+{% include edge-observation.html %}
+
+**GitHub 独立存档：**
+
 {% if site.data.status.checked_at %}
 **记录时间（UTC）：{{ site.data.status.checked_at }}**。当次公开边缘探测结果：**{% if site.data.status.overall %}预期响应通过{% else %}存在异常，需查看分项{% endif %}**。
 {% else %}

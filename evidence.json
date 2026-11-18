@@ -8,6 +8,8 @@
     "type": "operated AI API gateway"
   },
   "reviewedAt": "2026-08-12",
+  "reviewedAtScope": "原始证据索引的历史复核日期，不表示全表在最近一次条目更新时均已复核。各声明优先使用自身的 reviewedAt；缺少该字段即未提供逐项日期。",
+  "latestClaimReviewedAt": "2026-11-19",
   "claims": [
     {
       "id": "claude-fable-5-2-launch",

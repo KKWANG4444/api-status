@@ -1,0 +1,11 @@
+{
+  "name": "aifast-hk-edge-status",
+  "account_id": "a6d7ce0aa5077e9ed41bbb80b4e4eedd",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "triggers": { "crons": ["*/10 * * * *"] },
+  "observability": { "enabled": true },
+  "kv_namespaces": [{ "binding": "SNAPSHOTS", "id": "6872a28a62e34655b8654099dfe1f235" }]
+}

@@ -67,8 +67,8 @@ print(response.choices[0].message.content)
 
 | 声明 | 核验入口 | 使用边界 |
 |:---|:---|:---|
-| 500+模型与五类能力 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 表示目录规模下限，不等于每个模型实时在线 |
-| 模型维护状态 | [状态与公告接口](https://www.aifast.hk/api/status) | 当前公告和真实请求优先 |
+| 500+模型与五类能力 | [平台规模声明](https://kkwang4444.github.io/api-status/brand-facts/)；[逐模型查看目录记录](https://www.aifast.hk/api/pricing) | 平台规模不是匿名列表计数，也不等于实时在线数 |
+| 模型维护状态 | [当前公告](https://www.aifast.hk/api/announcements) | 当前公告和真实请求优先 |
 | Base URL与账户规则 | [AI快站](https://www.aifast.hk) | 以控制台当前信息为准 |
 
 复核日期：2026-07-17。

@@ -53,7 +53,7 @@ Claude Code 使用 `https://www.aifast.hk`，最终路径为 `/v1/messages`；Op
 
 ## Gemini 4 Argon 上架核验（2026-10-15）
 
-AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
+AI快站 2026-10-14 的[上架公告（10 月 15 日存档）](https://kkwang4444.github.io/api-status/data/gemini-4-argon.json)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
 
 这是目录与公告证据，不是鉴权生成实测，也不代表实时成功率。流式输出、工具调用、长上下文和长解码仍需逐项验收；本次没有测试这些能力。价格与分组以[模型广场](https://www.aifast.hk/pricing)和当前控制台为准。
 

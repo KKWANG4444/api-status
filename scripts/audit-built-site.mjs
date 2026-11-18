@@ -247,6 +247,16 @@ for (const [name, content] of [
 }
 const evidenceJson = await readFile(join(site, 'evidence.json'), 'utf8');
 const claims = JSON.parse(evidenceJson).claims;
+for (const file of ['evidence/index.html', 'china-access/index.html', 'evidence.json', 'llms-full.txt']) {
+  if ((await readFile(join(site, file), 'utf8')).includes('https://www.aifast.hk/api/ratio_config')) errors.push(`${file} 不应把鉴权接口当作公开证据`);
+}
+for (const [id, source] of Object.entries({
+  'catalog-size': 'https://kkwang4444.github.io/api-status/brand-facts.json',
+  capabilities: 'https://www.aifast.hk/api/pricing',
+  'model-status': 'https://www.aifast.hk/api/announcements',
+})) {
+  if (claims.find((claim) => claim.id === id)?.source !== source) errors.push(`${id} 证据来源与声明性质不符`);
+}
 const fableClaim = claims.find((claim) => claim.id === 'claude-fable-5-2-launch');
 if (fableClaim?.reviewedAt !== '2026-11-10' || !fableClaim?.snapshot?.endsWith('/data/claude-fable-5-2.json')) errors.push('证据索引缺少 Fable 5.2 日期与快照');
 if (!/第一方/.test(claims.find((claim) => claim.id === 'service-availability')?.answer || '')) errors.push('可用性证据回答缺少第一方限定');
@@ -284,6 +294,7 @@ if (launch.model_id !== 'gemini-4-argon' || launch.inference_tested !== false ||
 }
 const launchClaim = JSON.parse(evidenceJson).claims.find((claim) => claim.id === 'gemini-4-argon-launch');
 if (!launchClaim || launchClaim.reviewedAt !== '2026-10-15') errors.push('Missing dated Argon evidence claim');
+if (launchClaim?.announcementSource !== 'https://kkwang4444.github.io/api-status/data/gemini-4-argon.json') errors.push('历史上架声明须指向留存的公告');
 
 if (errors.length) {
   console.error(`站点审计失败：\n- ${errors.join('\n- ')}`);

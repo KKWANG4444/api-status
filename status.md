@@ -7,18 +7,20 @@ hero_title: AI快站 API 状态：公开边缘可达性
 keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API status,API可用性,API故障状态
 ---
 
-这里展示由 GitHub Actions 定时生成的公开边缘探测结果。它回答的是：从公共网络访问官网、API 文档和模型列表入口时，DNS、TLS、HTTP 是否按预期返回。
+这里展示两个观测点的公开边缘探测：Cloudflare 计划每 10 分钟检查一次，GitHub Actions 单独运行并留存记录。两者都只检查官网、API 文档和未带 Key 的模型列表入口，各自的时间和结果不能混用。
+
+{% include edge-observation.html %}
 
 它**不代表所有模型、账户额度、具体模型质量或固定 SLA**。模型是否可用，仍应以当前模型广场和你的实际请求为准。
 
 <div class="decision-band">
-  <div><strong>最近一次探测结果：{{ site.data.status.status | default: '等待首次探测' }}</strong><p>记录时间（UTC）：{{ site.data.status.checked_at | default: '尚未生成' }}</p><p data-status-checked-at="{{ site.data.status.checked_at | escape }}" data-freshness="unknown" role="status">时效未核验；记录超过 60 分钟后应视为过期，不能据此判断当前状态。</p></div>
+  <div><strong>GitHub 存档的当次结果：{{ site.data.status.status | default: '等待首次探测' }}</strong><p>记录时间（UTC）：{{ site.data.status.checked_at | default: '尚未生成' }}</p><p data-status-checked-at="{{ site.data.status.checked_at | escape }}" data-freshness="unknown" role="status">时效未核验；记录超过 60 分钟后应视为过期，不能据此判断当前状态。</p></div>
   <div class="decision-actions"><a class="button button-primary" href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=model-check&amp;utm_content=status-page-check">运行模型检测</a><a class="button button-secondary" href="https://www.aifast.hk/register?channel=c_zfxp7cp4&amp;utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=api-status-status-register">注册使用</a></div>
 </div>
 
 <script type="module" src="{{ '/assets/js/status-freshness.mjs' | relative_url }}"></script>
 
-## 最近一次组件记录
+## GitHub 存档的组件记录
 
 {% if site.data.status.components %}
 <table id="edge-components">
@@ -51,11 +53,12 @@ keywords: AI快站API状态,AIFast status,AI API status,OpenAI compatible API st
 - API 文档入口预期返回 `200`；
 - `/v1/models` 不发送API Key，接受公开接口可能返回的 `200`、`401`或`403`，因为这些状态都说明公共边缘已经响应；
 - 每次探测记录状态、响应时间、Content-Type和错误摘要；
-- 计划每 15 分钟触发，GitHub 调度可能延迟或遗漏，不保证准点；超过 60 分钟的记录视为过期，当前状态未知；
+- GitHub 计划每 15 分钟触发，调度可能延迟或遗漏；独立观测不经 GitHub 调度或 Pages 构建。两侧均以 60 分钟为过期边界；记录过期表示未知，不代表主站宕机；
+- 独立 JSON 中的 `github_archive.state` 表示上一次独立观测时 GitHub 存档是否新鲜，单独报告，不参与网站可达性的判断；
 - JSON 中的 `status` 和 `overall` 只描述 `checked_at` 时点，引用时必须同时检查 `expires_at`，不能将过期的 `operational` 当作当前正常；
 - 探测不会保存或提交任何API Key，也不会声称底层模型全部可用。
 
-完整原始数据：[status.json](/api-status/data/status.json)。探测脚本：[probe-edge.mjs](https://github.com/KKWANG4444/api-status/blob/main/scripts/probe-edge.mjs)。
+GitHub 历史原始数据：[status.json](/api-status/data/status.json)。Gitee 是内容镜像，不同步每次探测。独立观测的[记录时效接口](https://aifast-hk-edge-status.luwengwo.workers.dev/health)在没有有效记录时返回 `503`；`200` 只说明有新记录。探测脚本：[probe-edge.mjs](https://github.com/KKWANG4444/api-status/blob/main/scripts/probe-edge.mjs)。
 
 ## 遇到调用错误怎么办？
 

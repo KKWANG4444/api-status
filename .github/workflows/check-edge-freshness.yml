@@ -1,0 +1,27 @@
+name: Check independent HK observation
+
+on:
+  workflow_run:
+    workflows: [Probe public API edge]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: 核对独立记录时效（不代表模型可用性）
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://aifast-hk-edge-status.luwengwo.workers.dev/health'
+          data=$(curl --silent --show-error --fail --max-time 10 --retry 2 --retry-max-time 30 "$url") || {
+            echo '::error::独立观测没有新记录或无法访问。检查定时任务和存储，不要据此判定 HK API 宕机。'
+            exit 1
+          }
+          jq -e '.fresh == true and (.checked_at | type == "string")' <<<"$data" >/dev/null
+          echo "独立观测时间（UTC）：$(jq -r '.checked_at' <<<"$data")"

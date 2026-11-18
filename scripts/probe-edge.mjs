@@ -37,6 +37,8 @@ const result = {
   overall: failed === 0,
   components,
   methodology_url: 'https://kkwang4444.github.io/api-status/status/',
+  source: 'github-actions-archive',
+  independent_observation_url: 'https://aifast-hk-edge-status.luwengwo.workers.dev/status.json',
   limitations: 'Public edge observation at checked_at only. After expires_at, treat current status as unknown. This does not measure every model, account quota, latency SLA, or provider health.',
 };
 await mkdir(dirname(output), { recursive: true });

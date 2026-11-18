@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-18T10:15:41.297000+00:00",
+  "scope": "Public catalog and launch announcement; no authenticated inference tests",
+  "sources": [
+    "https://www.aifast.hk/api/pricing",
+    "https://www.aifast.hk/api/announcements",
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+  ],
+  "ratio_config_result": "HTTP 401 without authentication; not used as availability evidence",
+  "models": [
+    {
+      "model_name": "gpt-6.2-astra",
+      "available": true,
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "enable_groups": [
+        "Azure-Gpt-4",
+        "Azure-Gpt-5",
+        "Azure-Gpt-6",
+        "Codex-Gpt-1",
+        "Codex-Gpt-2",
+        "Codex-Gpt-3",
+        "Openai-Gpt-1",
+        "Openai-Gpt-2"
+      ],
+      "description": "GPT-6.2 Astra 可以构建和修改软件、操作计算机以及处理文档。它支持文本和图像输入，并以文本形式响应。在 Responses API 中，可使用多智能体测试版将任务委派给子智能体执行。"
+    },
+    {
+      "model_name": "gpt-6.2-sol",
+      "available": true,
+      "supported_endpoint_types": [
+        "openai",
+        "openai-response"
+      ],
+      "enable_groups": [
+        "Azure-Gpt-4",
+        "Azure-Gpt-5",
+        "Azure-Gpt-6",
+        "Codex-Gpt-1",
+        "Codex-Gpt-2",
+        "Codex-Gpt-3",
+        "Openai-Gpt-1",
+        "Openai-Gpt-2"
+      ],
+      "description": "GPT-6.2 Sol 支持文本和图像输入，并输出文本。可通过 Responses API 将其与网页搜索、计算机操作等工具配合使用。"
+    }
+  ],
+  "announcements": [
+    {
+      "content": "模型上架：gpt-6.2-astra、gpt-6.2-sol",
+      "publishDate": "2026-11-18T08:33:54.949Z",
+      "type": "success"
+    }
+  ],
+  "inference_tested": false
+}

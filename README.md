@@ -22,6 +22,16 @@
 
 ---
 
+## GPT-6.2 Astra / Sol 已上架（2026-11-18）
+
+![Model catalog update: 2026-11-18](https://img.shields.io/badge/model_catalog-2026--11--18-blue)
+
+AI快站已上架 `gpt-6.2-astra`、`gpt-6.2-sol`。[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)均已核对：两款模型标记 `available=true`，列出 `openai`、`openai-response` 端点类型。Base URL：`https://www.aifast.hk/v1`。
+
+[OpenAI 发布说明](https://openai.com/index/introducing-gpt-6-2-astra-sol/)将 Astra 定位于复杂推理、编码与专业工作，Sol 面向日常编码和智能体任务。厂商能力与网关接入需分开验收；本次记录上架与目录信息，未执行付费推理或稳定性测试。
+
+[查看当前模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gpt-6-2-launch&utm_content=api-status) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据](https://kkwang4444.github.io/api-status/data/gpt-6-2.json)
+
 ## 一个接口，解决多模型接入问题
 
 [AI快站](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro)面向开发者、工作室和企业团队提供大模型 API 统一接入。现有 OpenAI SDK 项目通常只需替换 Base URL、API Key 和模型 ID，即可迁移到统一接口。

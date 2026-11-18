@@ -25,6 +25,16 @@ keywords: AIFast API status, OpenAI-compatible API, AI API gateway check, Claude
 
 ---
 
+## GPT-6.2 Astra / Sol launch (2026-11-18)
+
+![Model catalog update: 2026-11-18](https://img.shields.io/badge/model_catalog-2026--11--18-blue)
+
+AIFast has added `gpt-6.2-astra` and `gpt-6.2-sol`. The [launch announcement](https://www.aifast.hk/api/announcements) and [public catalog](https://www.aifast.hk/api/pricing) agree: both are marked `available=true` with `openai` and `openai-response` endpoint types. Base URL: `https://www.aifast.hk/v1`.
+
+[OpenAI describes](https://openai.com/index/introducing-gpt-6-2-astra-sol/) Astra as a model for demanding reasoning, coding and professional work, and Sol for everyday coding and agent workflows. Provider capabilities still need separate gateway checks. This update records the launch and catalog; it does not report paid inference or reliability tests.
+
+[Check current models and groups](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gpt-6-2-launch&utm_content=api-status) · [Setup guide](https://kkwang4444.github.io/api-status/guide/) · [Catalog evidence](https://kkwang4444.github.io/api-status/data/gpt-6-2.json)
+
 ## One API for multi-model applications
 
 [AIFast](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=api-status-intro-en) provides an OpenAI-compatible AI API gateway for developers, studios and enterprise teams. Existing OpenAI SDK applications can usually migrate by replacing the Base URL, API key and model ID.

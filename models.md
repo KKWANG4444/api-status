@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 500+ AI模型目录与 Claude Fable 5.2 API 接入
+title: 500+ AI模型目录与 Claude Fable 5.2 API 接入 | GPT-6.2 Astra / Sol
 description: 查看 AI快站 HK 模型目录与 Claude Fable 5.2 的精确 ID、协议、分组和配置入口，区分公开上架记录与真实调用测试。
 permalink: /models/
 ---
@@ -11,7 +11,7 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理，平台�
 
 | 供应商 | 模型 ID 示例 |
 |:---|:---|
-| OpenAI | `gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra` |
+| OpenAI | `gpt-6.2-astra`、`gpt-6.2-sol`（2026-11-18 核验）、`gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra` |
 | Anthropic | `claude-sonnet-5-5`、`claude-opus-5-5`、`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | `grok-4.6`、`grok-4.5`、`grok-4.3`、`grok-4-20-reasoning` |
 | Google | `gemini-4-carbon`（2026-11-11 已上架）、`gemini-4-argon`（2026-10-15 目录已列出）、`gemini-3.7-flash`、`gemini-3.5-flash`、`gemini-3.1-pro-preview` |
@@ -20,6 +20,14 @@ Claude、GPT、Gemini 等国外模型支持国内直连、无需代理，平台�
 | Zhipu | `glm-5.3`、`glm-5.2` |
 | ByteDance | `doubao-seed-2-1-pro-260628` |
 | Moonshot | `kimi-k3`、`kimi-k2.7-code`、`kimi-k2.7-code-highspeed` |
+
+## GPT-6.2 Astra / Sol 已上架（2026-11-18）
+
+AI快站已上架 `gpt-6.2-astra`、`gpt-6.2-sol`。[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)均已核对：两款模型标记 `available=true`，列出 `openai`、`openai-response` 端点类型。Base URL：`https://www.aifast.hk/v1`。
+
+[OpenAI 发布说明](https://openai.com/index/introducing-gpt-6-2-astra-sol/)将 Astra 定位于复杂推理、编码与专业工作，Sol 面向日常编码和智能体任务。厂商能力与网关接入需分开验收；本次记录上架与目录信息，未执行付费推理或稳定性测试。
+
+[查看当前模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gpt-6-2-launch&utm_content=api-status-models) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据](https://kkwang4444.github.io/api-status/data/gpt-6-2.json)
 
 ## Gemini 4 Hydrogen / Carbon 目录更新（2026-11-17）
 

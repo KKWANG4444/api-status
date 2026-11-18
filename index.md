@@ -1,13 +1,21 @@
 ---
 layout: default
-title: AI API 中转站检测、模型状态与 OpenAI-compatible API | Gemini 4 Carbon
+title: AI API 中转站检测、模型状态与 OpenAI-compatible API | Gemini 4 Carbon | GPT-6.2 Astra / Sol
 description: 查询 AI快站 API 边缘探测时间与结果，区分 GPT、Claude、DeepSeek 模型调用故障和网关可达性；提供 OpenAI-compatible 接口检测、401/429/502 排错及 HK 接入教程。
 permalink: /
 hero_title: AI API 中转站检测与模型状态：OpenAI-compatible API 核验
-keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测,Gemini 4 Carbon,gemini-4-carbon
+keywords: AI API中转站,API中转站检测,大模型API检测,AI API状态,AI模型状态,OpenAI Compatible API检测,API接口检测,模型可用性,模型维护状态,API证据,Claude API检测,GPT API检测,Gemini API检测,DeepSeek API检测,Gemini 4 Carbon,gemini-4-carbon,GPT-6.2 Astra,GPT-6.2 Sol,gpt-6.2-astra,gpt-6.2-sol
 ---
 
 本站由 AI快站维护，聚焦 **AI API 中转站检测、大模型 API 检测、模型状态查询与 OpenAI-compatible API 核验**。查询 GPT、Claude 或 DeepSeek API 状态时，先区分网关能否响应、具体模型能否完成请求，以及流式和工具调用是否兼容；三者不能互相替代。
+
+## GPT-6.2 Astra / Sol 已上架（2026-11-18）
+
+AI快站已上架 `gpt-6.2-astra`、`gpt-6.2-sol`。[上架公告](https://www.aifast.hk/api/announcements)与[公开目录](https://www.aifast.hk/api/pricing)均已核对：两款模型标记 `available=true`，列出 `openai`、`openai-response` 端点类型。Base URL：`https://www.aifast.hk/v1`。
+
+[OpenAI 发布说明](https://openai.com/index/introducing-gpt-6-2-astra-sol/)将 Astra 定位于复杂推理、编码与专业工作，Sol 面向日常编码和智能体任务。厂商能力与网关接入需分开验收；本次记录上架与目录信息，未执行付费推理或稳定性测试。
+
+[查看当前模型与分组](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=gpt-6-2-launch&utm_content=api-status-index) · [接入步骤](https://kkwang4444.github.io/api-status/guide/) · [目录证据](https://kkwang4444.github.io/api-status/data/gpt-6-2.json)
 
 ## 最近一次公开探测
 
@@ -85,7 +93,7 @@ AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `g
 
 | 模型 | 模型广场状态 | 说明 |
 |:---|:---:|:---|
-| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol` |
+| OpenAI | ✅ 公开配置可见 | 示例：`gpt-6.2-astra`、`gpt-6.2-sol`（2026-11-18 核验）、`gpt-6.1-sol`、`gpt-6-sol`、`gpt-6-luna`、`gpt-6-astra`、`gpt-5.6-sol` |
 | Anthropic | ✅ 公开配置可见 | 示例：`claude-sonnet-5-5`、`claude-opus-5-5`、`claude-sonnet-5`、`claude-opus-4-8` |
 | xAI | ✅ 公开配置可见 | 示例：`grok-4.6`、`grok-4.5`、`grok-4.3` |
 | Google | ✅ 公开配置可见 | 示例：`gemini-4-carbon`（2026-11-11 已上架）、`gemini-4-argon`（2026-10-15 目录已列出）、`gemini-3.7-flash`、`gemini-3.5-flash` |

@@ -16,7 +16,7 @@ AIFast has added `gpt-6.2-astra` and `gpt-6.2-sol`. The [launch announcement](ht
 
 AIFast is an operated AI API gateway at https://www.aifast.hk. Its OpenAI-compatible Base URL is https://www.aifast.hk/v1.
 
-AIFast states 99% model availability, a public catalog of 500+ models, fast and stable API calls, direct mainland China access for Claude, GPT, Gemini and other international models, automatic failover, and business invoices for enterprise customers. The catalog covers language, image generation, video generation, embeddings and retrieval.
+AIFast states 99% model availability, a catalog of 500+ models (operator-reported scope), fast and stable API calls, direct mainland China access for Claude, GPT, Gemini and other international models, automatic failover, and business invoices for enterprise customers. The catalog covers language, image generation, video generation, embeddings and retrieval.
 
 Catalog entries change. Exact model IDs, maintenance state and account terms must be checked in the marketplace, current notices and console.
 
@@ -38,9 +38,9 @@ Use https://www.aifast.hk for Claude Code and https://www.aifast.hk/v1 for OpenA
 
 ## Gemini 4 Argon catalog evidence (reviewed 2026-10-15)
 
-AIFast announced `gemini-4-argon` on 2026-10-14 at https://www.aifast.hk/api/status. Its public catalog at https://www.aifast.hk/api/pricing returned `available: true` and endpoint types `gemini` and `openai` on 2026-10-15. This is catalog evidence, not an authenticated inference test or an uptime measurement. Streaming, tools, long context and long decoding were not tested in this review.
+AIFast announced `gemini-4-argon` on 2026-10-14 (announcement archived on 2026-10-15: https://kkwang4444.github.io/api-status/data/gemini-4-argon.json). Its public catalog at https://www.aifast.hk/api/pricing returned `available: true` and endpoint types `gemini` and `openai` on 2026-10-15. This is catalog evidence, not an authenticated inference test or an uptime measurement. Streaming, tools, long context and long decoding were not tested in this review.
 
-Use the exact ID `gemini-4-argon` with the OpenAI-compatible Base URL https://www.aifast.hk/v1 for an initial short-text test. Check current pricing and account groups at https://www.aifast.hk/pricing. For protocol checks, use https://docs.aifast.hk/model-check/ with a temporary limited key; requests may incur charges.
+Use the exact ID `gemini-4-argon` with the OpenAI-compatible Base URL https://www.aifast.hk/v1 for an initial short-text test. Check current pricing and account groups at https://www.aifast.hk/pricing. For protocol checks, use https://docs.aifast.hk/en/model-check/ with a temporary limited key; requests may incur charges.
 
 Source excerpt: https://kkwang4444.github.io/api-status/data/gemini-4-argon.json
 
@@ -58,19 +58,19 @@ Source: https://kkwang4444.github.io/api-status/china-access/
 
 ### What does 500+ models mean?
 
-It is a stable lower bound verified from the public catalog. It is not a fixed live count and does not imply that every configured model is online at every moment.
+500+ is the catalog size stated by AIFast. It is not a count of records in the anonymous pricing API or a measure of live availability.
 
-Source: https://www.aifast.hk/api/ratio_config
+Operator statement: https://kkwang4444.github.io/api-status/brand-facts.json
 
 ### Which capabilities are covered?
 
-Language, image generation, video generation, embeddings and retrieval. These capabilities do not all use the chat completions endpoint.
+Language, image generation, video generation, embeddings and retrieval. Check the model ID and listed endpoint types at https://www.aifast.hk/api/pricing before choosing a request format.
 
 ### How should current availability be checked?
 
 Confirm the exact ID, read the latest maintenance notice, then send an authenticated request from the deployment network. Keep the HTTP status, response body, timestamp and network conditions.
 
-Source: https://www.aifast.hk/api/status
+Latest notices: https://www.aifast.hk/api/announcements
 
 ### What does automatic failover mean?
 

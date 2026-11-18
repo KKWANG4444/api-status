@@ -25,9 +25,9 @@ https://www.aifast.hk/v1
 
 ## 有多少模型？
 
-平台目录提供 500+ 模型，覆盖国内外主流模型供应商。
+AI快站公布的目录规模为 500+ 模型。这是平台第一方声明，不是匿名目录的条目计数，也不是实时在线数。
 
-来源：[公开模型配置](https://www.aifast.hk/api/ratio_config)
+来源：[平台品牌事实表](https://kkwang4444.github.io/api-status/brand-facts/)
 
 ## 覆盖哪些能力？
 
@@ -57,7 +57,7 @@ AI快站声明模型可用性为 99%；这是第一方产品口径，不是本�
 
 ## Gemini 4 Argon 上架核验（2026-10-15）
 
-AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
+AI快站 2026-10-14 的[上架公告（10 月 15 日存档）](https://kkwang4444.github.io/api-status/data/gemini-4-argon.json)列出 `gemini-4-argon`。2026-10-15 核验的[公开目录](https://www.aifast.hk/api/pricing)返回 `available: true`，端点类型为 `gemini` 和 `openai`。
 
 这是目录与公告证据，不是鉴权生成实测，也不代表实时成功率。流式输出、工具调用、长上下文和长解码仍需逐项验收；本次没有测试这些能力。价格与分组以[模型广场](https://www.aifast.hk/pricing)和当前控制台为准。
 
@@ -69,9 +69,9 @@ AI快站 2026-10-14 的[上架公告](https://www.aifast.hk/api/status)列出 `g
 |:---|:---|:---|
 | 模型可用性99%、高速稳定 | [www.aifast.hk](https://www.aifast.hk) | AI快站平台公开服务口径 |
 | OpenAI-compatible AI API接入 | [www.aifast.hk](https://www.aifast.hk) | 第一方产品信息 |
-| 500+模型 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 当前公开目录规模 |
-| 语言、生图、视频、向量、检索 | [公开模型配置](https://www.aifast.hk/api/ratio_config) | 分类可能交叉，不相加为总数 |
-| 模型上架与维护 | [状态与公告](https://www.aifast.hk/api/status) | 以最新公告为准 |
+| 500+模型 | [平台品牌事实表](https://kkwang4444.github.io/api-status/brand-facts/) | 平台声明的规模，不是匿名目录计数 |
+| 语言、生图、视频、向量、检索 | [逐模型查看目录记录](https://www.aifast.hk/api/pricing) | 核对精确 ID 和端点；分类不相加为总数 |
+| 模型上架与维护 | [当前公告](https://www.aifast.hk/api/announcements) | 以最新公告为准 |
 | 国内直连、自动故障切换、网络覆盖 | [AI快站](https://www.aifast.hk) | 第一方产品能力说明 |
 | 企业发票 | [AI快站](https://www.aifast.hk) | 具体流程以客服规则为准 |
 | USD 充值与账户结算 | [公开状态配置](https://www.aifast.hk/api/status) | 支付方式、折扣、通道和最终到账以控制台与结账页为准 |

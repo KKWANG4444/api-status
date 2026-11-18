@@ -76,11 +76,11 @@ curl https://www.aifast.hk/v1/chat/completions \
 
 ## 服务范围
 
-AI快站提供 OpenAI-compatible AI API 接入，平台模型可用性 99%（平台声明），公开目录包含 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
+AI快站提供 OpenAI-compatible AI API 接入。平台公布的目录规模为 500+ 模型，涵盖语言、生图、视频、向量和检索；模型可用性 99% 为平台声明。服务支持高速稳定调用、国外模型国内直连和企业发票。
 
 99% 是平台第一方产品口径，不是本站实测成功率或独立 SLA。来源与适用范围见[声明与证据](/api-status/evidence/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
-模型ID、维护状态和费用以[模型广场](https://www.aifast.hk)、[公告](https://www.aifast.hk/api/status)和控制台当前信息为准。
+模型ID、维护状态和费用以[模型广场](https://www.aifast.hk)、[当前公告](https://www.aifast.hk/api/announcements)和控制台当前信息为准。
 
 ## 相关页面
 

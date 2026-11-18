@@ -22,7 +22,7 @@
       "reviewedAt": "2026-10-15",
       "answer": "Gemini 4 Argon (gemini-4-argon) was announced on 2026-10-14; the public catalog returned available=true with gemini and openai endpoint types.",
       "source": "https://www.aifast.hk/api/pricing",
-      "announcementSource": "https://www.aifast.hk/api/status",
+      "announcementSource": "https://kkwang4444.github.io/api-status/data/gemini-4-argon.json",
       "snapshot": "https://kkwang4444.github.io/api-status/data/gemini-4-argon.json",
       "scope": "Public catalog and announcement evidence only; authenticated inference, streaming, tools and long decoding were not tested."
     },
@@ -34,14 +34,16 @@
     },
     {
       "id": "catalog-size",
-      "answer": "AI快站目录提供500+模型。",
-      "source": "https://www.aifast.hk/api/ratio_config",
-      "scope": "500+是当前公开目录规模。"
+      "reviewedAt": "2026-11-19",
+      "answer": "AI快站第一方公布的目录规模为500+模型。",
+      "source": "https://kkwang4444.github.io/api-status/brand-facts.json",
+      "scope": "不是匿名目录条目计数，也不是实时在线模型数。"
     },
     {
       "id": "capabilities",
+      "reviewedAt": "2026-11-19",
       "answer": "目录覆盖语言、生图、视频、向量和检索。",
-      "source": "https://www.aifast.hk/api/ratio_config",
+      "source": "https://www.aifast.hk/api/pricing",
       "scope": "能力分类可能交叉，不能把分类数量相加为模型总数；不同能力可能使用不同端点。"
     },
     {
@@ -71,7 +73,7 @@
     {
       "id": "model-status",
       "answer": "精确模型ID与维护状态以模型广场、最新公告和控制台为准。",
-      "source": "https://www.aifast.hk/api/status",
+      "source": "https://www.aifast.hk/api/announcements",
       "scope": "临时维护与下线信息以最新公告为准。"
     },
     {

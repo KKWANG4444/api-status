@@ -10,7 +10,7 @@ const archiveUrl = 'https://kkwang4444.github.io/api-status/data/status.json';
 
 export async function checkArchive(request = fetch, now = Date.now) {
   try {
-    const r = await request(archiveUrl, { redirect: 'error', signal: AbortSignal.timeout(8000), cache: 'no-store' });
+    const r = await request(archiveUrl, { redirect: 'manual', signal: AbortSignal.timeout(8000), cache: 'no-store' });
     if (!r.ok) throw Error('存档无法读取');
     const data = await r.json();
     const state = freshness(data.checked_at, now()).state;
@@ -24,7 +24,7 @@ export async function observe(store, request = fetch, now = Date.now) {
   const [github_archive, components] = await Promise.all([checkArchive(request, now), Promise.all(targets.map(async ([id, url, expected, mime]) => {
     const start = now();
     try {
-      const r = await request(url, { redirect: 'error', signal: AbortSignal.timeout(12000) });
+      const r = await request(url, { redirect: 'manual', signal: AbortSignal.timeout(12000) });
       const content_type = (r.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
       await r.body?.cancel();
       return { id, status: r.status, content_type, ok: expected.includes(r.status) && content_type === mime, elapsed_ms: now() - start };
@@ -45,7 +45,7 @@ export function publicResult(record, now = Date.now()) {
   if (record?.source !== 'cloudflare-cron' || freshness(record.checked_at, now).state !== 'fresh' ||
       record.expires_at !== observationWindow(record.checked_at).expires_at || typeof record.overall !== 'boolean' ||
       record.status !== (record.overall ? 'operational' : 'degraded') ||
-      !Array.isArray(record.components) || record.components.length !== targets.length ||
+      !Array.isArray(record.components) || record.components.length !== targets.length || !record.components.some(c => Number.isInteger(c?.status)) ||
       !targets.every(([id]) => record.components.some(c => c?.id === id && typeof c.ok === 'boolean')) ||
       record.overall !== record.components.every(c => c.ok)) {
     return { status: 'unknown', overall: null, last_checked_at: record?.checked_at ?? null };

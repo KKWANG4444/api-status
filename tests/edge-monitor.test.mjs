@@ -12,7 +12,7 @@ async function sample(models = [401, 'application/json']) {
     if (url === 'https://kkwang4444.github.io/api-status/data/status.json') return Response.json({ checked_at: '2026-11-18T12:00:00.000Z', expires_at: '2026-11-18T13:00:00.000Z' });
     urls.push(url);
     assert.equal(options.headers, undefined);
-    assert.equal(options.redirect, 'error');
+    assert.equal(options.redirect, 'manual');
     const [status, type] = url.endsWith('/v1/models') ? models : [200, 'text/html'];
     return new Response('', { status, headers: { 'content-type': type } });
   }, () => ts);
@@ -35,6 +35,7 @@ test('60 分钟边界、未来时间、伪造有效期与缺少组件均不能�
   for (const t of [ts - 1, ts + 3600000]) assert.equal(publicResult(r, t).overall, null);
   assert.equal(publicResult({ ...r, expires_at: '2099' }, ts).status, 'unknown');
   assert.equal(publicResult({ ...r, components: [] }, ts).status, 'unknown');
+  assert.equal(publicResult({ ...r, overall: false, status: 'degraded', components: r.components.map(c => ({ ...c, ok: false, status: null })) }, ts).status, 'unknown');
 });
 test('公网请求只读：存储异常返回未知，外部请求不能启动探测', async () => {
   const env = { SNAPSHOTS: { get: async () => { throw Error('offline'); } } };
